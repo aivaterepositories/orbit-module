@@ -1,0 +1,37 @@
+{
+  "projectName": "my-demo-project",
+  "clientName": "Client Name or 'Internal Demo'",
+  "deployedDate": "2025-12-27",
+  "lastActivated": "2025-12-27T14:30:00Z",
+  "status": "active",
+  "ports": {
+    "web": 3001,
+    "api": 3002,
+    "database": 5432
+  },
+  "techStack": {
+    "frontend": "Next.js / React / Vue",
+    "backend": "Node.js / Python / etc",
+    "database": "PostgreSQL / MySQL / MongoDB"
+  },
+  "githubRepo": "https://github.com/username/repository",
+  "description": "Brief description of what this project does",
+  "demoUrl": "http://100.27.44.183:3001",
+  "healthCheckPath": "/",
+  "environment": {
+    "requiresEnvFile": true,
+    "envTemplate": ".env.example"
+  },
+  "resources": {
+    "cpuLimit": "0.5",
+    "memoryLimit": "512m"
+  },
+  "demoAccounts": [
+    {
+      "email": "demo@example.com",
+      "role": "user",
+      "password": "Demo123!"
+    }
+  ],
+  "notes": "Any additional notes about this deployment"
+}

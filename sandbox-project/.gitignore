@@ -1,0 +1,62 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# AWS credentials (never commit these!)
+*.pem
+*.key
+lightsail-*.pem
+
+# SSH keys
+id_rsa
+id_rsa.pub
+
+# Secrets
+secrets/
+*.secret
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Backups
+backups/
+*.backup
+*.bak
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker
+.dockerignore
+
+# Project-specific (generated)
+projects/*/node_modules/
+projects/*/.env
+projects/*/dist/
+projects/*/build/
+
+# Database dumps
+*.sql
+*.dump
+
+# Compressed archives (unless intentional)
+*.zip
+*.tar.gz
+*.tgz
