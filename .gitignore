@@ -1,0 +1,19 @@
+# ORBIT - Sensitive Data (DO NOT COMMIT)
+.orbit-credentials/
+**/api-keys.yaml
+**/secrets.yaml
+**/*-credentials.json
+
+# ORBIT - Local-only files
+**/local-settings.yaml
+**/temp-notes/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store

@@ -1,0 +1,171 @@
+name: orbit
+displayName: ORBIT
+description: Operational Resource for Business Innovation & Team delivery - Comprehensive development agency platform with Dual Engine Model
+version: 1.0.0
+author: Cob
+category: Business Operations + Technical Development
+defaultSelected: false
+
+installConfig:
+  # Project & Output Paths
+  project_output_path:
+    prompt: "Where should ORBIT save project data and deliverables?"
+    default: "{project-root}/orbit-projects"
+    result: "{value}"
+
+  reports_output_path:
+    prompt: "Where should ORBIT save generated reports?"
+    default: "{project_output_path}/reports"
+    result: "{value}"
+
+  templates_path:
+    prompt: "Where should ORBIT store reusable templates?"
+    default: "{project_output_path}/templates"
+    result: "{value}"
+
+  # Team Configuration
+  team_member_1_name:
+    prompt: "Primary team member name (PM/Process Engineer)?"
+    default: "Fiona"
+    result: "{value}"
+
+  team_member_1_email:
+    prompt: "Primary team member email?"
+    default: ""
+    result: "{value}"
+
+  team_member_1_role:
+    result: "PM/Process Engineer"
+
+  team_member_2_name:
+    prompt: "Developer 1 name?"
+    default: "Marky"
+    result: "{value}"
+
+  team_member_2_email:
+    prompt: "Developer 1 email?"
+    default: ""
+    result: "{value}"
+
+  team_member_2_role:
+    result: "Developer"
+
+  team_member_3_name:
+    prompt: "Developer 2 name?"
+    default: "Cob"
+    result: "{value}"
+
+  team_member_3_email:
+    prompt: "Developer 2 email?"
+    default: ""
+    result: "{value}"
+
+  team_member_3_role:
+    result: "Developer"
+
+  email_notifications_enabled:
+    prompt: "Enable email notifications for task reminders?"
+    default: "yes"
+    result: "{value}"
+    single-select:
+      - value: "yes"
+        label: "Yes - Send email reminders"
+      - value: "no"
+        label: "No - Disable email notifications"
+
+  # Feature Preferences
+  default_sprint_length:
+    prompt: "Default sprint length for Scrum methodology?"
+    default: "2-weeks"
+    result: "{value}"
+    single-select:
+      - value: "1-week"
+        label: "1 Week"
+      - value: "2-weeks"
+        label: "2 Weeks (Recommended)"
+      - value: "3-weeks"
+        label: "3 Weeks"
+      - value: "4-weeks"
+        label: "4 Weeks"
+
+  default_documentation_level:
+    prompt: "Default documentation level for client deliverables?"
+    default: "semi-tech"
+    result: "{value}"
+    single-select:
+      - value: "tech-savvy"
+        label: "Tech-Savvy - Full technical detail"
+      - value: "semi-tech"
+        label: "Semi-Technical - Balanced (Recommended)"
+      - value: "non-technical"
+        label: "Non-Technical - Plain language"
+
+  risk_assessment_frequency:
+    prompt: "How often should ORBIT conduct risk assessments?"
+    default: "weekly"
+    result: "{value}"
+    single-select:
+      - value: "daily"
+        label: "Daily"
+      - value: "weekly"
+        label: "Weekly (Recommended)"
+      - value: "bi-weekly"
+        label: "Bi-Weekly"
+      - value: "monthly"
+        label: "Monthly"
+
+  report_detail_level:
+    prompt: "Default detail level for status reports?"
+    default: "standard"
+    result: "{value}"
+    single-select:
+      - value: "minimal"
+        label: "Minimal - Executive summary only"
+      - value: "standard"
+        label: "Standard - Balanced detail (Recommended)"
+      - value: "detailed"
+        label: "Detailed - Comprehensive information"
+
+  # Dual Engine Model Settings
+  dual_engine_mode:
+    prompt: "Dual Engine execution mode?"
+    default: "simultaneous"
+    result: "{value}"
+    single-select:
+      - value: "simultaneous"
+        label: "Simultaneous - Run both engines in parallel (Recommended)"
+      - value: "sequential"
+        label: "Sequential - Process then develop"
+
+  process_review_frequency:
+    prompt: "How often should Process Engineer review workflows?"
+    default: "per-sprint"
+    result: "{value}"
+    single-select:
+      - value: "continuous"
+        label: "Continuous - During development"
+      - value: "per-sprint"
+        label: "Per Sprint - Sprint retrospective (Recommended)"
+      - value: "per-phase"
+        label: "Per Phase - At Discover/Demo/Deliver/Defend transitions"
+
+  # Integration Settings (Optional)
+  aws_region:
+    prompt: "Default AWS region? (Optional - can configure later)"
+    default: "us-east-1"
+    result: "{value}"
+
+  integration_credentials_path:
+    prompt: "Where should ORBIT store integration credentials securely?"
+    default: "{project-root}/.orbit-credentials"
+    result: "{value}"
+
+  # Static Configuration
+  module_version:
+    result: "1.0.0"
+
+  lifecycle_phases:
+    result: "Discover,Demo,Deliver,Defend"
+
+  supported_integrations:
+    result: "aws,n8n,zapier,make,shopify,context7,21st-dev"

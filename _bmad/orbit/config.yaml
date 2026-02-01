@@ -1,0 +1,41 @@
+# ORBIT Module Configuration
+# Generated: 2026-02-01
+
+# Project & Output Paths
+project_output_path: "/Users/fionaeflynnecafe/orbit-module/orbit-projects"
+reports_output_path: "/Users/fionaeflynnecafe/orbit-module/orbit-projects/reports"
+templates_path: "/Users/fionaeflynnecafe/orbit-module/orbit-projects/templates"
+
+# Team Configuration
+team_member_1_name: "Fiona"
+team_member_1_email: "fiona@example.com"
+team_member_1_role: "PM/Process Engineer"
+
+team_member_2_name: "Marky"
+team_member_2_email: "marky@example.com"
+team_member_2_role: "Developer"
+
+team_member_3_name: "Cob"
+team_member_3_email: "cob@example.com"
+team_member_3_role: "Developer"
+
+email_notifications_enabled: "yes"
+
+# Feature Preferences
+default_sprint_length: "2-weeks"
+default_documentation_level: "semi-tech"
+risk_assessment_frequency: "weekly"
+report_detail_level: "standard"
+
+# Dual Engine Model Settings
+dual_engine_mode: "simultaneous"
+process_review_frequency: "per-sprint"
+
+# Integration Settings
+aws_region: "us-east-1"
+integration_credentials_path: "/Users/fionaeflynnecafe/orbit-module/.orbit-credentials"
+
+# Static Configuration
+module_version: "1.0.0"
+lifecycle_phases: "Discover,Demo,Deliver,Defend"
+supported_integrations: "aws,n8n,zapier,make,shopify,context7,21st-dev"
