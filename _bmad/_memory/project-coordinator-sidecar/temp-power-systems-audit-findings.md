@@ -16,12 +16,12 @@
 
 ---
 
-## 🔴 CRITICAL PRIORITY
+## 🔴 ALL TASKS CRITICAL PRIORITY
 
 ### 1. Multi-Crew Assignment in Work Order Management
 **Location:** Work order management section
 **Issue:** Missing "Add Crew" capability for multiple crews per work order
-**Impact:** HIGH - Wayne cannot assign multiple crews as needed
+**Impact:** CRITICAL
 
 **Requirements:**
 - Wayne creates new work order
@@ -37,14 +37,14 @@
 
 **Assigned To:** Mark (Simulator UI)
 **Dependencies:** None
-**Estimated Complexity:** Medium
+**Priority:** CRITICAL
 
 ---
 
 ### 2. Change Order Button & Workflow
 **Location:** Sales summary section in job card
 **Issue:** Missing "Change Order" button and process flow
-**Impact:** HIGH - Cannot handle contract modifications (common occurrence)
+**Impact:** CRITICAL
 
 **Requirements:**
 - Button in sales summary section
@@ -60,18 +60,16 @@
 6. What notifications are sent and to whom?
 7. What fields are captured in the change order form?
 
-**Assigned To:** BLOCKED - Waiting on SOP from Fiona
-**Dependencies:** Change order process documentation
-**Estimated Complexity:** High (workflow + Salesforce integration)
+**Assigned To:** Marky (Front-End) + Cob/Jacob (Backend)
+**Dependencies:** Change order process documentation (RECEIVED)
+**Priority:** CRITICAL
 
 ---
-
-## 🟡 HIGH PRIORITY
 
 ### 3. "Crew Summary" Replacement
 **Location:** Work order and extra section in CRM
 **Issue:** "Selected Crew Member Summary" label needs replacement
-**Impact:** MEDIUM - Clarity and consistency
+**Impact:** CRITICAL
 
 **Current Label:** "Selected Crew Member Summary"
 **New Label:** "Crew Summary"
@@ -92,14 +90,14 @@
 
 **Assigned To:** Mark (Simulator UI + Label Change)
 **Dependencies:** Multi-crew assignment implementation (#1)
-**Estimated Complexity:** Low (if just label), Medium (if redesign needed)
+**Priority:** CRITICAL
 
 ---
 
 ### 4. Crew Summary in Extra Work Orders
 **Location:** Extra work order section
 **Issue:** Crew summary is missing entirely
-**Impact:** MEDIUM - Inconsistency between work order types
+**Impact:** CRITICAL
 
 **Requirements:**
 - Same crew summary as regular work orders
@@ -108,14 +106,14 @@
 
 **Assigned To:** Mark (Simulator UI)
 **Dependencies:** Multi-crew assignment implementation (#1), Crew Summary design (#3)
-**Estimated Complexity:** Low (duplicate existing feature)
+**Priority:** CRITICAL
 
 ---
 
 ### 5. Crew Portal Dashboard Replacement
 **Location:** Crew portal - currently shows "My Task"
 **Issue:** Need to replace "My Task" with comprehensive "Dashboard"
-**Impact:** MEDIUM - Crew visibility and engagement
+**Impact:** CRITICAL
 
 **Current:** "My Task" section
 **New:** "Dashboard" with metrics
@@ -142,18 +140,16 @@
 - Filter toggles for time periods
 - Visual charts/graphs if possible
 
-**Assigned To:** Mark (Simulator UI Design)
+**Assigned To:** Mark (Simulator UI Design) + Cob/Jacob (Backend)
 **Dependencies:** Work order time tracking data
-**Estimated Complexity:** Medium-High (new dashboard view)
+**Priority:** CRITICAL
 
 ---
-
-## 🟡 HIGH PRIORITY (CONTINUED)
 
 ### 8. Work Order Calendar View (Salesforce-Style)
 **Location:** Work Order Calendar navigation section
 **Issue:** Missing calendar/schedule view that client uses daily in Salesforce
-**Impact:** HIGH - Chris specifically requested, uses for daily scheduling and revenue projection
+**Impact:** CRITICAL
 
 **Requirements:**
 - Calendar/schedule grid view showing work orders by date
@@ -177,17 +173,14 @@
 
 **Assigned To:** Marky (Front-End), Cob/Jacob (Backend data queries)
 **Dependencies:** Work order data structure finalized
-**Estimated Complexity:** Medium-High
-**Estimated Time:** 4-5 days
+**Priority:** CRITICAL
 
 ---
-
-## 🟢 MEDIUM PRIORITY
 
 ### 6. "Add New Job" Notification/Feedback
 **Location:** Jobs page - "Add New Job" button
 **Issue:** No pop-up or notification when job is added
-**Impact:** LOW-MEDIUM - User uncertainty about action success
+**Impact:** CRITICAL
 
 **Current Behavior:**
 - Button may work but provides no feedback
@@ -202,14 +195,14 @@
 
 **Assigned To:** Mark (Simulator UI)
 **Dependencies:** None
-**Estimated Complexity:** Low
+**Priority:** CRITICAL
 
 ---
 
 ### 7. Phone Number Field in Crew Portal Profile
 **Location:** User profile in crew portal
 **Issue:** Missing phone number field
-**Impact:** LOW - Nice to have for contact management
+**Impact:** CRITICAL
 
 **Requirements:**
 - Add "Phone Number" field to crew profile
@@ -219,7 +212,7 @@
 
 **Assigned To:** Mark (Simulator UI)
 **Dependencies:** None
-**Estimated Complexity:** Low
+**Priority:** CRITICAL
 
 ---
 
@@ -260,23 +253,23 @@
 
 ## ASSIGNMENT SUMMARY
 
-### Mark (Simulator Lead)
+### Mark (Simulator Lead) - ALL CRITICAL
 - [ ] #1 - Multi-crew assignment in work order (CRITICAL)
-- [ ] #2 - Change Order UI implementation (CRITICAL - 6-8 days)
-- [ ] #3 - Crew summary label and content redesign (HIGH)
-- [ ] #4 - Crew summary in extra work orders (HIGH)
-- [ ] #5 - Crew portal dashboard replacement (MEDIUM)
-- [ ] #6 - Add new job notification (MEDIUM - Quick Win)
-- [ ] #7 - Phone number field in crew profile (MEDIUM - Quick Win)
-- [ ] #8 - Work Order Calendar view (HIGH - 4-5 days)
+- [ ] #2 - Change Order UI implementation (CRITICAL)
+- [ ] #3 - Crew summary label and content redesign (CRITICAL)
+- [ ] #4 - Crew summary in extra work orders (CRITICAL)
+- [ ] #5 - Crew portal dashboard replacement (CRITICAL)
+- [ ] #6 - Add new job notification (CRITICAL)
+- [ ] #7 - Phone number field in crew profile (CRITICAL)
+- [ ] #8 - Work Order Calendar view (CRITICAL)
 
 ### Fiona (Process Documentation)
 - [x] #2 - Provide change order SOP/process documentation (COMPLETED)
 
-### Cob/Jacob (Backend)
-- [ ] #2 - Change order backend + Salesforce integration (8-13 days)
-- [ ] #5 - Crew portal dashboard data queries (time tracking, pay calculation)
-- [ ] #8 - Work order calendar backend support (data queries, calculations)
+### Cob/Jacob (Backend) - ALL CRITICAL
+- [ ] #2 - Change order backend + Salesforce integration (CRITICAL)
+- [ ] #5 - Crew portal dashboard data queries (CRITICAL)
+- [ ] #8 - Work order calendar backend support (CRITICAL)
 
 ---
 
