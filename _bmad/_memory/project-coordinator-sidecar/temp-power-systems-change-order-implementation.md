@@ -592,37 +592,142 @@ Temp Power Systems CRM
 
 ---
 
-## QUESTIONS FOR FIONA (CLARIFICATIONS)
+## ✅ CLARIFICATIONS FROM FIONA (ANSWERED)
 
-1. **Pre-Lien Amount Calculation:**
-   - Is Pre-Lien always a percentage of contract amount?
-   - If yes, what percentage?
-   - Should it auto-calculate when contract amount changes?
+### 1. Pre-Lien Amount Calculation
+**Answer:** Manual field only - Angela calculates and enters manually
+**Implementation:**
+- Pre-Lien field in accounting section (text/currency input)
+- NO auto-calculation logic needed
+- Angela has full control to update as needed
 
-2. **Urgency Levels:**
-   - Are the due dates I specified correct? (Critical: 1 day, High: 3 days, Standard: 5 days)
-   - Or do you want different timelines?
+### 2. Urgency Levels and Due Dates
+**Answer:** Use specified timelines
+**Implementation:**
+- Critical: 1 business day per stage
+- High: 3 business days per stage
+- Standard: 5 business days per stage
+- Due dates auto-calculate based on urgency level selected
 
-3. **QuickBooks Integration:**
-   - You mentioned "QB reconciliation" - do we need to sync anything to QuickBooks?
-   - Or is QB external and Angela manually enters invoices there?
+### 3. QuickBooks Integration
+**Answer:** NO integration with QuickBooks
+**Implementation:**
+- QuickBooks is separate platform - no sync needed
+- Angela manually enters data into QB as needed
+- CRM tracks billable amounts, QB handles actual payments
+- Remove all QB integration from spec
 
-4. **Service Suspension:**
-   - You noted CO doesn't stop work unless "manual Service Suspension activated"
-   - Should we add a checkbox "Suspend Work Until CO Approved"?
-   - Or is this handled outside the CO workflow?
+### 4. Service Suspension During CO
+**Answer:** NO automatic suspension - Smart Alert only
+**Implementation:**
+- Display Smart Alert at top of job card: "⚠️ Change Order in Progress for This Job"
+- NO automatic work stoppage
+- Manual service suspension remains separate workflow if needed
+- Remove suspension checkbox from CO Request Form
 
-5. **Client Notification:**
-   - Should client receive any notifications during CO process?
-   - Or is all client communication handled manually by Sales?
+### 5. Client Notifications
+**Answer:** NO external client notifications - Internal team only
+**Implementation:**
+- When CO initiated: Send internal email to all admin users
+- Email subject: "Internal Alert: Change Order Initiated on [Job Name]"
+- Include: CO number, initiated by, urgency level, estimated amount
+- NO emails sent to external client (Sales handles all client communication manually)
 
-6. **CO Rejection:**
-   - What if client rejects the CO quote?
-   - Do we need a "Reject/Cancel" flow?
-   - Or does it just sit in Stage 2 indefinitely?
+### 6. CO Rejection/Cancellation Flow
+**Answer:** Allow notes, editing, and full cancellation
+**Implementation:**
+- Add "Notes" field in CO tracking (for rejection reasons, etc.)
+- Allow editing of CO amount after initial submission
+- Add "Cancel CO" button (visible to CO initiator and admins)
+- When canceled:
+  - Archive CO with "Canceled" status
+  - Remove Smart Alert
+  - Log activity: "[User] canceled CO-[number] - Reason: [note]"
+  - Notify stakeholders of cancellation
+- Notes visible to all users who can view CO details
+
+---
+
+---
+
+## 🎯 MARKY: YOUR TASKS (Front-End)
+
+### Priority Order:
+1. **IMMEDIATE:** Task #6 - Add new job notification (1 day)
+2. **IMMEDIATE:** Task #7 - Phone number field in crew profile (1 day)
+3. **THIS WEEK:** Task #1 - Multi-crew assignment (3-4 days)
+4. **NEXT WEEK:** Task #3 - Crew summary redesign (2 days)
+5. **NEXT WEEK:** Task #4 - Crew summary in extras (1 day)
+6. **WEEK 2-3:** Task #2 - Change Order UI (6-8 days)
+7. **WEEK 3-4:** Task #5 - Crew portal dashboard (4-5 days)
+
+### Change Order UI Components You'll Build:
+- **CO Request Button** in Sales Summary section
+- **CO Request Form** with all required fields (see Section 1.C above)
+- **Smart Alert System** at top of job card
+- **CO Tracking Section** showing all COs for job
+- **Detailed CO View** with workflow progress
+- **Stage Update Buttons** for Sales, Contracts, Accounting, PM
+- **Notes Field** for rejection reasons
+- **Edit CO Amount** capability
+- **Cancel CO Button** and confirmation dialog
+- **Mobile-responsive design** for iPad/phones
+
+### Key Features:
+✅ CO Request Form validates required fields
+✅ Smart Alert updates through workflow stages
+✅ Multiple COs can exist on same job
+✅ Support negative amounts (deduction COs)
+✅ Cancel CO removes alert and archives
+
+---
+
+## 🎯 COB/JACOB: YOUR TASKS (Back-End)
+
+### Priority Order:
+1. **WEEK 2-3:** Task #2 - Change Order backend (8-13 days)
+2. **WEEK 3-4:** Task #5 - Crew portal dashboard data queries (support Marky)
+
+### Change Order Backend Components You'll Build:
+
+#### Database:
+- **New table:** `change_orders` (see Section 3.A for schema)
+- **Update:** `jobs` table (add `total_change_orders_amount`)
+- **Update:** `schedule_of_values` table (add `source` and `change_order_id`)
+
+#### Workflow Automation:
+- **CO Initiation:** Generate CO number, create Smart Alert, task for Sales
+- **Stage 2 Handoff:** Update alert, create task for Contracts
+- **Stage 3 Handoff:** Update alert, create tasks for Sandra then Angela
+- **Stage 4 Handoff:** Update alert, create task for Production Manager
+- **Completion:** Remove alert, archive CO, notify all stakeholders
+
+#### Notifications:
+- **5 Email Templates** (see Section 5.A for all templates)
+- **Internal Admin Alert** when CO initiated (NEW - per Fiona's answer)
+- **Cancellation notification** when CO canceled
+
+#### Validation Logic:
+- **SOV Validation:** Prevent financial completion if SOV doesn't balance with new contract amount
+- **Contract Amount Updates:** Cumulative CO tracking (Original + CO1 + CO2 = Total)
+- **Multiple CO Support:** Independent tracking, cumulative amounts
+
+#### Salesforce Integration:
+- **Update parent opportunity** contract amount when CO completes
+- **NO duplicate opportunities** - nest under original job
+- **Error handling** if Salesforce sync fails
+
+### Key Features:
+✅ Pre-Lien field is manual (NO auto-calculation)
+✅ NO QuickBooks integration
+✅ NO automatic service suspension
+✅ NO client-facing notifications (internal team only)
+✅ Support CO notes, editing, and cancellation
+✅ Urgency-based due dates (Critical: 1 day, High: 3 days, Standard: 5 days)
 
 ---
 
 **Document Created:** 2026-02-02
-**Status:** Ready for team review and estimation
-**Next Step:** Mark and Cob/Jacob to review and provide time estimates
+**Document Updated:** 2026-02-02 (with Fiona's clarifications)
+**Status:** Ready for implementation - All questions answered
+**Next Step:** Marky and Cob/Jacob begin development per priority order above
