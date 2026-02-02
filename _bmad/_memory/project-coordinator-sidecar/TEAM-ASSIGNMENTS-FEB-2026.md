@@ -7,26 +7,27 @@
 
 ## 🎯 MARKY - YOUR TASK LIST
 
-### 🔴 ALL TASKS CRITICAL PRIORITY
+### 🔴 ALL TASKS CRITICAL PRIORITY - IMMEDIATE
 
-- [ ] **Task #1:** Multi-crew assignment in work order management (3-4 days) - CRITICAL
-- [ ] **Task #2:** Change Order UI implementation (6-8 days) - CRITICAL
-- [ ] **Task #3:** Crew summary redesign and replacement (2 days) - CRITICAL
-- [ ] **Task #4:** Add crew summary to extra work orders (1 day) - CRITICAL
-- [ ] **Task #5:** Crew portal dashboard replacement (4-5 days) - CRITICAL
-- [ ] **Task #6:** Add new job notification feedback (1 day) - CRITICAL
-- [ ] **Task #7:** Phone number field in crew profile (1 day) - CRITICAL
-- [ ] **Task #8:** Work Order Calendar view (4-5 days) - CRITICAL
+- [ ] **Task #1:** Multi-crew assignment in work order management (immediate) - CRITICAL
+- [ ] **Task #2:** Change Order UI implementation (immediate) - CRITICAL
+- [ ] **Task #3:** Crew summary redesign and replacement (immediate) - CRITICAL
+- [ ] **Task #4:** Add crew summary to extra work orders (immediate) - CRITICAL
+- [ ] **Task #5:** Crew portal dashboard replacement (immediate) - CRITICAL
+- [ ] **Task #6:** Add new job notification feedback (immediate) - CRITICAL
+- [ ] **Task #7:** Phone number field in crew profile (immediate) - CRITICAL
+- [ ] **Task #8:** Work Order Calendar view (immediate) - CRITICAL
 
-**TOTAL WORKLOAD:** 23-30 days (8 tasks) - Work at your pace, all items are critical
+**TARGET DEADLINE:** Before 5:30 AM Manila (Tuesday)
+**TOTAL WORKLOAD:** 8 tasks - All items are critical and immediate
 
 ---
 
 ## 🎯 COB/JACOB - YOUR TASK LIST
 
-### 🔴 ALL TASKS CRITICAL PRIORITY
+### 🔴 ALL TASKS CRITICAL PRIORITY - IMMEDIATE
 
-- [ ] **Task #2:** Change Order backend implementation (8-13 days) - CRITICAL
+- [ ] **Task #2:** Change Order backend implementation (immediate) - CRITICAL
   - Database schema updates
   - Workflow automation
   - Email notifications (5 templates)
@@ -34,16 +35,17 @@
   - Salesforce integration
   - CO notes, editing, cancellation
 
-- [ ] **Task #5:** Crew portal dashboard backend support (TBD days) - CRITICAL
+- [ ] **Task #5:** Crew portal dashboard backend support (immediate) - CRITICAL
   - Time tracking data queries
   - Pay calculation logic
   - Work order counts
 
-- [ ] **Task #8:** Work Order Calendar backend support - CRITICAL
+- [ ] **Task #8:** Work Order Calendar backend support (immediate) - CRITICAL
   - Data queries for calendar view
   - Daily/monthly revenue calculations
 
-**TOTAL WORKLOAD:** 8-13 days (Task #2) + support for Task #5 and #8 - Work at your pace, all items are critical
+**TARGET DEADLINE:** Before 5:30 AM Manila (Tuesday)
+**TOTAL WORKLOAD:** 3 tasks - All items are critical and immediate
 
 ---
 
@@ -283,11 +285,11 @@ Calendar/schedule grid view showing work orders by date (Salesforce-style)
 
 ## 📅 SPRINT TIMELINE
 
-### 🔴 ALL TASKS CRITICAL - NO STRICT TIMELINE
+### 🔴 ALL TASKS CRITICAL - IMMEDIATE DEADLINE
 
-**Target:** End of February 2026 pilot launch
+**TARGET DEADLINE:** Before 5:30 AM Manila (Tuesday)
 
-**All 8 tasks are CRITICAL priority.** Marky and Cob/Jacob can work at their own pace and sequence. Dependencies noted in each task description, but team has flexibility to approach in the most efficient order.
+**All 8 tasks are CRITICAL priority and must be completed immediately.** Marky and Cob/Jacob should sequence efficiently based on dependencies.
 
 **Suggested Sequencing (optional):**
 - Task #1 blocks Tasks #3 and #4 (multi-crew assignment foundation)
@@ -296,7 +298,7 @@ Calendar/schedule grid view showing work orders by date (Salesforce-style)
 - Task #8 is independent (work order calendar)
 - Task #5 can be done anytime (dashboard)
 
-**Deliverable:** ALL 8 tasks complete and ready for pilot
+**Deliverable:** ALL 8 tasks complete before Tuesday 5:30 AM Manila time
 
 ---
 

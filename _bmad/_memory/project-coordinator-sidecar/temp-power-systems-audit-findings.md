@@ -216,38 +216,26 @@
 
 ---
 
-## PRIORITY SEQUENCING RECOMMENDATION
+## 🔴 ALL TASKS CRITICAL - IMMEDIATE DEADLINE
 
-### Sprint 1 (This Week - Critical Path)
-1. **Multi-Crew Assignment (#1)** - HIGH IMPACT, blocks other items
-2. **"Add New Job" Notification (#6)** - Quick win, improves UX
-3. **Phone Number Field (#7)** - Quick win, low complexity
+**TARGET DEADLINE:** Before 5:30 AM Manila (Tuesday)
 
-### Sprint 2 (Next Week - Dependent Items)
-4. **Crew Summary Replacement (#3)** - Depends on #1
-5. **Crew Summary in Extra (#4)** - Depends on #3
-6. **Change Order Process (#2)** - SOP received, ready to implement
+All 8 tasks are CRITICAL priority and must be completed immediately. Marky and Cob/Jacob should sequence efficiently based on dependencies.
 
-### Sprint 3 (Following Week - Major Features)
-7. **Work Order Calendar (#8)** - Client priority, daily use feature
-8. **Crew Portal Dashboard (#5)** - Enhancement, less urgent
+**Suggested Sequencing (optional):**
+- Task #1 blocks Tasks #3 and #4 (multi-crew assignment foundation)
+- Task #2 is independent (change order workflow)
+- Tasks #6 and #7 are quick wins (can be done anytime)
+- Task #8 is independent (work order calendar)
+- Task #5 can be done anytime (dashboard)
 
 ---
 
 ## BLOCKERS
 
-### 🚫 BLOCKED: Change Order Implementation (#2)
-**Waiting On:** Fiona to provide SOP/process documentation
-**Impact:** Cannot design workflow without understanding business process
-**Action Required:** Fiona to document or schedule working session
+### ✅ NO BLOCKERS - ALL TASKS UNBLOCKED
 
-**Questions Needing Answers:**
-- Who initiates change orders?
-- What's the approval workflow?
-- What data is captured?
-- How does it integrate with Salesforce?
-- What notifications are triggered?
-- Does customer sign-off required?
+Change Order SOP received from Fiona. All 8 tasks ready for immediate implementation.
 
 ---
 
@@ -275,27 +263,29 @@
 
 ## ESTIMATED TIMELINE
 
-**Current Status (All Unblocked):**
-- Week 1: Items #1, #6, #7 (Critical + Quick Wins) - 3 of 8 complete
-- Week 2: Items #3, #4, start #2 (Dependent items + CO start) - 5 of 8 complete
-- Week 3: Items #2, #8 (Change Order + Work Order Calendar) - 7 of 8 complete
-- Week 4: Item #5 (Crew Portal Dashboard) + Testing - 8 of 8 complete
-- **Total:** 4 weeks to completion
+**All Tasks CRITICAL - IMMEDIATE DEADLINE**
 
-**Marky's Workload:** 23-30 days across 8 tasks
-**Cob/Jacob's Workload:** 8-13 days (Task #2) + support for #5 and #8
+**TARGET DEADLINE:** Before 5:30 AM Manila (Tuesday)
+
+**Marky's Workload:** 8 tasks (immediate)
+**Cob/Jacob's Workload:** 3 tasks (immediate) - Task #2 + support for #5 and #8
+
+All tasks are CRITICAL and must be completed before Tuesday 5:30 AM Manila time.
 
 ---
 
 ## NEXT STEPS
 
-1. **Fiona:** Review this breakdown, confirm priorities
-2. **Fiona:** Provide change order SOP (schedule working session if easier)
-3. **Mark:** Review assignments, provide time estimates
-4. **Nova:** Schedule sprint planning session with team
-5. **Team:** Align on sprint capacity and delivery dates
+**IMMEDIATE DEADLINE:** Before 5:30 AM Manila (Tuesday)
+
+1. **Marky:** Start all 8 tasks immediately - All CRITICAL
+2. **Cob/Jacob:** Start all 3 tasks immediately - All CRITICAL
+3. **Team:** Report blockers immediately to Fiona/Nova
+4. **Fiona:** Monitor progress, clear any blockers
+5. **All:** Complete ALL tasks before Tuesday 5:30 AM Manila time
 
 ---
 
 **Document Created:** 2026-02-02
-**Next Review:** After Fiona confirms priorities and provides change order SOP
+**Deadline:** Tuesday 5:30 AM Manila
+**Last Updated:** 2026-02-02 (Immediate deadline set)
