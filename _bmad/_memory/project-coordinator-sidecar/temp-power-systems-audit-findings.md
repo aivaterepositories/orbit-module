@@ -1,11 +1,12 @@
 # Temp Power Systems - Audit Findings
 **Date:** 2026-02-02
+**Updated:** 2026-02-02 (Added Task #8 - Work Order Calendar)
 **Auditor:** Fiona Cafe
-**Source:** Simulator inspection post-materials/skills list deployment
+**Source:** Simulator inspection + client requirements review
 
 ---
 
-## STATUS: 7 Items Identified for Implementation
+## STATUS: 8 Items Identified for Implementation
 
 ### ✅ COMPLETED ITEMS (Since Last Check)
 - Materials list drop-down deployed (Mark)
@@ -147,6 +148,40 @@
 
 ---
 
+## 🟡 HIGH PRIORITY (CONTINUED)
+
+### 8. Work Order Calendar View (Salesforce-Style)
+**Location:** Work Order Calendar navigation section
+**Issue:** Missing calendar/schedule view that client uses daily in Salesforce
+**Impact:** HIGH - Chris specifically requested, uses for daily scheduling and revenue projection
+
+**Requirements:**
+- Calendar/schedule grid view showing work orders by date
+- Columns: Date, Job Name, Crew, Comments, Scheduled Value, Billed, Remaining
+- Daily totals (sum of scheduled values per day)
+- Monthly projection totals at bottom
+- Time period filters (This Month, Next Month, Custom)
+- Revenue vs non-revenue work order identification
+- Interactive: Click job → job card, Click crew → crew schedule
+- Mobile-responsive design
+- Export to PDF/CSV capability
+
+**Client Quote (Chris - Meeting 1):**
+"It tells me the day that we're doing the work. The schedule says on the 3rd of November, we're doing these jobs: Sycamore Walk, Lake Paris... This is the crew. Then the comments... Here's the scheduled value of this work today... So I can see very quickly... in November, if everything goes well, we should bill around $170,000 of the $2.1 million we have in the books."
+
+**Design Reference:**
+- Based on Salesforce schedule view Chris showed in Meeting 1
+- Several rows per date showing work orders
+- Schedule of value vs billed amount per work order
+- Clear daily and monthly revenue projections
+
+**Assigned To:** Marky (Front-End), Cob/Jacob (Backend data queries)
+**Dependencies:** Work order data structure finalized
+**Estimated Complexity:** Medium-High
+**Estimated Time:** 4-5 days
+
+---
+
 ## 🟢 MEDIUM PRIORITY
 
 ### 6. "Add New Job" Notification/Feedback
@@ -198,10 +233,11 @@
 ### Sprint 2 (Next Week - Dependent Items)
 4. **Crew Summary Replacement (#3)** - Depends on #1
 5. **Crew Summary in Extra (#4)** - Depends on #3
-6. **Change Order Process (#2)** - Once SOP received from Fiona
+6. **Change Order Process (#2)** - SOP received, ready to implement
 
-### Sprint 3 (Following Week - Enhancement)
-7. **Crew Portal Dashboard (#5)** - More complex, less urgent
+### Sprint 3 (Following Week - Major Features)
+7. **Work Order Calendar (#8)** - Client priority, daily use feature
+8. **Crew Portal Dashboard (#5)** - Enhancement, less urgent
 
 ---
 
@@ -226,32 +262,35 @@
 
 ### Mark (Simulator Lead)
 - [ ] #1 - Multi-crew assignment in work order (CRITICAL)
+- [ ] #2 - Change Order UI implementation (CRITICAL - 6-8 days)
 - [ ] #3 - Crew summary label and content redesign (HIGH)
 - [ ] #4 - Crew summary in extra work orders (HIGH)
 - [ ] #5 - Crew portal dashboard replacement (MEDIUM)
-- [ ] #6 - Add new job notification (MEDIUM)
-- [ ] #7 - Phone number field in crew profile (MEDIUM)
+- [ ] #6 - Add new job notification (MEDIUM - Quick Win)
+- [ ] #7 - Phone number field in crew profile (MEDIUM - Quick Win)
+- [ ] #8 - Work Order Calendar view (HIGH - 4-5 days)
 
 ### Fiona (Process Documentation)
-- [ ] #2 - Provide change order SOP/process documentation (BLOCKING)
+- [x] #2 - Provide change order SOP/process documentation (COMPLETED)
 
-### Cob/Jacob (Backend - if needed)
-- [ ] #2 - Change order Salesforce integration (once SOP provided)
+### Cob/Jacob (Backend)
+- [ ] #2 - Change order backend + Salesforce integration (8-13 days)
 - [ ] #5 - Crew portal dashboard data queries (time tracking, pay calculation)
+- [ ] #8 - Work order calendar backend support (data queries, calculations)
 
 ---
 
 ## ESTIMATED TIMELINE
 
-**Best Case (No Blockers):**
-- Week 1: Items #1, #6, #7 (Critical + Quick Wins)
-- Week 2: Items #3, #4 (Dependent on #1)
-- Week 3: Items #2, #5 (Complex items)
-- **Total:** 3 weeks to completion
+**Current Status (All Unblocked):**
+- Week 1: Items #1, #6, #7 (Critical + Quick Wins) - 3 of 8 complete
+- Week 2: Items #3, #4, start #2 (Dependent items + CO start) - 5 of 8 complete
+- Week 3: Items #2, #8 (Change Order + Work Order Calendar) - 7 of 8 complete
+- Week 4: Item #5 (Crew Portal Dashboard) + Testing - 8 of 8 complete
+- **Total:** 4 weeks to completion
 
-**With Change Order Blocker:**
-- Items #1, #3, #4, #5, #6, #7: 2-3 weeks
-- Item #2: TBD based on SOP delivery
+**Marky's Workload:** 23-30 days across 8 tasks
+**Cob/Jacob's Workload:** 8-13 days (Task #2) + support for #5 and #8
 
 ---
 

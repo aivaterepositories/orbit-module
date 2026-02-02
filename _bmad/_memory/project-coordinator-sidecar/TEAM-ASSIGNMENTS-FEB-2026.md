@@ -20,11 +20,12 @@
 
 ### WEEKS 2-3 (Feb 10-23)
 - [ ] **Task #2:** Change Order UI implementation (6-8 days)
+- [ ] **Task #8:** Work Order Calendar view (4-5 days)
 
 ### WEEKS 3-4 (Feb 17-28)
 - [ ] **Task #5:** Crew portal dashboard replacement (4-5 days)
 
-**TOTAL WORKLOAD:** 19-25 days across 4 weeks
+**TOTAL WORKLOAD:** 23-30 days across 4 weeks (8 tasks)
 
 ---
 
@@ -215,26 +216,95 @@
 
 ---
 
+### Task #8: Work Order Calendar View (Marky)
+**Priority:** HIGH (Client specifically requested)
+**Complexity:** Medium-High
+**Estimated Time:** 4-5 days
+
+**What to Build:**
+Calendar/schedule grid view showing work orders by date (Salesforce-style)
+
+**Layout - Columns:**
+- Date (grouped by day)
+- Job Name (clickable → job card)
+- Crew Assignment
+- Comments/Special Instructions
+- Scheduled Value (billable amount)
+- Billed Amount (if completed)
+- Remaining (Scheduled - Billed)
+- Daily totals per date
+- Monthly total at bottom
+
+**Key Features:**
+1. **Time Period Filters:**
+   - This Month (default)
+   - Next Month
+   - Custom date range
+
+2. **Daily Totals:**
+   - Sum of scheduled values per day
+   - Shows expected daily billing
+
+3. **Monthly Projection:**
+   - Total at bottom: "If all goes well, bill $170,000 this month"
+
+4. **Revenue Indicators:**
+   - Visual for $0 work orders (pickups, already billed)
+   - Distinguish partial vs full scope work
+
+5. **Interactive Elements:**
+   - Click job → Opens job card
+   - Click crew → Shows crew schedule
+   - Click value → Shows SOV breakdown
+   - Hover comments → Full text tooltip
+   - Export to PDF/CSV
+
+**Filters:**
+- Time period, Crew, Status, Revenue type
+
+**Client Quote (Chris - Meeting 1):**
+> "It tells me the day that we're doing the work. The schedule says on the 3rd of November, we're doing these jobs: Sycamore Walk, Lake Paris... This is the crew. Then the comments... Here's the scheduled value of this work today... So I can see very quickly... in November, if everything goes well, we should bill around $170,000."
+
+**Implementation Phases:**
+- Phase 1: Mockup/Design (1 day) - Show Chris for approval
+- Phase 2: Basic calendar grid (1-2 days)
+- Phase 3: Calculations and totals (1 day)
+- Phase 4: Filters and interactions (1 day)
+
+**Acceptance Criteria:**
+✅ Calendar view groups work orders by date
+✅ Daily and monthly totals calculate correctly
+✅ Crew assignments display clearly
+✅ Comments visible (hover or column)
+✅ Time period filters work
+✅ Click interactions functional
+✅ Mobile-responsive design
+✅ Export capability
+✅ Matches Salesforce view per Chris's approval
+
+---
+
 ## 📅 SPRINT TIMELINE
 
 ### Week 1 (Feb 3-9)
 **Marky:** Tasks #6, #7, #1
 **Cob/Jacob:** Prepare for Task #2
-**Deliverables:** 3 tasks complete
+**Deliverables:** 3 of 8 tasks complete
 
 ### Week 2 (Feb 10-16)
 **Marky:** Tasks #3, #4, start #2
 **Cob/Jacob:** Start Task #2
-**Deliverables:** 5 tasks complete, CO 40% done
+**Deliverables:** 5 of 8 tasks complete, CO 40% done
 
 ### Week 3 (Feb 17-23)
-**Marky:** Complete Task #2, start #5
-**Cob/Jacob:** Complete Task #2, support #5
-**Deliverables:** 6 tasks complete, #5 in progress
+**Marky:** Complete Task #2, start #8 (Work Order Calendar)
+**Cob/Jacob:** Complete Task #2, backend support for #8
+**Deliverables:** 6 of 8 tasks complete, #8 in progress
 
 ### Week 4 (Feb 24-28)
-**All:** Complete Task #5, testing, pilot prep
-**Deliverables:** ALL 7 tasks complete, ready for pilot
+**Marky:** Complete Task #8, Task #5 (Dashboard)
+**Cob/Jacob:** Support Task #5 backend
+**Deliverables:** ALL 8 tasks complete, ready for pilot
 
 ---
 
@@ -270,16 +340,17 @@ Track your progress by updating task status:
 
 ## 🎯 SUCCESS CRITERIA
 
-**End of February Goal:** All 7 tasks complete, pilot phase ready
+**End of February Goal:** All 8 tasks complete, pilot phase ready
 
 **Pilot Requirements:**
-✅ All audit findings implemented
-✅ Change Order workflow functional
-✅ Multi-crew assignment working
-✅ Crew summaries consistent
-✅ Crew portal dashboard live
+✅ All audit findings implemented (Tasks #1, #3, #4, #6, #7)
+✅ Change Order workflow functional (Task #2)
+✅ Work Order Calendar view complete (Task #8)
+✅ Multi-crew assignment working (Task #1)
+✅ Crew summaries consistent (Tasks #3, #4)
+✅ Crew portal dashboard live (Task #5)
 ✅ All UI polish complete
-✅ Backend integrations tested
+✅ Backend integrations tested (Salesforce, SOV validation)
 ✅ Ready for client team to test with real data
 
 ---
