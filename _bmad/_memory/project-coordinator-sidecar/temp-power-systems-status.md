@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-02-02
+**Last Updated:** 2026-02-02 (Meeting transcripts processed)
 
 ---
 
@@ -31,30 +31,95 @@
 
 ---
 
-## Current Sprint - Pilot Preparation
+## Current Sprint - Final Integration & Pilot Prep
 
-**Sprint Goal:** Complete simulator demonstrations, get client approval, prepare for CRM pilot launch
+**Sprint Goal:** Complete Salesforce integration, implement final UI tweaks, prepare for end-of-February pilot launch
+
+**Sprint Status:** Week of Feb 2, 2026 - ON TRACK
 
 ### Active Tasks
 
-#### 1. Simulator Development (Marky)
-- **Status:** In Progress
-- **Goal:** Present simulator to client for approval
-- **Phase:** Demo → Client Approval
-
-#### 2. Salesforce Webhook Integration (Cob)
-- **Status:** Assigned - Technical Planning
-- **Goal:** Provision system to listen to Salesforce webhooks
+#### 1. Salesforce Integration Completion (Cob/Jacob)
+- **Status:** In Progress - Back-end mapping
+- **Goal:** Complete Salesforce API integration and enable live data sync
 - **Phase:** Deliver - Integration Setup
-- **Priority:** HIGH (blocking CRM pilot)
-- **Notes:** Technical planning and approach deferred to Cob
-- **Dependencies:** May require client Salesforce configuration
+- **Priority:** CRITICAL (blocking pilot)
+- **Progress:** Salesforce data fetch COMPLETED, mapping in progress
+- **Notes:** Ready to "click green button" once back-end finalized
 
-#### 3. Real CRM Development (Cob)
+#### 2. Simulator UI Refinements (Marky)
 - **Status:** In Progress
-- **Goal:** Build production CRM system
+- **Goal:** Implement final UI tweaks from Jan 7 meeting
+- **Phase:** Deliver - Final Polish
+- **Priority:** HIGH
+- **Items:**
+  - Crew portal work order sequencing (drag-and-drop)
+  - Multi-crew assignment capability
+  - Individual crew member timestamps
+  - Work order PDF export with signatures
+
+#### 3. Real CRM Deployment Prep (Cob/Jacob)
+- **Status:** In Progress
+- **Goal:** Prepare live CRM for pilot launch
 - **Phase:** Deliver
-- **Notes:** Awaiting simulator approval to finalize feature set
+- **Progress:** 95% front-end complete, back-end automation in progress
+- **Notes:** Client extremely satisfied, on track for February pilot
+
+#### 4. Lists Collection (BLOCKED - Waiting on Client)
+- **Status:** Blocked - Awaiting Chris
+- **Goal:** Receive skills list and materials/equipment list
+- **Phase:** Deliver - Data Setup
+- **Priority:** HIGH
+- **Blocking:** Auto-suggest functionality for crew assignment and materials
+- **Items Needed:**
+  - Skills list (Electrician, CPR, OSHA 300, all certs)
+  - Materials/equipment list (250-1,000 items)
+
+---
+
+## Latest Update - February 2, 2026
+
+### Meeting Transcript Analysis Complete
+**4 meetings processed:** Nov 20, Dec 4, Dec 10, 2025; Jan 7, 2026
+
+### Current Project State
+- **Front-End:** 95% complete, final UI refinements in progress
+- **Back-End:** Salesforce integration mapping complete, ready for deployment
+- **Client Satisfaction:** Extremely high ("everything we imagined and then some")
+- **Timeline:** ON TRACK for end-of-February pilot launch
+- **Blockers:** Waiting on skills/materials lists from Chris
+
+### Key Achievements Since Kickoff
+1. ✅ Dashboard with real-time KPIs finalized
+2. ✅ Job card with compartmentalized sections complete
+3. ✅ Schedule of Values auto-balancing system (client: "moneymaker")
+4. ✅ Crew portal with e-signature capture working
+5. ✅ Materials & Work Order Builder workflow implemented
+6. ✅ Task management with auto-generation complete
+7. ✅ PDF export for job cards and work orders
+8. ✅ Three-tier access system (Admin/Manager/Crew)
+9. ✅ Salesforce data fetch completed
+10. ✅ Archive stage for closed projects added
+
+### Outstanding Items
+**High Priority:**
+- Skills list from Chris (for crew assignment auto-suggest)
+- Materials/equipment list from Chris (for procurement auto-suggest)
+- Crew portal sequencing implementation (drag-and-drop)
+- Multi-crew assignment with individual timestamps
+- Back-end automation deployment
+
+**Medium Priority:**
+- Work order calendar view (Salesforce-style)
+- Training module creation for pilot
+- People Management module (separate proposal pending)
+
+### Next Actions
+1. **Fiona:** Follow up with Chris for outstanding lists
+2. **Marky:** Implement crew portal sequencing and multi-crew assignment
+3. **Cob/Jacob:** Complete back-end Salesforce automation mapping
+4. **Team:** Prepare for pilot phase (end of February)
+5. **Nova:** Schedule next demo coordination meeting
 
 ---
 
