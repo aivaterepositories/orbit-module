@@ -158,8 +158,9 @@ The following competitor sites were reviewed but deemed too clunky:
 ### Fiona (Today - Feb 4)
 - [x] Complete discovery session with Jeff
 - [x] Document project requirements
-- [ ] Provide Marky with Shopify access credentials
-- [ ] Push project docs to GitHub for team visibility
+- [x] Push project docs to GitHub for team visibility
+- [ ] **Email Jeff to request Shopify access** ⚠️ BLOCKER
+- [ ] Provide Marky with Shopify access credentials (pending Jeff's response)
 
 ### Marky (Feb 4-5)
 - [ ] Review Shopify access and current setup
