@@ -163,10 +163,12 @@ The following competitor sites were reviewed but deemed too clunky:
 - [ ] Provide Marky with Shopify access credentials (pending Jeff's response)
 
 ### Marky (Feb 4-5)
-- [ ] Review Shopify access and current setup
+- [ ] Review Shopify access and current setup — ⚠️ **BLOCKED: Waiting on Shopify credentials from Fiona**
 - [ ] Identify reusable assets and themes
 - [ ] Assess level of effort for demo
 - [ ] Report findings to Fiona
+
+> **2026-02-04 (Nova):** Marky confirmed blocked — cannot proceed without Shopify access. Fiona needs to email Jeff ASAP.
 
 ### Marky (Feb 5-10)
 - [ ] Design and develop demo version
@@ -208,5 +210,5 @@ The following competitor sites were reviewed but deemed too clunky:
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-02-04
+**Last Updated:** 2026-02-04 (Marky blocked on Shopify access)
 **Project Coordinator:** Nova
