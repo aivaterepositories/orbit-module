@@ -16,6 +16,7 @@
 | **Company** | Buster's Industrial |
 | **Owner** | Jeff Buster |
 | **Website** | BustersIndustrial.com (Shopify) |
+| **Shopify URL** | 618e17-1a.myshopify.com |
 | **Business** | Industrial hardware + Fleet management |
 | **Featured Product** | Diamond blades / Diamond saw blades |
 | **Location** | TBD |
@@ -159,16 +160,20 @@ The following competitor sites were reviewed but deemed too clunky:
 - [x] Complete discovery session with Jeff
 - [x] Document project requirements
 - [x] Push project docs to GitHub for team visibility
-- [ ] **Email Jeff to request Shopify access** ⚠️ BLOCKER
-- [ ] Provide Marky with Shopify access credentials (pending Jeff's response)
+- [x] **Email Jeff to request Shopify access** ✅ DONE
+- [x] Received Shopify URL from Jeff: `618e17-1a.myshopify.com`
+- [ ] Marky to send collaborator request to Jeff
 
 ### Marky (Feb 4-5)
-- [ ] Review Shopify access and current setup — ⚠️ **BLOCKED: Waiting on Shopify credentials from Fiona**
+- [ ] Send collaborator request to Jeff via Shopify — ⏳ **READY TO PROCEED**
+- [ ] Review Shopify access and current setup (after Jeff approves request)
 - [ ] Identify reusable assets and themes
 - [ ] Assess level of effort for demo
 - [ ] Report findings to Fiona
 
 > **2026-02-04 (Nova):** Marky confirmed blocked — cannot proceed without Shopify access. Fiona needs to email Jeff ASAP.
+>
+> **2026-02-05 (Nova):** ✅ BLOCKER CLEARED — Jeff provided Shopify URL: `618e17-1a.myshopify.com`. Marky can now send collaborator request. Awaiting Jeff's approval.
 
 ### Marky (Feb 5-10)
 - [ ] Design and develop demo version
@@ -210,5 +215,5 @@ The following competitor sites were reviewed but deemed too clunky:
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-02-04 (Marky blocked on Shopify access)
+**Last Updated:** 2026-02-05 (Shopify URL received - blocker cleared)
 **Project Coordinator:** Nova
