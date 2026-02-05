@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-02-02 16:40 PST (Marky completed all 8 tasks - Ready for Fiona review)
+**Last Updated:** 2026-02-05 (New tasks from CRM demo with Chris)
 
 ---
 
@@ -77,7 +77,32 @@
 
 ---
 
-## Latest Update - February 2, 2026
+## Latest Update - February 5, 2026
+
+### CRM Demo with Chris Yates
+**Full walkthrough completed** - Crew Portal deferred to Monday meeting with Wayne
+
+### 🚨 Critical Gap Identified: Materials ↔ Work Orders Link
+Mark (shop/production) cannot see what materials are needed per work order. Chris emphasized this is "the part that makes a job fail or succeed."
+
+### MARKY - New Tasks (CRITICAL)
+
+| # | Task | Priority | Status |
+|---|------|----------|--------|
+| 1 | **Implement notification bell** for task assignments and @mentions | HIGH | 🔴 Not Started |
+| 2 | **Link materials to work orders** - create relation | CRITICAL | 🔴 Not Started |
+| 3 | **Add "Work Order" column in Materials Builder** | CRITICAL | 🔴 Not Started |
+| 4 | **Show materials list in Work Order detail view** | CRITICAL | 🔴 Not Started |
+
+**Details:** See `temp-power-systems-crm-demo-feb5.md` for full meeting notes.
+
+### Next Meeting: Monday Feb 10, 2026 @ 2 PM
+**Attendees:** Chris, Wayne, Fiona
+**Agenda:** Pilot walkthrough, Crew Portal review, Data migration strategy
+
+---
+
+## Previous Update - February 2, 2026
 
 ### Meeting Transcript Analysis Complete
 **4 meetings processed:** Nov 20, Dec 4, Dec 10, 2025; Jan 7, 2026
