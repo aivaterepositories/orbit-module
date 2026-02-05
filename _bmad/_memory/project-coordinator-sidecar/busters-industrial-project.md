@@ -162,10 +162,14 @@ The following competitor sites were reviewed but deemed too clunky:
 - [x] Push project docs to GitHub for team visibility
 - [x] **Email Jeff to request Shopify access** ✅ DONE
 - [x] Received Shopify URL from Jeff: `618e17-1a.myshopify.com`
-- [ ] Marky to send collaborator request to Jeff
+- [x] Marky to send collaborator request to Jeff — ✅ **DONE (Feb 5)**
+
+### 🔔 Fiona Action Required (Feb 5)
+- [ ] **Notify Jeff** to approve Marky's Shopify collaborator request
+- [ ] Once approved, notify Marky to begin Shopify inspection
 
 ### Marky (Feb 4-5)
-- [ ] Send collaborator request to Jeff via Shopify — ⏳ **READY TO PROCEED**
+- [x] Send collaborator request to Jeff via Shopify — ✅ **COMPLETED**
 - [ ] Review Shopify access and current setup (after Jeff approves request)
 - [ ] Identify reusable assets and themes
 - [ ] Assess level of effort for demo
@@ -174,6 +178,8 @@ The following competitor sites were reviewed but deemed too clunky:
 > **2026-02-04 (Nova):** Marky confirmed blocked — cannot proceed without Shopify access. Fiona needs to email Jeff ASAP.
 >
 > **2026-02-05 (Nova):** ✅ BLOCKER CLEARED — Jeff provided Shopify URL: `618e17-1a.myshopify.com`. Marky can now send collaborator request. Awaiting Jeff's approval.
+>
+> **2026-02-05 (Nova):** ✅ Marky sent collaborator request to Jeff. **@Fiona:** Awaiting Jeff's approval to grant Marky access.
 
 ### Marky (Feb 5-10)
 - [ ] Design and develop demo version
@@ -215,5 +221,5 @@ The following competitor sites were reviewed but deemed too clunky:
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-02-05 (Shopify URL received - blocker cleared)
+**Last Updated:** 2026-02-05 (Marky sent collaborator request to Jeff)
 **Project Coordinator:** Nova
