@@ -85,14 +85,17 @@
 ### 🚨 Critical Gap Identified: Materials ↔ Work Orders Link
 Mark (shop/production) cannot see what materials are needed per work order. Chris emphasized this is "the part that makes a job fail or succeed."
 
-### MARKY - New Tasks (CRITICAL)
+### MARKY - New Tasks (CRITICAL) - ✅ ALL COMPLETED
 
 | # | Task | Priority | Status |
 |---|------|----------|--------|
-| 1 | **Implement notification bell** for task assignments and @mentions | HIGH | 🔴 Not Started |
-| 2 | **Link materials to work orders** - create relation | CRITICAL | 🔴 Not Started |
-| 3 | **Add "Work Order" column in Materials Builder** | CRITICAL | 🔴 Not Started |
-| 4 | **Show materials list in Work Order detail view** | CRITICAL | 🔴 Not Started |
+| 1 | **Implement notification bell** for task assignments and @mentions | HIGH | ✅ COMPLETED |
+| 2 | **Link materials to work orders** - create relation | CRITICAL | ✅ COMPLETED |
+| 3 | **Add "Work Order" column in Materials Builder** | CRITICAL | ✅ COMPLETED |
+| 4 | **Show materials list in Work Order detail view** | CRITICAL | ✅ COMPLETED |
+
+**COMPLETED BY:** Marky | **DATE:** 2026-02-05
+**🔴 FIONA REVIEW REQUIRED** - All 4 tasks ready for validation before Monday demo
 
 **Details:** See `temp-power-systems-crm-demo-feb5.md` for full meeting notes.
 

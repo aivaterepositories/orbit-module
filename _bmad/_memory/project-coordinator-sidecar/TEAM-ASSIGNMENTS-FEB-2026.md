@@ -7,7 +7,7 @@
 
 ## ✅ MARKY - ALL TASKS COMPLETED - PENDING REVIEW
 
-### ✅ ALL TASKS DONE - AWAITING FIONA'S REVIEW
+### ✅ Sprint 1 (8 Tasks) - AWAITING FIONA'S REVIEW
 
 - [x] **Task #1:** Multi-crew assignment in work order management - ✅ COMPLETED
 - [x] **Task #2:** Change Order UI implementation - ✅ COMPLETED
@@ -20,7 +20,17 @@
 
 **STATUS:** ✅ ALL 8 TASKS COMPLETED BY MARKY
 **COMPLETED:** 2026-02-02 16:40 PST
-**NEXT STEP:** Fiona review and deployment approval
+
+### ✅ Sprint 2 - Feb 5 Demo Tasks (4 Tasks) - AWAITING FIONA'S REVIEW
+
+- [x] **Task #9:** Implement notification bell for task assignments and @mentions - ✅ COMPLETED
+- [x] **Task #10:** Link materials to work orders - create relation - ✅ COMPLETED
+- [x] **Task #11:** Add "Work Order" column in Materials Builder - ✅ COMPLETED
+- [x] **Task #12:** Show materials list in Work Order detail view - ✅ COMPLETED
+
+**STATUS:** ✅ ALL 4 NEW TASKS COMPLETED BY MARKY
+**COMPLETED:** 2026-02-05
+**NEXT STEP:** 🔴 **FIONA REVIEW REQUIRED** - 12 total tasks ready for validation
 
 ---
 

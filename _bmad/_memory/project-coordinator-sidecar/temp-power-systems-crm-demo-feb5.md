@@ -72,12 +72,18 @@ Fiona walked Chris through the CRM simulator, covering:
 
 ## 🔧 MARKY - Development Tasks
 
+### ✅ ALL 4 TASKS COMPLETED - AWAITING FIONA REVIEW
+
 | # | Task | Priority | Status | Notes |
 |---|------|----------|--------|-------|
-| 1 | **Implement notification bell** for task assignments and @mentions | HIGH | 🔴 Not Started | Add to profile/header area in CRM |
-| 2 | **Link materials to work orders** - create relation | CRITICAL | 🔴 Not Started | Materials must be associated with specific work orders |
-| 3 | **Add "Work Order" column in Materials Builder** | CRITICAL | 🔴 Not Started | Shows which WO each material/equipment is needed for |
-| 4 | **Show materials list in Work Order detail view** | CRITICAL | 🔴 Not Started | Crew needs to see what to load on truck |
+| 1 | **Implement notification bell** for task assignments and @mentions | HIGH | ✅ COMPLETED | Add to profile/header area in CRM |
+| 2 | **Link materials to work orders** - create relation | CRITICAL | ✅ COMPLETED | Materials must be associated with specific work orders |
+| 3 | **Add "Work Order" column in Materials Builder** | CRITICAL | ✅ COMPLETED | Shows which WO each material/equipment is needed for |
+| 4 | **Show materials list in Work Order detail view** | CRITICAL | ✅ COMPLETED | Crew needs to see what to load on truck |
+
+**COMPLETED BY:** Marky
+**COMPLETED DATE:** 2026-02-05
+**NEXT STEP:** 🔴 **FIONA - REVIEW REQUIRED** - Please validate all 4 tasks before Monday demo
 
 ---
 
@@ -87,6 +93,10 @@ Fiona walked Chris through the CRM simulator, covering:
 |---|------|--------|-------|
 | 1 | Schedule Monday 2 PM call with Chris + Wayne | ⏳ To Do | Pilot walkthrough + Crew Portal review |
 | 2 | Push/commit this update so Marky has visibility | ⏳ To Do | This document |
+| 3 | 🔴 **REVIEW Marky's 4 completed tasks** | ⏳ URGENT | Notification bell, Materials ↔ WO link, WO column, Materials in WO view |
+
+### 🚨 FIONA ACTION REQUIRED
+Marky has completed all 4 development tasks from the Feb 5 demo. Please review and validate before the Monday meeting with Chris + Wayne.
 
 ---
 
