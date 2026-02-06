@@ -54,4 +54,3 @@ When you generate a design system:
 
 *New entries will be appended below as Aurora generates design systems*
 
----
