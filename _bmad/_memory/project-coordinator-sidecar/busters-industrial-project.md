@@ -1,6 +1,6 @@
 # Buster's Industrial - Shopify Website Optimization
 
-**Status:** Discovery Complete → Demo Phase
+**Status:** Redesign Complete → Fiona Final Review
 **Priority:** High (Demo deadline: Feb 11-12, 2026)
 **Client:** Jeff Buster (Owner)
 **Project Lead:** Fiona (PM / Process Engineer)
@@ -182,10 +182,16 @@ The following competitor sites were reviewed but deemed too clunky:
 > **2026-02-05 (Nova):** ✅ Marky sent collaborator request to Jeff. **@Fiona:** Awaiting Jeff's approval to grant Marky access.
 
 ### Marky (Feb 5-10)
-- [ ] Design and develop demo version
-- [ ] Focus on diamond blades showcase
-- [ ] Implement quick wins (speed, layout, hero)
-- [ ] Prepare demo walkthrough
+- [x] Design and develop demo version ✅ COMPLETE (Feb 6)
+- [x] Focus on diamond blades showcase ✅ COMPLETE
+- [x] Implement quick wins (speed, layout, hero) ✅ COMPLETE
+- [x] Prepare demo walkthrough ✅ COMPLETE
+
+> **2026-02-06 (Nova):** ✅ Marky completed Shopify redesign. Sent to **@Fiona** for final review before demo.
+
+### Fiona (Feb 6-10)
+- [ ] **Final review of Marky's redesign** — PRIORITY
+- [ ] Approve or request changes before demo
 
 ### Team (Feb 11-12)
 - [ ] Demo presentation to Jeff
@@ -221,5 +227,5 @@ The following competitor sites were reviewed but deemed too clunky:
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-02-05 (Marky sent collaborator request to Jeff)
+**Last Updated:** 2026-02-06 (Marky completed redesign — Fiona final review)
 **Project Coordinator:** Nova
