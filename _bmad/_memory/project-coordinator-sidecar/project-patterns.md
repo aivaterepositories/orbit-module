@@ -24,6 +24,8 @@ When sending emails on Fiona's behalf:
 | Cob | cob@aivate.net | Team member - added 2026-02-08 |
 | Chris Yates | cyates@temppower.com | TPS client - introduced 2026-02-12 |
 | Wayne | wayne@temppower.com | TPS Project Manager - introduced 2026-02-12 |
+| Kel King | Kelking372@gmail.com | LA Elite Rentals Owner - introduced 2026-02-12 |
+| Dos Espina | espinajasvenzon@gmail.com | LA Elite Rentals Admin/Lead Manager - introduced 2026-02-12 |
 
 ## Patterns Learned
 
