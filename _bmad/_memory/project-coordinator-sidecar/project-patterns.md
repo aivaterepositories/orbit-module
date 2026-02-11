@@ -21,6 +21,9 @@ When sending emails on Fiona's behalf:
 | Name | Email | Notes |
 |------|-------|-------|
 | Marky | mark@aivate.net | Team member - introduced 2026-02-05 |
+| Cob | cob@aivate.net | Team member - added 2026-02-08 |
+| Chris Yates | cyates@temppower.com | TPS client - introduced 2026-02-12 |
+| Wayne | wayne@temppower.com | TPS Project Manager - introduced 2026-02-12 |
 
 ## Patterns Learned
 
