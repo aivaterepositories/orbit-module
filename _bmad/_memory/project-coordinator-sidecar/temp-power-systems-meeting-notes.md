@@ -615,6 +615,27 @@ Chris called Angela in to see SOV system
 
 ---
 
-**Last Updated:** 2026-02-02 by Nova (Project Coordinator)
-**Next Demo:** TBD (Fiona to schedule with Jacob's availability)
+---
+
+## Meeting 5: February 11, 2026 (139 mins)
+
+**See full notes:** [temp-power-systems-meeting-feb11-2026.md](./temp-power-systems-meeting-feb11-2026.md)
+
+### Summary
+First CRM walkthrough with Wayne McCoy (TPS Project Manager). Wayne is the primary user for work orders and scheduling. Very positive reception.
+
+### Key Outcomes
+- **Wayne's reaction:** "This is absolutely amazing because it gives more information than we've ever been able to acquire"
+- Identified workflow gaps for permits, materials reporting, and billing schedule view
+- Salesforce access blocker identified (Cob needs access restored)
+- Change order mapping needs design session
+- All requested items confirmed within current scope
+
+### Action Items Generated
+- See [temp-power-systems-feb11-action-items.md](./temp-power-systems-feb11-action-items.md)
+
+---
+
+**Last Updated:** 2026-02-12 by Nova (Project Coordinator)
+**Next Demo:** TBD (SF access session with Chris + Cob first)
 **Pilot Launch Target:** End of February 2026
