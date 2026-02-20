@@ -9,20 +9,19 @@
 
 ## BLOCKERS
 
-### Salesforce Access Lost
-- **Status:** BLOCKED
-- **Issue:** Cob lost access to Salesforce last week (password changed?)
-- **Resolution:** Need to schedule 15-20 min session with Chris to restore access
-- **Impact:** Blocks all Salesforce integration work
+### ~~Salesforce Access Lost~~ ✅ RESOLVED
+- **Status:** ✅ UNBLOCKED — 2026-02-21
+- **Resolution:** Cob completed session with Chris. Salesforce access restored.
+- **Impact:** All Salesforce integration work can now proceed.
 
 ---
 
 ## COB'S ACTION ITEMS
 
-### CRITICAL (Blocks Other Work)
-1. **Restore Salesforce Access**
-   - Schedule 15-20 min session with Chris
-   - Fiona will coordinate scheduling
+### ~~CRITICAL (Blocks Other Work)~~
+1. ~~**Restore Salesforce Access**~~ ✅ COMPLETED — 2026-02-21
+   - ~~Schedule 15-20 min session with Chris~~
+   - ~~Fiona will coordinate scheduling~~
 
 ### HIGH PRIORITY
 
