@@ -12,7 +12,7 @@
 
 This document contains the technical specifications for building GHL automations for LA Elite Rentals. Workflows are organized by phase and priority. Each workflow includes trigger, actions, and copy to use.
 
-**Total Workflows:** 16 (across 4 phases)
+**Total Workflows:** 20 (across 4 phases)
 **Pipeline Used:** Rideshare (primary), Black SUV (secondary)
 
 ---
@@ -488,13 +488,84 @@ On your way? Reply with your ETA!
 
 ---
 
+## PHASE 4 ADDITIONS (Added Feb 24)
+
+### Workflow 4.5: Bouncie Maintenance Alert Automation
+
+**Priority:** MEDIUM
+**Trigger:** Bouncie Webhook (vehicle alert received)
+**Status:** Scope broadly — refine after auditing Kel's Bouncie dashboard
+
+**Expected Alert Types (verify in Bouncie):**
+- Check engine light
+- Overheating / coolant alert
+- Hard braking / rapid acceleration
+- Mileage threshold reached
+- Battery voltage low
+- DTC (Diagnostic Trouble Code) triggered
+
+**Actions:**
+1. Receive Bouncie webhook → match vehicle to renter via custom field or tag
+2. Create Task in GHL: "Vehicle Alert — [Alert Type] — [Vehicle Name]" → assign to manager
+3. Send SMS to renter (if applicable):
+```
+Hi {{contact.first_name}}, we received an alert from your vehicle.
+
+Please do NOT attempt any repairs on your own. Contact us immediately so we can assess the situation.
+
+Reply here or call us. Thank you.
+```
+4. Add Tag: `Maintenance Alert - [Type]`
+5. Add Note with alert details
+
+**Pre-Build:** Marky to audit Bouncie dashboard and confirm available webhook events + payload structure. Document findings before building.
+
+---
+
+### Workflow 4.6: Registration Renewal Notification
+
+**Priority:** MEDIUM
+**Trigger:** Custom Field `Registration Expiry Date` = Today + 30 days (and again at 14 days, 7 days)
+**Data Source:** [LA Elite Rentals 2.0 Google Sheet](https://docs.google.com/spreadsheets/d/19YtXpZoymtNFaxKLucoz5TUWh-vaTu5dHHcAm59WUSs/edit?usp=sharing)
+
+**Actions:**
+
+**30 Days Before Expiry:**
+1. Create Task: "Vehicle registration expiring in 30 days — [Vehicle Name]" → assign to manager
+2. Add Tag: `Registration - 30 Day Warning`
+
+**14 Days Before Expiry:**
+3. Create Task: "Vehicle registration expiring in 14 days — [Vehicle Name]" → assign to manager (HIGH priority)
+
+**7 Days Before Expiry:**
+4. Create Task: "URGENT: Vehicle registration expires in 7 days — [Vehicle Name]" → assign to manager (URGENT)
+5. Add Tag: `Registration - Critical`
+
+**Pre-Build:** Need to determine how registration dates get into GHL — manual entry, Google Sheets sync, or import. Check Google Sheet structure for field mapping.
+
+---
+
+### Workflow 4.7: Off-Grid / Border Alert
+
+**Priority:** MEDIUM
+**Trigger:** Bouncie Geofence Webhook (vehicle exits defined boundary)
+
+**Actions:**
+1. Create Task: "ALERT: Vehicle left service area — [Vehicle Name]" → assign to manager (URGENT)
+2. Send internal notification (SMS or email to Kel)
+3. Add Tag: `Off-Grid Alert`
+4. Add Note with location data from Bouncie
+
+**Pre-Build:** Kel needs to set up geofence boundaries in Bouncie for LA service area. Marky to confirm webhook payload includes location data.
+
+---
+
 ## FUTURE INTEGRATIONS (Phase 5+)
 
 These require additional setup or third-party tools:
 
 | Integration | Description | Complexity |
 |-------------|-------------|------------|
-| **Bouncie Webhook** | Vehicle alerts trigger GHL tasks + renter texts | Medium |
 | **RingCentral Integration** | Missed calls auto-trigger workflows | Medium |
 | **Telegram Notifications** | High-priority events push to team chat | Low |
 | **HQ Rentals Sync** | Vehicle availability updates tags | High |
@@ -522,6 +593,9 @@ These require additional setup or third-party tools:
 | 15 | Weekly Renter Check-In | 3 | LOW |
 | 16 | Referral Request | 3 | LOW |
 | 17 | Denial Auto-Response | 4 | LOW |
+| 18 | Bouncie Maintenance Alerts | 4 | MEDIUM |
+| 19 | Registration Renewal Notification | 4 | MEDIUM |
+| 20 | Off-Grid / Border Alert | 4 | MEDIUM |
 
 ---
 
@@ -555,5 +629,6 @@ For each workflow, verify:
 ---
 
 **Document Created:** 2026-02-07
-**Status:** Ready for Build
+**Last Updated:** 2026-02-24
+**Status:** Phase 1 In Progress — Build Week
 **Project Coordinator:** Nova (ORBIT)

@@ -168,22 +168,70 @@ Fiona has already created for this client:
 - Stale lead alerts
 - Denial reason auto-response
 - Pipeline stage automation
-- **Registration automations** *(added Feb 19)*
-- **Off-grid/border alerts** *(added Feb 19)*
+- **Registration renewal notifications** *(added Feb 19, confirmed Feb 24)* — Auto-alert when vehicle registration is approaching expiry. Data source: [LA Elite Rentals 2.0 Google Sheet](https://docs.google.com/spreadsheets/d/19YtXpZoymtNFaxKLucoz5TUWh-vaTu5dHHcAm59WUSs/edit?usp=sharing)
+- **Off-grid/border alerts** *(added Feb 19)* — Bouncie geofence integration
+- **Maintenance alerts (Bouncie integration)** *(added Feb 24)* — Bouncie webhook triggers → GHL tasks + renter notifications for vehicle alerts (check engine, overheating, mileage, etc.). Scope broadly; refine after Marky audits Bouncie dashboard.
 
 ---
 
-## Immediate Next Steps (Post-Close)
+## Sprint Plan — Week of Feb 24, 2026
 
-1. **Send WISE payment link to Kel** — $1,500 first payment ($1,250 + $350)
-2. **Send GHL access instructions** — Kel needs to add Aivate team as users in GoHighLevel
-3. **Schedule Phase 1 kickoff call** — Need to conduct a call with Kel to set up speed-to-lead drips
+### Focus: Phase 1 — Quick Wins (4 Workflows)
+
+**GHL Access:** Fiona has access. Credentials to be shared with Marky via secure channel (NOT in repo).
+
+| # | Workflow | Key Deliverables | Owner | Status |
+|---|----------|-----------------|-------|--------|
+| 1 | **Speed-to-Lead Auto-Response** | Instant SMS on new lead (Facebook/Web Form), auto-tag, VA task creation | Marky | Not Started |
+| 2 | **Missed Call Text-Back** | Auto-SMS on missed call, tag + task creation | Marky | Not Started |
+| 3 | **Payment Due Reminder Sequence** | 3-stage sequence: Day before → Due date → Overdue (12:30 PM) | Marky | Not Started |
+| 4 | **Post-Pickup Welcome Kit** | Auto-send welcome message + Bluetooth setup + payment schedule on stage change to "Became Renter" | Marky | Not Started |
+
+### Pre-Build Checklist (Before Marky Starts)
+- [ ] Share GHL credentials with Marky (secure channel)
+- [ ] Audit existing workflows in Kel's GHL (note what's already built)
+- [ ] Confirm pipeline stages match scope (New Lead → Contacted → Waiting for Paperwork → Nurturing Lead → Denied → Became Renter)
+- [ ] Confirm/create custom fields: `Pickup Date`, `Payment Due Date`, `Vehicle Type`, `Denial Reason`, `Security Deposit Received`
+- [ ] Confirm/create tags: `Speed-to-Lead Sent`, `Missed Call - Texted`, `Payment Reminder Sent`, `Welcome Kit Sent`
+- [ ] Confirm GHL timezone = Pacific Time
+
+### What We Need From Kel This Week
+1. **Confirm pipeline stages** — Do the stages in GHL match what we scoped?
+2. **Confirm payment amount** — Scope says $420/week; verify this is current and standard across renters
+3. **Confirm Zelle address** — infolaeliterentals@gmail.com (per scope)
+4. **Confirm pickup location** — 6102 W Sunset Blvd (per scope)
+5. **Bouncie access** — Not urgent (Phase 4), but if he can share dashboard access now, Marky can start auditing available webhooks early
+
+### Collaboration Plan
+| Who | This Week's Responsibilities |
+|-----|------|
+| **Fiona** | Share GHL access with Marky, send Kel the confirmation questions above, review/approve workflows before going live |
+| **Marky** | Pre-build checklist → Build workflows 1-4 in order → Test with test contact |
+| **Kel** | Answer confirmation questions, flag any changes to payment amounts/processes |
+
+### Upcoming Sprints
+| Week | Phase | Focus |
+|------|-------|-------|
+| **Week 1 (Feb 24)** | Phase 1: Quick Wins | Speed-to-Lead, Missed Call, Payment Reminders, Welcome Kit |
+| **Week 2 (Mar 3)** | Phase 2: Lead Nurturing | 3-Day Urgency, Intake Reminder, Nurturing Drip, FB Lead Warm-Up |
+| **Week 3 (Mar 10)** | Phase 3: Retention | Late Payment Escalation, Weekly Check-In, Referral Request, Renewal Reminder |
+| **Week 4 (Mar 17)** | Phase 4: Internal Efficiency | Auto-Tasks, Stale Alerts, Denial Response, Registration Renewal, Bouncie Maintenance Alerts, Off-Grid Alerts |
+
+---
+
+## Previous Next Steps (Post-Close — Feb 19)
+
+1. ~~**Send WISE payment link to Kel**~~ — ✅ Payment received
+2. **GHL access** — ✅ Fiona has access; share with Marky via secure channel
+3. **Schedule Phase 1 kickoff call** — In progress
 4. **Brief Marky & Jacob** — Share scope, timeline, and GHL access details
 5. **Fiona to test processes** — Fiona mentioned she may conduct calls herself to test the process firsthand as PM
 
 ---
 
 ## Progress Log
+
+**2026-02-24:** Payment received. Sprint planning completed for all 4 phases (Week 1-4). Phase 1 sprint starts this week: Speed-to-Lead, Missed Call Text-Back, Payment Reminders, Post-Pickup Welcome Kit. Fiona has GHL access; sharing with Marky via secure channel. New scope additions confirmed: Maintenance alerts via Bouncie webhooks (Phase 4, scope broadly then refine). Registration renewal notifications confirmed — data tracked in Google Sheet ([LA Elite Rentals 2.0](https://docs.google.com/spreadsheets/d/19YtXpZoymtNFaxKLucoz5TUWh-vaTu5dHHcAm59WUSs/edit?usp=sharing)). Total active workflows: 19 across 4 phases.
 
 **2026-02-19:** Automation follow-up call held. Kel chose **Option 2 (Retainer): $1,250 upfront + $350/month for 12 months.** First month total: $1,500. Additional scope: Registration automations and off-grid/border alerts added to Phase 4. Kel expressed strong interest in AI voice agents, website chat AI, and payment email parsing (all future/separate scope). White label discussion introduced. Fiona to send WISE payment link and GHL access instructions. Phase 1 kickoff to be scheduled. See transcript: https://fathom.video/share/DVwJ6NbzMBf4mU-sCrafQgQLVpdN7auk
 
@@ -208,7 +256,8 @@ Fiona has already created for this client:
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-02-19
-**Status:** ACTIVE — DEAL CLOSED (Option 2: Retainer)
-**Next Step:** Send WISE link + GHL access instructions to Kel, schedule Phase 1 kickoff
+**Last Updated:** 2026-02-24
+**Status:** ACTIVE — PHASE 1 IN PROGRESS
+**Current Sprint:** Phase 1: Quick Wins (Feb 24 - Feb 28)
+**Next Step:** Share GHL credentials with Marky, send Kel confirmation questions, begin Phase 1 build
 **Project Coordinator:** Nova
