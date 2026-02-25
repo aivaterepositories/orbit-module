@@ -42,7 +42,7 @@ When sending emails on Fiona's behalf:
 | Chris Yates | cyates@temppower.com | TPS client - introduced 2026-02-12 |
 | Wayne | wayne@temppower.com | TPS Project Manager - introduced 2026-02-12 |
 | Kel King | Kelking372@gmail.com | LA Elite Rentals Owner - introduced 2026-02-12 |
-| ~~Dos Espina~~ | ~~espinajasvenzon@gmail.com~~ | **REMOVED** — No longer with LA Elite Rentals as of 2026-02-18. Do NOT include in communications. |
+| Dos Espina | espinajasvenzon@gmail.com | LA Elite Rentals — Manager on Duty. Reinstated 2026-02-26. Receives all VA follow-up tasks. |
 
 ## Internal Aivate Projects
 
