@@ -23,13 +23,15 @@ Before starting, confirm the following in Kel's GHL account:
 
 - [ ] Access granted (admin level)
 - [ ] Review existing workflows (note what's already built)
-- [ ] Confirm pipeline stages match:
+- [ ] Confirm pipeline stages match (CONFIRMED Feb 26 — Rideshare pipeline):
   - New Lead
-  - Contacted
   - Waiting for Paperwork
-  - Nurturing Lead
-  - Denied
+  - Priority Nurturing Leads (warm leads — ready to convert soon)
+  - Nurturing Lead (still trying to convert)
+  - Waitlist
+  - Denied Not Interested
   - Became Renter
+  - Low Income
 - [ ] Confirm custom fields exist (or create):
   - `Pickup Date`
   - `Payment Due Date`
@@ -51,23 +53,27 @@ Before starting, confirm the following in Kel's GHL account:
 ### Workflow 1.1: Speed-to-Lead Auto-Response
 
 **Priority:** HIGH
+**Status:** APPROVED by Kel (Feb 26) — qualifying questions, tag, and 2hr window all confirmed
 **Trigger:** Contact Created (source = Facebook Lead OR Web Form)
+> **Note:** Web forms are NOT yet integrated with GHL. Currently received via email and manually added. Webhook integration deferred to Phase 4.
 
 **Actions:**
 1. Wait 1 minute
-2. Send SMS:
+2. Send SMS (from +1 516-670-1787):
 ```
 Hi {{contact.first_name}}! This is LA Elite Rentals. Thanks for reaching out.
 
 Quick question: Are you currently driving for Uber, Lyft, or delivery apps? And are you located in the LA area?
 
 Reply and we'll get you set up fast.
+
+Ready to get started? Fill out our intake form: https://laeliterentals2.hqrentals.asia/form/driver-intake-form
 ```
 3. Add Tag: `Speed-to-Lead Sent`
-4. Create Task: "Follow up if no response in 2hrs" → assign to VA
+4. Create Task: "Follow up if no response in 2hrs" → assign to Dos
 
 **Exit Conditions:**
-- Contact replies (handled by VA)
+- Contact replies (handled by Dos)
 - Contact already has tag `Speed-to-Lead Sent`
 
 ---
@@ -75,50 +81,94 @@ Reply and we'll get you set up fast.
 ### Workflow 1.2: Missed Call Text-Back
 
 **Priority:** HIGH
-**Trigger:** Call Status = Missed (or integrate with RingCentral webhook if available)
+**Status:** APPROVED by Kel (Feb 26) — tag and 2hr window confirmed. Needs business/after-hours split.
+**Trigger:** Call Status = Missed on EITHER:
+- GHL number: **+1 516-670-1787**
+- RingCentral number: **310-943-6795**
 
-**Actions:**
+> Both numbers must trigger this automation. Renters and leads call both.
+
+**Actions — BUSINESS HOURS (8:00 AM – 4:00 PM PT)**
+
 1. Wait 2 minutes
-2. Send SMS:
+2. Send SMS (from +1 516-670-1787):
 ```
 Hi {{contact.first_name}}, sorry we missed your call! This is LA Elite Rentals.
 
 Are you looking to rent a car for rideshare or delivery? Reply here and we'll get back to you right away.
+
+Ready to get started? Fill out our intake form: https://laeliterentals2.hqrentals.asia/form/driver-intake-form
 ```
 3. Add Tag: `Missed Call - Texted`
-4. Create Task: "Missed call follow-up" → assign to VA
+4. Create Task: "Missed call follow-up — respond within 2 hours" → assign to Dos
+
+**Actions — AFTER HOURS (before 8:00 AM / after 4:00 PM PT)**
+
+1. Wait 2 minutes
+2. Send SMS (from +1 516-670-1787):
+```
+Hi {{contact.first_name}}, sorry we missed your call! This is LA Elite Rentals.
+
+We're currently closed but will get back to you first thing tomorrow. In the meantime, feel free to fill out our intake form so we can get you started faster:
+
+https://laeliterentals2.hqrentals.asia/form/driver-intake-form
+
+Are you looking to rent a car for rideshare or delivery? Reply here and we'll follow up in the morning!
+```
+3. Add Tag: `Missed Call - Texted`
+4. Create Task: "Missed call follow-up (after hours) — follow up first hour of next shift" → assign to Dos
 
 ---
 
 ### Workflow 1.3: Payment Due Reminder Sequence
 
 **Priority:** HIGH
-**Trigger:** Custom Field `Payment Due Date` = Today - 1 day
+**Status:** APPROVED by Kel (Feb 26) — major rework on trigger, timing, and SMS copy
+**Trigger:** ~~Custom Field `Payment Due Date` = Today - 1 day~~ **CHANGED**
+> **No custom field for payment due date in GHL.** Data lives in **HQ Rental** → Dashboard → select "Time To Tomorrow" to pull records for renters scheduled to return units tomorrow.
+> **Integration needed:** Manual process for now. Webhook/API from HQ Rental to GHL deferred to Phase 4.
 
 **Actions:**
 
-**Day Before (Trigger Day):**
-1. Send SMS at 10:00 AM:
+**Stage 1 — Day Before (2:00 PM PT):** *(changed from 10am)*
+1. Send SMS at **2:00 PM** (from +1 516-670-1787):
 ```
-Hi {{contact.first_name}}, friendly reminder that your weekly payment of $420 is due tomorrow by 12:00 PM.
+Hi {{contact.first_name}}, this is LA Elite Rentals. Your weekly payment is due tomorrow by 12:00 PM.
 
-Payment methods: Zelle (infolaeliterentals@gmail.com) or Cash.
+Are you planning to extend your rental? Let us know:
+- Reply YES if you're extending
+- Reply NO if you're returning the vehicle
+- Reply UNSURE if you'd like to discuss options
 
-Please send a screenshot once completed. Thank you!
+Payment methods:
+- Zelle: infolaeliterentals@gmail.com
+- Cash App: $rentals1000
+
+Please send a screenshot once paid. Thank you!
 ```
 
-**Due Date (Next Day):**
-2. Wait until 10:00 AM
+**Conditional VA Tasks (based on renter response to Stage 1):**
+
+| Response | VA Task for Dos |
+|----------|----------------|
+| **YES (extending)** | "Renter extending — process rental extension for {{contact.first_name}}" |
+| **NO (returning)** | "Renter returning vehicle — coordinate return for {{contact.first_name}}" |
+| **UNSURE** | "Renter undecided — follow up to clarify extension or return for {{contact.first_name}}" |
+| **No response** | Proceed to Stage 2 |
+
+**Stage 2 — Due Date (8:00 AM PT):** *(changed from 10am)*
+2. Wait until **8:00 AM** next day
 3. Send SMS:
 ```
 Hi {{contact.first_name}}, your weekly payment is due today by 12:00 PM.
 
 Zelle: infolaeliterentals@gmail.com
+Cash App: $rentals1000
 
 Please send confirmation once paid. Thank you!
 ```
 
-**Overdue (Same Day, 12:30 PM):**
+**Stage 3 — Overdue (12:30 PM PT):** *(unchanged)*
 4. Wait until 12:30 PM
 5. If no `Payment Received` tag → Send SMS:
 ```
@@ -126,37 +176,62 @@ Hi {{contact.first_name}}, your payment was due at 12:00 PM today. Please send p
 
 Thank you.
 ```
-6. Create Task: "Payment overdue - escalate" → assign to VA
+6. Create Task: "Payment overdue - escalate" → assign to Dos
+
+> **IMPORTANT:** Payment amount removed from all SMS — varies per vehicle/unit. Payment methods updated: NO cash, added Cash App ($rentals1000).
 
 ---
 
 ### Workflow 1.4: Post-Pickup Welcome Kit
 
 **Priority:** HIGH
+**Status:** APPROVED by Kel (Feb 26) — expanded SMS content with tickets, insurance, maintenance info
 **Trigger:** Opportunity Stage Changed to `Became Renter`
+> **Note:** May need HQ Rental webhook integration for trigger — circle back Phase 4.
 
 **Actions:**
 1. Wait 30 minutes (allows onsite handoff to complete)
-2. Send SMS:
+2. Send SMS (Message 1 — Welcome & Payment) from +1 516-670-1787:
 ```
 Hi {{contact.first_name}},
 
 Welcome to LA Elite Rentals! Here are the key terms for your rental:
 
-PAYMENT DUE: {{custom.payment_due_date}} by 12:00 PM
+PAYMENT:
 - Zelle: infolaeliterentals@gmail.com
+- Cash App: $rentals1000
 
 SECURITY DEPOSIT: Refunded 24-48 hours after vehicle return (minus any incidentals).
 
-MAINTENANCE: All repairs must be approved by us first. Unauthorized repairs are your responsibility.
-
-Questions? Reply to this message anytime.
+Questions? Call or text us: 310-943-6795
 
 Thank you for choosing LA Elite!
 ```
-3. Add Tag: `Welcome Kit Sent`
-4. Wait 5 minutes
-5. Send SMS (Bluetooth Setup - separate message to avoid length issues):
+3. Wait 5 minutes
+4. Send SMS (Message 2 — Accidents, Tickets & Insurance):
+```
+IMPORTANT — ACCIDENTS & INSURANCE:
+If you are in an accident, DO NOT contact the insurance company. Contact LA Elite Rentals FIRST at 310-943-6795. We will handle everything from there.
+
+TICKETS & TOLLS:
+You are responsible for all parking tickets, traffic citations, red light violations, and toll charges while renting. Any fines will be charged to your account. If you receive a ticket, notify us immediately.
+```
+5. Wait 5 minutes
+6. Send SMS (Message 3 — Maintenance):
+```
+MAINTENANCE:
+All repairs must be approved by us first. Unauthorized repairs are your responsibility.
+
+We conduct mandatory maintenance checks every 30-45 days. When it's time, we'll coordinate with you to bring the vehicle to our service partner:
+
+Santa Tire Depot
+5150 Santa Monica Blvd, Los Angeles CA 90028
+818-588-2440
+
+If you notice any vehicle issues, contact us immediately — do NOT attempt repairs on your own.
+```
+7. Wait 5 minutes
+8. Send SMS (Message 4 — Bluetooth Setup):
 ```
 BLUETOOTH SETUP (2015 Ford Fusion):
 
@@ -172,6 +247,7 @@ For music: Tap Entertainment → Source → Bluetooth Audio
 
 Let us know if you need help!
 ```
+9. Add Tag: `Welcome Kit Sent`
 
 ---
 
@@ -210,7 +286,7 @@ Once you submit your documents (license, payout history), we can get you approve
 
 Need the link again? Just reply and we'll send it over.
 ```
-2. Create Task: "Intake not submitted - follow up" → assign to VA
+2. Create Task: "Intake not submitted - follow up" → assign to Dos
 
 ---
 
@@ -316,7 +392,7 @@ If we do not receive payment or hear from you today, we will need to proceed wit
 
 Please contact us immediately.
 ```
-4. Create Task: "48hr overdue - escalate to DOS" → assign to manager
+4. Create Task: "48hr overdue - escalate to DOS" → assign to Dos
 5. Add Tag: `Payment Escalated`
 
 ---
@@ -371,7 +447,7 @@ Would you like to continue renting? Just reply to confirm and we'll keep you on 
 
 Thank you!
 ```
-2. Create Task: "Renewal follow-up" → assign to VA
+2. Create Task: "Renewal follow-up" → assign to Dos
 
 ---
 
@@ -506,7 +582,7 @@ On your way? Reply with your ETA!
 
 **Actions:**
 1. Receive Bouncie webhook → match vehicle to renter via custom field or tag
-2. Create Task in GHL: "Vehicle Alert — [Alert Type] — [Vehicle Name]" → assign to manager
+2. Create Task in GHL: "Vehicle Alert — [Alert Type] — [Vehicle Name]" → assign to Dos
 3. Send SMS to renter (if applicable):
 ```
 Hi {{contact.first_name}}, we received an alert from your vehicle.
@@ -531,14 +607,14 @@ Reply here or call us. Thank you.
 **Actions:**
 
 **30 Days Before Expiry:**
-1. Create Task: "Vehicle registration expiring in 30 days — [Vehicle Name]" → assign to manager
+1. Create Task: "Vehicle registration expiring in 30 days — [Vehicle Name]" → assign to Dos
 2. Add Tag: `Registration - 30 Day Warning`
 
 **14 Days Before Expiry:**
-3. Create Task: "Vehicle registration expiring in 14 days — [Vehicle Name]" → assign to manager (HIGH priority)
+3. Create Task: "Vehicle registration expiring in 14 days — [Vehicle Name]" → assign to Dos (HIGH priority)
 
 **7 Days Before Expiry:**
-4. Create Task: "URGENT: Vehicle registration expires in 7 days — [Vehicle Name]" → assign to manager (URGENT)
+4. Create Task: "URGENT: Vehicle registration expires in 7 days — [Vehicle Name]" → assign to Dos (URGENT)
 5. Add Tag: `Registration - Critical`
 
 **Pre-Build:** Need to determine how registration dates get into GHL — manual entry, Google Sheets sync, or import. Check Google Sheet structure for field mapping.
@@ -551,7 +627,7 @@ Reply here or call us. Thank you.
 **Trigger:** Bouncie Geofence Webhook (vehicle exits defined boundary)
 
 **Actions:**
-1. Create Task: "ALERT: Vehicle left service area — [Vehicle Name]" → assign to manager (URGENT)
+1. Create Task: "ALERT: Vehicle left service area — [Vehicle Name]" → assign to Dos (URGENT)
 2. Send internal notification (SMS or email to Kel)
 3. Add Tag: `Off-Grid Alert`
 4. Add Note with location data from Bouncie
@@ -612,23 +688,56 @@ For each workflow, verify:
 
 ---
 
+## Key Reference Info (Updated Feb 26)
+
+| Item | Value |
+|------|-------|
+| **GHL Sender Number** | +1 516-670-1787 |
+| **RingCentral Number** | 310-943-6795 |
+| **Intake Form** | https://laeliterentals2.hqrentals.asia/form/driver-intake-form |
+| **Cash App** | $rentals1000 |
+| **Zelle** | infolaeliterentals@gmail.com |
+| **Task Assignee** | Dos (all follow-up tasks) |
+| **Santa Tire Depot** | 5150 Santa Monica Blvd, LA CA 90028 — 818-588-2440 |
+| **King Berk Auto Center** | 6044 Santa Monica Blvd, LA CA 90028 — 323-460-4989 |
+| **Business Hours** | 8:00 AM – 4:00 PM PT |
+
+### Reference Documents
+- `la-elite-rentals-tickets-violations-process.md` — Full tickets & violations SOP (for WF4 SMS content)
+- `la-elite-rentals-fleet-maintenance-process.md` — Full fleet maintenance SOP (includes mechanic contacts, routing rules)
+
+### Existing GHL Workflows to Audit
+| Workflow | Action |
+|----------|--------|
+| Save Caller Info | KEEP — do not modify |
+| JV Leads | KEEP — do not modify |
+| New Workflow | AUDIT — check for conflicts with our builds |
+| Rental Waitlist Workflow | AUDIT — check for conflicts |
+| Uber and Lyft Leads | AUDIT — check for conflicts |
+
+---
+
 ## Notes for Marky
 
-1. **Custom Fields:** Create these before building workflows. Payment Due Date and Pickup Date are critical for scheduling triggers.
+1. **Custom Fields:** Create these before building workflows. ~~Payment Due Date~~ is in HQ Rental (not GHL). Pickup Date is critical for scheduling triggers.
 
 2. **Merge Fields:** Use `{{contact.first_name}}` and `{{custom.field_name}}` — test with real data.
 
-3. **SMS Length:** Keep under 160 characters per segment when possible. Welcome Kit is intentionally split into two messages.
+3. **SMS Length:** Keep under 160 characters per segment when possible. Welcome Kit is now split into FOUR messages (welcome, tickets/insurance, maintenance, bluetooth).
 
 4. **Time Zones:** Confirm GHL account is set to Pacific Time (LA).
 
-5. **Existing Automations:** Audit what's already built before duplicating. Disable old workflows if replacing.
+5. **Existing Automations:** Audit the 3 flagged workflows before building. KEEP Save Caller Info and JV Leads untouched.
 
 6. **Testing:** Use a test contact (your own number) before going live.
+
+7. **HQ Rental Integration:** WF 1.3 (Payment) and WF 1.4 (Welcome Kit) may need HQ Rental data. For now, manual process. Webhook integration in Phase 4.
+
+8. **Tags:** Starting fresh — Kel has minimal tags in GHL. Create tags as defined in each workflow.
 
 ---
 
 **Document Created:** 2026-02-07
-**Last Updated:** 2026-02-24
+**Last Updated:** 2026-02-26
 **Status:** Phase 1 In Progress — Build Week
 **Project Coordinator:** Nova (ORBIT)

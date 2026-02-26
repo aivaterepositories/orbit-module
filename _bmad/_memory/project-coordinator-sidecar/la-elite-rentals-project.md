@@ -189,11 +189,14 @@ Fiona has already created for this client:
 
 ### Pre-Build Checklist (Before Marky Starts)
 - [ ] Share GHL credentials with Marky (secure channel)
-- [ ] Audit existing workflows in Kel's GHL (note what's already built)
-- [ ] Confirm pipeline stages match scope (New Lead → Contacted → Waiting for Paperwork → Nurturing Lead → Denied → Became Renter)
-- [ ] Confirm/create custom fields: `Pickup Date`, `Payment Due Date`, `Vehicle Type`, `Denial Reason`, `Security Deposit Received`
-- [ ] Confirm/create tags: `Speed-to-Lead Sent`, `Missed Call - Texted`, `Payment Reminder Sent`, `Welcome Kit Sent`
+- [ ] Audit existing workflows in Kel's GHL — **KEEP:** Save Caller Info, JV Leads. **AUDIT for conflicts:** New Workflow, Rental Waitlist Workflow, Uber and Lyft Leads
+- [ ] Confirm pipeline stages match (CONFIRMED Feb 26): New Lead → Waiting for Paperwork → Priority Nurturing Leads → Nurturing Lead → Waitlist → Denied Not Interested → Became Renter → Low Income
+- [ ] Confirm/create custom fields: `Pickup Date`, `Vehicle Type`, `Denial Reason`, `Security Deposit Received` *(Note: Payment Due Date is in HQ Rental, not GHL)*
+- [ ] Confirm/create tags: `Speed-to-Lead Sent`, `Missed Call - Texted`, `Payment Reminder Sent`, `Welcome Kit Sent` *(Starting fresh — Kel has minimal tags)*
 - [ ] Confirm GHL timezone = Pacific Time
+- [x] Confirm business hours: **8:00 AM – 4:00 PM PT** (confirmed Feb 26)
+- [ ] **Marky:** Investigate HQ Rental webhook/API for GHL integration (WF 1.3 + 1.4 triggers)
+- [ ] **Fiona:** Email Kel to request HQ Rental access for Marky
 
 ### What We Need From Kel This Week
 1. **Confirm pipeline stages** — Do the stages in GHL match what we scoped?
@@ -231,6 +234,8 @@ Fiona has already created for this client:
 
 ## Progress Log
 
+**2026-02-26:** Meeting with Kel and Dos (no Fathom). Key decisions: Pipeline stages confirmed (different from original scope — see Pre-Build Checklist). Dos reinstated as Manager on Duty, receives all follow-up tasks. Existing GHL workflows: Keep Save Caller Info + JV Leads; audit New Workflow, Rental Waitlist, Uber and Lyft Leads for conflicts. GHL sender number: +1 516-670-1787. RingCentral number: 310-943-6795. WF1 approved — add intake form link. WF2 approved — split business/after hours, two phone triggers. WF3 major rework — trigger from HQ Rental (no payment due date field in GHL), timing changes (Stage 1: 2pm, Stage 2: 8am), ask about extension intention, conditional VA tasks, remove fixed amount, add Cash App ($rentals1000). WF4 approved — add tickets/violations protocol, insurance first-contact rule, Cash App, maintenance schedule (30-45 days), Santa Tire Depot info, 310 contact number. Intake form: https://laeliterentals2.hqrentals.asia/form/driver-intake-form. Process docs received: Tickets & Violations, Fleet Maintenance. HQ Rental webhook integration deferred to Phase 4. Business hours pending confirmation from Dos.
+
 **2026-02-24:** Payment received. Sprint planning completed for all 4 phases (Week 1-4). Phase 1 sprint starts this week: Speed-to-Lead, Missed Call Text-Back, Payment Reminders, Post-Pickup Welcome Kit. Fiona has GHL access; sharing with Marky via secure channel. New scope additions confirmed: Maintenance alerts via Bouncie webhooks (Phase 4, scope broadly then refine). Registration renewal notifications confirmed — data tracked in Google Sheet ([LA Elite Rentals 2.0](https://docs.google.com/spreadsheets/d/19YtXpZoymtNFaxKLucoz5TUWh-vaTu5dHHcAm59WUSs/edit?usp=sharing)). Total active workflows: 19 across 4 phases.
 
 **2026-02-19:** Automation follow-up call held. Kel chose **Option 2 (Retainer): $1,250 upfront + $350/month for 12 months.** First month total: $1,500. Additional scope: Registration automations and off-grid/border alerts added to Phase 4. Kel expressed strong interest in AI voice agents, website chat AI, and payment email parsing (all future/separate scope). White label discussion introduced. Fiona to send WISE payment link and GHL access instructions. Phase 1 kickoff to be scheduled. See transcript: https://fathom.video/share/DVwJ6NbzMBf4mU-sCrafQgQLVpdN7auk
@@ -251,7 +256,7 @@ Fiona has already created for this client:
 - This project originated from Scale Virtually engagement
 - Aivate opportunity: Offer GHL automation services
 - Kel's team is small (<5 people) — automation would significantly reduce manual work
-- **Dos Espina is no longer part of LA Elite Rentals (as of 2026-02-18).** Remove from all future communications, deliverables, and collaterals. Do NOT include in emails or meeting invites.
+- **Dos Espina** is back with LA Elite Rentals as of 2026-02-26. Manager on Duty. Receives all VA follow-up tasks. Handles King Berk Auto Center payments via company credit card.
 
 ---
 
