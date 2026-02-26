@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-02-05 (New tasks from CRM demo with Chris)
+**Last Updated:** 2026-02-26 (Marky completed all Feb 11 Wayne tasks — Fiona review required)
 
 ---
 
@@ -25,9 +25,9 @@
 
 | Team Member | Role | Current Work |
 |-------------|------|--------------|
-| **Marky** | Developer | ✅ ALL 8 TASKS COMPLETED - Awaiting Fiona review |
+| **Marky** | Developer | 🔴 ALL 7 FEB-11 WAYNE TASKS COMPLETED (2026-02-26) — Awaiting Fiona review |
 | **Cob** | Lead Developer | Real CRM implementation - production system (3 backend tasks pending) |
-| **Fiona** | PM/Coordinator | ⚠️ REVIEW NEEDED - Marky's completed work ready for deployment approval |
+| **Fiona** | PM/Coordinator | 🔴 HIGH IMPORTANCE REVIEW NEEDED — Marky's Feb 11 Wayne tasks ready for validation before next demo |
 
 ---
 
@@ -77,7 +77,32 @@
 
 ---
 
-## Latest Update - February 5, 2026
+## Latest Update - February 26, 2026
+
+### 🔴 FIONA — HIGH IMPORTANCE REVIEW REQUIRED
+
+Marky has completed all 7 tasks from the February 11 Wayne walkthrough. All items are ready for Fiona's validation before the next client demo.
+
+### MARKY - Feb 11 Wayne Tasks — ✅ ALL 7 COMPLETED
+
+| # | Task | Priority | Status |
+|---|------|----------|--------|
+| 1 | **Revamp Billing Schedule View** — list/report format, date grouping, day summaries, period totals, date filters, revenue flag, calendar toggle, click-through | HIGH | ✅ COMPLETED |
+| 2 | **Build Daily/Weekly Materials Report** — consolidated cross-job view for Mark (Shop Manager), filterable by date range | HIGH | ✅ COMPLETED |
+| 3 | **Add Crew Portal Fields** — Customer name, Job name, POC name added to crew work order view | HIGH | ✅ COMPLETED |
+| 4 | **Add POC Dropdown in Work Order Creation** — dropdown from contacts, add new, designate primary | MEDIUM | ✅ COMPLETED |
+| 5 | **Add Sitemap Link at Job Card Level** — auto-populates to all work orders for that job | MEDIUM | ✅ COMPLETED |
+| 6 | **Add Pending Work Order Status** — visible on calendar/billing schedule, hidden from crew portal until Ready for Field Execution | MEDIUM | ✅ COMPLETED |
+| 7 | **Revenue Type Flag on Billing Schedule** — Billable vs Zero-Dollar indicator per work order row | MEDIUM | ✅ COMPLETED |
+
+**COMPLETED BY:** Marky | **DATE:** 2026-02-26
+**🔴 FIONA REVIEW REQUIRED** — All 7 tasks ready for validation before next demo with Wayne/Chris
+
+**Details:** See `temp-power-systems-feb11-action-items.md` for full context.
+
+---
+
+## Previous Update - February 5, 2026
 
 ### CRM Demo with Chris Yates
 **Full walkthrough completed** - Crew Portal deferred to Monday meeting with Wayne

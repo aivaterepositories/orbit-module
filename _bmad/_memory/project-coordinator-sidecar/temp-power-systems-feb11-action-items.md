@@ -100,48 +100,51 @@
 
 ## MARKY'S ACTION ITEMS
 
+### 🔴 FIONA REVIEW REQUIRED — ALL 7 TASKS COMPLETED BY MARKY (2026-02-26)
+
 ### HIGH PRIORITY
 
-1. **Revamp Billing Schedule View**
-   - Wayne shared his current Salesforce task-based scheduling
-   - Needs list/report format showing all work for day/week/month
-   - Current calendar view insufficient for his workflow
-   - He said: "By that view, I can't tell if I've got five jobs, if I've got 20 jobs"
+1. ~~**Revamp Billing Schedule View**~~ ✅ COMPLETED — 2026-02-26
+   - ~~Wayne shared his current Salesforce task-based scheduling~~
+   - ~~Needs list/report format showing all work for day/week/month~~
+   - ~~Current calendar view insufficient for his workflow~~
+   - ~~He said: "By that view, I can't tell if I've got five jobs, if I've got 20 jobs"~~
    - Timestamp: [1:55:25](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=6925.9999)
+   - **Implemented:** List/report view with date grouping, day summaries, period totals, date filters (Today / This Week / This Month / Next Month / Custom), revenue type flag, calendar toggle, and row click-through to work order detail
 
-2. **Build Daily/Weekly Materials Report**
-   - For Mark (Shop Manager)
-   - Consolidated view of ALL materials needed across ALL jobs
-   - Filterable by date range
-   - Shows: material, job, need-by date, order status
-   - Chris said Mark would "go crazy" opening each job individually
+2. ~~**Build Daily/Weekly Materials Report**~~ ✅ COMPLETED — 2026-02-26
+   - ~~For Mark (Shop Manager)~~
+   - ~~Consolidated view of ALL materials needed across ALL jobs~~
+   - ~~Filterable by date range~~
+   - ~~Shows: material, job, need-by date, order status~~
+   - ~~Chris said Mark would "go crazy" opening each job individually~~
    - Timestamp: [58:34](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=3514.9999)
 
-3. **Add Crew Portal Fields**
-   - Missing from work order view:
-     - Customer name (e.g., "ABC Construction")
-     - Job name
-     - POC name (not just phone number)
-   - Wayne: "They need to know who they're working for"
+3. ~~**Add Crew Portal Fields**~~ ✅ COMPLETED — 2026-02-26
+   - ~~Missing from work order view:~~
+     - ~~Customer name (e.g., "ABC Construction")~~
+     - ~~Job name~~
+     - ~~POC name (not just phone number)~~
+   - ~~Wayne: "They need to know who they're working for"~~
    - Timestamp: [2:08:58](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=7738.9999)
 
 ### MEDIUM PRIORITY
 
-4. **Add POC Dropdown in Work Order Creation**
-   - Dropdown from Salesforce contacts (Cob provides data)
-   - Ability to add new contacts
-   - Designate primary contact
+4. ~~**Add POC Dropdown in Work Order Creation**~~ ✅ COMPLETED — 2026-02-26
+   - ~~Dropdown from Salesforce contacts (Cob provides data)~~
+   - ~~Ability to add new contacts~~
+   - ~~Designate primary contact~~
    - Timestamp: [2:13:00](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=7980)
 
-5. **Add Sitemap Link Field at Job Card Level**
-   - Field for Wayne to paste Google Maps link once
-   - Auto-populates to all work orders for that job
+5. ~~**Add Sitemap Link Field at Job Card Level**~~ ✅ COMPLETED — 2026-02-26
+   - ~~Field for Wayne to paste Google Maps link once~~
+   - ~~Auto-populates to all work orders for that job~~
    - Timestamp: [1:25:19](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=5119.9999)
 
-6. **Add Pending Status for Work Orders**
-   - New status option in work order creation
-   - Pending = visible on calendar, hidden from crew portal
-   - Ready for Field Execution = visible to assigned crew
+6. ~~**Add Pending Status for Work Orders**~~ ✅ COMPLETED — 2026-02-26
+   - ~~New status option in work order creation~~
+   - ~~Pending = visible on calendar, hidden from crew portal~~
+   - ~~Ready for Field Execution = visible to assigned crew~~
    - Timestamp: [1:48:16](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=6496.9999)
 
 ---
