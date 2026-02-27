@@ -1,12 +1,13 @@
 # Khalifeh & Associates — Process Engineering (Scale Virtually)
 
-**Status:** PRE-PEC — Call Prep
+**Status:** PHASE 1 — Process Engineering (BD & Client Outreach)
 **Priority:** High
 **Company:** Khalifeh & Associates Inc.
 **Client Contact:** Jack Khalifeh (President)
 **Project Lead:** Fiona (PM / Process Engineer)
 **Source:** Scale Virtually — RFP received 2026-02-16
 **PEC Date:** 2026-02-20
+**Follow-Up Engineering Call:** 2026-02-28
 
 ---
 
@@ -421,6 +422,8 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 
 ## Progress Log
 
+**2026-02-28:** Follow-up engineering call with Jack. Focus: Deliverable #1 — BD & Client Outreach Process discovery. Call notes template created (`khalifeh-bd-call-notes-feb28.md`). Status moved to Phase 1 — Process Engineering.
+
 **2026-02-19:** Project file created. IPEC presentation, deliverables (lean — $1,000 SUF), and risk assessment documented. Client's original JD added for reference. PEC/IPEC scheduled for 2026-02-20.
 
 ---
@@ -487,7 +490,7 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 ---
 
 **Created:** 2026-02-19
-**Last Updated:** 2026-02-19
-**Status:** PRE-PEC — Call Prep
-**Next Step:** Conduct PEC with Jack (2026-02-20)
+**Last Updated:** 2026-02-28
+**Status:** PHASE 1 — Process Engineering (BD & Client Outreach)
+**Next Step:** Conduct follow-up engineering call with Jack (2026-02-28) — BD & Client Outreach Process discovery
 **Project Coordinator:** Nova
