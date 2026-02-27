@@ -161,7 +161,7 @@
 | # | Deliverable | File | Status |
 |---|-------------|------|--------|
 | 1 | **BD & Client Outreach Process** | `khalifeh-deliverable-1-bd-outreach-process.md` | DRAFT — Ready for Jack review |
-| 1a | **Client Outreach Tracker** | `khalifeh-outreach-tracker-template.csv` | DRAFT — Structure ready, populate when Jack sends 20-name list |
+| 1a | **Client Outreach Tracker** | `khalifeh-outreach-tracker-template.md` | DRAFT — Structure ready, populate when Jack sends 20-name list |
 | 1b | **Company & Conversation Guide** | `khalifeh-company-conversation-guide.md` | DRAFT — Ready for Jack review |
 | 2 | **Admin & Scheduling Process** | TBD | Not started — separate engineering call needed |
 | 3 | **QuickBooks / AR-AP Process** | TBD | Not started — separate engineering call needed |
