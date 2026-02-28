@@ -1,12 +1,13 @@
 # Khalifeh & Associates — Process Engineering (Scale Virtually)
 
-**Status:** PRE-PEC — Call Prep
+**Status:** PHASE 1 — Process Engineering (BD & Client Outreach)
 **Priority:** High
 **Company:** Khalifeh & Associates Inc.
 **Client Contact:** Jack Khalifeh (President)
 **Project Lead:** Fiona (PM / Process Engineer)
 **Source:** Scale Virtually — RFP received 2026-02-16
 **PEC Date:** 2026-02-20
+**Follow-Up Engineering Call:** 2026-02-28
 
 ---
 
@@ -157,19 +158,21 @@
 
 ### Phase 1: Process Engineering (Post-IPEC)
 
-| # | Deliverable | Description |
-|---|-------------|-------------|
-| 1 | **BD & Client Outreach Process** | Core outreach workflow for Architectural firms — prospecting steps, outreach cadence, and follow-up sequence. Kept lean, no full playbook. |
-| 2 | **Admin & Scheduling Process** | Core daily/weekly admin workflow — correspondence handling, calendar management, and vendor coordination basics |
-| 3 | **QuickBooks / AR-AP Process** | Core bookkeeping workflow — invoicing steps, payment tracking, and basic reconciliation process |
+| # | Deliverable | File | Status |
+|---|-------------|------|--------|
+| 1 | **BD & Client Outreach Process** | `khalifeh-deliverable-1-bd-outreach-process.md` | DRAFT — Ready for Jack review |
+| 1a | **Client Outreach Tracker** | `khalifeh-outreach-tracker-template.md` | DRAFT — Structure ready, populate when Jack sends 20-name list |
+| 1b | **Company & Conversation Guide** | `khalifeh-company-conversation-guide.md` | DRAFT — Ready for Jack review |
+| 2 | **Admin & Scheduling Process** | TBD | Not started — separate engineering call needed |
+| 3 | **QuickBooks / AR-AP Process** | TBD | Not started — separate engineering call needed |
 
 ### Phase 2: MVA Sourcing & Placement
 
-| # | Deliverable | Description |
-|---|-------------|-------------|
-| 4 | **Finalized VA Job Description** | Refined JD based on IPEC findings and process-engineered role |
-| 5 | **Screening Criteria** | Must-have vs. nice-to-have skills, assessment rubric |
-| 6 | **VA Selection Support** | Shortlist presentation, interview coordination |
+| # | Deliverable | File | Status |
+|---|-------------|------|--------|
+| 4 | **Refined VA Job Description** | `khalifeh-va-job-description-refined.md` | DRAFT — Ready for Jack review, then forward to placement team |
+| 5 | **Screening Criteria** | Included in JD (Screening Notes section) | DRAFT |
+| 6 | **VA Selection Support** | TBD | Not started — begins after JD approved + placement team engaged |
 
 ---
 
@@ -421,6 +424,8 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 
 ## Progress Log
 
+**2026-02-28:** Follow-up engineering call with Jack and Brandon. Focus: Deliverable #1 — BD & Client Outreach Process. Key findings: No one currently doing outreach (all business has been referrals for 40 years), proposal summary spreadsheet is the primary prospect research tool, phone + email combo is the outreach approach, monthly follow-up cadence, goal is re-engagement not proposals, Salesforce being cancelled, RingCentral is phone system, Outlook for email. Jack wants VA with AEC/architecture industry experience. Jack & Brandon to provide first 20 client list. VA search approved to start in parallel. Next call: Wed March 4 at 12:00 PM PST. Deliverables created: BD Outreach Process doc, Outreach Tracker template, Company & Conversation Guide, Refined VA JD.
+
 **2026-02-19:** Project file created. IPEC presentation, deliverables (lean — $1,000 SUF), and risk assessment documented. Client's original JD added for reference. PEC/IPEC scheduled for 2026-02-20.
 
 ---
@@ -487,7 +492,7 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 ---
 
 **Created:** 2026-02-19
-**Last Updated:** 2026-02-19
-**Status:** PRE-PEC — Call Prep
-**Next Step:** Conduct PEC with Jack (2026-02-20)
+**Last Updated:** 2026-02-28
+**Status:** PHASE 1 — Process Engineering (BD & Client Outreach) — Drafts complete, pending Jack review
+**Next Step:** Present deliverable drafts to Jack for review (Wed March 4, 12:00 PM PST)
 **Project Coordinator:** Nova
