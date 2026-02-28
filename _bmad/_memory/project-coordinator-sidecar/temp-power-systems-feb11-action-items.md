@@ -100,11 +100,17 @@
 
 ## MARKY'S ACTION ITEMS
 
-### 🔴 FIONA REVIEW REQUIRED — ALL 7 TASKS COMPLETED BY MARKY (2026-02-26)
+### 🟡 FIONA REVIEW COMPLETE — 4 REVISIONS REQUIRED (2026-02-27)
+
+**Fiona's Loom Audit:**
+- [Part 1](https://www.loom.com/share/0759be0050cb426ebce49141201526610)
+- [Part 2](https://www.loom.com/share/09e5e2901673421ea3c33e392aff83cb)
+
+---
 
 ### HIGH PRIORITY
 
-1. ~~**Revamp Billing Schedule View**~~ ✅ COMPLETED — 2026-02-26
+1. ~~**Revamp Billing Schedule View**~~ ✅ APPROVED — 2026-02-27
    - ~~Wayne shared his current Salesforce task-based scheduling~~
    - ~~Needs list/report format showing all work for day/week/month~~
    - ~~Current calendar view insufficient for his workflow~~
@@ -112,40 +118,48 @@
    - Timestamp: [1:55:25](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=6925.9999)
    - **Implemented:** List/report view with date grouping, day summaries, period totals, date filters (Today / This Week / This Month / Next Month / Custom), revenue type flag, calendar toggle, and row click-through to work order detail
 
-2. ~~**Build Daily/Weekly Materials Report**~~ ✅ COMPLETED — 2026-02-26
-   - ~~For Mark (Shop Manager)~~
-   - ~~Consolidated view of ALL materials needed across ALL jobs~~
-   - ~~Filterable by date range~~
-   - ~~Shows: material, job, need-by date, order status~~
-   - ~~Chris said Mark would "go crazy" opening each job individually~~
+2. **Build Daily/Weekly Materials Report** 🔴 REVISION NEEDED — 2026-02-27
+   - For Mark (Shop Manager)
+   - Consolidated view of ALL materials needed across ALL jobs
+   - Filterable by date range
+   - Shows: material, job, need-by date, order status
    - Timestamp: [58:34](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=3514.9999)
+   - **Fiona's Note:** "I couldn't find this in the crew portal. Can you point me to where it's located, or does it still need to be built? (This was the consolidated materials view across all jobs for the shop manager.)"
+   - **Action:** Confirm location in simulator OR build if missing
 
-3. ~~**Add Crew Portal Fields**~~ ✅ COMPLETED — 2026-02-26
-   - ~~Missing from work order view:~~
-     - ~~Customer name (e.g., "ABC Construction")~~
-     - ~~Job name~~
-     - ~~POC name (not just phone number)~~
-   - ~~Wayne: "They need to know who they're working for"~~
+3. **Add Crew Portal Fields — Customer Name** 🔴 REVISION NEEDED — 2026-02-27
+   - Missing from work order view in crew portal
+   - Wayne: "They need to know who they're working for"
    - Timestamp: [2:08:58](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=7738.9999)
+   - **Fiona's Note:** "When viewing a work order in the crew portal, the customer name isn't visible. Please add this field to the crew portal work order view."
+   - **Action:** Add Customer Name field to crew portal work order view
+   - *(Job Name — status unclear, Fiona did not flag separately)*
 
 ### MEDIUM PRIORITY
 
-4. ~~**Add POC Dropdown in Work Order Creation**~~ ✅ COMPLETED — 2026-02-26
-   - ~~Dropdown from Salesforce contacts (Cob provides data)~~
-   - ~~Ability to add new contacts~~
-   - ~~Designate primary contact~~
+4. **Add POC Dropdown in Work Order Creation** 🔴 REVISION NEEDED — 2026-02-27
+   - Dropdown from Salesforce contacts (Cob provides data)
+   - Ability to add new contacts
+   - Designate primary contact
    - Timestamp: [2:13:00](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=7980)
+   - **Fiona's Note:** "When creating a work order, there's no dropdown or field for the Point of Contact (POC) name. This needs to be added so Wayne can select/assign a POC during work order creation."
+   - **Action:** Add POC name dropdown to work order creation form
 
-5. ~~**Add Sitemap Link Field at Job Card Level**~~ ✅ COMPLETED — 2026-02-26
-   - ~~Field for Wayne to paste Google Maps link once~~
-   - ~~Auto-populates to all work orders for that job~~
+5. **Add Sitemap Link Field at Job Card Level** 🔴 REVISION NEEDED — 2026-02-27
+   - Field for Wayne to paste Google Maps link once
+   - Auto-populates to all work orders for that job
    - Timestamp: [1:25:19](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=5119.9999)
+   - **Fiona's Note:** "Found the field, but it's unclear whether it's a clickable hyperlink that opens Google Maps or just a plain text field. It should function as a clickable link so crew members can tap it and get directions directly."
+   - **Action:** Ensure sitemap field renders as a tappable hyperlink (not plain text)
 
-6. ~~**Add Pending Status for Work Orders**~~ ✅ COMPLETED — 2026-02-26
+6. ~~**Add Pending Status for Work Orders**~~ ✅ APPROVED — 2026-02-27
    - ~~New status option in work order creation~~
    - ~~Pending = visible on calendar, hidden from crew portal~~
    - ~~Ready for Field Execution = visible to assigned crew~~
    - Timestamp: [1:48:16](https://fathom.video/share/EwhF_h461Xz1xfx5fbyxA8x3xBbDB4SW?timestamp=6496.9999)
+
+7. ~~**Revenue Type Flag on Billing Schedule**~~ ✅ APPROVED — 2026-02-27
+   - ~~Billable vs Zero-Dollar indicator per work order row~~
 
 ---
 

@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-02-26 (Marky completed all Feb 11 Wayne tasks — Fiona review required)
+**Last Updated:** 2026-02-27 (Fiona review complete — 4 revisions required for Marky)
 
 ---
 
@@ -25,9 +25,9 @@
 
 | Team Member | Role | Current Work |
 |-------------|------|--------------|
-| **Marky** | Developer | 🔴 ALL 7 FEB-11 WAYNE TASKS COMPLETED (2026-02-26) — Awaiting Fiona review |
-| **Cob** | Lead Developer | Real CRM implementation - production system (3 backend tasks pending) |
-| **Fiona** | PM/Coordinator | 🔴 HIGH IMPORTANCE REVIEW NEEDED — Marky's Feb 11 Wayne tasks ready for validation before next demo |
+| **Marky** | Developer | 🔴 4 REVISIONS NEEDED from Fiona's audit (2026-02-27) — See feb11-action-items.md |
+| **Cob** | Lead Developer | Real CRM implementation - production system (backend tasks pending) |
+| **Fiona** | PM/Coordinator | ✅ Review complete — revision notes sent back to Marky (2026-02-27) |
 
 ---
 
@@ -77,28 +77,28 @@
 
 ---
 
-## Latest Update - February 26, 2026
+## Latest Update - February 27, 2026
 
-### 🔴 FIONA — HIGH IMPORTANCE REVIEW REQUIRED
+### 🟡 FIONA REVIEW COMPLETE — 4 REVISIONS FOR MARKY
 
-Marky has completed all 7 tasks from the February 11 Wayne walkthrough. All items are ready for Fiona's validation before the next client demo.
+Fiona completed her audit of Marky's 7 tasks. 3 approved, 4 need revisions.
 
-### MARKY - Feb 11 Wayne Tasks — ✅ ALL 7 COMPLETED
+**Fiona's Loom Audit:** [Part 1](https://www.loom.com/share/0759be0050cb426ebce49141201526610) | [Part 2](https://www.loom.com/share/09e5e2901673421ea3c33e392aff83cb)
 
-| # | Task | Priority | Status |
-|---|------|----------|--------|
-| 1 | **Revamp Billing Schedule View** — list/report format, date grouping, day summaries, period totals, date filters, revenue flag, calendar toggle, click-through | HIGH | ✅ COMPLETED |
-| 2 | **Build Daily/Weekly Materials Report** — consolidated cross-job view for Mark (Shop Manager), filterable by date range | HIGH | ✅ COMPLETED |
-| 3 | **Add Crew Portal Fields** — Customer name, Job name, POC name added to crew work order view | HIGH | ✅ COMPLETED |
-| 4 | **Add POC Dropdown in Work Order Creation** — dropdown from contacts, add new, designate primary | MEDIUM | ✅ COMPLETED |
-| 5 | **Add Sitemap Link at Job Card Level** — auto-populates to all work orders for that job | MEDIUM | ✅ COMPLETED |
-| 6 | **Add Pending Work Order Status** — visible on calendar/billing schedule, hidden from crew portal until Ready for Field Execution | MEDIUM | ✅ COMPLETED |
-| 7 | **Revenue Type Flag on Billing Schedule** — Billable vs Zero-Dollar indicator per work order row | MEDIUM | ✅ COMPLETED |
+| # | Task | Priority | Status | Fiona's Note |
+|---|------|----------|--------|--------------|
+| 1 | Revamp Billing Schedule View | HIGH | ✅ APPROVED | — |
+| 2 | Build Daily/Weekly Materials Report | HIGH | 🔴 REVISION | Can't find it — confirm location or build |
+| 3 | Add Crew Portal Fields (Customer Name) | HIGH | 🔴 REVISION | Customer name not visible in crew portal WO view |
+| 4 | Add POC Dropdown in Work Order Creation | MEDIUM | 🔴 REVISION | No dropdown/field for POC name when creating WO |
+| 5 | Add Sitemap Link at Job Card Level | MEDIUM | 🔴 REVISION | Field exists but must be a tappable hyperlink, not plain text |
+| 6 | Add Pending Work Order Status | MEDIUM | ✅ APPROVED | — |
+| 7 | Revenue Type Flag on Billing Schedule | MEDIUM | ✅ APPROVED | — |
 
-**COMPLETED BY:** Marky | **DATE:** 2026-02-26
-**🔴 FIONA REVIEW REQUIRED** — All 7 tasks ready for validation before next demo with Wayne/Chris
+**REVIEWED BY:** Fiona | **DATE:** 2026-02-27
+**🔴 MARKY — 4 items require fixes before next demo with Wayne/Chris**
 
-**Details:** See `temp-power-systems-feb11-action-items.md` for full context.
+**Details:** See `temp-power-systems-feb11-action-items.md` for full revision specs.
 
 ---
 
