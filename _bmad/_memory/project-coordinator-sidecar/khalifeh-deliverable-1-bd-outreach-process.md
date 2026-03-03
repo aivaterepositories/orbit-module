@@ -9,15 +9,28 @@
 
 ## 1. Purpose
 
-This document defines the step-by-step process for the Virtual Assistant to conduct business development outreach on behalf of Khalifeh & Associates (KFA). The goal is to re-engage dormant architectural firm and developer relationships, identify new project opportunities, and book meetings or lunches for Jack Khalifeh to close in person.
+This document defines the step-by-step process for you to conduct business development outreach on behalf of Khalifeh & Associates (KFA). The goal is to re-engage dormant architectural firm and developer relationships, identify new project opportunities, and book meetings or lunches for Jack Khalifeh to close in person.
 
-**This is NOT cold sales.** KFA has 40 years of reputation and established relationships. The VA's role is to reactivate those relationships and surface project opportunities — not hard-sell.
+**This is NOT cold sales.** KFA has 40 years of reputation and established relationships. Your role is to reactivate those relationships and surface project opportunities — not hard-sell.
 
 ---
 
-## 2. Outreach Objective
+## 2. Required Inputs
 
-The VA's outreach has ONE clear objective:
+Before you begin outreach, make sure you have access to and are familiar with the following tools:
+
+- **RingCentral** — KFA phone system for making calls to prospects (you'll need a VA user account set up by IT)
+- **Outlook** — For sending emails on Jack's behalf (you'll need a VA email account set up by IT)
+- **Proposal Summary Spreadsheet** — Shared by Brandon; used to research prospect history before calls
+- **Outreach Tracker Spreadsheet** — Created by Fiona; where you log every outreach attempt and update prospect status
+- **KFA Marketing Materials** — Company profile and project approach docs shared by Brandon; reference during conversations
+- **Company & Conversation Guide** — Created by Fiona; study this before making any calls so you understand KFA positioning
+
+---
+
+## 3. Outreach Objective
+
+Your outreach has ONE clear objective:
 
 **Re-establish contact with dormant or inactive clients and determine if there is an opportunity to collaborate on a current or upcoming project.**
 
@@ -27,13 +40,13 @@ A successful outreach results in one of the following:
 - A confirmed follow-up date for when the client expects to have a project
 - Intelligence on why the client stopped working with KFA (fee, relationship, changed firms, etc.)
 
-**The VA does NOT send proposals.** Proposals are project-specific and require Jack to review scope and determine fees. The VA surfaces the opportunity; Jack closes it.
+**You do NOT send proposals.** Proposals are project-specific and require Jack to review scope and determine fees. You surface the opportunity; Jack closes it.
 
 ---
 
-## 3. Prospect Research (Before Any Outreach)
+## 4. Prospect Research (Before Any Outreach)
 
-Before contacting any firm, the VA must do the following research:
+Before contacting any firm, you must do the following research:
 
 ### Step 1: Check the Proposal Summary
 - Open the **Proposal Summary spreadsheet** (shared by Brandon)
@@ -58,7 +71,7 @@ Before contacting any firm, the VA must do the following research:
 
 ---
 
-## 4. Outreach Sequence
+## 5. Outreach Sequence
 
 Each prospect goes through the following sequence:
 
@@ -66,7 +79,7 @@ Each prospect goes through the following sequence:
 - **When:** Day 1 of outreach cycle
 - **Channel:** RingCentral (KFA phone system)
 - **Approach:** Call the contact directly
-- **If connected:** Follow the Conversation Framework (Section 5)
+- **If connected:** Follow the Conversation Framework (Section 6)
 - **If voicemail:** Leave a brief, warm message:
   - "Hi [Name], this is [VA Name] calling from Khalifeh & Associates, Jack Khalifeh's office. Jack wanted me to reach out — it's been a while since we've connected and he'd love to catch up. I'll try you again, or feel free to call us back at [number]. Thanks!"
 - **Log:** Record date, channel, and outcome in the Outreach Tracker
@@ -122,9 +135,9 @@ Each prospect goes through the following sequence:
 
 ---
 
-## 5. Conversation Framework
+## 6. Conversation Framework
 
-This is NOT a rigid script. The VA must be adaptive and read the room. However, these are the key beats to hit:
+This is NOT a rigid script. You must be adaptive and read the room. However, these are the key beats to hit:
 
 ### Opening
 - Introduce yourself: "Hi [Name], this is [VA Name] from Khalifeh & Associates, Jack Khalifeh's office."
@@ -178,7 +191,7 @@ When a prospect is qualified (has a project, wants to meet, or is unhappy with c
 
 ---
 
-## 6. Follow-Up Cadence
+## 7. Follow-Up Cadence
 
 ### Active Prospects (In Conversation)
 - Follow up within **2-3 business days** of any interaction
@@ -197,7 +210,7 @@ When a prospect is qualified (has a project, wants to meet, or is unhappy with c
 
 ---
 
-## 7. Tracking & Reporting
+## 8. Tracking & Reporting
 
 ### Daily
 - Log every outreach attempt in the **Outreach Tracker** (date, channel, outcome)
@@ -218,24 +231,11 @@ When a prospect is qualified (has a project, wants to meet, or is unhappy with c
 
 ---
 
-## 8. Tools & Access Required
-
-| Tool | Purpose | Access Needed |
-|------|---------|---------------|
-| **RingCentral** | Phone calls to prospects | VA user account (IT to set up) |
-| **Outlook** | Email on Jack's behalf | VA email account (IT to set up) |
-| **Proposal Summary (spreadsheet)** | Research prospect history | Shared access from Brandon |
-| **Outreach Tracker (spreadsheet)** | Log all outreach activity | Created by Fiona — shared with team |
-| **KFA Marketing Materials** | Reference during conversations | Shared by Brandon (profile, project approach) |
-| **Company & Conversation Guide** | Study before calls | Created by Fiona |
-
----
-
 ## 9. Rules & Boundaries
 
-1. **The VA does NOT quote fees or send proposals.** All pricing and proposals go through Jack.
-2. **The VA does NOT negotiate.** If a prospect raises fee concerns, note it and route to Jack.
-3. **The VA does NOT commit to project timelines.** Say "Let me check with Jack and get back to you."
+1. **You do NOT quote fees or send proposals.** All pricing and proposals go through Jack.
+2. **You do NOT negotiate.** If a prospect raises fee concerns, note it and route to Jack.
+3. **You do NOT commit to project timelines.** Say "Let me check with Jack and get back to you."
 4. **Emails sent on Jack's behalf must be reviewed by Brandon or Jack** before sending (until trust is established).
 5. **Confidentiality:** Fee information, proposal details, and client relationships are confidential. Do not share with outside parties.
 6. **Quality over quantity.** Jack does not want 1,000 leads. He wants the RIGHT clients — high-end, quality-focused firms who value expertise over low price.
