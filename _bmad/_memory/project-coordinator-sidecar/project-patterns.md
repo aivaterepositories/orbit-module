@@ -43,6 +43,8 @@ When sending emails on Fiona's behalf:
 | Wayne | wayne@temppower.com | TPS Project Manager - introduced 2026-02-12 |
 | Kel King | Kelking372@gmail.com | LA Elite Rentals Owner - introduced 2026-02-12 |
 | Dos Espina | espinajasvenzon@gmail.com | LA Elite Rentals — Manager on Duty. Reinstated 2026-02-26. Receives all VA follow-up tasks. |
+| Jesse (Jesylou Jopio) | *(TBD)* | Fiona's supervisor at Scale Virtually. Assigns clients to Fiona for process engineering. NOT part of Aivate. |
+| Brayden Wynn | *(bouncing — domain issue)* | Client at Collett. Assigned via Scale Virtually / Jesse. |
 
 ## Internal Aivate Projects
 
