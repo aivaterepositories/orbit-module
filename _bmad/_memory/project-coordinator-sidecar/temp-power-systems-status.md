@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-02-27 (Fiona review complete — 4 revisions required for Marky)
+**Last Updated:** 2026-03-15 (Marky pushed all 4 revisions — pending Fiona re-review)
 
 ---
 
@@ -17,7 +17,8 @@
 3. Cob integrates approved features into real CRM
 4. Pilot launch with real CRM
 
-**GitHub Repository:** https://github.com/aivaterepositories/temp-power-final-version-for-real
+**GitHub Repository (latest):** https://github.com/aivaterepositories/temp-power-system-true-final-version-truest-true-version-last
+**Previous Repository:** https://github.com/aivaterepositories/temp-power-final-version-for-real
 
 ---
 
@@ -25,9 +26,9 @@
 
 | Team Member | Role | Current Work |
 |-------------|------|--------------|
-| **Marky** | Developer | 🔴 4 REVISIONS NEEDED from Fiona's audit (2026-02-27) — See feb11-action-items.md |
+| **Marky** | Developer | ✅ All 4 revisions pushed (2026-03-15) — 🔴 Fiona re-review required |
 | **Cob** | Lead Developer | Real CRM implementation - production system (backend tasks pending) |
-| **Fiona** | PM/Coordinator | ✅ Review complete — revision notes sent back to Marky (2026-02-27) |
+| **Fiona** | PM/Coordinator | 🔴 Re-review needed — Marky's 4 revisions pushed to new repo |
 
 ---
 
@@ -77,7 +78,25 @@
 
 ---
 
-## Latest Update - February 27, 2026
+## Latest Update - March 15, 2026
+
+### ✅ MARKY REVISIONS COMPLETE — FIONA RE-REVIEW NEEDED
+
+Marky pushed all 4 revisions from Fiona's Feb 27 audit to the new repo:
+**https://github.com/aivaterepositories/temp-power-system-true-final-version-truest-true-version-last**
+
+| # | Task | Status |
+|---|------|--------|
+| 2 | Daily/Weekly Materials Report | ✅ PUSHED — needs Fiona verification |
+| 3 | Customer Name visible in Crew Portal WO view | ✅ PUSHED — needs Fiona verification |
+| 4 | POC Dropdown in Work Order Creation | ✅ PUSHED — needs Fiona verification |
+| 5 | Sitemap Link as tappable hyperlink | ✅ PUSHED — needs Fiona verification |
+
+**🔴 NEXT STEP: Fiona to review Marky's pushed revisions before next demo with Wayne/Chris.**
+
+---
+
+## Previous Update - February 27, 2026
 
 ### 🟡 FIONA REVIEW COMPLETE — 4 REVISIONS FOR MARKY
 
