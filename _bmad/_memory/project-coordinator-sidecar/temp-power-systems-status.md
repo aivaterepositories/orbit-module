@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-03-15 (Marky pushed all 4 revisions — pending Fiona re-review)
+**Last Updated:** 2026-03-17 (Cob — major backend milestone completed; pending tasks listed)
 
 ---
 
@@ -27,7 +27,7 @@
 | Team Member | Role | Current Work |
 |-------------|------|--------------|
 | **Marky** | Developer | ✅ All 4 revisions pushed (2026-03-15) — 🔴 Fiona re-review required |
-| **Cob** | Lead Developer | Real CRM implementation - production system (backend tasks pending) |
+| **Cob** | Lead Developer | 🟡 Major backend milestone complete (Mar 17) — 9 pending backend tasks remaining |
 | **Fiona** | PM/Coordinator | 🔴 Re-review needed — Marky's 4 revisions pushed to new repo |
 
 ---
@@ -40,13 +40,12 @@
 
 ### Active Tasks
 
-#### 1. Salesforce Integration Completion (Cob/Jacob)
-- **Status:** In Progress - Back-end mapping
+#### 1. Salesforce Integration & Backend (Cob) — ✅ MAJOR MILESTONE COMPLETE
+- **Status:** ✅ Core backend complete as of 2026-03-17
 - **Goal:** Complete Salesforce API integration and enable live data sync
 - **Phase:** Deliver - Integration Setup
 - **Priority:** CRITICAL (blocking pilot)
-- **Progress:** Salesforce data fetch COMPLETED, mapping in progress
-- **Notes:** Ready to "click green button" once back-end finalized
+- **Progress:** See full breakdown below ↓
 
 #### 2. Simulator UI Refinements (Marky)
 - **Status:** In Progress
@@ -78,7 +77,47 @@
 
 ---
 
-## Latest Update - March 15, 2026
+## Latest Update - March 17, 2026
+
+### ✅ COB — BACKEND MILESTONE COMPLETE
+
+**Completed by:** Cob | **Date:** 2026-03-17
+
+#### ✅ COMPLETED — Backend Tasks
+
+| Task | What Was Built |
+|------|---------------|
+| **DB Schema** | `jobs`, `work_orders`, and related tables deployed to Supabase |
+| **All API Routes** | `/api/jobs/create`, `/api/jobs/update`, `/api/work-orders/create`, `/api/work-orders/update` |
+| **DataContext Migration** | Frontend migrated from `useState` to live Supabase queries |
+| **SF Inbound Webhook** | `/api/webhooks/salesforce-job` — receives Closed Won from n8n, maps 21 SF fields, inserts to Supabase with dedup |
+| **SF Outbound Push** | `/api/salesforce/push-change-order` — CO Stage 4 approved → posts to n8n → updates SF Opportunity Amount |
+| **n8n WF1 (Poller)** | Polls SF every 5 min for Closed Won, HMAC signs payload, POSTs to webhook |
+| **n8n WF2 (CO Approved)** | Receives CO approval, updates SF Opportunity Amount |
+| **SF Field Mapping** | Verified against live SF org — address fields, `Job_Status__c`, `Job_Type__c`, `Utility_Company__c` |
+| **Dashboard Metric Fix** | Archived jobs excluded from all dashboard calculations |
+| **Pending WO Status** | Pending WOs hidden from crew portal, visible on calendar only |
+| **Task #2 (Change Order + SF)** | Complete end-to-end |
+
+#### 🔴 PENDING — Backend Tasks (Cob)
+
+| Task | Notes |
+|------|-------|
+| **Task #5 — Crew Portal Dashboard** | Hours, pay calc, open/completed WO counts per crew member |
+| **Task #8 — WO Calendar** | Backend queries for calendar view |
+| **Multi-crew timestamps per WO** | Per-crew-member time in/out records |
+| **Sitemap field auto-populate** | Job-level sitemap → inherit to all child WOs |
+| **SF Contact Roles** | Pull POC contacts from SF into WO creation |
+| **SF Permit fields** | iPermit link + dig alert fields — 🚫 BLOCKED: need field names from Wayne |
+| **CO Parent/Child logic** | Prevent duplicate jobs from child SF opportunities |
+| **SOV validation** | Phases must total contract amount before save |
+| **Task Automation Engine** | Auto-tasks triggered by job events |
+
+**🔴 BLOCKER:** SF Permit fields blocked — need Wayne to provide iPermit link + dig alert field names from Salesforce.
+
+---
+
+## Previous Update - March 15, 2026
 
 ### ✅ MARKY REVISIONS COMPLETE — FIONA RE-REVIEW NEEDED
 
