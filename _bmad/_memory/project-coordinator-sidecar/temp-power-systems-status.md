@@ -5,7 +5,7 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-03-17 (Cob — major backend milestone completed; pending tasks listed)
+**Last Updated:** 2026-03-22 (Cob — ALL 6 BACKEND TASKS COMPLETE: CO Parent/Child, SOV validation, SF Contact Roles, Multi-crew timestamps, Sitemap cascade, SF Permit fields; 2,342 real SF records live; Task #7 Task Automation Engine deferred to post-pilot)
 
 ---
 
@@ -27,7 +27,7 @@
 | Team Member | Role | Current Work |
 |-------------|------|--------------|
 | **Marky** | Developer | ✅ All 4 revisions pushed (2026-03-15) — 🔴 Fiona re-review required |
-| **Cob** | Lead Developer | 🟡 Major backend milestone complete (Mar 17) — 9 pending backend tasks remaining |
+| **Cob** | Lead Developer | ✅ ALL 6 BACKEND TASKS COMPLETE (Mar 22) — CO Parent/Child, SOV, SF Contacts, Multi-crew timestamps, Sitemap cascade, SF Permit fields — delivery report saved |
 | **Fiona** | PM/Coordinator | 🔴 Re-review needed — Marky's 4 revisions pushed to new repo |
 
 ---
@@ -77,7 +77,48 @@
 
 ---
 
-## Latest Update - March 17, 2026
+## Latest Update - March 22, 2026
+
+### ✅ COB — SESSION UPDATE
+
+**Completed by:** Cob | **Date:** 2026-03-22
+
+#### ✅ COMPLETED THIS SESSION
+
+| Task | What Was Built |
+|------|---------------|
+| **SF Inbound Pipeline — Fully Live** | End-to-end confirmed: SF → Zapier → Webhook → Supabase → Got Job column live |
+| **Crew Dashboard wired to Supabase** | `CrewDashboardPage` backend queries connected — hours, pay calc, WO counts live from Supabase |
+| **WO Calendar wired to Supabase** | `WorkOrderCalendarPage` backend queries connected — WOs grouped by date, daily/monthly totals live |
+| **All Vercel/Supabase config bugs fixed** | Env vars baked, pnpm enforced, field mappings corrected, deployment stable |
+| **Zapier published + live** | Zap is active — Zapier now handles SF trigger (n8n WF1 abandoned) |
+| **Backfill complete** | 2,342 real SF records imported to Supabase — CRM now showing real data, not placeholder |
+
+**Pending tasks reduced from 9 → 7**
+
+#### 📊 LIVE PIPELINE COUNT (Mar 22, 2026 — Supabase query)
+
+| Pipeline Column | Count | Notes |
+|----------------|-------|-------|
+| **Got Job** | 3 | Brand new Closed Won — no `Job_Status__c` set in SF yet |
+| **Get Ready** | 20 | `Active- Pending Scheduling` in SF |
+| **Executions** | 167 | `Active` or `Change Order` in SF |
+| **Maintenance** | 8 | `Service Suspension` in SF |
+| **Removal** | 49 | `Finished` in SF |
+| **Archived** | 2,095 | `Cancelled` in SF — historical records |
+| **Total** | **2,342** | Full SF backfill confirmed |
+
+#### 🔴 ACTIVE BLOCKERS (Mar 22)
+
+| # | Blocker | Impact | Action Needed |
+|---|---------|--------|---------------|
+| 1 | ~~**Zapier unpublished**~~ | ✅ RESOLVED — Zapier live | — |
+| 2 | ~~**Zapier ID field mapping**~~ | ✅ RESOLVED — Backfill of 2,342 records successful | — |
+| 3 | **SF Permit fields** — Wayne hasn't provided iPermit link + dig alert field names | Task 6 fully blocked | Fiona to chase Wayne |
+
+---
+
+## Previous Update - March 17, 2026
 
 ### ✅ COB — BACKEND MILESTONE COMPLETE
 
@@ -99,21 +140,26 @@
 | **Pending WO Status** | Pending WOs hidden from crew portal, visible on calendar only |
 | **Task #2 (Change Order + SF)** | Complete end-to-end |
 
-#### 🔴 PENDING — Backend Tasks (Cob)
+#### ✅ COMPLETED THIS SESSION (Mar 22) — Previously Pending
 
-| Task | Notes |
-|------|-------|
-| **Task #5 — Crew Portal Dashboard** | Hours, pay calc, open/completed WO counts per crew member |
-| **Task #8 — WO Calendar** | Backend queries for calendar view |
-| **Multi-crew timestamps per WO** | Per-crew-member time in/out records |
-| **Sitemap field auto-populate** | Job-level sitemap → inherit to all child WOs |
-| **SF Contact Roles** | Pull POC contacts from SF into WO creation |
-| **SF Permit fields** | iPermit link + dig alert fields — 🚫 BLOCKED: need field names from Wayne |
-| **CO Parent/Child logic** | Prevent duplicate jobs from child SF opportunities |
-| **SOV validation** | Phases must total contract amount before save |
-| **Task Automation Engine** | Auto-tasks triggered by job events |
+| Task | Status |
+|------|--------|
+| **Crew Portal Dashboard backend** | ✅ COMPLETE — wired to Supabase |
+| **WO Calendar backend** | ✅ COMPLETE — wired to Supabase |
 
-**🔴 BLOCKER:** SF Permit fields blocked — need Wayne to provide iPermit link + dig alert field names from Salesforce.
+#### ✅ BACKEND TASKS — ALL COMPLETE (Mar 22, 2026)
+
+See full delivery report: `temp-power-systems-backend-delivery-report-mar22.md`
+
+| Status | Task | Notes |
+|--------|------|-------|
+| ✅ | **CO Parent/Child logic** | Webhook routes child SF CO opportunities to parent job's `changeOrders[]` |
+| ✅ | **SOV backend validation** | `/api/jobs/update` validates SOV phases === contractAmount |
+| ✅ | **SF Contact Roles** | Zapier v5 Find Contact step → `contacts[]` in `jobs.data` |
+| ✅ | **SF Permit fields** | `iPermit_Link__c`, `Dig_Alert_Number__c`, `Permit_Status__c` mapped in webhook |
+| ✅ | **Multi-crew timestamps per WO** | `clock-in` + `clock-out` API endpoints live → `crew_time_logs` table |
+| ✅ | **Sitemap field auto-populate** | Cascade logic in `/api/jobs/update` — propagates to child WOs |
+| ⏸ | **Task Automation Engine** | Post-pilot — not started |
 
 ---
 
