@@ -1,304 +1,215 @@
 # Bedrock Investment Property — IPEC Call Guide
 
-**Call Date:** TBD — URGENT, schedule ASAP
-**Attendees:** Jeremy Watson (Founding Partner, CEO)
+**Call Date:** TBD (preferred was Fri Apr 10 10am EST — reschedule needed)
+**Attendees:** Jeremy Watson (CEO). Push for: COO, Personal Assistant, Bookkeeping Lead
 **Presenter:** Fiona Flynn, Process Engineer (Scale Virtually)
 **Duration:** ~60–90 minutes
-**Engagement Type:** PROCESS ONLY — LinkedIn Outreach System
+**Engagement Type:** PROCESS w/ MVA — Multi Role (2 VAs)
 
 ---
 
 ## Pre-Call Reminders
 
 - **Record the call** — confirm with Jeremy at the start
-- This is **PROCESS ONLY** — no VA placement. You're building the LinkedIn outreach system and playbook.
-- **VIP Influencer** client — treat accordingly. Jeremy is well-connected (Investor Fuel network).
-- Jeremy is a former financial advisor — he thinks in terms of risk-adjusted returns, portfolio allocation, and yield. Mirror that language.
-- He's a strong communicator and confident in his product — your job is to build the distribution system, not convince him his product works.
-- He's already engaged another marketing provider (not yet started) — understand what they're doing so you don't overlap or conflict.
-- The RFP flags 4 open uncertainties — these MUST be resolved during this call.
-- $2,500 SUF at standard scope — full deliverable set is appropriate.
-- Only Jeremy on the call — no other teammates. This is a 1-on-1 working session.
+- **VIP Influencer** client — treat accordingly. Well-connected (Investor Fuel network).
+- **2 VA roles** — Role #1 (Ops Assistant to COO) is fairly clear. Role #2 is UNDEFINED and must be resolved.
+- **Push for the COO to attend** — they're the primary source for Role #1 workflow mapping and the most overloaded person.
+- Jeremy has **never used VAs before** — he explicitly said he needs guidance and hand-holding. Be consultative.
+- He's a former financial advisor — thinks in terms of risk-adjusted returns, portfolio allocation. Mirror that language.
+- **Fear of premature growth** — he's worried marketing will work before ops are ready. Position process engineering as solving that fear.
+- $4,000 SUF, multi-role — full deliverable set is appropriate.
+- LinkedIn lead-gen was sold SEPARATELY — confirm whether PEC should cover marketing-process layer or stay ops-only.
+- **Listen for the COO's name** — not in the RFP. We need it.
 
 ---
 
 ## SLIDE 1: Introduction & Expectations
 
-### What to Cover
+### Talking Points
 - Introduce yourself: Fiona Flynn, Process Engineer with Scale Virtually
-- Purpose: Design and document a complete LinkedIn outreach system that puts Jeremy in front of the right investors and advisors consistently
-- Set expectations for the process engineering journey:
-  - **Today** = Deep discovery. We need to nail down who you're targeting, what the message is, and how the system will run day-to-day.
-  - **After today** = I build the full playbook — ICP strategy, messaging sequences, campaign workflows, KPIs, everything documented and executable.
-  - **Follow-up calls** = We review drafts, refine messaging, and finalize before launch.
-  - **End result** = A repeatable, documented LinkedIn outreach system you can run yourself or hand to someone to operate.
-- Acknowledge the RFP context: "I've reviewed the discovery call summary in detail. You've got a strong product and a clear value proposition — my job is to build the engine that gets it in front of the right people at scale."
+- Purpose: Design the roles, SOPs, and systems for two VAs that will give Bedrock the operational leverage to scale
+- Set the journey expectations:
+  - **Today** = Discovery. Understand the business, map the workflows, define both VA roles.
+  - **After today** = I build the playbooks — SOPs, reporting cadences, dashboards, training docs.
+  - **Follow-up calls** = We review drafts, refine, and finalize before sourcing begins.
+  - **End result** = Two fully documented VA roles with repeatable systems, so your team scales without quality slipping.
+- Acknowledge: "I know you've never used VAs before — that's exactly why we're here. My job is to make sure the system is so well-documented that the VAs can execute from Day 1."
+- Acknowledge the fear: "You mentioned being concerned about growing before ops are ready. That's exactly what we're solving — building the infrastructure before we hit the gas."
 
 ### Tone-Setter
-> "You've spent 5.5 years building the product. What we're building today is the system that makes sure the right people actually hear about it — consistently, not accidentally."
+> "You've built a strong product over 5.5 years. What we're building now is the operational layer that lets you go from 12 acquisitions a month to whatever number you want — without anything falling through the cracks."
 
 ---
 
 ## SLIDE 2: Agenda
 
-### What to Cover
-Walk through the agenda — set expectations for timing:
+### Talking Points
 
-1. **Business understanding** (~15 min) — Understand your model, your investor, and your competitive landscape
-2. **Pain points validation** (~10 min) — Confirm what's held marketing back and where the real gaps are
-3. **LinkedIn campaign design** (~20 min) — ICP, messaging, offer, automation, and workflow
-4. **Systems & tools review** (~10 min) — Current tech stack and what we need for the campaign
-5. **Risk assessment** (~5 min) — Flag anything that could slow us down
-6. **Deliverables & timeline** (~10 min) — What I'll build and when you'll see it
+1. **Business understanding** (~15 min) — The Bedrock model, team structure, current operations
+2. **Pain points validation** (~10 min) — Confirm the bottlenecks and prioritize
+3. **Role #1 design** (~15 min) — Ops Assistant to the COO: tasks, workflows, reporting
+4. **Role #2 definition** (~15 min) — Resolve which direction: bookkeeping, exec admin, insurance/tax, or ops
+5. **Systems & tools review** (~10 min) — Current tech stack and workflow mapping
+6. **Deliverables & timeline** (~10 min) — What I'll build and when
 7. **Q&A** (~10 min) — Open floor
-
-### Note
-> "This is a working session — I'll have a lot of questions. The more specific you can be, the stronger the system I build for you."
 
 ---
 
 ## SLIDE 3: Understanding Bedrock Investment Property
 
-### What to Cover
-Present what you know from the RFP, then validate and go deeper.
+### Questions — Business Model & Scale
 
-**What we know:**
-- Turnkey real estate investment company — ~5.5 years in business
-- Core offer: Managed single-family investment solution — clients retain ownership, control, financing, and exit timing
-- Differentiated from syndications, REITs, DSTs — direct ownership model
-- Jeremy's background as former financial advisor gives credibility with investor audiences
-- Growth has been referral/repeat-driven — no reliable outbound engine built yet
-- Based in Lehi, Utah but operates in specific investment markets
+1. Walk me through the Bedrock model end-to-end — what does a client experience from first conversation to owning a cash-flowing property?
+2. You're operating across 9 states with 13 property managers — how are those PMs structured? Are they third-party companies, in-house, or a mix?
+3. How many total properties are you managing right now?
+4. You mentioned capacity of ~12 acquisitions/month — what's the bottleneck? Is it deal flow, operational bandwidth, or something else?
+5. When you say you could scale to ~100 properties/month if marketing and ops are solved — what does that look like operationally? What breaks first?
 
-### Questions — Business Model & Value Proposition
+*Why this matters: Understanding scale and the bottleneck tells us exactly what the VAs need to absorb.*
 
-1. Walk me through the Bedrock model from an investor's perspective — if I'm a new client, what does working with you actually look like from Day 1 to Year 5?
-2. What markets are you currently operating in? Where are you acquiring properties?
-3. What's your average deal size — what does a typical investor put in, and what kind of returns are they seeing?
-4. How many active investor clients do you have right now?
-5. What's your capacity — how many new investors can you realistically onboard per month/quarter without quality slipping?
-6. Who is your best client? Describe the investor who's been the easiest to close and the happiest long-term.
-7. Who is your worst-fit client — someone who looked good but turned out to be a bad match?
-8. What's your close rate when you get a qualified meeting? (This helps us set realistic funnel targets.)
-9. What's the average timeline from first conversation to signed deal?
-10. How do you typically explain the Bedrock advantage over syndications, DSTs, or just buying rental property independently?
+### Questions — Team & Org Structure
 
-*Why this matters: The messaging sequences and ICP definition are only as strong as our understanding of who buys, why they buy, and what makes them say yes.*
+6. **Who is your COO?** Walk me through what their day looks like — what consumes their time?
+7. Who else is on the team? Give me the full org chart — even informal roles.
+8. You mentioned having a personal assistant — what do they handle today?
+9. Who does your bookkeeping right now? Is it in-house or outsourced?
+10. Who handles insurance renewals and property tax coordination currently?
+11. Who manages the CRM (GoHighLevel)? Is anyone building automations or campaigns in it?
+12. For the 13 property managers — does the COO communicate with all 13 directly? How often and through what channels?
 
-### Questions — Competitive Landscape
+*Why this matters: We need the full teammate map to know who owns what, and where the VA roles plug in without overlap.*
 
-11. Who are the other turnkey operators in your space? Who do you compete with most directly?
-12. What do you do differently or better than them?
-13. When a deal falls through, what's the most common reason? (Helps us understand objections we'll face in outreach.)
-14. Are there any turnkey operators or investor communities that Jeremy is already connected to or respected in?
+### Questions — Entity & Compliance
 
-*Why this matters: Competitive positioning feeds directly into the messaging — we need to know what makes Bedrock's pitch different in a crowded LinkedIn feed.*
-
-### Questions — Current Marketing & Sales
-
-15. Walk me through what you've tried before for marketing — what worked, what didn't, and why?
-16. How much have you spent on marketing efforts that didn't produce results?
-17. What does your current lead flow look like? How many inbound inquiries per month?
-18. You mentioned you've engaged another marketing provider — what are they going to be handling? (I need to make sure LinkedIn outreach complements, not conflicts.)
-19. What's your referral engine look like — is it structured (ask for referrals, incentivize) or organic (people just send you deals)?
-20. Do you have any existing content — blog posts, podcasts, speaking recordings, case studies, investor testimonials?
-21. Have you done any LinkedIn outreach before, even informally?
-
-*Why this matters: Understanding what's been tried prevents us from repeating mistakes. Knowing the other provider's scope prevents overlap.*
+13. You mentioned two entities — one for acquisitions/marketing, one for admin/VA work. Which entity will the VAs operate under?
+14. Are there any compliance considerations that affect what the VAs can access or do? (Financial data, investor PII, etc.)
 
 ---
 
 ## SLIDE 4: Validated Pain Points
 
-### What to Cover
-Present the pain points from the RFP and validate. Get Jeremy to talk about the real cost of not having a marketing engine.
-
-**Pain points to validate:**
+### Probes for Each Pain Point
 
 | # | Pain Point | Probe |
 |---|-----------|-------|
-| 1 | No reliable outbound marketing engine | "In 5.5 years, what's been the closest you've come to a repeatable acquisition channel?" |
-| 2 | Prior marketing spend underperformed | "When you look back at the money spent — what's the biggest lesson? Was it wrong audience, wrong channel, wrong message, or something else?" |
-| 3 | Niche product needs precise targeting | "When you think about the deals that closed easiest, what did those people have in common? Where did they come from?" |
-| 4 | Growth driven by referrals only | "If referrals stopped tomorrow, what happens to the business?" |
-| 5 | Strong message, weak distribution | "You clearly know how to sell this in a conversation — what breaks down between that conversation and getting someone on the phone in the first place?" |
-| 6 | ICP prioritization unresolved | "If you had to bet everything on ONE audience for the first 90 days — investors or financial advisors — which one would you bet on, and why?" |
+| 1 | Scale bottleneck — no admin infrastructure | "If you doubled deal flow tomorrow, what breaks first — PM communication, bookkeeping, insurance, or something else?" |
+| 2 | No button pushers | "What are the top 5 tasks that are repetitive, time-consuming, and don't need a senior person — but a senior person is doing them anyway?" |
+| 3 | COO bandwidth strain | *(Direct to COO if present)* "What's the first thing you'd hand off if you could? What eats the most hours?" |
+| 4 | Tribal knowledge, no SOPs | "If your COO took a 2-week vacation tomorrow, what would fall apart? What lives only in their head?" |
+| 5 | Fear of premature growth | "What specifically would need to be true — in terms of systems and people — before you'd feel comfortable scaling to 50 or 100 properties a month?" |
+| 6 | Never used VAs before | "What's your biggest concern about bringing on VAs? What would make you feel confident it's working?" |
+| 7 | Systems not scale-ready | "At what point do your current systems start breaking — 20 properties/month? 50? Where's the ceiling?" |
 
 ### Critical Questions
 
-22. What would a successful LinkedIn outreach program change about your business in 6 months? Paint me the picture.
-23. What's the biggest risk you see — is it that outreach won't work, that you'll get the wrong audience, or something else?
-24. How much time per week are YOU willing to invest in this? (LinkedIn outreach works best when the principal is involved — especially for a high-trust, high-ticket offer.)
-25. Are you comfortable being the face of this campaign, or do you want to minimize personal exposure?
-
-*Why this matters: Jeremy's time commitment and willingness to be the face of the campaign directly impacts the strategy. A principal-led LinkedIn campaign converts 3-5x better than a brand-led one for high-ticket B2B/investor outreach.*
+15. **Priority ranking:** If we could only solve ONE bottleneck in the first 30 days, which one would make the biggest difference for the business?
+16. What's falling through the cracks right now that you know shouldn't be?
+17. Have you had any near-misses — insurance lapses, missed tax deadlines, PM issues that went unnoticed?
+18. What does the COO need to stop doing immediately?
 
 ---
 
-## SLIDE 5: LinkedIn Campaign Design + Systems & Tools Audit
+## SLIDE 5: VA Role Design
 
-### Part A: ICP & Targeting Strategy
+### Part A: Role #1 — Ops Assistant to COO
 
-**This is the most critical section of the call. The RFP flags ICP prioritization as unresolved — we MUST lock this down.**
+### Questions — Role #1 Workflow Mapping
 
-### Questions — ICP Definition
+19. Walk me through the daily PM reporting process as it happens today — the COO contacts each PM, asks questions, gets updates. What does that look like exactly?
+20. How many PMs does the COO talk to per day? How long does each check-in take?
+21. What questions are asked in these check-ins? Is there a standard set, or does it vary?
+22. What format does the update come back in — email, text, call, spreadsheet?
+23. Where does the consolidated information end up today — a dashboard, an email to Jeremy, a spreadsheet?
+24. What does "managing up" look like — what does Jeremy/ownership need to see daily/weekly?
+25. What CRM data needs to be updated and how often? Walk me through the fields.
+26. When something is wrong at a property — delinquency, vacancy, maintenance issue — what's the escalation path today?
+27. What does a "battle plan" on an underperforming property look like? Who creates it, who tracks it?
+28. What level of autonomy should this VA have? Can they follow up with PMs independently, or does every communication go through the COO?
+29. What hours does this VA need to work? Does it need to overlap with PM business hours across 9 states and multiple time zones?
 
-26. Let's rank these audiences. For the first 90-day campaign, who should we go after first?
-    - **Option A:** Real estate investors (actively investing, looking for better returns/vehicles)
-    - **Option B:** Financial advisors / RIAs / insurance & annuity professionals (serving clients with underperforming real estate)
-    - **Option C:** Affluent professionals in investor-heavy geographies
-    - **Option D:** Something else?
-27. For whichever audience we pick first — describe the ideal person. What's their title, what's their portfolio size, what's their current frustration?
-28. For real estate investors: Are we targeting people already in rental properties who want a better management solution? Or people in syndications/REITs who want more control? Or people with capital sitting idle?
-29. For financial advisors: Are we targeting advisors who already recommend real estate to clients, or advisors who DON'T currently but should?
-30. What investor database or list does Jeremy have access to? (The RFP mentions a "large investor database" — what is it, where does it live, how large?)
-31. Is there a minimum net worth or investment capacity threshold for a qualified prospect?
-32. Are there any geographies that are better than others for finding your ICP? (Where do your best clients tend to live?)
-33. Are there LinkedIn groups, communities, or influencers where your ICP congregates?
-34. Are there any audiences we should explicitly AVOID? (Tire-kickers, people looking for passive-only, etc.)
+*Why this matters: This is the core of Deliverable #1 (PM Reporting Cadence) and #3 (Role #1 VA Playbook). Every question maps to a process step we need to document.*
 
-*Why this matters: This is Deliverable #1 (ICP Definition & Targeting Strategy). Every other deliverable depends on getting this right.*
+### Part B: Role #2 — Definition Session
 
-### Questions — Offer & First-Touch Strategy
+**This is the most critical conversation of the call. Role #2 is undefined.**
 
-**The RFP flags the first-touch offer as unresolved — resolve it here.**
+### Questions — Role #2 Discovery
 
-35. When someone connects with you on LinkedIn, what do you want to happen next? Rank these:
-    - **A.** Book a direct 1-on-1 meeting (highest intent, lowest volume)
-    - **B.** Register for a CEO roundtable / webinar (medium intent, higher volume)
-    - **C.** Receive a market report / case study / resource (lowest intent, highest volume — nurture funnel)
-    - **D.** Start a conversation (softest touch — qualify through DMs first)
-36. Have you hosted a webinar or roundtable before? If yes, how did it convert?
-37. Do you have a specific piece of content or case study that's been particularly effective at converting interest into meetings?
-38. What does your calendar look like — how many meetings per week can you realistically take?
-39. What happens after a meeting — is there a second call, a proposal, a site visit, or does it close in one conversation?
+30. Let's map out all the recurring operational tasks that someone could take off the team's plate. I'll name categories — you tell me how much time each one consumes per week:
+    - a. Bookkeeping / QuickBooks coding (across 6 companies)
+    - b. Personal / executive assistant tasks for Jeremy
+    - c. Property tax tracking and payment coordination
+    - d. Homeowners insurance renewals, lapse prevention, reshop
+    - e. Vendor / PM / broker follow-ups (routine, not strategic)
+    - f. CRM data entry and maintenance (GoHighLevel)
+    - g. Investor / owner communication and updates
+    - h. Anything else?
+31. Which of those categories, if removed from the team's plate tomorrow, would create the most immediate relief?
+32. You mentioned the second role might be better as "broader operational offloading" rather than pure bookkeeping — can you expand on that? What does that look like in your mind?
+33. Is bookkeeping currently causing problems (errors, delays, compliance risk), or is it just taking up time?
+34. For insurance and tax coordination — how many policies and parcels are we talking about? What's the volume?
+35. If we split Role #2 into a primary function (60-70% of time) and a secondary function (30-40%), what combination makes the most sense?
+36. Is there a world where Role #2 is actually a second operations person rather than a finance/admin person?
 
-*Why this matters: This determines the campaign funnel design and the call-to-action in every outreach message.*
+*Why this matters: We MUST walk out of this call with a clear direction for Role #2 — at minimum the primary function. Deliverable #4 and #5 depend on it.*
 
-### Questions — LinkedIn Profile & Presence
+### Questions — Both Roles
 
-40. How active are you on LinkedIn currently? Do you post, comment, engage?
-41. Have you looked at your LinkedIn profile recently — does it reflect Bedrock's current positioning, or is it still your old financial advisor identity?
-42. Are you open to us repositioning your LinkedIn profile entirely around the Bedrock value proposition?
-43. Do you have professional headshots or brand visuals we can use?
-44. Are you willing to post content regularly (1-3x/week) to support the outreach campaign? (Content + outreach compound each other.)
+37. What rate range are you comfortable with for each role? (Different skill levels may command different rates.)
+38. Full-time for both, or is one of these part-time?
+39. Do both VAs report to the COO, or does one report to Jeremy directly?
+40. Have you worked with remote team members before at all — even non-VA?
+41. What does "success at 90 days" look like for each role?
 
-*Why this matters: Deliverable #2 (LinkedIn Profile Optimization). A profile that doesn't match the outreach message kills conversion.*
+---
 
-### Part B: Systems & Tools Audit
+## SLIDE 5 (continued): Systems & Tools Audit
 
 ### Questions — Tools & Infrastructure
 
-45. What CRM do you use today? (HubSpot, Salesforce, Pipedrive, spreadsheets, nothing?)
-46. How do you currently track leads and prospects? Is there a pipeline?
-47. What calendar/scheduling tool do you use? (Calendly, HubSpot meetings, manual scheduling?)
-48. Have you used any LinkedIn automation tools before? (Dripify, Expandi, Phantombuster, LinkedHelper, Dux-Soup, etc.)
-49. What email platform do you use? (For follow-up sequences outside LinkedIn)
-50. Do you have a website with a landing page or any lead capture?
-51. What do you use for email marketing / nurture sequences? (Mailchimp, ActiveCampaign, ConvertKit, nothing?)
-52. Do you have Sales Navigator on LinkedIn?
-53. What's your current LinkedIn connection count? (Rough number)
-54. Is there a team member or assistant who will help operate this system day-to-day, or is this 100% Jeremy?
+42. **GoHighLevel:** How is it set up? What's in it — contacts, deals, automations, campaigns? Who manages it?
+43. **QuickBooks:** Desktop or Online? Which version? How many company files (you mentioned 6 entities)?
+44. **Property management software:** Do the 13 PMs use a shared platform (AppFolio, Buildium, Propertyware), or does each PM have their own system?
+45. **Communication channels:** How does the COO communicate with PMs today — email, phone, text, Slack, something else?
+46. **Dashboards / reporting:** Is there an existing dashboard or reporting template, or is this built from scratch?
+47. **Document storage:** Google Drive, Dropbox, SharePoint? How is it organized?
+48. **Insurance tracking:** Is there a system/spreadsheet tracking policies, renewal dates, and coverage — or is it scattered?
+49. **Tax tracking:** Same question — is there a centralized view of property tax deadlines and payments across all markets?
+50. **Calendar / scheduling:** What does Jeremy and the COO use?
+51. **Investor / owner portal:** Is there a client-facing system where investors see property performance, or is it all manual communication?
+52. **Password management:** How will you share tool access securely with VAs?
+53. **Screen recording / process capture:** Are you open to recording workflows (Loom, Scribe) so we can document processes efficiently?
 
-*Why this matters: Feeds into Deliverable #4 (Campaign Workflow & Automation Setup Guide). We need to know what exists and what we need to build or recommend.*
-
-### Listen For (Don't Ask Directly)
-- Is Jeremy tech-savvy enough to run automation tools, or does he need everything simplified?
-- Does he have the budget for paid LinkedIn tools (Sales Navigator ~$100/mo, automation tools ~$50-100/mo)?
-- Is there a future operator for this system (VA, marketing hire) or will Jeremy run it indefinitely?
-- How protective is he of his personal LinkedIn? Some executives resist automation on their personal profile.
+*Why this matters: Deliverable #8 (Tool Workflow Guide). Every tool needs to be mapped — especially since 13 PMs across 9 states likely use different systems.*
 
 ---
 
 ## SLIDE 6: Deliverables & Timeline
 
-### What to Cover
-Walk through each deliverable. Explain what it is, why it matters, and confirm it aligns with Jeremy's expectations.
+### Deliverable-Specific Questions
 
-### Deliverable 1: ICP Definition & Targeting Strategy
-*Who we're going after, why, and how we find them on LinkedIn*
+**Deliverable 1: PM Reporting Cadence & Dashboard**
 
-**What you're building:** A documented targeting strategy with primary and secondary ICP profiles, LinkedIn search criteria, audience sizing, and campaign sequencing (which audience first, second, third).
+54. What does the ideal daily PM report look like — if you could wave a wand, what information lands on the COO's desk every morning?
+55. What are the key metrics per property: occupancy, rent collected, delinquency, maintenance open/closed, anything else?
+56. Do different markets/PMs need different reporting cadences, or is it standardized?
 
-**Questions (if not already covered):**
+**Deliverable 6: Communication & Escalation Flow Map**
 
-55. How do you feel about running parallel campaigns to different audiences, or do you want to go one audience at a time?
-56. Are you open to A/B testing different audiences in the first 30 days to see which converts better?
+57. When a PM flags a problem — eviction, major maintenance, vacancy — what's the current escalation path?
+58. What decisions can the COO make alone vs. what needs Jeremy's approval?
+59. How do investor/owner communications work today — who tells the investor what's happening with their property?
 
-### Deliverable 2: LinkedIn Profile Optimization Guide
-*Repositioning Jeremy's LinkedIn as a conversion asset*
+**Deliverable 7: Daily/Weekly Reporting Structure**
 
-**What you're building:** A section-by-section guide for optimizing Jeremy's LinkedIn profile — headline, banner, about section, featured content, experience section — all aligned to the campaign messaging.
+60. What do you want to see from each VA at the end of every day?
+61. Is there a weekly team meeting or reporting cadence?
+62. How do you want escalations flagged — real-time or batched in daily reports?
 
-**Questions:**
+### Scope Clarification
 
-57. What's the single most important thing you want someone to think when they land on your LinkedIn profile?
-58. Do you have any investor success stories or case studies we can feature?
-
-### Deliverable 3: Outreach Messaging Sequences
-*Connection requests, follow-ups, conversation scripts*
-
-**What you're building:** A complete library of outreach messages — connection request templates (multiple variants), follow-up sequences (Day 1, 3, 7, 14+), conversation scripts for warm replies, and objection handling for common pushback.
-
-**Questions:**
-
-59. What's your communication style — formal/professional, conversational, or somewhere in between?
-60. What are the most common objections or hesitations you hear from prospects? (e.g., "I already have a property manager," "I don't invest in single-family," "What's the catch?")
-61. What's the single strongest thing you can say in one sentence that makes an investor lean in?
-62. Are there any words, phrases, or positioning you want to AVOID? (Anything that feels off-brand?)
-63. How do you feel about being direct in outreach (e.g., "I'd love to show you how we help investors get X") vs. indirect (e.g., sharing a resource first, then transitioning to a conversation)?
-
-### Deliverable 4: Campaign Workflow & Automation Setup Guide
-*Step-by-step system for running the LinkedIn outreach machine*
-
-**What you're building:** A daily/weekly workflow document — how many connections per day, when to send follow-ups, how to manage the conversation pipeline, what to do when someone replies, when to hand off to a CRM, and which tools to use.
-
-**Questions:**
-
-64. How many hours per day can you (or someone on your team) dedicate to LinkedIn outreach?
-65. What's your comfort level with automation? (Some is almost always needed — the question is how much.)
-66. Who will physically operate this on a daily basis — you, or will you eventually hand this off?
-
-### Deliverable 5: Lead Management & Conversion Process
-*From LinkedIn conversation to booked meeting to investor client*
-
-**What you're building:** A pipeline process — how leads move from "connected on LinkedIn" → "in conversation" → "meeting booked" → "qualified opportunity" → "closed client." Includes lead scoring, disqualification criteria, and handoff points.
-
-**Questions:**
-
-67. What qualifies a lead as "worth a meeting" — what do you need to know before you'll take the call?
-68. What disqualifies someone? What red flags tell you this person won't close?
-69. After a meeting, what happens next — what does your sales process look like from meeting to signed deal?
-70. Do you have a follow-up process for people who are interested but not ready yet? (6-month nurture, etc.)
-
-### Deliverable 6: KPI Dashboard & Reporting Structure
-*How to measure success and optimize*
-
-**What you're building:** A KPI framework with weekly/monthly tracking metrics — connection requests sent, accepted, reply rate, conversations started, meetings booked, qualified opportunities, deals closed. Plus a simple reporting template.
-
-**Questions:**
-
-71. The RFP flagged that success metrics weren't defined — let's define them now. What would make you say "this is working" at 30 days? 60 days? 90 days?
-72. How many meetings per month would feel like a win?
-73. What's a realistic close rate from meeting to deal? (So we can back into the number of meetings needed.)
-74. How do you want to see reporting — weekly email summary, shared dashboard, or quick call?
-
-### Deliverable 7: CEO Roundtable / Webinar Funnel Framework
-*Higher-conviction conversion asset for warm-but-not-ready prospects*
-
-**What you're building:** A framework for a recurring CEO roundtable or webinar — topic structure, promotion plan, registration flow, follow-up sequence, and conversion path from attendee to meeting.
-
-**Questions:**
-
-75. How interested are you in the roundtable/webinar concept — is this a Day 1 priority or a Phase 2 idea?
-76. If we did a roundtable, what would the topic be? What would make an investor want to show up?
-77. How often would you want to host — monthly, quarterly?
-78. Would this be live only, or would you want to record and repurpose as content?
-
-### Deliverable 8: Consolidated LinkedIn Outreach Playbook
-*Everything assembled into one executable document*
-
-> No questions needed — this is the compilation of all deliverables above.
+63. The RFP mentions GoHighLevel and a LinkedIn lead-gen program sold separately — do you want us to include the marketing-process layer in this engagement, or keep it strictly operational?
+64. If we include marketing workflow, that's a significant scope addition. Are you comfortable with that, or should we focus the PEC purely on the 2 VA roles and operational systems?
 
 ---
 
@@ -307,45 +218,48 @@ Walk through each deliverable. Explain what it is, why it matters, and confirm i
 ### What to Cover
 
 1. **Fiona's immediate actions:**
-   - Begin building the ICP strategy and targeting criteria
-   - Draft LinkedIn profile optimization recommendations
-   - Start outreach messaging sequence drafts
-   - Will share first round of drafts before the next call
+   - Build PM Reporting Cadence & Dashboard draft (Deliverable #1)
+   - Document Role #1 workflows based on today's findings
+   - Draft Role #2 definition based on the direction we chose today
+   - Share first drafts before the next call
 
-2. **What we need from Jeremy (action items):**
-   - Share access to or screenshots of: current LinkedIn profile, CRM (if any), any existing lead lists or investor databases
-   - Share any existing marketing materials: pitch decks, case studies, investor testimonials, website content
-   - Confirm the other marketing provider's scope (so we don't overlap)
-   - Share 3-5 examples of his "best-fit" investor clients (anonymized is fine — just the profile/persona)
-   - If available: any recordings of past webinars, podcast appearances, or presentations
+2. **What we need from Jeremy / COO:**
+   - COO to attend next call if they weren't at this one
+   - Share access or screenshots of: GoHighLevel, QuickBooks setup, any existing dashboards or templates
+   - Share list of all 13 PMs (names, contact info, which markets/properties they manage)
+   - Share current insurance and tax tracking documents (however they exist)
+   - Confirm full org chart / team roster with responsibilities
+   - Set up screen recordings (Loom/Scribe) for key workflows
 
 3. **Follow-up engineering call:**
-   - Schedule within 1 week to review ICP strategy + messaging drafts
-   - Offer Fiona's calendar link for scheduling
+   - Schedule within 1 week to review first drafts
+   - Offer Fiona's calendar link
 
 4. **Timeline overview:**
-   - Week 1: ICP Strategy + LinkedIn Profile Optimization Guide
-   - Week 2: Outreach Messaging Sequences + Campaign Workflow
-   - Week 3: Lead Management Process + KPI Dashboard + Roundtable Framework
-   - Week 4: Consolidated Playbook delivery + final review call
+   - Week 1: PM Reporting Cadence + Role #1 Workflows + Role #2 Definition
+   - Week 2: Role #1 VA Playbook + Role #2 Workflows + Communication Flow Map
+   - Week 3: Role #2 VA Playbook + Reporting Structure + Tool Guide + Refined JDs
+   - Week 4: VA sourcing begins (3 candidates per role)
+   - Week 5: Selected VAs enter training on client-specific docs
+   - Week 6: Onboarding and integration
 
 ### Closing
-> "You've built a strong product — now we're building the engine that puts it in front of the right people every single day. By the time we're done, you'll have a documented, repeatable system that generates qualified investor conversations on autopilot."
+> "You said it yourself — you've built a strong product and you're at the right timing window. What we're building now is the infrastructure that lets you scale confidently — knowing nothing falls through the cracks because every process is documented and every role is clear."
 
 ---
 
 ## Post-Call Checklist (For Fiona)
 
 - [ ] Save and label the recording
-- [ ] Update the Bedrock project file with all new information
-- [ ] Document the ICP decision (which audience first)
-- [ ] Document the first-touch offer decision (meeting, webinar, resource, or conversation)
-- [ ] Document the KPI targets Jeremy agreed to
-- [ ] Note any answers that contradicted the RFP assumptions
-- [ ] List all action items assigned to Jeremy
+- [ ] Update project file with all new information
+- [ ] **Get the COO's name and email**
+- [ ] Document the Role #2 decision
+- [ ] Document priority ranking (which bottleneck first)
+- [ ] Note any answers that contradicted RFP assumptions
+- [ ] List all action items assigned to Jeremy/COO
 - [ ] Schedule follow-up engineering call
-- [ ] Review Jeremy's LinkedIn profile and begin Deliverable #2 draft
-- [ ] Begin Deliverable #1: ICP Definition & Targeting Strategy
+- [ ] Confirm PEC scope: ops-only or include marketing layer
+- [ ] Begin Deliverable #1: PM Reporting Cadence & Dashboard
 
 ---
 

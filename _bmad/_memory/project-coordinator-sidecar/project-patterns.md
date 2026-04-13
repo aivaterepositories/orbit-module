@@ -49,7 +49,7 @@ When sending emails on Fiona's behalf:
 | Shelly Evans | *(TBD)* | Client — Broker at WePartner Commercial. Works with Nick Kavali. IPEC 2026-03-20. |
 | Haruna Oyola | haruna@rnrpropertysolutions.com | Client — COO at RNR Property Solutions. Property management & fix-and-flip. CST. Assigned via Scale Virtually Apr 2026. |
 | Willie Oyola | *(TBD)* | Client — Co-owner/Operator at RNR Property Solutions. Works with Haruna Oyola. |
-| Jeremy Watson | jeremy@bedrockinvestmentproperty.com | Client — Founding Partner/CEO at Bedrock Investment Property. Turnkey RE investment. VIP Influencer. EST. Assigned via Scale Virtually Apr 2026. PROCESS ONLY. |
+| Jeremy Watson | jeremy@bedrockinvestmentproperty.com | Client — Founding Partner/CEO at Bedrock Investment Property. Turnkey RE investment (hundreds of properties, 13 PMs, 9 states). VIP Influencer. EST. Assigned via Scale Virtually Apr 2026. PROCESS w/ MVA, Multi Role (2 VAs), $4,000 SUF. |
 
 ## Internal Aivate Projects
 
