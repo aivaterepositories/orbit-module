@@ -45,6 +45,10 @@ When sending emails on Fiona's behalf:
 | Dos Espina | espinajasvenzon@gmail.com | LA Elite Rentals — Manager on Duty. Reinstated 2026-02-26. Receives all VA follow-up tasks. |
 | Jesse (Jesylou Jopio) | *(TBD)* | Fiona's supervisor at Scale Virtually. Assigns clients to Fiona for process engineering. NOT part of Aivate. |
 | Brayden Wynn | *(bouncing — domain issue)* | Client at Collett. Assigned via Scale Virtually / Jesse. |
+| Nick Kavali | *(TBD)* | Client — Broker at WePartner Commercial. Commercial office leasing, Roswell GA. IPEC 2026-03-20. |
+| Shelly Evans | *(TBD)* | Client — Broker at WePartner Commercial. Works with Nick Kavali. IPEC 2026-03-20. |
+| Haruna Oyola | haruna@rnrpropertysolutions.com | Client — COO at RNR Property Solutions. Property management & fix-and-flip. CST. Assigned via Scale Virtually Apr 2026. |
+| Willie Oyola | *(TBD)* | Client — Co-owner/Operator at RNR Property Solutions. Works with Haruna Oyola. |
 
 ## Internal Aivate Projects
 
