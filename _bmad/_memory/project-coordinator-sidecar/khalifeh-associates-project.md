@@ -1,11 +1,11 @@
 # Khalifeh & Associates — Process Engineering (Scale Virtually)
 
-**Status:** PHASE 1 — Process Engineering (BD & Client Outreach)
+**Status:** ACTIVE — Fiona EMPLOYED by KFA (transitioned from Scale Virtually process engineering to direct hire)
 **Priority:** High
 **Company:** Khalifeh & Associates Inc.
-**Client Contact:** Jack Khalifeh (President)
-**Project Lead:** Fiona (PM / Process Engineer)
-**Source:** Scale Virtually — RFP received 2026-02-16
+**Key Contacts:** Jack Khalifeh (President), Brandon (Operations)
+**Fiona's Role:** Virtual Assistant / BDR / Marketing (employed by KFA)
+**Source:** Originally Scale Virtually RFP (2026-02-16) — Fiona took the role herself instead of sourcing a VA
 **PEC Date:** 2026-02-20
 **Follow-Up Engineering Call:** 2026-02-28
 
@@ -426,6 +426,8 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 
 **2026-02-28:** Follow-up engineering call with Jack and Brandon. Focus: Deliverable #1 — BD & Client Outreach Process. Key findings: No one currently doing outreach (all business has been referrals for 40 years), proposal summary spreadsheet is the primary prospect research tool, phone + email combo is the outreach approach, monthly follow-up cadence, goal is re-engagement not proposals, Salesforce being cancelled, RingCentral is phone system, Outlook for email. Jack wants VA with AEC/architecture industry experience. Jack & Brandon to provide first 20 client list. VA search approved to start in parallel. Next call: Wed March 4 at 12:00 PM PST. Deliverables created: BD Outreach Process doc, Outreach Tracker template, Company & Conversation Guide, Refined VA JD.
 
+**2026-04-21:** Nova built the full client outreach system based on April 16 Fathom call transcript (128 min). Extracted 13 contacts with relationship history, talking points, and context. Created 3 documents: Contact Tracker, Call Scripts & Templates (6 script versions + gatekeeper + voicemail + 3 email templates + SMS), Follow-Up Cadence (21-day initial sequence + HOT/WARM/COOL handling + daily routine + weekly reporting). System modeled after the Cavalli Evans/WePartner outreach system built for Nick Kavali. Ready for Fiona's review.
+
 **2026-02-19:** Project file created. IPEC presentation, deliverables (lean — $1,000 SUF), and risk assessment documented. Client's original JD added for reference. PEC/IPEC scheduled for 2026-02-20.
 
 ---
@@ -492,7 +494,28 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 ---
 
 **Created:** 2026-02-19
-**Last Updated:** 2026-02-28
-**Status:** PHASE 1 — Process Engineering (BD & Client Outreach) — Drafts complete, pending Jack review
-**Next Step:** Present deliverable drafts to Jack for review (Wed March 4, 12:00 PM PST)
+**Last Updated:** 2026-04-21
+**Status:** ACTIVE — Fiona employed by KFA. Priority tasks: LinkedIn content for Jack + Client outreach (BDR).
+**Fiona's Responsibilities at KFA:**
+1. Admin / ad hoc tasks
+2. Marketing — LinkedIn content for Jack, blog exploration (Fiona's idea, not yet pitched to Jack/Brandon)
+3. Client outreach — BDR role, re-engaging past/current clients
+4. Systems & workflows — building processes with Nova's support
+
+### Client Outreach System (Built 2026-04-21)
+| # | Document | File | Status |
+|---|----------|------|--------|
+| 1 | **Contact Tracker** — 13 contacts extracted from Apr 16 call | `khalifeh-outreach-contact-tracker.md` | READY |
+| 2 | **Call Scripts & Templates** — Warm reconnection, gatekeeper, voicemail, email, SMS | `khalifeh-outreach-call-scripts.md` | READY |
+| 3 | **Follow-Up Cadence** — Outreach sequence, lead classification, daily routine, weekly reporting | `khalifeh-outreach-follow-up-cadence.md` | READY |
+
+**Next Steps:**
+1. Fiona to review all 3 outreach docs and confirm accuracy
+2. Waiting on: RingCentral setup + KFA email (fiona@khalifehassociates.com) — then outreach can begin
+3. Waiting on: Brandon to provide remaining contact info for contacts missing phone/email
+4. Research needed: Julie Smith-Clemente, John Black (Rios), Chait & Company, Gary Partners — find contact details
+5. Jim Williams (BSB Design) — DO NOT contact until after April 28
+6. Jack to text Fiona his 2-3 preferred restaurant options for lunch meetings
+7. Paste Fathom transcript context into talking points (done — embedded in contact tracker)
+
 **Project Coordinator:** Nova
