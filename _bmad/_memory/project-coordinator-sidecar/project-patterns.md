@@ -50,6 +50,8 @@ When sending emails on Fiona's behalf:
 | Haruna Oyola | haruna@rnrpropertysolutions.com | Client — COO at RNR Property Solutions. Property management & fix-and-flip. CST. Assigned via Scale Virtually Apr 2026. |
 | Willie Oyola | *(TBD)* | Client — Co-owner/Operator at RNR Property Solutions. Works with Haruna Oyola. |
 | Jeremy Watson | jeremy@bedrockinvestmentproperty.com | Client — Founding Partner/CEO at Bedrock Investment Property. Turnkey RE investment (hundreds of properties, 13 PMs, 9 states). VIP Influencer. EST. Assigned via Scale Virtually Apr 2026. PROCESS w/ MVA, Multi Role (2 VAs), $4,000 SUF. |
+| Jack Khalifeh | jack@khalifehassociates.com | Employer — President of Khalifeh & Associates Inc. MEP Engineering Consulting, 40 yrs. PST. Fiona is employed directly by KFA (transitioned from Scale Virtually process engineering). |
+| Brandon | *(TBD)* | Employer — Operations at Khalifeh & Associates Inc. Works with Jack. |
 
 ## Internal Aivate Projects
 

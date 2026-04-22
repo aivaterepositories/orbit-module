@@ -17,36 +17,27 @@ This is your pay structure. Read it once to understand how you get paid, then re
 ### The Basics
 
 - **Base salary:** None. This is 100% commission from Day 1.
-- **Commission rate:** 15-20% of closed deal revenue (see tiered structure below)
+- **Commission rate:** 10-15% of closed deal revenue (see tiered structure below)
 - **No cap on earnings.** The more you close, the more you make.
 - **You are paid on revenue you bring in.** Every dollar the client pays, you get your percentage.
 
-### Commission Tiers by Service Type
-
-| Service Category | Commission Rate | Why |
-|---|---|---|
-| GHL Automations (per-workflow) | 20% | Smaller deals, higher volume |
-| GHL Automations (retainer) | 15% on first 3 months, 10% ongoing | Recurring revenue, lower effort after close |
-| GHL All-In Setup | 18% | Mid-size project deals |
-| Custom CRM / Web Application | 15% | Larger deals, higher revenue per deal |
-| Shopify / E-Commerce | 18% | Mid-size deals |
-| n8n Workflow Automation | 20% | Smaller deals, higher volume |
-| Landing Pages / Web Dev | 20% | Smaller deals, quick closes |
-| Retainer / Monthly Services | 15% first 3 months, 10% ongoing | Ongoing revenue stream |
-| Bundles | 18% | Blended rate for multi-service deals |
-
-### Commission on Deal Size Tiers
-
-For larger deals, the commission rate may adjust:
+### Commission Tiers by Deal Size
 
 | Deal Size (Total Revenue) | Commission Rate |
 |---|---|
-| Up to $5,000 | 20% |
-| $5,001 - $15,000 | 18% |
-| $15,001 - $30,000 | 15% |
+| Up to $5,000 | 10% |
+| $5,001 - $15,000 | 12% |
+| $15,001 - $30,000 | 13% |
 | $30,001+ | 15% (negotiate with Fiona for specific large deals) |
 
-**Which rate applies?** The higher of the two (service type rate vs. deal size rate). We want to incentivize you to close, not penalize you on bigger deals.
+Bigger deals earn a higher commission rate — this incentivizes you to pursue larger engagements and close enterprise-level work.
+
+### Retainer / Recurring Revenue
+
+| Period | Commission Rate |
+|---|---|
+| First 3 months | Same rate as deal size tier above |
+| Month 4+ | 8% ongoing (you continue earning as long as the client stays) |
 
 ---
 
@@ -60,9 +51,9 @@ For larger deals, the commission rate may adjust:
 - Your commission on the completion payment is paid within 7 days of receiving it.
 
 **Example:**
-- You close a $5,000 custom CRM deal (15% commission = $750 total)
-- Client pays $2,500 upfront → You receive $375 within 7 days
-- Client pays $2,500 on completion → You receive $375 within 7 days
+- You close a $5,000 custom CRM deal (10% commission = $500 total)
+- Client pays $2,500 upfront → You receive $250 within 7 days
+- Client pays $2,500 on completion → You receive $250 within 7 days
 
 ### Retainer / Monthly Services
 
@@ -71,10 +62,10 @@ For larger deals, the commission rate may adjust:
 - Month 4+: 10% commission rate (you continue earning as long as the client stays)
 
 **Example:**
-- You close a $2,000/month GHL retainer
-- Month 1-3: You earn $300/month (15% x $2,000)
-- Month 4+: You earn $200/month (10% x $2,000)
-- If the client stays 12 months: Total commission = $2,700
+- You close a $2,000/month GHL retainer (deal value under $5k tier = 10%)
+- Month 1-3: You earn $200/month (10% x $2,000)
+- Month 4+: You earn $160/month (8% x $2,000)
+- If the client stays 12 months: Total commission = $2,040
 
 ### Payment Method
 
@@ -117,8 +108,8 @@ This protects both sides. You should be closing clients who genuinely need our s
 | Proposals sent | 3 |
 | Deals closed | 1 |
 | Average deal size | $2,000 |
-| Monthly commission | $360-$400 |
-| **Quarterly total** | **$1,080-$1,200** |
+| Monthly commission | $200 |
+| **Quarterly total** | **$600** |
 
 ### Scenario 2: Steady State (Months 4-6)
 
@@ -130,9 +121,9 @@ This protects both sides. You should be closing clients who genuinely need our s
 | Proposals sent | 6 |
 | Deals closed | 2-3 |
 | Average deal size | $3,000 |
-| Monthly commission (new deals) | $1,080-$1,620 |
-| Monthly commission (retainer residuals) | $200-$600 |
-| **Monthly total** | **$1,280-$2,220** |
+| Monthly commission (new deals) | $600-$900 |
+| Monthly commission (retainer residuals) | $160-$480 |
+| **Monthly total** | **$760-$1,380** |
 
 ### Scenario 3: Full Throttle (Months 7+)
 
@@ -144,9 +135,9 @@ This protects both sides. You should be closing clients who genuinely need our s
 | Proposals sent | 8 |
 | Deals closed | 3-5 |
 | Average deal size | $4,000 |
-| Monthly commission (new deals) | $2,160-$3,600 |
-| Monthly commission (retainer residuals) | $600-$1,500 |
-| **Monthly total** | **$2,760-$5,100** |
+| Monthly commission (new deals) | $1,200-$2,000 |
+| Monthly commission (retainer residuals) | $480-$1,200 |
+| **Monthly total** | **$1,680-$3,200** |
 
 ### Scenario 4: Top Performer
 
@@ -156,9 +147,9 @@ This protects both sides. You should be closing clients who genuinely need our s
 |---|---|
 | Deals closed | 4-6 |
 | Average deal size | $6,000 |
-| Monthly commission (new deals) | $3,600-$6,480 |
-| Monthly commission (retainer residuals) | $1,500-$3,000 |
-| **Monthly total** | **$5,100-$9,480** |
+| Monthly commission (new deals) | $2,880-$4,320 |
+| Monthly commission (retainer residuals) | $1,200-$2,400 |
+| **Monthly total** | **$4,080-$6,720** |
 
 ---
 
@@ -211,9 +202,9 @@ These are optional bonuses that kick in when you exceed targets. They're in addi
 | Item | Details |
 |---|---|
 | **Base salary** | $0 |
-| **Standard commission** | 15-20% depending on service and deal size |
+| **Standard commission** | 10-15% depending on deal size |
 | **When paid** | Within 7 days of receiving client payment |
-| **Retainer commission** | 15% first 3 months, 10% ongoing |
+| **Retainer commission** | Deal size tier rate for first 3 months, 8% ongoing |
 | **Clawback period** | 30 days from first client payment |
 | **Discount authority** | Up to 10% without approval |
 | **Payment method** | Bank transfer, PayPal, or Wise |
@@ -227,6 +218,7 @@ These are optional bonuses that kick in when you exceed targets. They're in addi
 | Version | Date | Changes |
 |---|---|---|
 | 1.0 | April 2026 | Initial compensation plan created |
+| 1.1 | April 2026 | Commission restructured: 10% (≤$5k), 12-15% (>$5k) by deal size. Retainer ongoing rate reduced to 8%. |
 
 ---
 

@@ -64,6 +64,8 @@ Fiona has already created for this client:
 |----------|------|--------|
 | **Pitch Deck Outline** | `la-elite-rentals-pitch-deck-outline.md` | Ready for pitch |
 | **Marky's Build Scope** | `la-elite-rentals-marky-scope.md` | Ready for build |
+| **Phase 1 Client Doc** | `la-elite-rentals-phase1-client-doc.md` | Delivered |
+| **Phase 3 Client Doc** | `la-elite-rentals-phase3-client-doc.md` | ROUGH DRAFT — Pending Fiona review |
 
 **Automations Identified:** 30 opportunities across 4 phases
 **Workflows Scoped for Build:** 17 (with full specs, triggers, and copy)
@@ -431,6 +433,8 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 
 ## Progress Log
 
+**2026-04-23:** Phase 3 rough draft created (`la-elite-rentals-phase3-client-doc.md`). Covers 4 workflows: Late Payment Escalation (WF9), Weekly Renter Check-In (WF10), Referral Request at 30 days (WF11), Renewal/Extension Reminder (WF12). Draft prepared for Fiona's review ahead of Kel meeting. 5 questions identified for Kel: vehicle recovery process, rental end date tracking, check-in frequency preference, referral incentive, payment confirmation process.
+
 **2026-03-13:** HQ Rental access acquired — WF3 (Payment Due Reminders) now unblocked. Phase 1 fully unblocked. Phase 2 workflow drafts created (WF5-WF8: 3-Day Urgency Follow-Up, Intake Form Reminder, Nurturing Drip, Waitlist Reactivation). Rough drafts prepared in same format as Phase 1 workflows, committed to GitHub, and shared via Google Doc. Emailed Marky to review for risks/blockers (do NOT start build). Emailed Kel to propose Phase 2 kickoff call — Monday March 16, 2:00 PM Pacific. Marky to join for technical questions. Awaiting Kel's confirmation.
 
 **2026-03-07:** Nova sent second follow-up email to Kel (CC: Dos, solutions@aivate.net) re: HQ Rental access still needed. Reminded Phase 1 complete except WF3 (Payment Due Reminders) which remains blocked. Now entering Phase 2 — requested credentials/invite to close out Phase 1.
@@ -464,8 +468,8 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-03-13
-**Status:** ACTIVE — PHASE 2 STARTING (Phase 1 unblocked with HQ Rental access)
-**Current Sprint:** Phase 2: Lead Nurturing (Mar 13+)
-**Next Step:** Fiona review Phase 2 workflow drafts → Finalize WF3 with HQ Rental → Begin Phase 2 build
+**Last Updated:** 2026-04-23
+**Status:** ACTIVE — PHASE 3 DRAFTING (Meeting with Kel upcoming)
+**Current Sprint:** Phase 3: Retention (Apr 2026)
+**Next Step:** Fiona review Phase 3 rough draft → Present to Kel in meeting → Address 5 questions → Begin Phase 3 build
 **Project Coordinator:** Nova
