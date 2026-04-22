@@ -103,7 +103,7 @@
 
 | Task | Notes |
 |------|-------|
-| **🔴 Login/Auth System** | **NEW — HIGH PRIORITY.** Implement user login logic. Credentials provided by Aivate (no self-registration). Must include permission/access levels (Admin/Manager/Crew). Aivate controls user provisioning. |
+| **🔴 Login/Auth System** | **HIGH PRIORITY — ✅ RBAC SPEC APPROVED BY FIONA (Apr 23, 2026).** See RBAC Decision Record below. Ready for Cob to implement. |
 | **🔴 Mobile Compatibility Audit** | **NEW — HIGH PRIORITY.** Audit and fix mobile responsiveness across all CRM views. Users (especially crew) will be on mobile in the field. Test all key flows on mobile devices. |
 | **Task #5 — Crew Portal Dashboard** | Hours, pay calc, open/completed WO counts per crew member |
 | **Task #8 — WO Calendar** | Backend queries for calendar view |
@@ -116,6 +116,34 @@
 | **Task Automation Engine** | Auto-tasks triggered by job events |
 
 **🔴 BLOCKER:** SF Permit fields blocked — need Wayne to provide iPermit link + dig alert field names from Salesforce.
+
+---
+
+## RBAC Decision Record — Approved April 23, 2026
+
+**Approved by:** Fiona
+**Status:** Ready for Cob to implement
+
+### Three-Tier Access Split
+
+| Tier | Login Method | Pages | Permissions |
+|------|-------------|-------|-------------|
+| **Admin** | Email + password (provisioned by Aivate) | Dashboard, Jobs, Job Detail, WO Detail, WO Calendar, WO Schedule, Materials Report, People Management, Profile | Full access — SOV, CO approval, billing handoff, user management, edit job details |
+| **Manager** | Email + password (provisioned by Aivate) | Dashboard, Jobs, Job Detail, WO Detail, WO Calendar, WO Schedule, Materials Report, People Management, Profile | View dashboard metrics, view people management, **edit job details**, create/schedule WOs, assign crews — **NO** CO approval, **NO** billing handoff, **NO** user management |
+| **Crew** | Employee ID as username AND password (e.g., JORGEAB1) | Crew Dashboard, Crew Work Orders, Profile | View assigned WOs only, clock in/out, mark tasks complete, upload photos — mobile-first |
+
+### Key Decisions
+
+1. **Page-level split confirmed** — as mapped above
+2. **Credential provisioning** — Aivate controls all user creation for pilot (no self-registration). TPS team to be onboarded for user management post-pilot.
+3. **Crew login** — Employee ID serves as both username and password
+4. **Manager permissions clarified:**
+   - Managers **CAN** see the Dashboard
+   - Managers **CAN** see People Management
+   - Managers **CAN** edit job details
+   - Managers **CANNOT** approve change orders
+   - Managers **CANNOT** manage billing/handoff
+   - Managers **CANNOT** create/manage user accounts
 
 ---
 
