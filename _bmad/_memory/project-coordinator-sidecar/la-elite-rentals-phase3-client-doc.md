@@ -2,8 +2,7 @@
 
 **Prepared for:** Kel King
 **Prepared by:** Fiona (Aivate)
-**Drafted by:** Nova (2026-04-23)
-**Status:** ROUGH DRAFT — Pending Fiona review + Kel approval
+**Updated:** May 7, 2026
 
 ---
 
@@ -198,8 +197,6 @@ Three days before a renter's current rental period ends, they get a reminder ask
 | 11 | **Referral Request (30-Day)** | One-time referral request at 30 days, intake form link included, referral task routing | Marky | Not Started |
 | 12 | **Renewal/Extension Reminder** | 2-stage renewal reminder (3 days + 1 day before end), response-based task routing | Marky | Not Started |
 
----
-
 ## Phase 3 Pre-Build Checklist
 
 - [ ] Confirm WF3 (Payment Due Reminders) is fully live and `Payment Overdue` tag is being applied correctly (WF9 depends on this)
@@ -212,27 +209,10 @@ Three days before a renter's current rental period ends, they get a reminder ask
 - [ ] Review WF10 frequency — weekly check-ins: Kel comfortable with this cadence, or prefer bi-weekly?
 - [ ] Marky to confirm GHL can track "days since entering stage" for WF10 and WF11 triggers
 
----
-
 ## What We Need From Kel for Phase 3
 
 1. **Vehicle recovery process** — After the 48-hour overdue escalation, what's the next step? Do you want a specific message sent, or does the team take over manually from there? (This helps us decide whether to extend WF9 to a 72hr+ stage.)
-
 2. **Rental end date tracking** — Where is the rental end date currently tracked? GHL custom field, HQ Rental, or the Google Sheet? We need to know so WF12 triggers correctly.
-
 3. **Check-in frequency** — Are you comfortable with weekly check-in texts to renters, or would you prefer every two weeks? (We can adjust WF10.)
-
 4. **Referral incentive** — Do you want to offer any incentive for referrals (e.g., "$50 off your next week for every driver you refer")? If so, we'll update the WF11 copy. If not, the current message works great as-is.
-
 5. **Payment confirmation process** — When a renter sends payment, how does the team currently mark it as received? Manual tag in GHL? HQ Rental update? This affects how WF9 knows to stop escalating.
-
----
-
-## How Phase 3 Connects to the Other Phases
-
-| Connection | Detail |
-|------------|--------|
-| **WF3 → WF9** | Payment Due Reminders (Phase 1) feeds directly into Late Payment Escalation (Phase 3). If the 3-stage reminder doesn't get a payment, the escalation sequence picks up automatically. |
-| **WF4 → WF10** | Post-Pickup Welcome Kit (Phase 1) fires when someone becomes a renter. Weekly Check-In starts 7 days after that same stage change. |
-| **WF10 → WF11** | Weekly Check-Ins build the relationship. At 30 days, the Referral Request fires — by then the renter has received ~4 check-ins and feels taken care of. |
-| **WF12 → WF3** | If a renter extends via the Renewal Reminder, they re-enter the Payment Due Reminder cycle for the next period. |
