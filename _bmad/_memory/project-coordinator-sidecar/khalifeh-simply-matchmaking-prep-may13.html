@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simply Matchmaking Prep — Fiona | KFA</title>
+<style>
+  :root {
+    --navy: #1a2744;
+    --slate: #334155;
+    --gold: #d4a843;
+    --gold-light: #f5e6c0;
+    --blue: #2563eb;
+    --blue-light: #dbeafe;
+    --green: #059669;
+    --green-light: #d1fae5;
+    --red: #dc2626;
+    --red-light: #fee2e2;
+    --purple: #7c3aed;
+    --purple-light: #ede9fe;
+    --orange: #ea580c;
+    --orange-light: #ffedd5;
+    --teal: #0d9488;
+    --teal-light: #ccfbf1;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--navy);
+    color: white;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  }
+  .topbar h1 { font-size: 16px; font-weight: 600; letter-spacing: 0.5px; }
+  .topbar .date { font-size: 13px; color: var(--gold); font-weight: 500; }
+
+  /* ── QUICK NAV ── */
+  .quicknav {
+    background: white;
+    border-bottom: 2px solid var(--gold);
+    padding: 10px 24px;
+    position: sticky;
+    top: 48px;
+    z-index: 99;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .quicknav a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .quicknav a:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .nav-jacobs { background: var(--blue-light); color: var(--blue); }
+  .nav-marines { background: var(--green-light); color: var(--green); }
+  .nav-usace { background: var(--red-light); color: var(--red); }
+  .nav-afrl { background: var(--purple-light); color: var(--purple); }
+  .nav-bae { background: var(--gold-light); color: #92700c; }
+  .nav-pitch { background: var(--navy); color: white; }
+  .nav-playbook { background: var(--slate); color: white; }
+  .nav-followup { background: var(--teal-light); color: var(--teal); }
+
+  /* ── CONTAINERS ── */
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 20px 80px; }
+
+  /* ── SCHEDULE STRIP ── */
+  .schedule-strip {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 28px;
+    color: white;
+  }
+  .schedule-strip h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 16px; }
+  .schedule-grid { display: flex; flex-direction: column; gap: 8px; }
+  .sched-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    font-size: 14px;
+  }
+  .sched-row:hover { background: rgba(255,255,255,0.1); }
+  .sched-time { font-weight: 700; color: var(--gold); font-size: 15px; font-variant-numeric: tabular-nums; }
+  .sched-name { font-weight: 600; }
+  .sched-org { color: rgba(255,255,255,0.65); font-size: 13px; }
+  .sched-row a { color: var(--gold); text-decoration: none; font-size: 12px; }
+  .sched-row a:hover { text-decoration: underline; }
+  .priority-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .p1 { background: #fbbf24; color: #78350f; }
+  .p2 { background: #f87171; color: #fff; }
+  .p3 { background: #60a5fa; color: #fff; }
+  .p4 { background: #34d399; color: #064e3b; }
+  .p5 { background: #a78bfa; color: #fff; }
+
+  /* ── SECTION CARDS ── */
+  .section { margin-bottom: 28px; }
+  .section-card {
+    background: var(--card);
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  .section-header {
+    padding: 20px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    transition: background 0.2s;
+  }
+  .section-header:hover { filter: brightness(0.97); }
+  .section-header h2 { font-size: 18px; font-weight: 700; }
+  .section-header .subtitle { font-size: 13px; margin-top: 2px; }
+  .section-header .chevron {
+    font-size: 20px;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+  .section-card.collapsed .section-body { display: none; }
+  .section-card.collapsed .chevron { transform: rotate(-90deg); }
+  .section-body { padding: 0 24px 24px; }
+
+  /* ── MEETING CARDS — COLOR CODED ── */
+  .meeting-jacobs .section-header { background: var(--blue-light); border-left: 5px solid var(--blue); }
+  .meeting-jacobs .section-header h2 { color: var(--blue); }
+  .meeting-marines .section-header { background: var(--green-light); border-left: 5px solid var(--green); }
+  .meeting-marines .section-header h2 { color: var(--green); }
+  .meeting-usace .section-header { background: var(--red-light); border-left: 5px solid var(--red); }
+  .meeting-usace .section-header h2 { color: var(--red); }
+  .meeting-afrl .section-header { background: var(--purple-light); border-left: 5px solid var(--purple); }
+  .meeting-afrl .section-header h2 { color: var(--purple); }
+  .meeting-bae .section-header { background: var(--gold-light); border-left: 5px solid var(--gold); }
+  .meeting-bae .section-header h2 { color: #92700c; }
+
+  .meeting-pitch .section-header { background: linear-gradient(135deg, var(--navy), #2d3f63); border-left: 5px solid var(--gold); }
+  .meeting-pitch .section-header h2 { color: white; }
+  .meeting-pitch .section-header .subtitle { color: var(--gold); }
+  .meeting-pitch .section-header .chevron { color: white; }
+
+  .meeting-playbook .section-header { background: linear-gradient(135deg, var(--slate), #475569); border-left: 5px solid var(--gold); }
+  .meeting-playbook .section-header h2 { color: white; }
+  .meeting-playbook .section-header .subtitle { color: rgba(255,255,255,0.7); }
+  .meeting-playbook .section-header .chevron { color: white; }
+
+  .meeting-followup .section-header { background: var(--teal-light); border-left: 5px solid var(--teal); }
+  .meeting-followup .section-header h2 { color: var(--teal); }
+
+  .meeting-checklist .section-header { background: var(--orange-light); border-left: 5px solid var(--orange); }
+  .meeting-checklist .section-header h2 { color: var(--orange); }
+
+  .meeting-facts .section-header { background: #f1f5f9; border-left: 5px solid var(--slate); }
+  .meeting-facts .section-header h2 { color: var(--slate); }
+
+  /* ── CONTENT STYLES ── */
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: var(--muted); margin-top: 20px; margin-bottom: 6px; }
+  .label:first-child { margin-top: 0; }
+
+  .opener {
+    background: #fefce8;
+    border-left: 4px solid var(--gold);
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 8px 0 16px;
+    color: #713f12;
+  }
+
+  .question-list { list-style: none; counter-reset: q; }
+  .question-list li {
+    counter-increment: q;
+    padding: 10px 14px 10px 44px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--border);
+  }
+  .question-list li:last-child { border-bottom: none; }
+  .question-list li::before {
+    content: "Q" counter(q);
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    background: var(--slate);
+    padding: 2px 7px;
+    border-radius: 6px;
+  }
+
+  .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .project-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: var(--slate);
+    font-weight: 500;
+    border: 1px solid var(--border);
+  }
+
+  .success-box {
+    background: var(--green-light);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #064e3b;
+    margin-top: 12px;
+  }
+  .success-box strong { color: var(--green); }
+
+  .context-box {
+    background: #fef3c7;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #92400e;
+    margin: 8px 0;
+  }
+
+  .who-box {
+    background: #f1f5f9;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .who-box strong { color: var(--navy); }
+
+  /* ── PITCH BOX ── */
+  .pitch-box {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+    padding: 24px;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 12px 0;
+    position: relative;
+  }
+  .pitch-box::before {
+    content: open-quote;
+    font-size: 60px;
+    color: var(--gold);
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    line-height: 1;
+    font-family: Georgia, serif;
+  }
+  .pitch-box p { padding-left: 40px; }
+  .pitch-short {
+    background: #f8fafc;
+    border: 2px dashed var(--border);
+    padding: 18px 24px;
+    border-radius: 14px;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 12px 0;
+    color: var(--slate);
+  }
+
+  /* ── PLAYBOOK TIMELINE ── */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--gold), var(--blue), var(--green), var(--purple), var(--teal));
+    border-radius: 3px;
+  }
+  .tl-item { position: relative; margin-bottom: 24px; }
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    background: white;
+  }
+  .tl-item:nth-child(2)::before { border-color: var(--blue); }
+  .tl-item:nth-child(3)::before { border-color: var(--green); }
+  .tl-item:nth-child(4)::before { border-color: var(--purple); }
+  .tl-item:nth-child(5)::before { border-color: var(--teal); }
+  .tl-item:nth-child(6)::before { border-color: var(--navy); }
+  .tl-time { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .tl-title { font-size: 16px; font-weight: 700; color: var(--navy); margin: 4px 0; }
+  .tl-goal { font-size: 13px; color: var(--muted); font-style: italic; margin-bottom: 8px; }
+  .tl-content { font-size: 14px; line-height: 1.7; }
+  .tl-content ul { padding-left: 18px; margin-top: 6px; }
+  .tl-content li { margin-bottom: 6px; }
+  .tl-script {
+    background: #fffbeb;
+    border-left: 3px solid var(--gold);
+    padding: 10px 14px;
+    margin: 8px 0;
+    font-style: italic;
+    font-size: 14px;
+    border-radius: 0 8px 8px 0;
+    color: #713f12;
+  }
+
+  /* ── CHECKLIST ── */
+  .checklist { list-style: none; }
+  .checklist li {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check-box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .check-box.checked { background: var(--green); border-color: var(--green); }
+  .check-box.checked::after { content: '\2713'; color: white; font-size: 13px; font-weight: 700; }
+  .checklist li.done { text-decoration: line-through; color: var(--muted); }
+
+  /* ── FACTS TABLE ── */
+  .facts-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .facts-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .facts-table td:first-child { font-weight: 700; color: var(--navy); white-space: nowrap; width: 140px; }
+
+  /* ── EMAIL TEMPLATE ── */
+  .email-template {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 12px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .email-subject { font-weight: 700; color: var(--navy); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+  /* ── MINDSET ── */
+  .mindset-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .mindset-card {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 16px;
+    border-left: 4px solid var(--gold);
+  }
+  .mindset-card .mc-title { font-weight: 700; font-size: 14px; color: var(--navy); margin-bottom: 4px; }
+  .mindset-card .mc-body { font-size: 13px; color: var(--muted); }
+
+  /* ── PREQUALIFY TABLE ── */
+  .pq-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .pq-table th { text-align: left; padding: 10px 12px; background: var(--navy); color: white; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+  .pq-table th:first-child { border-radius: 8px 0 0 0; }
+  .pq-table th:last-child { border-radius: 0 8px 0 0; }
+  .pq-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .pq-table tr:hover { background: #f8fafc; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .mindset-grid { grid-template-columns: 1fr; }
+    .sched-row { grid-template-columns: 70px 1fr; }
+    .sched-org { grid-column: 1 / -1; }
+    .quicknav { padding: 8px 12px; }
+    .quicknav a { font-size: 11px; padding: 5px 10px; }
+  }
+
+  @media print {
+    .topbar, .quicknav { position: relative; }
+    .section-card.collapsed .section-body { display: block !important; }
+    .section-card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ TOP BAR ═══ -->
+<div class="topbar">
+  <h1>SIMPLY MATCHMAKING | FIONA'S PREP GUIDE</h1>
+  <span class="date">Wed, May 13, 2026 &bull; 1:00 – 4:00 PM ET</span>
+</div>
+
+<!-- ═══ QUICK NAV ═══ -->
+<div class="quicknav">
+  <a href="#pitch" class="nav-pitch">Elevator Pitch</a>
+  <a href="#playbook" class="nav-playbook">15-Min Playbook</a>
+  <a href="#jacobs" class="nav-jacobs">1:15 Jacobs</a>
+  <a href="#marines" class="nav-marines">1:30 Marines</a>
+  <a href="#usace" class="nav-usace">1:45 USACE</a>
+  <a href="#afrl" class="nav-afrl">2:00 AFRL</a>
+  <a href="#bae" class="nav-bae">2:30 BAE</a>
+  <a href="#followup" class="nav-followup">Follow-Up</a>
+</div>
+
+<div class="container">
+
+<!-- ═══ SCHEDULE ═══ -->
+<div class="schedule-strip">
+  <h2>Your Schedule</h2>
+  <div class="schedule-grid">
+    <div class="sched-row">
+      <span class="sched-time">1:15 PM</span>
+      <span><span class="sched-name">Gretchen Hursh</span> <span class="priority-badge p3">#3</span></span>
+      <span class="sched-org">Jacobs &bull; <a href="https://teams.microsoft.com/meet/260976917875060?p=AyLM3RS6yEf4MuFd19" target="_blank">Join Teams</a></span>
+    </div>
+    <div class="sched-row">
+      <span class="sched-time">1:30 PM</span>
+      <span><span class="sched-name">Marisa Perez</span> <span class="priority-badge p4">#4</span></span>
+      <span class="sched-org">PAE Marine Corps &bull; <a href="https://meetings.uswcc.org/?m=16027001" target="_blank">Join Chime</a> &bull; 855-349-1279 / 16027001</span>
+    </div>
+    <div class="sched-row">
+      <span class="sched-time">1:45 PM</span>
+      <span><span class="sched-name">Michael Stearns</span> <span class="priority-badge p2">#2</span></span>
+      <span class="sched-org">U.S. Army Corps of Engineers &bull; <a href="https://dod.teams.microsoft.us/l/meetup-join/19%3adod%3ameeting_ab7b0b1397534586b0a2d73f5d8b63bf%40thread.v2/0?context=%7b%22Tid%22%3a%22fc4d76ba-f17c-4c50-b9a7-8f3163d27582%22%2c%22Oid%22%3a%22bb525184-11b0-445a-ae8a-1f4d102e331c%22%7d" target="_blank">Join DoD Teams</a></span>
+    </div>
+    <div class="sched-row">
+      <span class="sched-time">2:00 PM</span>
+      <span><span class="sched-name">Lisa Gallion</span> <span class="priority-badge p5">#5</span></span>
+      <span class="sched-org">Air Force Research Labs &bull; <a href="https://meetings.uswcc.org/?m=20029001" target="_blank">Join Chime</a> &bull; 855-349-1279 / 20029001</span>
+    </div>
+    <div class="sched-row" style="background: rgba(212,168,67,0.15); border: 1px solid rgba(212,168,67,0.3);">
+      <span class="sched-time">2:30 PM</span>
+      <span><span class="sched-name">Katelyn Russell</span> <span class="priority-badge p1">#1 TOP</span></span>
+      <span class="sched-org">BAE Systems &bull; <a href="https://gov.teams.microsoft.us/l/meetup-join/19%3agcch%3ameeting_5b9aeaf1efd8441ca088dec87ca842e8%40thread.v2/0?context=%7b%22Tid%22%3a%2203b86c3a-8954-4d19-9522-e464fe9f22ce%22%2c%22Oid%22%3a%2249f2c6c4-96d6-41e0-9bd9-799e6bcd20b0%22%7d" target="_blank">Join GovCloud Teams</a> &bull; ID: 992 622 808 813 / uG2yn3w7</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ELEVATOR PITCH ═══ -->
+<div class="section" id="pitch">
+  <div class="section-card meeting-pitch">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>Your Elevator Pitch</h2>
+        <div class="subtitle">Memorize this. Say it like you're talking to a friend.</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="label">FULL VERSION (30 seconds)</div>
+      <div class="pitch-box">
+        <p>I'm Fiona, with Khalifeh & Associates out of Los Angeles. We're an MEP engineering firm &mdash; mechanical, electrical, plumbing, and fire protection design &mdash; and we've been at it for almost 40 years. We're licensed in five states. We design building systems for schools, fire stations, universities, government facilities &mdash; basically everything except hospitals. We've completed over 15 LEED Platinum projects, and our designs consistently exceed energy code requirements by 25 to 60 percent. We've worked with firms like Jacobs and AECOM on peer review for post office and municipal projects. Jack Khalifeh, our principal engineer, oversees every project personally. We're a quality-first firm &mdash; our designs mean fewer change orders, which means lower costs during construction. We're looking to bring that experience into the federal space.</p>
+      </div>
+      <div class="label">SHORT VERSION (15 seconds &mdash; when you need to squeeze it in)</div>
+      <div class="pitch-short">
+        Khalifeh & Associates &mdash; 40-year MEP engineering firm in LA, licensed in five states. We do all building systems design except hospitals. Schools, fire stations, universities, government facilities. Fifteen-plus LEED Platinum projects. We've peer-reviewed with Jacobs and AECOM. Quality work, fewer change orders &mdash; that's what we're known for.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 15-MIN PLAYBOOK ═══ -->
+<div class="section" id="playbook">
+  <div class="section-card meeting-playbook">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>The 15-Minute Playbook</h2>
+        <div class="subtitle">Your minute-by-minute game plan for every meeting</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">0:00 &ndash; 1:30</div>
+          <div class="tl-title">The Warm Open</div>
+          <div class="tl-goal">Be human. Break the screen barrier.</div>
+          <div class="tl-content">
+            <div class="tl-script">"Hi [Name]! I've been looking forward to this one. Speed dating for government contracts &mdash; who knew this would be my Wednesday afternoon?"</div>
+            <div class="tl-script">"Hi! I'm Fiona from Khalifeh & Associates. These back-to-back meetings can feel like a marathon, so I'll keep it fun."</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">1:30 &ndash; 4:00</div>
+          <div class="tl-title">Let Them Go First</div>
+          <div class="tl-goal">Show respect. People love talking about what they do.</div>
+          <div class="tl-content">
+            <div class="tl-script">"Before I jump in &mdash; I'd love to hear about your role and what you're focused on right now. What's keeping you busy?"</div>
+            <strong style="font-size:13px;">Listen for:</strong>
+            <ul>
+              <li>Types of projects or contracts they manage</li>
+              <li>Facility design, construction, or engineering mentions</li>
+              <li>Small business goals or subcontracting needs</li>
+              <li>Upcoming projects or pain points</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">4:00 &ndash; 6:00</div>
+          <div class="tl-title">Your Intro (Tailored)</div>
+          <div class="tl-goal">Deliver the pitch, but weave in what they just told you.</div>
+          <div class="tl-content">
+            <ul>
+              <li>If they mentioned facilities: <em>"That's exactly our lane."</em></li>
+              <li>If they mentioned SB goals: <em>"We're a small business MEP firm, so that's music to our ears."</em></li>
+              <li>If they mentioned a project type: <em>"We've done exactly that &mdash; [reference KFA project]."</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">6:00 &ndash; 10:00</div>
+          <div class="tl-title">Discovery &mdash; Pre-Qualify Them</div>
+          <div class="tl-goal">Find out if there's a real opportunity.</div>
+          <div class="tl-content">
+            <strong style="font-size:13px;">The Three Big Questions:</strong>
+            <ol style="margin-top:6px;">
+              <li>"What does it take for a firm like ours to get into your network / vendor database?"</li>
+              <li>"What types of MEP work do you contract out &mdash; and is there anything on the horizon?"</li>
+              <li>"Is there a registration portal or specific process we should go through?"</li>
+            </ol>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">10:00 &ndash; 13:00</div>
+          <div class="tl-title">The Ask</div>
+          <div class="tl-goal">Plant the seed for a follow-up with Jack.</div>
+          <div class="tl-content">
+            <div class="tl-script">"I'd love to continue this beyond today's speed round. Our principal, Jack Khalifeh, has 40 years in this business and would love to connect. Would you be open to a longer call &mdash; or even a lunch if you're ever in the LA area?"</div>
+            <ul>
+              <li><strong>Very interested:</strong> Offer to have Jack reach out directly</li>
+              <li><strong>Moderate:</strong> Offer to send the KFA profile</li>
+              <li><strong>Warm but noncommittal:</strong> Ask for email, send follow-up</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">13:00 &ndash; 15:00</div>
+          <div class="tl-title">Exchange Info + Warm Exit</div>
+          <div class="tl-goal">Get their contact. Leave them smiling.</div>
+          <div class="tl-content">
+            <div class="tl-script">"What's the best email to send our profile to?"</div>
+            <div class="tl-script">"This was great &mdash; I'm glad they matched us up. Enjoy the rest of your speed dates!"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MEETING 1: JACOBS ═══ -->
+<div class="section" id="jacobs">
+  <div class="section-card meeting-jacobs">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>1:15 PM &mdash; Gretchen Hursh | Jacobs</h2>
+        <div class="subtitle" style="color:var(--blue);">Priority #3 &bull; EXISTING RELATIONSHIP &bull; Procurement Leader</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="who-box">
+        <strong>Who she is:</strong> Procurement Leader at Jacobs, strategic sourcing & supplier relationship management. Based in Colorado Springs, CO.<br>
+        <strong>Why it matters:</strong> KFA has ALREADY worked with Jacobs &mdash; they peer-reviewed your USPS post office MEP work. This is a warm connection.
+      </div>
+
+      <div class="label">YOUR OPENING LINE</div>
+      <div class="opener">
+        "Gretchen, this is actually exciting for me because we've already worked with Jacobs. Your team peer-reviewed our MEP design work on post office projects for the USPS. Jack Khalifeh, our principal, has a lot of respect for Jacobs. So this feels less like a cold introduction and more like reconnecting with family."
+      </div>
+
+      <div class="label">QUESTIONS TO ASK</div>
+      <ol class="question-list">
+        <li>We've already worked together on USPS peer review. How do we formalize that into your supplier database for future teaming?</li>
+        <li>What federal contract vehicles does Jacobs hold where you're seeking MEP subconsultants &mdash; particularly in California or the western states?</li>
+        <li>What does your small business subcontracting plan look like? Are there goals where a firm like ours helps?</li>
+        <li>Beyond Ariba registration, is there a specific project pursuit manager or SB coordinator I should connect with?</li>
+        <li>Are there upcoming proposals where a licensed MEP firm with LEED Platinum experience across five states would strengthen the team?</li>
+      </ol>
+
+      <div class="label">PROJECTS TO DROP</div>
+      <div class="project-tags">
+        <span class="project-tag">USPS Post Offices (Jacobs peer-reviewed)</span>
+        <span class="project-tag">LA County Fire Stations</span>
+        <span class="project-tag">Long Beach Police</span>
+        <span class="project-tag">UCR Glen Mor II</span>
+      </div>
+
+      <div class="label">REGISTRATION</div>
+      <div class="context-box">Register on <strong>SAP Ariba Network</strong> &mdash; Jacobs' supplier discovery platform.</div>
+
+      <div class="success-box">
+        <strong>Win =</strong> Get a specific Jacobs contact name (pursuit manager or SB coordinator). Get registered on Ariba. Book a follow-up with Jack.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MEETING 2: MARINES ═══ -->
+<div class="section" id="marines">
+  <div class="section-card meeting-marines">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>1:30 PM &mdash; Marisa Perez | PAE Marine Corps</h2>
+        <div class="subtitle" style="color:var(--green);">Priority #4 &bull; Gateway to NAVFAC ($891M WOSB awards)</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="who-box">
+        <strong>Who she is:</strong> Associated with the Marine Corps acquisition community (PAE-MC, est. April 2026).<br>
+        <strong>Key context:</strong> PAE-MC acquires weapons systems, NOT facilities. Marine Corps facility MEP goes through <strong>NAVFAC</strong>. Use this meeting to get NAVFAC contacts.
+      </div>
+
+      <div class="context-box">
+        NAVFAC awarded <strong>$891.5M to Women-Owned Small Businesses</strong> in FY2023 &mdash; 560+ WOSB contracts. NAVFAC Southwest (San Diego) covers Camp Pendleton, Twentynine Palms, and other CA bases.
+      </div>
+
+      <div class="label">YOUR OPENING LINE</div>
+      <div class="opener">
+        "Marisa, thanks for being here. I'm curious about the Marine Corps side of things &mdash; we're an MEP engineering firm, and I know the Marine Corps has incredible facilities from Camp Pendleton to Twentynine Palms. I'd love to understand how a firm like ours can get involved."
+      </div>
+
+      <div class="label">QUESTIONS TO ASK</div>
+      <ol class="question-list">
+        <li>I know facility construction for the Marines goes through NAVFAC. Does PAE-MC have any facility engineering needs of its own?</li>
+        <li>Can you point me to the right contacts within the Marine Corps or NAVFAC small business office?</li>
+        <li>What does the small business outreach process look like &mdash; industry days, vendor fairs, specific portals?</li>
+        <li>We have extensive experience with fire stations, police stations, and institutional buildings in SoCal. How well does that translate?</li>
+        <li>Is there a mentor-protege program through the Marine Corps or Department of the Navy?</li>
+      </ol>
+
+      <div class="label">PROJECTS TO DROP</div>
+      <div class="project-tags">
+        <span class="project-tag">LA County Fire Stations (military analog)</span>
+        <span class="project-tag">Long Beach Police (secure facility)</span>
+        <span class="project-tag">Schools & Universities (institutional)</span>
+      </div>
+
+      <div class="success-box">
+        <strong>Win =</strong> Get a direct NAVFAC Southwest contact name. Learn about upcoming industry days. Understand the vendor registration path.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MEETING 3: USACE ═══ -->
+<div class="section" id="usace">
+  <div class="section-card meeting-usace">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>1:45 PM &mdash; Michael Stearns | USACE</h2>
+        <div class="subtitle" style="color:var(--red);">Priority #2 &bull; #1 A-E Procurer in Federal Gov &bull; LA District in KFA's backyard</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="who-box">
+        <strong>Who he is:</strong> Role at USACE not publicly listed &mdash; ask him directly. Could be LA District, South Pacific Division, or a specialized center.<br>
+        <strong>Why critical:</strong> USACE is the LARGEST procurer of A-E design services in the entire federal government. The LA District / South Pacific Division covers CA, AZ, NV &mdash; exactly where KFA is licensed.
+      </div>
+
+      <div class="context-box">
+        Recent solicitation: <strong>$230M Regional Vertical A-E Design MATOC</strong> covering CA, AZ, NV, UT, NM, portions of CO &mdash; with <strong>3-5 small business IDCs reserved specifically for small firms</strong>.
+      </div>
+
+      <div class="label">YOUR OPENING LINE</div>
+      <div class="opener">
+        "Michael, I have to say &mdash; this is one of the meetings I was most looking forward to. The Army Corps of Engineers is kind of legendary for engineers. We're a 40-year MEP firm in LA, and I know the LA District and South Pacific Division are right in our backyard. I'd love to understand how we get from a firm that's done fire stations and universities to one that's doing MILCON."
+      </div>
+
+      <div class="label">QUESTIONS TO ASK</div>
+      <ol class="question-list">
+        <li>What district or center are you with? What types of A-E contracts are you currently pursuing or releasing?</li>
+        <li>For a small MEP firm with 40 years in institutional facilities, what USACE project types would be the best fit to start?</li>
+        <li>We have strong LEED Platinum and energy performance experience. Are there ESPC or energy design contracts through Huntsville Center?</li>
+        <li>Best way for a firm new to USACE to build past performance &mdash; start as sub or pursue SB set-asides directly?</li>
+        <li>Upcoming industry days or SB outreach events for LA District or South Pacific Division?</li>
+        <li>Does USACE have a mentor-protege program &mdash; which large A-E firms are looking for MEP mentees?</li>
+      </ol>
+
+      <div class="label">PROJECTS TO DROP</div>
+      <div class="project-tags">
+        <span class="project-tag">LA County Fire Stations 128-194</span>
+        <span class="project-tag">Long Beach Police Stations</span>
+        <span class="project-tag">UCR Glen Mor II / Cal Poly Pomona</span>
+        <span class="project-tag">15+ LEED Platinum</span>
+        <span class="project-tag">USPS Post Offices (Jacobs peer review)</span>
+      </div>
+
+      <div class="label">REGISTRATION</div>
+      <div class="context-box"><strong>SAM.gov</strong> (mandatory) &bull; <strong>CAGE code</strong> &bull; <strong>UEI number</strong> &bull; <strong>SF-330</strong> qualifications package</div>
+
+      <div class="success-box">
+        <strong>Win =</strong> Learn his district. Get a LA District Small Business Office contact. Understand next A-E solicitation timeline. Get invited to an industry day. Book a follow-up with Jack.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MEETING 4: AFRL ═══ -->
+<div class="section" id="afrl">
+  <div class="section-card meeting-afrl">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>2:00 PM &mdash; Lisa Gallion | Air Force Research Labs</h2>
+        <div class="subtitle" style="color:var(--purple);">Priority #5 &bull; Edwards AFB is in California &bull; Specialized lab MEP</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="who-box">
+        <strong>Who she is:</strong> Role at AFRL not publicly listed &mdash; ask directly. AFRL is HQ'd at Wright-Patterson AFB (OH), with facilities at Edwards AFB (CA), Kirtland AFB (NM).<br>
+        <strong>Key context:</strong> AFRL contracting focuses on R&D, not facilities. Air Force facility design goes through <strong>AFCEC</strong>. But AFRL labs have complex MEP needs (clean rooms, high-power electrical, precision HVAC).
+      </div>
+
+      <div class="label">YOUR OPENING LINE</div>
+      <div class="opener">
+        "Lisa, hi! I'll be honest &mdash; Air Force Research Laboratories sounds like one of the coolest organizations in the DoD. I'm an MEP engineer at heart, so I geek out about the building systems that make research possible. I'd love to learn about what you do and how facilities fit into the picture."
+      </div>
+
+      <div class="label">QUESTIONS TO ASK</div>
+      <ol class="question-list">
+        <li>What's your role at AFRL &mdash; facility requirements, contracting, or small business programs?</li>
+        <li>Does AFRL have upcoming facility renovation or modernization at Edwards AFB in California?</li>
+        <li>How does facility design procurement work for AFRL labs &mdash; does it go through AFCEC?</li>
+        <li>Are there specialized MEP needs &mdash; clean room HVAC, high-power electrical, precision controls &mdash; where you need design expertise?</li>
+        <li>Best way for a small MEP firm to get visibility with the Air Force facility engineering community?</li>
+      </ol>
+
+      <div class="label">PROJECTS TO DROP</div>
+      <div class="project-tags">
+        <span class="project-tag">15+ LEED Platinum</span>
+        <span class="project-tag">SMC AET Campus (specialized MEP)</span>
+        <span class="project-tag">LAUSD Cleveland HS Media Studio (acoustical)</span>
+        <span class="project-tag">Energy: Title 24 +25-60%</span>
+      </div>
+
+      <div class="success-box">
+        <strong>Win =</strong> Learn if Edwards AFB has upcoming work. Get connected to AFCEC or AF facility engineering contacts. Understand the Air Force A-E contract path.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MEETING 5: BAE ═══ -->
+<div class="section" id="bae">
+  <div class="section-card meeting-bae">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>2:30 PM &mdash; Katelyn Russell | BAE Systems</h2>
+        <div class="subtitle" style="color:#92700c;">PRIORITY #1 &bull; Small Business Liaison Officer &bull; HER JOB = FINDING FIRMS LIKE KFA</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="who-box" style="background: #fefce8; border: 1px solid #fde68a;">
+        <strong>Who she is:</strong> Small Business Liaison Officer (SBLO) for BAE Systems Intelligence & Security sector. 10+ years in small business compliance. Won the <strong>SBA Dwight D. Eisenhower Award (2023)</strong>. Certified Federal Contracts Manager + Certified Supplier Diversity Professional.<br><br>
+        <strong style="color: var(--red);">Her literal job is finding and qualifying small businesses like KFA. This is your #1 meeting.</strong>
+      </div>
+
+      <div class="label">YOUR OPENING LINE</div>
+      <div class="opener">
+        "Katelyn, I have a feeling this is going to be my favorite meeting of the day. Your role is finding great small businesses, and I'm here to show you we're exactly that. I promise I'll make it easy for you &mdash; no sales pitch, just a real conversation about how we fit."
+      </div>
+
+      <div class="label">QUESTIONS TO ASK</div>
+      <ol class="question-list">
+        <li>Given your I&S sector focus, what types of facility engineering or MEP design subcontracting needs come up most?</li>
+        <li>How does BAE's small business registration work &mdash; supplier portal or database where we register?</li>
+        <li>Are there specific BAE contracts on the West Coast or at California installations where you need MEP subs?</li>
+        <li>Does BAE have a mentor-protege program? Would our profile &mdash; 40 years, five state licenses, LEED &mdash; be a fit?</li>
+        <li>What do you look for beyond technical capability &mdash; certifications, past performance, security clearance?</li>
+        <li>Any upcoming BAE supplier diversity events or capability briefings for your program managers?</li>
+      </ol>
+
+      <div class="label">PROJECTS TO DROP</div>
+      <div class="project-tags">
+        <span class="project-tag">Full MEP under one roof</span>
+        <span class="project-tag">LA County Fire Stations</span>
+        <span class="project-tag">Long Beach Police</span>
+        <span class="project-tag">15+ LEED Platinum</span>
+        <span class="project-tag">Jacobs & AECOM peer review</span>
+        <span class="project-tag">40 yrs, 5 state licenses</span>
+      </div>
+
+      <div class="success-box" style="background: #fef3c7; color: #92400e;">
+        <strong style="color: #b45309;">Win =</strong> Get registered in BAE's supplier database. Get Katelyn's direct contact info. Start a mentor-protege conversation. Book a follow-up with Jack. <strong>This is the meeting most likely to produce a concrete next step.</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PRE-QUALIFICATION ═══ -->
+<div class="section" id="prequalify">
+  <div class="section-card meeting-facts collapsed">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>Pre-Qualification Checklist</h2>
+        <div class="subtitle">Data to capture during each meeting</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <table class="pq-table">
+        <thead><tr><th>Capture This</th><th>Why It Matters</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Full name, title, email</strong></td><td>Follow-up is impossible without this</td></tr>
+          <tr><td><strong>Their specific role / what they procure</strong></td><td>Tells you if MEP is relevant to them</td></tr>
+          <tr><td><strong>Do they have MEP or facility design needs?</strong></td><td>Core qualification question</td></tr>
+          <tr><td><strong>What contract vehicles do they use?</strong></td><td>IDIQ, MATOC, MACC, BPA, etc.</td></tr>
+          <tr><td><strong>Small business set-asides?</strong></td><td>Determines if KFA competes as prime or sub</td></tr>
+          <tr><td><strong>Registration / portals required?</strong></td><td>SAM.gov, Ariba, internal portals</td></tr>
+          <tr><td>Upcoming industry days?</td><td>Face-to-face opportunities</td></tr>
+          <tr><td>Mentor-protege program?</td><td>Fast track into their network</td></tr>
+          <tr><td>Geographic focus area</td><td>Alignment with KFA's 5-state licenses</td></tr>
+          <tr><td>Who else should we be talking to?</td><td>Warm referral = gold</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOLLOW-UP ═══ -->
+<div class="section" id="followup">
+  <div class="section-card meeting-followup">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>Same-Day Follow-Up Plan</h2>
+        <div class="subtitle" style="color:var(--teal);">Do this within 2 hours of each meeting</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <ul class="checklist" id="followup-checklist">
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span><strong>Send thank-you email within 2 hours</strong> &mdash; short, warm, reference something specific from the conversation</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span><strong>Attach KFA Company Profile PDF</strong> &mdash; "As promised, here's our profile so you have us on file."</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span><strong>Connect on LinkedIn</strong> &mdash; personalized connection request referencing the event</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span><strong>Log the meeting</strong> &mdash; what they said, what they need, action items</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span><strong>Flag hot ones for Jack</strong> &mdash; anyone with genuine interest gets a Jack call within 48 hours</span></li>
+      </ul>
+
+      <div class="label">FOLLOW-UP EMAIL TEMPLATE</div>
+      <div class="email-template">
+        <div class="email-subject">Subject: Great meeting you at Simply Matchmaking &mdash; Khalifeh & Associates</div>
+        <p>Hi [Name],</p>
+        <p>It was wonderful connecting with you today at the USWCC Simply Matchmaking event. I really enjoyed learning about [something specific they mentioned].</p>
+        <p>As I mentioned, Khalifeh & Associates is a 40-year MEP engineering firm based in Los Angeles, licensed in five states. I've attached our company profile for your reference &mdash; we'd love to be in your network for any facility engineering or MEP design needs.</p>
+        <p>Our principal, Jack Khalifeh, would love the opportunity to connect with you as well. Would you be open to a follow-up call or meeting?</p>
+        <p>Thanks again for your time today!</p>
+        <p>Best,<br>
+        Fiona Flynn<br>
+        Khalifeh & Associates Inc.<br>
+        fiona@khalifehassociates.com<br>
+        (310) 305-1555</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BEFORE-EVENT CHECKLIST ═══ -->
+<div class="section" id="checklist">
+  <div class="section-card meeting-checklist collapsed">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>Before-Event Checklist</h2>
+        <div class="subtitle" style="color:var(--orange);">Do these TONIGHT or before 1:00 PM ET tomorrow</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <ul class="checklist" id="before-checklist">
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Join the 11:00 AM or 12:00 PM demo/test session</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Disconnect VPN before joining any meetings</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Use Chrome (not Edge)</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Have all 5 meeting links open in separate tabs</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Have dial-in numbers written down as backup</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Have this prep doc open on a second screen</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Have KFA Company Profile PDF ready for follow-up emails</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Have LinkedIn open for connection requests</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Have a notepad ready for key info</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Test camera and microphone</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Quiet, well-lit space with professional background</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Water nearby &mdash; 90 minutes of nonstop talking</span></li>
+        <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Dress professionally &mdash; you're meeting DoD executives</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ KFA FACTS ═══ -->
+<div class="section" id="facts">
+  <div class="section-card meeting-facts collapsed">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>KFA Quick-Reference Facts</h2>
+        <div class="subtitle">Glance at this if you need a stat mid-conversation</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <table class="facts-table">
+        <tr><td>Founded</td><td>1985 &mdash; nearly 40 years</td></tr>
+        <tr><td>Principal</td><td>Jack Khalifeh, P.E., LEED A.P.</td></tr>
+        <tr><td>Team</td><td>Jack (Principal ME), Bernard De Leon (Sr. ME), Jeff Van Parys (VP, Sr. PM Electrical)</td></tr>
+        <tr><td>Services</td><td>HVAC, Plumbing, Electrical, Fire Protection, Energy Analysis, Title 24, LEED, Commissioning</td></tr>
+        <tr><td>Licensed In</td><td>CA, NV, CO, WA, AZ</td></tr>
+        <tr><td>LEED</td><td>15+ LEED Platinum projects</td></tr>
+        <tr><td>Energy</td><td>Exceeds Title 24 by 25-60%</td></tr>
+        <tr><td>Firsts</td><td>LA County's first approved gray-water irrigation system</td></tr>
+        <tr><td>Awards</td><td>AIA California, L.A. Business Council, PCBC Gold Nugget, LA Architectural Awards</td></tr>
+        <tr><td>Gov Projects</td><td>LA County Fire Stations 128-194, Long Beach Police, USPS Post Offices, LAUSD schools</td></tr>
+        <tr><td>Higher Ed</td><td>UCR Glen Mor II, Cal Poly Pomona, SMC, Cal State LB, UCLA, U of La Verne</td></tr>
+        <tr><td>Federal Work</td><td>USPS post office MEP (Jacobs peer review), AECOM peer review</td></tr>
+        <tr><td>We Don't Do</td><td>Hospitals</td></tr>
+        <tr><td>NAICS</td><td>541330 &mdash; Engineering Services</td></tr>
+        <tr><td>Address</td><td>1625 W Olympic Blvd, Suite 791, LA, CA 90015</td></tr>
+        <tr><td>Phone</td><td>(310) 305-1555</td></tr>
+        <tr><td>Website</td><td>www.khalifehassociates.com</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MINDSET ═══ -->
+<div class="section" id="mindset">
+  <div class="section-card" style="border-left: 5px solid var(--gold);">
+    <div class="section-header" onclick="toggleSection(this)">
+      <div>
+        <h2>Mindset Reminders</h2>
+        <div class="subtitle" style="color:var(--muted);">Read this once before your first meeting</div>
+      </div>
+      <span class="chevron">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="mindset-grid">
+        <div class="mindset-card">
+          <div class="mc-title">You're not selling.</div>
+          <div class="mc-body">You're qualifying. You want to find out if THEY are a fit for KFA, not the other way around.</div>
+        </div>
+        <div class="mindset-card">
+          <div class="mc-title">Let them talk.</div>
+          <div class="mc-body">The person who listens wins in 15-minute meetings. Ask good questions, take notes, follow up.</div>
+        </div>
+        <div class="mindset-card">
+          <div class="mc-title">40 years behind you.</div>
+          <div class="mc-body">Walk in with quiet confidence. KFA has done the work. You're just opening the door.</div>
+        </div>
+        <div class="mindset-card">
+          <div class="mc-title">Don't close. Open.</div>
+          <div class="mc-body">The goal is to get them curious enough for a second conversation &mdash; ideally with Jack.</div>
+        </div>
+        <div class="mindset-card">
+          <div class="mc-title">One next step.</div>
+          <div class="mc-body">Every meeting should end with ONE clear action: email, call, lunch, referral &mdash; anything that keeps the door open.</div>
+        </div>
+        <div class="mindset-card">
+          <div class="mc-title">Be yourself.</div>
+          <div class="mc-body">You're warm, you're smart, you're genuine. That's your superpower in a room full of corporate scripts.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<script>
+  function toggleSection(header) {
+    header.closest('.section-card').classList.toggle('collapsed');
+  }
+  function toggleCheck(li) {
+    const box = li.querySelector('.check-box');
+    box.classList.toggle('checked');
+    li.classList.toggle('done');
+  }
+</script>
+</body>
+</html>
