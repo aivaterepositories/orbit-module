@@ -1,10 +1,10 @@
 # Khalifeh & Associates — Process Engineering (Scale Virtually)
 
-**Status:** ACTIVE — Fiona EMPLOYED by KFA (transitioned from Scale Virtually process engineering to direct hire)
+**Status:** ACTIVE — Fiona EMPLOYED by KFA as Consultant (transitioned from Scale Virtually process engineering to direct hire)
 **Priority:** High
 **Company:** Khalifeh & Associates Inc.
-**Key Contacts:** Jack Khalifeh (President), Brandon (Operations)
-**Fiona's Role:** Virtual Assistant / BDR / Marketing (employed by KFA)
+**Key Contacts:** Jack Khalifeh (President), Brandon (Operations) — both supervise Fiona
+**Fiona's Role:** Consultant — Admin, Proposal Support (markups/edits), Marketing (LinkedIn), Client Outreach (BDR)
 **Source:** Originally Scale Virtually RFP (2026-02-16) — Fiona took the role herself instead of sourcing a VA
 **PEC Date:** 2026-02-20
 **Follow-Up Engineering Call:** 2026-02-28
@@ -428,6 +428,10 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 
 **2026-04-21:** Nova built the full client outreach system based on April 16 Fathom call transcript (128 min). Extracted 13 contacts with relationship history, talking points, and context. Created 3 documents: Contact Tracker, Call Scripts & Templates (6 script versions + gatekeeper + voicemail + 3 email templates + SMS), Follow-Up Cadence (21-day initial sequence + HOT/WARM/COOL handling + daily routine + weekly reporting). System modeled after the Cavalli Evans/WePartner outreach system built for Nick Kavali. Ready for Fiona's review.
 
+**2026-05-14:** USWCC Simply Matchmaking Event — full day. Fiona created prep guide, assisted Jack with system setup, resolved meeting link issue with event organizer (2-3 hrs demo prep + systems check). Attended 2 hours of matchmaking sessions. All matches successful except Jacobs (Gretchen Hirsch) — meeting room issue, nobody let them in. Reached out to Charmaine to reschedule. Post-event: emailed Marine Corps to schedule 30-min one-on-one + sent company profile. Reviewed BAE Systems supplier handout and USACE Baltimore District FCO (FY26-FY35, 104 items) — shared both with Jack. Nova analyzed FCO and identified 33 MEP-relevant projects worth ~$3.5B+ across 4 tiers (analysis saved: `khalifeh-fco-analysis-usace-baltimore.md`). Jack provided AECOM contacts — Clint Isa (Senior Manager, Transportation US West) and Candice Grant (Project Controls Analyst, Transportation US West / Ports & Marine). Fiona emailed both to explore sub-consulting on Marine Corps projects awarded to AECOM, offered to call at their convenience. LinkedIn: reviewed all incoming messages/requests/comments on Jack's account, sent acknowledgment messages on his behalf. New connections: Nathan Katzer (Project Engineer, Plumbing & Mechanical), Greg Roth (Plumbing Engineer/Estimator, Gerald Mechanical Contractors), Igor Dermendzi (Senior Mechanical & Plumbing Engineer), Gary Farley (Senior Mechanical Plumbing Designer, CM Engineering PLLC), Alicia Zarro. Spoke with Reza — freelancer at Saira Engineers (Canada, 3 yrs), specializes in HVAC and plumbing system modeling/design for commercial and residential, looking for remote work, shared phone number, open to collaborating. Pending: ask Jack if he wants to interview Reza via Zoom or if there are preliminary questions first. Tomorrow: call AECOM early AM, email Justin at ASICS re: project availability (annual membership but no recent projects), follow up on Marine Corps meeting, continue FCO/BAE analysis for MEP opportunities.
+
+**2026-05-07:** Fiona confirmed current role scope at KA. Title: Consultant (under Jack and Brandon's supervision). Responsibilities: (1) Admin tasks, (2) Proposal support — markups and small edits only, not drafting, (3) Marketing — managing Jack's LinkedIn, connecting with industry contacts, strong inbound engagement from connections, (4) Client outreach — revitalizing Jack's client relationships for potential MEP collaborations, 2 lunch meetings booked on calendar. Contact list nearly exhausted from outreach push. Future need flagged: lead generation and new relationship building (Nova to assist).
+
 **2026-02-19:** Project file created. IPEC presentation, deliverables (lean — $1,000 SUF), and risk assessment documented. Client's original JD added for reference. PEC/IPEC scheduled for 2026-02-20.
 
 ---
@@ -494,13 +498,65 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 ---
 
 **Created:** 2026-02-19
-**Last Updated:** 2026-04-21
-**Status:** ACTIVE — Fiona employed by KFA. Priority tasks: LinkedIn content for Jack + Client outreach (BDR).
-**Fiona's Responsibilities at KFA:**
+**Last Updated:** 2026-05-14
+**Status:** ACTIVE — Fiona employed by KA as Consultant. Priority tasks: LinkedIn management + Client outreach (BDR) + Proposal support + Federal/military sub-consulting development.
+**Fiona's Responsibilities at KA:**
 1. Admin / ad hoc tasks
-2. Marketing — LinkedIn content for Jack, blog exploration (Fiona's idea, not yet pitched to Jack/Brandon)
-3. Client outreach — BDR role, re-engaging past/current clients
-4. Systems & workflows — building processes with Nova's support
+2. Proposal support — markups and small/easy edits on proposals (does NOT draft proposals from scratch)
+3. Marketing — Managing Jack's LinkedIn account, connecting with key industry contacts, receiving and managing inbound engagement/messages from LinkedIn connections
+4. Client outreach — BDR role, revitalizing Jack's relationships with past/current clients, exploring collaborations and MEP project opportunities. Successfully booked 2 client lunch meetings (on calendar as of May 2026).
+5. Federal/military business development — USWCC matchmaking participation, sub-consulting outreach to primes (AECOM), Marine Corps engagement, USACE FCO analysis
+6. Systems & workflows — building processes with Nova's support
+
+**Outreach Progress (May 2026):**
+- Original contact list is nearly exhausted — Fiona has reached out to most contacts since late April
+- New channel opened: Federal/military sub-consulting via USWCC matchmaking event (May 14)
+- AECOM outreach initiated — email sent to Clint Isa and Candice Grant (May 14), phone follow-up planned for May 15
+- Marine Corps engagement initiated — email sent requesting one-on-one meeting + company profile shared
+- ASICS membership under review — email to Justin pending (May 15)
+
+### AECOM Sub-Consulting Opportunity (New — May 14)
+
+| Field | Details |
+|-------|---------|
+| **Source** | USWCC Simply Matchmaking Event (May 14, 2026) |
+| **Opportunity** | Position KA as MEP sub-consultant to AECOM on Marine Corps / USACE projects |
+| **Leverage** | KA has existing project history with AECOM |
+| **Status** | Email sent May 14, phone follow-up planned May 15 |
+
+**AECOM Contacts:**
+
+| Name | Title | Division | Phone | Email |
+|------|-------|----------|-------|-------|
+| Clint Isaac Isa, PE | Senior Manager | Transportation, US West | 310-612-4176 | clint.isa@aecom.com |
+| Candice Grant | Project Controls Analyst | Transportation, US West / Ports & Marine, Americas | +1-714-330-7802 | candice.grant@aecom.com |
+
+**FCO Analysis:**
+- USACE Baltimore District FCO (FY26–FY35) analyzed — 33 MEP-relevant projects identified out of 104 total
+- Combined value: ~$3.5B+ across 4 tiers
+- Full analysis saved: `khalifeh-fco-analysis-usace-baltimore.md`
+
+### Matchmaking Event Contacts & Follow-ups (May 14)
+
+| Contact / Org | Status | Next Step |
+|---------------|--------|-----------|
+| AECOM (Clint Isa, Candice Grant) | Email sent | Phone follow-up May 15 AM |
+| Marine Corps | Email sent + company profile shared | Waiting on one-on-one meeting scheduling |
+| Jacobs (Gretchen Hirsch) | UNSUCCESSFUL — meeting room issue | Reached out to Charmaine to reschedule |
+| BAE Systems | Supplier handout reviewed, shared with Jack | Analyze for MEP opportunities |
+| US Army Corps of Engineers | FCO reviewed, shared with Jack | FCO analysis complete, send suggestions to Jack |
+| ASICS (Justin) | Not yet contacted | Email planned May 15 — inquire about project availability |
+
+### Reza — Potential Collaborator (May 14)
+
+| Field | Details |
+|-------|---------|
+| **Name** | Reza |
+| **Current Work** | Freelancer at Saira Engineers (Canada), 3 years |
+| **Specialty** | Modeling and designing HVAC and plumbing systems — commercial and residential |
+| **Looking For** | Remote work |
+| **Status** | Shared phone number, open to collaborating |
+| **Pending** | Ask Jack: does he want to interview Reza via Zoom, or are there preliminary questions to ask first? |
 
 ### Client Outreach System (Built 2026-04-21)
 | # | Document | File | Status |
@@ -508,14 +564,16 @@ Beyond the tools mentioned in the JD (MS Office, QuickBooks, ChatGPT, Boomerang)
 | 1 | **Contact Tracker** — 13 contacts extracted from Apr 16 call | `khalifeh-outreach-contact-tracker.md` | READY |
 | 2 | **Call Scripts & Templates** — Warm reconnection, gatekeeper, voicemail, email, SMS | `khalifeh-outreach-call-scripts.md` | READY |
 | 3 | **Follow-Up Cadence** — Outreach sequence, lead classification, daily routine, weekly reporting | `khalifeh-outreach-follow-up-cadence.md` | READY |
+| 4 | **AECOM Outreach Email + Call Guide** | Drafted by Nova, sent May 14 | SENT |
+| 5 | **FCO Analysis — USACE Baltimore District** | `khalifeh-fco-analysis-usace-baltimore.md` | READY |
 
 **Next Steps:**
-1. Fiona to review all 3 outreach docs and confirm accuracy
-2. Waiting on: RingCentral setup + KFA email (fiona@khalifehassociates.com) — then outreach can begin
-3. Waiting on: Brandon to provide remaining contact info for contacts missing phone/email
-4. Research needed: Julie Smith-Clemente, John Black (Rios), Chait & Company, Gary Partners — find contact details
-5. Jim Williams (BSB Design) — DO NOT contact until after April 28
-6. Jack to text Fiona his 2-3 preferred restaurant options for lunch meetings
-7. Paste Fathom transcript context into talking points (done — embedded in contact tracker)
+1. Call AECOM contacts (Clint and Candice) — May 15, early morning
+2. Email Justin at ASICS — inquire about project availability, assess membership value
+3. Follow up on Marine Corps one-on-one meeting scheduling
+4. Continue analyzing FCO and BAE Systems supplier handout for MEP opportunities — send Jack suggestions
+5. Follow up with Charmaine on rescheduling Jacobs/Gretchen Hirsch match
+6. Ask Jack about Reza — interview via Zoom or preliminary questions first?
+7. LinkedIn: continue managing Jack's account, building industry connections
 
 **Project Coordinator:** Nova

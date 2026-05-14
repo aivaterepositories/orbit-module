@@ -50,8 +50,10 @@ When sending emails on Fiona's behalf:
 | Haruna Oyola | haruna@rnrpropertysolutions.com | Client — COO at RNR Property Solutions. Property management & fix-and-flip. CST. Assigned via Scale Virtually Apr 2026. |
 | Willie Oyola | *(TBD)* | Client — Co-owner/Operator at RNR Property Solutions. Works with Haruna Oyola. |
 | Jeremy Watson | jeremy@bedrockinvestmentproperty.com | Client — Founding Partner/CEO at Bedrock Investment Property. Turnkey RE investment (hundreds of properties, 13 PMs, 9 states). VIP Influencer. EST. Assigned via Scale Virtually Apr 2026. PROCESS w/ MVA, Multi Role (2 VAs), $4,000 SUF. |
-| Jack Khalifeh | jack@khalifehassociates.com | Employer — President of Khalifeh & Associates Inc. MEP Engineering Consulting, 40 yrs. PST. Fiona is employed directly by KFA (transitioned from Scale Virtually process engineering). |
+| Jack Khalifeh | jack@khalifehassociates.com | Employer — Principal of Khalifeh & Associates Inc. MEP Engineering Consulting, 40 yrs. PST. Fiona is employed directly by KA (transitioned from Scale Virtually process engineering). |
 | Brandon | *(TBD)* | Employer — Operations at Khalifeh & Associates Inc. Works with Jack. |
+| Clint Isaac Isa, PE | clint.isa@aecom.com | AECOM — Senior Manager, Transportation, US West. Phone: 310-612-4176. Contact for sub-consulting on federal/military projects. Introduced via USWCC Matchmaking May 2026. |
+| Candice Grant | candice.grant@aecom.com | AECOM — Project Controls Analyst, Transportation US West / Ports & Marine Americas. Phone: +1-714-330-7802. Contact for sub-consulting on federal/military projects. Introduced via USWCC Matchmaking May 2026. |
 
 ## Internal Aivate Projects
 
@@ -62,6 +64,22 @@ When sending emails on Fiona's behalf:
 - **Document:** `aivate-local-outreach-cavite-mvp.md`
 - **Goal:** Outreach to local businesses in Cavite, book store visits, close deals
 - **Weekly Target:** 50 outreaches, 4-6 replies, 2-3 visits, 1-2 closes
+
+## Report Templates
+
+### EOD / SOD Report Format (WhatsApp-friendly)
+- Format for WhatsApp readability — no markdown tables, no emojis
+- Header: just "*End of Day Report — [Day], [Date]*" or "*Start of Day Report — [Day], [Date]*"
+- No name, no company name in header
+- Use *bold* for section headers
+- Use → for sub-bullets (e.g. LinkedIn connections)
+- Use — as section dividers
+- Sections:
+  1. *TODAY'S ACCOMPLISHMENTS* — numbered items with bullet details
+  2. *TOMORROW'S PLAN* — numbered list
+  3. *BLOCKERS / OUTSTANDING* — bullet list, no emojis
+- Close with: "That's it for today. Thank you!"
+- Spelling: John (not John), AR Aging report, KA share
 
 ## Patterns Learned
 
