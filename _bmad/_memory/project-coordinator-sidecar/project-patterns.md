@@ -50,7 +50,8 @@ When sending emails on Fiona's behalf:
 | Haruna Oyola | haruna@rnrpropertysolutions.com | Client — COO at RNR Property Solutions. Property management & fix-and-flip. CST. Assigned via Scale Virtually Apr 2026. |
 | Willie Oyola | *(TBD)* | Client — Co-owner/Operator at RNR Property Solutions. Works with Haruna Oyola. |
 | Jeremy Watson | jeremy@bedrockinvestmentproperty.com | Client — Founding Partner/CEO at Bedrock Investment Property. Turnkey RE investment (hundreds of properties, 13 PMs, 9 states). VIP Influencer. EST. Assigned via Scale Virtually Apr 2026. PROCESS w/ MVA, Multi Role (2 VAs), $4,000 SUF. |
-| Walker McCallon | wmccallon@dosgringosllc.com | Client — Co-owner at Dos Gringos Construction LLC. RE investor/construction (wholesaling, fix-and-flip, rentals). CST. Assigned via Scale Virtually May 2026. PROCESS w/ MVA, Single Role, $1,000 SUF. Partner: Alex. |
+| Walker McCallon | wmccallon@dosgringosllc.com | Client — Co-owner at Dos Gringos Construction LLC. Fix-and-flip, high-equity acquisitions, Kansas City. CST. PROCESS w/ MVA, Single Role, $1,000 SUF. Partner: Alejandro (Alex). Three-person team (Walker, Alex, Walker's wife). IPEC completed May 20, 2026. Next PEC: May 22. |
+| Colton | *(TBD)* | Dos Gringos — In-house real estate agent, runs networking/deal acquisitions. Gets overwhelmed with deal flow. VA will eventually support him with underwriting pre-screening. |
 | Jack Khalifeh | jack@khalifehassociates.com | Employer — Principal of Khalifeh & Associates Inc. MEP Engineering Consulting, 40 yrs. PST. Fiona is employed directly by KA (transitioned from Scale Virtually process engineering). |
 | Brandon | *(TBD)* | Employer — Operations at Khalifeh & Associates Inc. Works with Jack. |
 | Clint Isaac Isa, PE | clint.isa@aecom.com | AECOM — Senior Manager, Transportation, US West. Phone: 310-612-4176. Contact for sub-consulting on federal/military projects. Introduced via USWCC Matchmaking May 2026. |
