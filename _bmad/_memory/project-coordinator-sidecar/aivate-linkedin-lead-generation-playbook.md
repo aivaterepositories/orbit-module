@@ -31,26 +31,46 @@ Before you send a single message, your profile needs to be dialed in. Prospects 
 
 ---
 
-## Section 2: Marky's Data Capture Method
+## Section 2: Marky's LinkedIn Scraper Tool
 
-> **STATUS: PENDING — NEEDS MARKY CALL**
->
-> Fiona needs to schedule a 30-minute call with Marky to document his LinkedIn data capture method.
->
-> **What to capture on the call:**
-> - How Marky extracts prospect data from LinkedIn (tools, extensions, manual methods)
-> - His workflow for building lead lists
-> - Any tools he uses (Phantombuster, LinkedIn Sales Navigator exports, etc.)
-> - How he organizes and scores the data
-> - Any automations he's built for this process
->
-> **Once documented, this section will include:**
-> - Step-by-step data capture process
-> - Required tools and setup instructions
-> - Lead list template
-> - Automation workflow (if applicable)
->
-> **Action item:** Fiona → Schedule Marky call. Record it. Nova → Document the method here after the call.
+> **STATUS: DOCUMENTED — May 14, 2026 (LinkedIn Gen Meeting)**
+
+Marky built a custom LinkedIn scraper that automates lead list generation. Instead of manually searching LinkedIn and copying profiles one by one, you input your criteria and the tool does the work for you.
+
+**Full SOP:** See `LinkedIn Scraper SOP — BDM Onboarding` in the [BDM Onboarding Google Drive folder](https://drive.google.com/drive/folders/1eUTByuvwjuR8gTeS1cMdsT8yntYr6rr8?usp=drive_link).
+
+### Quick Overview
+
+**Inputs:**
+- Industry (e.g., "Real Estate", "E-commerce")
+- Location (e.g., "Philippines", "United States")
+- Number of results per role (e.g., 10 = 40 total profiles)
+
+**Baseline roles searched:** CEO, CFO, CTO, Business Development Manager
+- Additional roles can be added by Marky upon request
+
+**How it works:**
+1. Enter industry, location, and number of results per role
+2. Click "Run Scrape"
+3. Tool opens Google Chrome automatically and scrapes LinkedIn via MCP integration
+4. Results display on screen: Name, Title, Location, LinkedIn Profile Link
+5. Download results as CSV
+
+**Output:** Downloadable CSV with name, title, location, and direct LinkedIn profile link for each contact.
+
+**Scale:** 10 per role = 40 profiles, 25 per role = 100 profiles, 50 per role = 200 profiles.
+
+### After Scraping — What to Do
+
+1. Download the CSV
+2. Import leads into the **Aivate International BDM** Trello board (Not Contacted column)
+3. Research each prospect using the 60-second scan (Section 3 below)
+4. Score the lead (Section 5 below)
+5. Begin outreach using the follow-up cadence and scripts (`aivate-outreach-scripts-linkedin.md`)
+
+### Access
+
+Request scraper tool access from Marky if you don't have it.
 
 ---
 

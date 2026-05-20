@@ -5,7 +5,37 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-03-20 (Nova — Login/Auth + Mobile Audit tasks assigned to Cob per Fiona)
+**Last Updated:** 2026-05-16 (Nova — Fiona/Cob CRM review call. 5 test areas reviewed: SOV remaining-to-schedule RESOLVED, PO upload BUG, pre-lien docs RESOLVED, deposit color NEEDS FIX, task management CRITICAL. Supabase free tier flagged for audit.)
+
+---
+
+## Latest Update - May 16, 2026
+
+### FIONA/COB CRM REVIEW CALL — 5 ITEMS TESTED
+
+| # | Test Area | Result | Notes |
+|---|-----------|--------|-------|
+| 1 | **SOV Remaining to Schedule** | PASS | Auto-calculation reinstated in SOV summary area. Remaining to bill also works. Minor caching issue — use Cmd-Shift-R or incognito to force refresh. |
+| 2 | **Purchase Order Separate Section** | FAIL — BUG | PO section separated (layout approved), but uploaded PO files don't persist after save. "No purchase order item in checklist" error. |
+| 3 | **Pre-Lien Documents Upload** | PASS | Stackable uploads, instant-display, multiple files — working correctly. This is the reference design for PO/contract uploads. |
+| 4 | **Deposit Status Color** | FAIL — NEEDS FIX | "Deposit Required" badge shows red, alarming the client. Decision: remove color entirely, use neutral/default style like "Pending." |
+| 5 | **Task Management** | FAIL — CRITICAL | Tasks only visible to creator. Other users (e.g., Chris) cannot see tasks assigned to them. Notifications not firing. |
+
+#### Cob Action Items from May 16 Call
+
+| # | Action | Priority |
+|---|--------|----------|
+| 1 | **Fix PO upload persistence** — apply same upload logic from pre-lien/accounting docs (stackable, instant-display) to PO section | HIGH |
+| 2 | **Remove "Documents Upload" section from Edit view** — redundant, docs accessible from front view | MEDIUM |
+| 3 | **Rename "Contract PO" to "Contract"** — PO now has its own section | MEDIUM |
+| 4 | **Add upload button on front view** for contracts and insurance certificates (match accounting docs pattern) | HIGH |
+| 5 | **Text-wrap document file names** so delete button stays visible without horizontal scrolling | MEDIUM |
+| 6 | **Remove red color from Deposit Required badge** — use neutral style | MEDIUM |
+| 7 | **Fix task visibility** — tasks must be visible to ALL managers, not just the creator | CRITICAL |
+| 8 | **Notification bell for task assignment** — bell must fire when someone is assigned a task | CRITICAL |
+| 9 | **Tasks in assignee's profile** — assigned tasks must appear in the user's task management/profile section (two display locations: bell + task management page) | CRITICAL |
+| 10 | **Add Fiona as a user** in the system so she can be assigned tasks | HIGH |
+| 11 | **Audit Supabase free tier** — assess usage, flag when upgrade is needed. Aivate will cover cost, reimburse from Chris. BAA not needed (no healthcare data). | MEDIUM |
 
 ---
 

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K&A Trello Boards — Walkthrough Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1a1a2e; color: #e0e0e0; padding: 40px; }
+
+        .slide { display: none; min-height: 90vh; padding: 40px; border-radius: 16px; background: #16213e; margin-bottom: 20px; position: relative; }
+        .slide.active { display: block; }
+
+        .nav { position: fixed; bottom: 30px; right: 30px; display: flex; gap: 12px; z-index: 100; }
+        .nav button { padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .nav .prev { background: #2d3748; color: #e0e0e0; }
+        .nav .next { background: #4299e1; color: white; }
+        .nav button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        .nav .counter { padding: 12px 16px; background: #2d3748; border-radius: 8px; color: #a0aec0; font-size: 14px; display: flex; align-items: center; }
+
+        h1 { font-size: 36px; margin-bottom: 8px; color: #fff; }
+        h2 { font-size: 28px; margin-bottom: 16px; color: #63b3ed; }
+        h3 { font-size: 20px; margin-bottom: 12px; color: #90cdf4; }
+        p { font-size: 16px; line-height: 1.6; color: #cbd5e0; margin-bottom: 12px; }
+        .subtitle { font-size: 18px; color: #a0aec0; margin-bottom: 40px; }
+
+        /* Board mockup styles */
+        .board { display: flex; gap: 12px; overflow-x: auto; padding: 20px 0; }
+        .list { background: #2d3748; border-radius: 12px; min-width: 240px; max-width: 240px; padding: 12px; }
+        .list-title { font-size: 14px; font-weight: 700; color: #e2e8f0; padding: 8px 4px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .card { background: #4a5568; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; font-size: 13px; color: #e2e8f0; cursor: default; transition: all 0.2s; border-left: 4px solid transparent; }
+        .card:hover { background: #5a6578; transform: translateX(2px); }
+        .card .amount { font-weight: 700; color: #fc8181; font-size: 14px; display: block; margin-top: 4px; }
+        .card .project { color: #a0aec0; font-size: 11px; display: block; margin-top: 2px; }
+        .card .due { color: #fbd38d; font-size: 11px; display: block; margin-top: 4px; }
+
+        /* Label dots */
+        .labels { display: flex; gap: 4px; margin-bottom: 6px; }
+        .label { width: 32px; height: 6px; border-radius: 3px; }
+        .label-green { background: #48bb78; }
+        .label-yellow { background: #ecc94b; }
+        .label-orange { background: #ed8936; }
+        .label-red { background: #fc8181; }
+        .label-blue { background: #63b3ed; }
+        .label-purple { background: #b794f4; }
+
+        /* Card detail mockup */
+        .card-detail { background: #2d3748; border-radius: 16px; padding: 32px; max-width: 600px; margin: 20px auto; }
+        .card-detail h3 { color: #fff; margin-bottom: 20px; }
+        .detail-section { margin-bottom: 20px; padding: 16px; background: #4a5568; border-radius: 8px; }
+        .detail-section h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #a0aec0; margin-bottom: 8px; }
+        .detail-section p { font-size: 14px; margin-bottom: 4px; }
+        .checklist-item { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: #e2e8f0; }
+        .checklist-item .box { width: 16px; height: 16px; border: 2px solid #63b3ed; border-radius: 3px; flex-shrink: 0; }
+        .checklist-item .box.checked { background: #48bb78; border-color: #48bb78; }
+
+        /* Calendar mockup */
+        .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; background: #2d3748; border-radius: 12px; overflow: hidden; padding: 4px; margin: 20px 0; }
+        .cal-header { padding: 12px 8px; text-align: center; font-size: 12px; font-weight: 700; color: #a0aec0; text-transform: uppercase; }
+        .cal-day { padding: 8px; min-height: 80px; background: #4a5568; font-size: 12px; }
+        .cal-day .date { color: #a0aec0; margin-bottom: 4px; }
+        .cal-day .event { background: #fc8181; color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-top: 4px; display: block; }
+        .cal-day .event.blue { background: #4299e1; }
+        .cal-day .event.green { background: #48bb78; }
+        .cal-day.today { border: 2px solid #4299e1; }
+        .cal-day.empty { background: #3a4a5e; }
+
+        /* Flow diagram */
+        .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; padding: 30px 0; }
+        .flow-step { background: #4a5568; border-radius: 12px; padding: 16px 20px; text-align: center; min-width: 140px; }
+        .flow-step .icon { font-size: 24px; margin-bottom: 8px; }
+        .flow-step .text { font-size: 13px; color: #e2e8f0; }
+        .flow-arrow { color: #4299e1; font-size: 24px; font-weight: bold; }
+
+        /* Role boxes */
+        .roles { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .role-box { background: #2d3748; border-radius: 12px; padding: 24px; border: 2px solid #4a5568; }
+        .role-box h4 { color: #63b3ed; margin-bottom: 12px; font-size: 16px; }
+        .role-box ul { list-style: none; padding: 0; }
+        .role-box ul li { padding: 6px 0; font-size: 14px; color: #cbd5e0; padding-left: 20px; position: relative; }
+        .role-box ul li:before { content: "→"; position: absolute; left: 0; color: #4299e1; }
+        .role-box.brandon { border-color: #ed8936; }
+        .role-box.brandon h4 { color: #ed8936; }
+        .role-box.fiona { border-color: #48bb78; }
+        .role-box.fiona h4 { color: #48bb78; }
+
+        /* Highlight box */
+        .highlight { background: linear-gradient(135deg, #2d3748, #4a5568); border-radius: 12px; padding: 24px; border-left: 4px solid #4299e1; margin: 20px 0; }
+        .highlight p { color: #e2e8f0; font-size: 15px; }
+
+        /* Aging legend */
+        .legend { display: flex; gap: 20px; flex-wrap: wrap; margin: 16px 0; }
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+
+        .title-slide { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .title-slide h1 { font-size: 48px; margin-bottom: 16px; }
+        .title-slide .subtitle { font-size: 22px; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
+        .col { background: #2d3748; border-radius: 12px; padding: 24px; }
+        .col h3 { margin-bottom: 16px; }
+        .col ul { list-style: none; padding: 0; }
+        .col ul li { padding: 8px 0; border-bottom: 1px solid #4a5568; font-size: 14px; }
+        .col ul li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: Title -->
+<div class="slide active title-slide">
+    <h1>Khalifeh & Associates</h1>
+    <p class="subtitle">Trello Boards Walkthrough</p>
+    <p style="margin-top: 40px; color: #a0aec0;">Two boards. One for money. One for deadlines.<br>Let's make sure nothing falls through the cracks.</p>
+    <div style="margin-top: 60px; display: flex; gap: 30px;">
+        <div style="background: #2d3748; padding: 20px 30px; border-radius: 12px; border-top: 4px solid #48bb78;">
+            <h3 style="color: #48bb78; font-size: 16px;">Board 1</h3>
+            <p style="font-size: 14px;">AR Collections Tracker</p>
+        </div>
+        <div style="background: #2d3748; padding: 20px 30px; border-radius: 12px; border-top: 4px solid #4299e1;">
+            <h3 style="color: #4299e1; font-size: 16px;">Board 2</h3>
+            <p style="font-size: 14px;">Master Project Calendar</p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 2: AR Board Overview -->
+<div class="slide">
+    <h2>Board 1: AR Collections Tracker</h2>
+    <p class="subtitle">Total Outstanding: $609,524.39 — 25 clients</p>
+
+    <div class="board">
+        <div class="list">
+            <div class="list-title">Needs Invoice/Info</div>
+            <div class="card" style="border-left-color: #ed8936;">
+                Salas O'Brien
+                <span class="amount">$153,080.00</span>
+                <span class="project">Celadon, Carlsbad, The Junction</span>
+            </div>
+            <div class="card" style="border-left-color: #ed8936;">
+                Abode Communities
+                <span class="amount">$106,327.50</span>
+                <span class="project">Chavez Gardens, Grandview, Harbor View</span>
+            </div>
+            <div class="card" style="border-left-color: #ed8936;">
+                Gilcrest, LLC
+                <span class="amount">$94,365.00</span>
+                <span class="project">1660 & 1665 Gilcrest Dr</span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Ready to Follow Up</div>
+            <div class="card" style="border-left-color: #48bb78;">
+                <div class="labels"><span class="label label-red"></span></div>
+                Warwick Group
+                <span class="amount">$2,100.00</span>
+                <span class="project">39 E Loma Alta</span>
+                <span class="due">60+ days old</span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Contacted — Awaiting</div>
+            <div class="card" style="border-left-color: #63b3ed; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 20px 0;">Cards move here after outreach</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Payment Promised</div>
+            <div class="card" style="border-left-color: #ecc94b; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 20px 0;">Client confirmed a pay date</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Escalate</div>
+            <div class="card" style="border-left-color: #fc8181; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 20px 0;">Needs Jack or Brandon</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Payment Received</div>
+            <div class="card" style="border-left-color: #48bb78; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 20px 0;">Confirmed & applied in QB</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 3: AR Flow -->
+<div class="slide">
+    <h2>AR Workflow — How Cards Move</h2>
+    <p class="subtitle">Left to right. Simple.</p>
+
+    <div class="flow">
+        <div class="flow-step">
+            <div class="icon">📋</div>
+            <div class="text">Needs Invoice<br>/Info</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+            <div class="icon">📞</div>
+            <div class="text">Ready to<br>Follow Up</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+            <div class="icon">⏳</div>
+            <div class="text">Contacted —<br>Awaiting</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+            <div class="icon">🤝</div>
+            <div class="text">Payment<br>Promised</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step" style="border: 2px solid #48bb78;">
+            <div class="icon">✓</div>
+            <div class="text">Payment<br>Received</div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <div class="flow-step" style="display: inline-block; border: 2px solid #fc8181; margin-right: 20px;">
+            <div class="icon">⚠️</div>
+            <div class="text">Escalate to<br>Jack/Brandon</div>
+        </div>
+        <div class="flow-step" style="display: inline-block; border: 2px solid #a0aec0;">
+            <div class="icon">⏸️</div>
+            <div class="text">On Hold /<br>Disputed</div>
+        </div>
+    </div>
+
+    <div class="highlight" style="margin-top: 40px;">
+        <p><strong>Key rule:</strong> Cards only move forward. If a client goes silent after being contacted, they stay in "Contacted — Awaiting" until we escalate or they respond.</p>
+    </div>
+</div>
+
+<!-- SLIDE 4: AR Card Detail -->
+<div class="slide">
+    <h2>What's Inside Each AR Card</h2>
+    <p class="subtitle">Everything we need to follow up in one place</p>
+
+    <div class="card-detail">
+        <div class="labels" style="margin-bottom: 16px;">
+            <span class="label label-orange" style="width: 50px;"></span>
+        </div>
+        <h3>Warwick Group — $2,100 — 39 E Loma Alta</h3>
+
+        <div class="detail-section">
+            <h4>Details</h4>
+            <p><strong>Client #:</strong> C733</p>
+            <p><strong>Invoice #:</strong> [from Brandon]</p>
+            <p><strong>Invoice Date:</strong> ~March 2026 (60+ days)</p>
+            <p><strong>Amount:</strong> $2,100.00</p>
+            <p><strong>Contact:</strong> [name, email, phone from Brandon]</p>
+        </div>
+
+        <div class="detail-section">
+            <h4>Follow-Up Checklist</h4>
+            <div class="checklist-item"><span class="box checked"></span> Invoice received from Brandon</div>
+            <div class="checklist-item"><span class="box checked"></span> Contact info confirmed</div>
+            <div class="checklist-item"><span class="box"></span> First follow-up sent</div>
+            <div class="checklist-item"><span class="box"></span> Second follow-up sent</div>
+            <div class="checklist-item"><span class="box"></span> Payment confirmed</div>
+            <div class="checklist-item"><span class="box"></span> Applied in QuickBooks</div>
+        </div>
+
+        <div class="detail-section">
+            <h4>Activity / Notes</h4>
+            <p style="color: #a0aec0; font-style: italic;">May 20 — Fiona: Left voicemail with AP dept, will try again Thursday</p>
+            <p style="color: #a0aec0; font-style: italic;">May 22 — Fiona: Spoke to AP, payment going out Friday 5/23</p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 5: AR Aging Labels -->
+<div class="slide">
+    <h2>Color-Coded by Aging</h2>
+    <p class="subtitle">See at a glance what's urgent</p>
+
+    <div class="legend" style="margin: 40px 0;">
+        <div class="legend-item"><span class="legend-dot" style="background: #48bb78;"></span> 0–30 days (recent)</div>
+        <div class="legend-item"><span class="legend-dot" style="background: #ecc94b;"></span> 31–60 days</div>
+        <div class="legend-item"><span class="legend-dot" style="background: #ed8936;"></span> 61–90 days</div>
+        <div class="legend-item"><span class="legend-dot" style="background: #fc8181;"></span> 90+ days (oldest — priority)</div>
+    </div>
+
+    <div class="board" style="margin-top: 20px;">
+        <div class="list">
+            <div class="list-title">Example Cards</div>
+            <div class="card" style="border-left-color: #fc8181;">
+                <div class="labels"><span class="label label-red"></span></div>
+                University Campus Hotel
+                <span class="amount">$8,090.00</span>
+                <span class="due">90+ days — PRIORITY</span>
+            </div>
+            <div class="card" style="border-left-color: #ed8936;">
+                <div class="labels"><span class="label label-orange"></span></div>
+                Warwick Group
+                <span class="amount">$2,100.00</span>
+                <span class="due">61–90 days</span>
+            </div>
+            <div class="card" style="border-left-color: #ecc94b;">
+                <div class="labels"><span class="label label-yellow"></span></div>
+                GGLO
+                <span class="amount">$7,400.00</span>
+                <span class="due">31–60 days</span>
+            </div>
+            <div class="card" style="border-left-color: #48bb78;">
+                <div class="labels"><span class="label label-green"></span></div>
+                Sean Horton
+                <span class="amount">$3,120.00</span>
+                <span class="due">0–30 days</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight" style="margin-top: 40px;">
+        <p><strong>Strategy:</strong> We'll prioritize follow-ups by aging — oldest first, largest amounts first. Red and orange labels get attention before green.</p>
+    </div>
+</div>
+
+<!-- SLIDE 6: AR Roles -->
+<div class="slide">
+    <h2>Who Does What — AR Board</h2>
+    <p class="subtitle">Clear ownership, no confusion</p>
+
+    <div class="roles">
+        <div class="role-box fiona">
+            <h4>Fiona (Day-to-Day)</h4>
+            <ul>
+                <li>Maintains the board</li>
+                <li>Sends follow-up emails/calls to clients</li>
+                <li>Moves cards through the pipeline</li>
+                <li>Logs notes and activity on each card</li>
+                <li>Sets due dates for next follow-up</li>
+                <li>Flags items that need escalation</li>
+            </ul>
+        </div>
+        <div class="role-box brandon">
+            <h4>Brandon (Support)</h4>
+            <ul>
+                <li>Provides invoices when requested</li>
+                <li>Provides client contact info</li>
+                <li>Confirms payments received & applied in QB</li>
+                <li>Handles escalated items with Jack</li>
+                <li>Answers questions about specific invoices</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <p><strong>Brandon's simple rule:</strong> If you see cards in the "Needs Invoice/Info" column, that's Fiona waiting on you. Drop the info on the card and she takes it from there.</p>
+    </div>
+</div>
+
+<!-- SLIDE 7: Master Calendar Board Overview -->
+<div class="slide">
+    <h2>Board 2: Master Project Calendar</h2>
+    <p class="subtitle">Every project. Every deadline. One place.</p>
+
+    <div class="board">
+        <div class="list">
+            <div class="list-title">Incoming / New</div>
+            <div class="card" style="border-left-color: #a0aec0; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 10px 0;">New projects land here</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Active — In Design</div>
+            <div class="card" style="border-left-color: #b794f4;">
+                <div class="labels"><span class="label label-purple"></span></div>
+                222612 — Jordan Downs S6
+                <span class="project">Killefer Flammang Architects</span>
+                <span class="due">Backgrounds due: 5/29</span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Active — Under Review</div>
+            <div class="card" style="border-left-color: #63b3ed; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 10px 0;">Waiting on client comments</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title" style="color: #fc8181;">Submittal Due</div>
+            <div class="card" style="border-left-color: #fc8181;">
+                <div class="labels"><span class="label label-purple"></span><span class="label label-red"></span></div>
+                252691 — Guggenheim
+                <span class="project">Domicile Design</span>
+                <span class="due">URGENT — Due: 5/25</span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">On Hold / Waiting</div>
+            <div class="card" style="border-left-color: #a0aec0; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 10px 0;">Stalled projects</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-title">Completed</div>
+            <div class="card" style="border-left-color: #48bb78; opacity: 0.6;">
+                <p style="font-size: 12px; color: #a0aec0; text-align: center; padding: 10px 0;">Done & archived</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 8: Calendar Card Detail - Guggenheim -->
+<div class="slide">
+    <h2>Card Example: Guggenheim</h2>
+    <p class="subtitle">252691 — Domicile Design — URGENT</p>
+
+    <div class="card-detail">
+        <div class="labels" style="margin-bottom: 16px;">
+            <span class="label label-purple" style="width: 50px;"></span>
+            <span class="label label-red" style="width: 50px;"></span>
+        </div>
+        <h3>252691 — Guggenheim — Domicile Design</h3>
+
+        <div class="detail-section">
+            <h4>Project Info</h4>
+            <p><strong>Client:</strong> Domicile Design — Darren Domingue</p>
+            <p><strong>Electrical Sub:</strong> Salas O'Brien — Sebastian Munguia / Jeff Van Parys</p>
+            <p><strong>Discipline:</strong> Full MEPF</p>
+            <p><strong>K&A Lead:</strong> Jack / Bernard</p>
+        </div>
+
+        <div class="detail-section">
+            <h4>Key Dates</h4>
+            <p><strong>12-Day Promise Made:</strong> ~May 12-13, 2026</p>
+            <p><strong>Target Submittal:</strong> May 25, 2026</p>
+            <p style="color: #fc8181;"><strong>STATUS:</strong> Sebastian asked for exact date confirmation</p>
+        </div>
+
+        <div class="detail-section">
+            <h4>Checklist</h4>
+            <div class="checklist-item"><span class="box"></span> Confirm exact submittal date with team</div>
+            <div class="checklist-item"><span class="box"></span> Final mechanical plans sent to Salas O'Brien</div>
+            <div class="checklist-item"><span class="box"></span> Solar panel layout — confirm who generates</div>
+            <div class="checklist-item"><span class="box"></span> Salas O'Brien confirms schedule works</div>
+            <div class="checklist-item"><span class="box"></span> Internal QC review</div>
+            <div class="checklist-item"><span class="box"></span> Final submittal to client</div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 9: Calendar Card Detail - Jordan Downs -->
+<div class="slide">
+    <h2>Card Example: Jordan Downs S6</h2>
+    <p class="subtitle">222612 — Killefer Flammang Architects</p>
+
+    <div class="card-detail">
+        <div class="labels" style="margin-bottom: 16px;">
+            <span class="label label-purple" style="width: 50px;"></span>
+        </div>
+        <h3>222612 — Jordan Downs S6 — KFA</h3>
+
+        <div class="detail-section">
+            <h4>Project Info</h4>
+            <p><strong>Client:</strong> Killefer Flammang Architects (KFA, LLP)</p>
+            <p><strong>Lead Contact:</strong> Karen Filippe — karen@kfalosangeles.com</p>
+            <p><strong>Discipline:</strong> Full MEPF</p>
+            <p><strong>K&A Lead:</strong> Brandon / Bernard</p>
+        </div>
+
+        <div class="detail-section">
+            <h4>Key Dates</h4>
+            <p><strong>Last Meeting:</strong> May 7, 2026</p>
+            <p><strong>Updated Backgrounds Due:</strong> May 29, 2026</p>
+            <p><strong>Mid-June Milestone:</strong> ~June 15, 2026 (TBD)</p>
+        </div>
+
+        <div class="detail-section">
+            <h4>Checklist</h4>
+            <div class="checklist-item"><span class="box"></span> Updated backgrounds received (due 5/29)</div>
+            <div class="checklist-item"><span class="box"></span> Bluebeam access confirmed for all team members</div>
+            <div class="checklist-item"><span class="box"></span> KFA review comments received</div>
+            <div class="checklist-item"><span class="box"></span> Mid-June milestone deliverable submitted</div>
+            <div class="checklist-item"><span class="box"></span> Revisions completed</div>
+        </div>
+
+        <div class="detail-section">
+            <h4>Notes</h4>
+            <p style="color: #a0aec0;">AR: $48,656.25 outstanding under this client (Jordan Downs S6)</p>
+            <p style="color: #a0aec0;">Also $14,800 outstanding for Park Lane Homes Phase 1</p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 10: Calendar View -->
+<div class="slide">
+    <h2>The Calendar View</h2>
+    <p class="subtitle">This is why we needed Premium — visual deadline tracking</p>
+
+    <div class="calendar">
+        <div class="cal-header">Sun</div>
+        <div class="cal-header">Mon</div>
+        <div class="cal-header">Tue</div>
+        <div class="cal-header">Wed</div>
+        <div class="cal-header">Thu</div>
+        <div class="cal-header">Fri</div>
+        <div class="cal-header">Sat</div>
+
+        <div class="cal-day"><span class="date">18</span></div>
+        <div class="cal-day today"><span class="date">19</span><span class="event green">Today</span></div>
+        <div class="cal-day"><span class="date">20</span></div>
+        <div class="cal-day"><span class="date">21</span></div>
+        <div class="cal-day"><span class="date">22</span></div>
+        <div class="cal-day"><span class="date">23</span></div>
+        <div class="cal-day"><span class="date">24</span></div>
+
+        <div class="cal-day"><span class="date">25</span><span class="event">Guggenheim Due</span></div>
+        <div class="cal-day"><span class="date">26</span></div>
+        <div class="cal-day"><span class="date">27</span></div>
+        <div class="cal-day"><span class="date">28</span></div>
+        <div class="cal-day"><span class="date">29</span><span class="event blue">JDS6 Backgrounds</span></div>
+        <div class="cal-day"><span class="date">30</span></div>
+        <div class="cal-day"><span class="date">31</span></div>
+
+        <div class="cal-day"><span class="date">1</span></div>
+        <div class="cal-day"><span class="date">2</span></div>
+        <div class="cal-day"><span class="date">3</span></div>
+        <div class="cal-day"><span class="date">4</span></div>
+        <div class="cal-day"><span class="date">5</span></div>
+        <div class="cal-day"><span class="date">6</span></div>
+        <div class="cal-day"><span class="date">7</span></div>
+
+        <div class="cal-day"><span class="date">8</span></div>
+        <div class="cal-day"><span class="date">9</span></div>
+        <div class="cal-day"><span class="date">10</span></div>
+        <div class="cal-day"><span class="date">11</span></div>
+        <div class="cal-day"><span class="date">12</span></div>
+        <div class="cal-day"><span class="date">13</span></div>
+        <div class="cal-day"><span class="date">14</span></div>
+
+        <div class="cal-day"><span class="date">15</span><span class="event blue">JDS6 Mid-June</span></div>
+        <div class="cal-day"><span class="date">16</span></div>
+        <div class="cal-day"><span class="date">17</span></div>
+        <div class="cal-day"><span class="date">18</span></div>
+        <div class="cal-day"><span class="date">19</span></div>
+        <div class="cal-day"><span class="date">20</span></div>
+        <div class="cal-day"><span class="date">21</span></div>
+    </div>
+
+    <div class="highlight">
+        <p><strong>How it works:</strong> Every card with a due date automatically shows up on the calendar. As we add more projects, the calendar fills in — giving the whole team a visual of what's due and when. No more surprises.</p>
+    </div>
+</div>
+
+<!-- SLIDE 11: Discipline Labels -->
+<div class="slide">
+    <h2>Project Labels — By Discipline</h2>
+    <p class="subtitle">Quick visual identification of what type of work each project involves</p>
+
+    <div class="legend" style="margin: 40px 0; flex-direction: column; gap: 16px;">
+        <div class="legend-item"><span class="legend-dot" style="background: #63b3ed; width: 40px; height: 12px; border-radius: 6px;"></span> <strong>Electrical</strong></div>
+        <div class="legend-item"><span class="legend-dot" style="background: #fc8181; width: 40px; height: 12px; border-radius: 6px;"></span> <strong>Mechanical / HVAC</strong></div>
+        <div class="legend-item"><span class="legend-dot" style="background: #48bb78; width: 40px; height: 12px; border-radius: 6px;"></span> <strong>Plumbing</strong></div>
+        <div class="legend-item"><span class="legend-dot" style="background: #ed8936; width: 40px; height: 12px; border-radius: 6px;"></span> <strong>Fire Protection</strong></div>
+        <div class="legend-item"><span class="legend-dot" style="background: #b794f4; width: 40px; height: 12px; border-radius: 6px;"></span> <strong>Full MEPF</strong> (multi-discipline)</div>
+        <div class="legend-item"><span class="legend-dot" style="background: #ecc94b; width: 40px; height: 12px; border-radius: 6px;"></span> <strong>Proposal Stage</strong> (not yet contracted)</div>
+    </div>
+
+    <div class="highlight" style="margin-top: 40px;">
+        <p><strong>Urgency labels stack on top:</strong></p>
+        <div class="legend" style="margin-top: 12px;">
+            <div class="legend-item"><span class="legend-dot" style="background: #fc8181;"></span> URGENT — deadline within 7 days</div>
+            <div class="legend-item"><span class="legend-dot" style="background: #ecc94b;"></span> ATTENTION — deadline within 14 days</div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 12: Roles - Calendar -->
+<div class="slide">
+    <h2>Who Does What — Calendar Board</h2>
+    <p class="subtitle">Clear ownership, minimal effort from Brandon</p>
+
+    <div class="roles">
+        <div class="role-box fiona">
+            <h4>Fiona (Maintains the Board)</h4>
+            <ul>
+                <li>Creates and updates project cards</li>
+                <li>Sets and adjusts due dates</li>
+                <li>Moves cards between lists as status changes</li>
+                <li>Tracks checklists and milestones</li>
+                <li>Sends reminders when deadlines approach</li>
+                <li>Archives completed projects</li>
+            </ul>
+        </div>
+        <div class="role-box brandon">
+            <h4>Brandon (Flags Changes)</h4>
+            <ul>
+                <li>Tells Fiona about new projects to add</li>
+                <li>Flags deadline changes or new milestones</li>
+                <li>Lets Fiona know when submittals go out</li>
+                <li>Checks the calendar for team visibility</li>
+                <li>Uses card format: [Project #] — [Name] — [Client]</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <p><strong>Brandon's simple rule:</strong> When a new project comes in or a deadline changes — just tell Fiona (email, message, or comment on the card). She handles the rest.</p>
+    </div>
+</div>
+
+<!-- SLIDE 13: Summary -->
+<div class="slide title-slide">
+    <h2>Summary</h2>
+    <div class="two-col" style="margin-top: 40px; text-align: left;">
+        <div class="col" style="border-top: 4px solid #48bb78;">
+            <h3 style="color: #48bb78;">AR Tracker</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Follow up on $609K in outstanding payments</li>
+                <li><strong>Cards move:</strong> Left → Right as we progress</li>
+                <li><strong>Brandon's part:</strong> Provide invoices & confirm payments</li>
+                <li><strong>Fiona's part:</strong> Everything else — outreach, tracking, logging</li>
+                <li><strong>Color = aging:</strong> Red is oldest, green is newest</li>
+            </ul>
+        </div>
+        <div class="col" style="border-top: 4px solid #4299e1;">
+            <h3 style="color: #4299e1;">Master Calendar</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Never miss a project deadline</li>
+                <li><strong>Calendar view:</strong> Visual timeline of all due dates</li>
+                <li><strong>Brandon's part:</strong> Flag new projects & deadline changes</li>
+                <li><strong>Fiona's part:</strong> Maintains cards, dates, and checklists</li>
+                <li><strong>Color = discipline:</strong> Purple = MEPF, Blue = Elec, etc.</li>
+            </ul>
+        </div>
+    </div>
+    <p style="margin-top: 40px; color: #a0aec0; font-size: 16px;">Questions? Let's talk through anything that needs adjusting.</p>
+</div>
+
+<!-- Navigation -->
+<div class="nav">
+    <button class="prev" onclick="prevSlide()">← Back</button>
+    <div class="counter"><span id="current">1</span> / <span id="total">13</span></div>
+    <button class="next" onclick="nextSlide()">Next →</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const total = slides.length;
+    document.getElementById('total').textContent = total;
+
+    function showSlide(n) {
+        slides.forEach(s => s.classList.remove('active'));
+        slides[n].classList.add('active');
+        document.getElementById('current').textContent = n + 1;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % total;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + total) % total;
+        showSlide(currentSlide);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); nextSlide(); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); prevSlide(); }
+    });
+</script>
+
+</body>
+</html>
