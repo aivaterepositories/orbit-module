@@ -5,29 +5,60 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-05-21 (Nova — Fiona CRM review with client. 4 new issues identified: duplicate job card deletion, document checklist inconsistency, SOV retention row delete disabled, pipeline filter not persisting.)
+**Last Updated:** 2026-05-21 (Nova — Two CRM sessions with Chris, Angela, Sandra. 9 issues identified across deletion permissions, file uploads, SOV, filters, and task management. Reviewed and corrected by Fiona. Fathom: https://fathom.video/share/dq6wf8fyTacxr3gDT8YBtzBRfu973Eaj)
 
 ---
 
 ## Latest Update - May 21, 2026
 
-### FIONA/CLIENT CRM REVIEW — 4 NEW ISSUES IDENTIFIED
+### CRM SET-UP SESSIONS (Two Sessions: AM + PM) — 9 ISSUES IDENTIFIED
+
+**Attendees:** Chris Yates, Angela Vaughn-Richey, Sandra Morales, Fiona
+**Recording:** [CRM Set-Up — May 21 (65 min)](https://fathom.video/share/dq6wf8fyTacxr3gDT8YBtzBRfu973Eaj)
+
+**What was demonstrated (working):**
+- Contracts & Compliance section — 4-category document upload (Contract, Insurance Certificate, Billing Information, Purchase Order) now functional
+- Deposit Required badge — changed from red to neutral yellow
+- Task management — task creation, assignment, bell notification, profile task list, status filtering, task preview on pipeline view all working
+- SOV Remaining to Schedule — auto-calculation live and working
+- CSV backfill — 369 total jobs now in CRM (up from 251), cross-matched with Salesforce
+
+#### All Issues Identified — May 21
 
 | # | Issue | Severity | Description |
 |---|-------|----------|-------------|
-| 1 | **Cannot delete duplicate job cards** | HIGH | CSV backfill uploads from Jacob (Salesforce → CRM) created duplicate job cards. Chris acknowledges the duplicates and is fine with them existing, BUT no user can currently delete them. **Fix:** Implement admin-only delete permission — only Admin users (Chris, Fiona, Justin) should be able to delete job cards. Non-admins should not have delete capability. |
-| 2 | **Old document checklist on some job cards** | HIGH | Some job cards still show the OLD 3-document checklist (Contract/PO, Insurance, Billing Information). ALL job cards — regardless of stage — should now have the updated **4-document checklist**: (1) Contract, (2) Insurance Certificate, (3) Billing Information, (4) Purchase Order. Cards from the CSV backfill likely carried over the old schema. |
-| 3 | **Cannot delete retention row in SOV** | MEDIUM | Angela is unable to delete a retention line item she added under the SOV section. The delete button is disabled / grayed out / unclickable. She can add a retention row but cannot remove it if she changes her mind. |
-| 4 | **Pipeline filters not persisting** | HIGH | When a user applies a filter on the Jobs Pipeline page, then opens a job card, then navigates back to the pipeline — the filter is cleared. Users have to re-apply filters every time they return from viewing a job card. Chris flagged this as a significant pain point for daily use. |
+| 1 | **Job deletion blocked + admin-only guardrail** | CRITICAL | Backfilled duplicate job cards (from CSV import) cannot be deleted by ANY user. Chris and Fiona both attempted to delete the PIH Whittier duplicate — system returned "Failed to delete job. Method not allowed." This is a code-level blocker. Once fixed, deletion must be restricted to admin-only: **only Chris, Fiona, and Justin** can delete job cards. Non-admins should not see or access a delete option. The edit and delete buttons are also too close together — easy to accidentally hit delete instead of edit. |
+| 2 | **Contract file uploads not persisting / disappearing** | CRITICAL | Sandra uploads a contract file, but it either: (a) doesn't appear for other users until she uploads it a second time, or (b) disappears entirely even after re-uploading. No save button exists after upload — it should auto-persist. Sandra should never have to re-upload. Files must persist immediately and reliably for all users on the first attempt, regardless of file size. |
+| 3 | **SOV retention row — full logic overhaul needed** | CRITICAL | This is NOT isolated to job 84852 — it affects ALL job cards. The retention row in the SOV section has multiple issues: (a) the delete button is disabled/grayed out — users cannot remove a retention row once added; (b) retention must **add to the contract amount**, not just display as a line item; (c) the **Scheduled Value field** must be open and editable by the user; (d) the **Invoice Value field** must be open and editable by the user. Retention needs to integrate into the full SOV calculation flow (contract amount → scheduled → invoiced → remaining to bill). This requires a logic overhaul, not just a UI fix. |
+| 4 | **Task deletion guardrail — assigner-only delete** | HIGH | Only the person who ASSIGNED a task should be able to delete it. Not the assignee, not anyone else. Chris: "The person assigning the task should be the only person to delete it... that could very quickly become an 'oh I didn't get your email' thing." |
+| 5 | **Old document checklist on backfilled cards** | HIGH | Some job cards (from CSV backfill) still show the OLD 3-document checklist (Contract/PO, Insurance, Billing Information) instead of the updated 4-item checklist (Contract, Insurance Certificate, Billing Information, Purchase Order). ALL job cards — regardless of stage or source — must have the 4-document checklist. |
+| 6 | **10MB file upload limit** | HIGH | Users cannot upload files exceeding 10MB. Workaround options: (a) increase the upload size limit in the CRM, OR (b) allow users to paste a **link** (e.g., to the Salesforce opportunity document) in addition to uploading a file. Sandra should be able to either upload a file OR paste a document link for each checklist item (Contract, Insurance Certificate, Billing Information, Purchase Order). |
+| 7 | **Pipeline filters not persisting across navigation** | HIGH | When a user applies a filter on the Jobs Pipeline page (e.g., Project Manager = Wayne), opens a job card, then navigates back — the filter is cleared. Users have to re-apply filters every time they return from viewing a job card. Chris flagged this as a significant daily pain point, especially during the sanitization exercise. |
+| 8 | **Retention filter not pulling correct records** | MEDIUM | On the Jobs Pipeline page, filtering by "has retention" does not return the correct job cards. Jobs with retention rows in their SOV are not being pulled by this filter. All pipeline filters should be validated to ensure they return accurate data. |
+| 9 | **Notification bell requires real-time push** | MEDIUM | Task assignment notifications only appear in the bell icon after the user manually refreshes the page. Notifications should be real-time push — no refresh needed. Users must see new task assignments immediately without having to remember to refresh. |
 
-#### Cob Action Items from May 21 Review
+#### Jacob Action Items from May 21 Sessions
 
 | # | Action | Priority |
 |---|--------|----------|
-| 12 | **Implement admin-only job card deletion** — Only Chris, Fiona, and Justin can delete job cards. Other users should not see or access a delete option. | HIGH |
-| 13 | **Migrate all job cards to 4-document checklist** — Ensure every job card (including CSV backfill imports) has: Contract, Insurance Certificate, Billing Information, Purchase Order. Fix the data, not just new cards going forward. | HIGH |
-| 14 | **Fix SOV retention row delete** — Enable the delete button on retention line items in the SOV section so users (like Angela) can remove rows they've added. | MEDIUM |
-| 15 | **Persist pipeline filters across navigation** — When a user applies a filter on the Jobs Pipeline page and opens a job card, the filter state should be preserved when they navigate back. | HIGH |
+| 12 | **Fix job deletion + implement admin-only guardrail** — The "Method not allowed" error must be resolved first. Backfilled CSV jobs cannot be deleted by anyone. Fix the underlying deletion logic, then restrict delete permissions to Admin users only (Chris, Fiona, Justin). Remove the delete option from the 3-dot menu for non-admins. Test by deleting the PIH Whittier duplicate. | CRITICAL |
+| 13 | **Fix contract/document upload persistence** — Investigate why uploaded files sometimes don't appear or disappear. Uploads must persist immediately and reliably for all users on the first attempt. No re-upload should ever be necessary. | CRITICAL |
+| 14 | **SOV retention row — full logic overhaul** — This affects ALL job cards, not just one. Fix: (a) enable delete button on retention rows, (b) retention must add to the contract amount, (c) Scheduled Value field must be open/editable, (d) Invoice Value field must be open/editable. Retention must integrate into the full SOV calculation flow (contract amount → scheduled → invoiced → remaining to bill). | CRITICAL |
+| 15 | **Implement task deletion guardrail** — Only the person who ASSIGNED a task can delete it. The assignee and other users should not see a delete option on tasks they did not create. | HIGH |
+| 16 | **Migrate all job cards to 4-document checklist** — Ensure every job card (including CSV backfill imports) has: Contract, Insurance Certificate, Billing Information, Purchase Order. Fix the data for existing cards, not just new ones. | HIGH |
+| 17 | **Increase file upload limit OR add document link option** — Either raise the 10MB upload cap, or add the ability to paste a URL/link to documents in each checklist item as an alternative to file upload. Ideally both. | HIGH |
+| 18 | **Persist pipeline filters across navigation** — When a user applies a filter and opens a job card, the filter state must be preserved when they navigate back. | HIGH |
+| 19 | **Fix retention filter on pipeline page** — The "has retention" filter is not pulling correct job cards. Validate ALL pipeline filters to ensure they return accurate records matching the filter criteria. | MEDIUM |
+| 20 | **Implement real-time push notifications** — Notification bell must update in real-time when a task is assigned. No page refresh should be required. | MEDIUM |
+
+#### Other Action Items from May 21 Sessions
+
+| # | Action | Owner | Priority |
+|---|--------|-------|----------|
+| A | **Schedule Salesforce-Zapier reconnect session** — Jacob + Chris need to reconnect the API key so jobs auto-sync from Salesforce to CRM again. Jacob got kicked out due to Salesforce security settings. | Jacob + Chris | HIGH |
+| B | **Schedule Permits & Utilities scope session with Wayne** — Wayne said there's a lot missing. Chris wants to talk to Wayne before any dev work. Target: next week, after Angela & Sandra are rolling. Mark and Wayne are the next users to onboard. | Fiona | MEDIUM |
+| C | **Upload insurance certificates to CRM** — Fiona now has access to Sandra's folder (TPS Renewal Certificates). Fiona to download, organize, and upload COIs to each job card in the CRM. | Fiona | MEDIUM |
+| D | **Supabase data recovery reminder** — Chris informed that accidental deletions can be recovered by emailing solutions@aivate.net. Supabase retains data. | Info only | — |
 
 ---
 
