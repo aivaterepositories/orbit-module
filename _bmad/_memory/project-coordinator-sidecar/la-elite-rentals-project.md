@@ -434,7 +434,9 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 
 ## Progress Log
 
-**2026-05-21:** Phase 4 rough draft created (`la-elite-rentals-phase4-client-doc.md`). Covers 7 workflows: Auto-Task on Stage Change (WF13), Stale Lead Alert (WF14), Denial Reason Auto-Response (WF15), Pickup Confirmation Sequence (WF16), Registration Renewal Notification (WF17), Bouncie Maintenance Alert (WF18), Off-Grid/Border Alert (WF19). 9 questions identified for Kel: Bouncie access, geofence boundaries, alert classifications, vehicle-renter matching, registration data sync, pickup location, denial reasons, HQ Rental webhook, stale lead threshold. Draft prepared for Fiona's review ahead of Kel meeting today.
+**2026-05-21 (Post-Call):** Phase 4 Kick-Off call completed with Kel (39 min). All 7 workflows APPROVED. Key decisions: (1) WF15 — Background check denial gets NO automated SMS (sensitive). All other denial reasons approved verbatim. (2) WF16 — Day-before changed to 1 PM PT, ETA check changed to 1 hour before (not 30 min). Major addition: multi-person notification for ALL pickup outcomes — DOS (task) + Kel (SMS: 773-807-7147) + Don (SMS: 917-365-3661). No-reply alert fires 30 min before. (3) WF18 — Two new Bouncie alert types: Impact (collision) and Device Removed (CRITICAL). Kel to send screenshot of device removal alert. (4) WF19 — Don also gets SMS for off-grid alerts. (5) Post-pickup policy text — Kel shared that DOS sends manual welcome/policy text after pickup. Wants automated. Kel to send template. Variable: 3-day vs weekly payment structures. (6) Pipeline hygiene concern — Kel wants proper labeling so mass texts don't hit wrong people. Fiona to audit with DOS. (7) Phase 3 at 90%, Marky EOD today. (8) May $350 retainer — Kel to send today. (9) Timeline: ~2 weeks for Phase 4. Open items: Bouncie API key (DOS + Marky), geofence config, device removed screenshot, post-pickup template, pipeline audit. Fathom: https://fathom.video/share/ffTwkkS_5mxPU8oxxGRhc4y4g9JNC4Tu
+
+**2026-05-21 (Pre-Call):** Phase 4 rough draft created (`la-elite-rentals-phase4-client-doc.md`). Covers 7 workflows: Auto-Task on Stage Change (WF13), Stale Lead Alert (WF14), Denial Reason Auto-Response (WF15), Pickup Confirmation Sequence (WF16), Registration Renewal Notification (WF17), Bouncie Maintenance Alert (WF18), Off-Grid/Border Alert (WF19). 9 questions identified for Kel. Draft prepared for Fiona's review ahead of Kel meeting.
 
 **2026-04-23:** Phase 3 rough draft created (`la-elite-rentals-phase3-client-doc.md`). Covers 4 workflows: Late Payment Escalation (WF9), Weekly Renter Check-In (WF10), Referral Request at 30 days (WF11), Renewal/Extension Reminder (WF12). Draft prepared for Fiona's review ahead of Kel meeting. 5 questions identified for Kel: vehicle recovery process, rental end date tracking, check-in frequency preference, referral incentive, payment confirmation process.
 
@@ -472,7 +474,7 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 
 **Created:** 2026-02-04
 **Last Updated:** 2026-05-21
-**Status:** ACTIVE — PHASE 4 DRAFTING (Meeting with Kel today May 21)
-**Current Sprint:** Phase 4: Internal Efficiency (May 2026)
-**Next Step:** Fiona review Phase 4 rough draft → Discuss with Kel today → Resolve 9 questions → Begin Phase 4 build
+**Status:** ACTIVE — PHASE 4 ALL APPROVED (7 workflows approved by Kel, May 21)
+**Current Sprint:** Phase 3 completing (Marky EOD May 21) → Phase 4: Internal Efficiency
+**Next Step:** Marky finishes Phase 3 → Collect Bouncie access + Kel's post-pickup template → Begin Phase 4 build (~2 weeks)
 **Project Coordinator:** Nova

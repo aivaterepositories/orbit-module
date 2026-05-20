@@ -5,11 +5,33 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-05-16 (Nova — Fiona/Cob CRM review call. 5 test areas reviewed: SOV remaining-to-schedule RESOLVED, PO upload BUG, pre-lien docs RESOLVED, deposit color NEEDS FIX, task management CRITICAL. Supabase free tier flagged for audit.)
+**Last Updated:** 2026-05-21 (Nova — Fiona CRM review with client. 4 new issues identified: duplicate job card deletion, document checklist inconsistency, SOV retention row delete disabled, pipeline filter not persisting.)
 
 ---
 
-## Latest Update - May 16, 2026
+## Latest Update - May 21, 2026
+
+### FIONA/CLIENT CRM REVIEW — 4 NEW ISSUES IDENTIFIED
+
+| # | Issue | Severity | Description |
+|---|-------|----------|-------------|
+| 1 | **Cannot delete duplicate job cards** | HIGH | CSV backfill uploads from Jacob (Salesforce → CRM) created duplicate job cards. Chris acknowledges the duplicates and is fine with them existing, BUT no user can currently delete them. **Fix:** Implement admin-only delete permission — only Admin users (Chris, Fiona, Justin) should be able to delete job cards. Non-admins should not have delete capability. |
+| 2 | **Old document checklist on some job cards** | HIGH | Some job cards still show the OLD 3-document checklist (Contract/PO, Insurance, Billing Information). ALL job cards — regardless of stage — should now have the updated **4-document checklist**: (1) Contract, (2) Insurance Certificate, (3) Billing Information, (4) Purchase Order. Cards from the CSV backfill likely carried over the old schema. |
+| 3 | **Cannot delete retention row in SOV** | MEDIUM | Angela is unable to delete a retention line item she added under the SOV section. The delete button is disabled / grayed out / unclickable. She can add a retention row but cannot remove it if she changes her mind. |
+| 4 | **Pipeline filters not persisting** | HIGH | When a user applies a filter on the Jobs Pipeline page, then opens a job card, then navigates back to the pipeline — the filter is cleared. Users have to re-apply filters every time they return from viewing a job card. Chris flagged this as a significant pain point for daily use. |
+
+#### Cob Action Items from May 21 Review
+
+| # | Action | Priority |
+|---|--------|----------|
+| 12 | **Implement admin-only job card deletion** — Only Chris, Fiona, and Justin can delete job cards. Other users should not see or access a delete option. | HIGH |
+| 13 | **Migrate all job cards to 4-document checklist** — Ensure every job card (including CSV backfill imports) has: Contract, Insurance Certificate, Billing Information, Purchase Order. Fix the data, not just new cards going forward. | HIGH |
+| 14 | **Fix SOV retention row delete** — Enable the delete button on retention line items in the SOV section so users (like Angela) can remove rows they've added. | MEDIUM |
+| 15 | **Persist pipeline filters across navigation** — When a user applies a filter on the Jobs Pipeline page and opens a job card, the filter state should be preserved when they navigate back. | HIGH |
+
+---
+
+## Previous Update - May 16, 2026
 
 ### FIONA/COB CRM REVIEW CALL — 5 ITEMS TESTED
 
