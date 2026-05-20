@@ -66,6 +66,7 @@ Fiona has already created for this client:
 | **Marky's Build Scope** | `la-elite-rentals-marky-scope.md` | Ready for build |
 | **Phase 1 Client Doc** | `la-elite-rentals-phase1-client-doc.md` | Delivered |
 | **Phase 3 Client Doc** | `la-elite-rentals-phase3-client-doc.md` | ROUGH DRAFT — Pending Fiona review |
+| **Phase 4 Client Doc** | `la-elite-rentals-phase4-client-doc.md` | ROUGH DRAFT — Pending Fiona review + Kel discussion |
 
 **Automations Identified:** 30 opportunities across 4 phases
 **Workflows Scoped for Build:** 17 (with full specs, triggers, and copy)
@@ -433,6 +434,8 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 
 ## Progress Log
 
+**2026-05-21:** Phase 4 rough draft created (`la-elite-rentals-phase4-client-doc.md`). Covers 7 workflows: Auto-Task on Stage Change (WF13), Stale Lead Alert (WF14), Denial Reason Auto-Response (WF15), Pickup Confirmation Sequence (WF16), Registration Renewal Notification (WF17), Bouncie Maintenance Alert (WF18), Off-Grid/Border Alert (WF19). 9 questions identified for Kel: Bouncie access, geofence boundaries, alert classifications, vehicle-renter matching, registration data sync, pickup location, denial reasons, HQ Rental webhook, stale lead threshold. Draft prepared for Fiona's review ahead of Kel meeting today.
+
 **2026-04-23:** Phase 3 rough draft created (`la-elite-rentals-phase3-client-doc.md`). Covers 4 workflows: Late Payment Escalation (WF9), Weekly Renter Check-In (WF10), Referral Request at 30 days (WF11), Renewal/Extension Reminder (WF12). Draft prepared for Fiona's review ahead of Kel meeting. 5 questions identified for Kel: vehicle recovery process, rental end date tracking, check-in frequency preference, referral incentive, payment confirmation process.
 
 **2026-03-13:** HQ Rental access acquired — WF3 (Payment Due Reminders) now unblocked. Phase 1 fully unblocked. Phase 2 workflow drafts created (WF5-WF8: 3-Day Urgency Follow-Up, Intake Form Reminder, Nurturing Drip, Waitlist Reactivation). Rough drafts prepared in same format as Phase 1 workflows, committed to GitHub, and shared via Google Doc. Emailed Marky to review for risks/blockers (do NOT start build). Emailed Kel to propose Phase 2 kickoff call — Monday March 16, 2:00 PM Pacific. Marky to join for technical questions. Awaiting Kel's confirmation.
@@ -468,8 +471,8 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-04-23
-**Status:** ACTIVE — PHASE 3 DRAFTING (Meeting with Kel upcoming)
-**Current Sprint:** Phase 3: Retention (Apr 2026)
-**Next Step:** Fiona review Phase 3 rough draft → Present to Kel in meeting → Address 5 questions → Begin Phase 3 build
+**Last Updated:** 2026-05-21
+**Status:** ACTIVE — PHASE 4 DRAFTING (Meeting with Kel today May 21)
+**Current Sprint:** Phase 4: Internal Efficiency (May 2026)
+**Next Step:** Fiona review Phase 4 rough draft → Discuss with Kel today → Resolve 9 questions → Begin Phase 4 build
 **Project Coordinator:** Nova
