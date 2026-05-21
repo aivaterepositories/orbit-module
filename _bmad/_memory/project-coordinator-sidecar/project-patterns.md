@@ -1,6 +1,6 @@
 # Project Patterns - Nova's Memory
 
-**Last Updated:** 2026-02-13
+**Last Updated:** 2026-05-21
 
 This file stores learned patterns from managing projects across sprints. Nova uses this to improve coordination and prevent common issues.
 
@@ -27,7 +27,7 @@ When sending emails on Fiona's behalf:
 - **Workspace:** KA Workspace
 - **Default List:** Do Today
 - **Lists:** Do Today, Doing, Delegated, Stuck, Completed, KB
-- **Labels:** Khalifeh & Associates (blue), Temp Power Systems (red), LA Elite Rentals (orange), Dos Gringos Construction (green), RNR Property Solutions (purple), Bedrock Investment Property (yellow), Aivate Internal (sky)
+- **Labels:** Khalifeh & Associates (blue), Temp Power Systems (red), LA Elite Rentals (orange), Dos Gringos Construction (green), RNR Property Solutions (purple), Bedrock Investment Property (yellow), Aivate Internal (sky), FIG (pink)
 - **Usage:** After call transcripts, auto-create task cards in Do Today with the appropriate project label.
 
 #### Trello — Khalifeh & Associates (Legacy/Standalone)
@@ -36,15 +36,20 @@ When sending emails on Fiona's behalf:
 #### Fathom Accounts
 - **Aivate account:** TPS, LA Elite, Dos Gringos, RNR, Bedrock, Aivate Internal
 - **Scale Virtually account:** Dos Gringos, RNR, Bedrock, and other SV clients
-- **KA account:** *(pending from Fiona)*
+- **FIG account:** Fiona is EA to Cory (CEO). Sometimes calls aren't recorded in Fathom — check Gemini Notes as fallback. **Do NOT auto-process FIG calls unless Fiona explicitly asks.**
+- **KA account:** No Fathom for KA. KA uses Microsoft Teams for meetings (see Teams Notes below).
 - **API base:** `https://api.fathom.ai/external/v1`
 - **Auth header:** `X-Api-Key`
 
 ### AI Notetaker Integration
 - **Workflow:** Fiona finishes call → tells Nova "process my [client] call" → Nova pulls transcript → extracts action items → creates Trello cards with correct label
-- **Notetakers:** Fathom (multiple accounts), Gemini Notes (multiple accounts), Teams Notes
-- **Gemini Notes API Keys:** *(pending from Fiona)*
-- **Teams Notes API Keys:** *(pending from Fiona)*
+- **Notetakers by account:**
+  - **Aivate:** Fathom (API connected)
+  - **Scale Virtually:** Fathom (API connected)
+  - **FIG:** Fathom (API connected) + Gemini Notes via Google Drive (fallback when Fathom doesn't record)
+  - **KA:** Microsoft Teams Notes (copy-paste from Fiona — no API, Graph API requires Azure AD admin setup)
+- **Gemini Notes:** Accessed via Google Drive MCP (solutions@aivate.net). FIG team shares notes from cory@freedomcm.net, karla@freedomcm.net. No API — Google doesn't offer one for Gemini Notes.
+- **Teams Notes:** No API access. Fiona will copy-paste Teams transcripts for KA meetings with Brandon/Jack. Nova extracts action items and creates Trello cards.
 
 ### Call Processing Rules
 - **SV call filtering:** Skip internal-only meetings (pdev client services, pdev daily standups, calls with only Scale Virtually team members and no clients). IMPORTANT: Always check transcript speakers, not just calendar invitees — impromptu calls may have clients who weren't on the invite.
@@ -56,6 +61,8 @@ When sending emails on Fiona's behalf:
   - Haruna Oyola / Willie Oyola / RNR → RNR Property Solutions (purple)
   - Jeremy Watson / Bedrock → Bedrock Investment Property (yellow)
   - Internal SV team only (Jesylou, Marc, Ace, Alex, Bhel, CK, Ella, pdev@) → SKIP
+- **Client-to-label mapping (FIG account):**
+  - Cory (CEO) / FIG calls → FIG (pink)
 
 ### Fiona's Calendar Booking Link
 - **URL:** https://calendar.google.com/appointments/schedules/AcZssZ2duyv6vS3CvA2vf_Ond637NJ90m65px2j-I3N3pD5W68BPlnSt47VAJUb94zKuwvsYJGxKIxyL
