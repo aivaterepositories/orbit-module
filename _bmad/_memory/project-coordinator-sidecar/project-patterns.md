@@ -32,6 +32,7 @@ When sending emails on Fiona's behalf:
 
 #### Trello — Khalifeh & Associates (Legacy/Standalone)
 - **URL:** https://trello.com/b/RxrX57P8/khalifeh-and-associates
+- **Timesheet Card:** `69eff51847e987ce823de238` (Timesheet and EOD Report — update daily with time allocation from KA EOD)
 
 #### Fathom Accounts
 - **Aivate account:** TPS, LA Elite, Dos Gringos, RNR, Bedrock, Aivate Internal
