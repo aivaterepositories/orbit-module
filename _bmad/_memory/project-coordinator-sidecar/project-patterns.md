@@ -18,6 +18,45 @@ When sending emails on Fiona's behalf:
 - **SMTP:** Gmail (smtp.gmail.com:587)
 - **App Password:** vknm hvsb wglu baan
 
+### Trello + Fathom Integration
+
+**Credentials file:** `.orbit-credentials/nova-integrations.yaml` (gitignored — read at runtime)
+
+#### Trello — Fiona's Project Board (Primary)
+- **URL:** https://trello.com/b/f2r0lkt5
+- **Workspace:** KA Workspace
+- **Default List:** Do Today
+- **Lists:** Do Today, Doing, Delegated, Stuck, Completed, KB
+- **Labels:** Khalifeh & Associates (blue), Temp Power Systems (red), LA Elite Rentals (orange), Dos Gringos Construction (green), RNR Property Solutions (purple), Bedrock Investment Property (yellow), Aivate Internal (sky)
+- **Usage:** After call transcripts, auto-create task cards in Do Today with the appropriate project label.
+
+#### Trello — Khalifeh & Associates (Legacy/Standalone)
+- **URL:** https://trello.com/b/RxrX57P8/khalifeh-and-associates
+
+#### Fathom Accounts
+- **Aivate account:** TPS, LA Elite, Dos Gringos, RNR, Bedrock, Aivate Internal
+- **Scale Virtually account:** Dos Gringos, RNR, Bedrock, and other SV clients
+- **KA account:** *(pending from Fiona)*
+- **API base:** `https://api.fathom.ai/external/v1`
+- **Auth header:** `X-Api-Key`
+
+### AI Notetaker Integration
+- **Workflow:** Fiona finishes call → tells Nova "process my [client] call" → Nova pulls transcript → extracts action items → creates Trello cards with correct label
+- **Notetakers:** Fathom (multiple accounts), Gemini Notes (multiple accounts), Teams Notes
+- **Gemini Notes API Keys:** *(pending from Fiona)*
+- **Teams Notes API Keys:** *(pending from Fiona)*
+
+### Call Processing Rules
+- **SV call filtering:** Skip internal-only meetings (pdev client services, pdev daily standups, calls with only Scale Virtually team members and no clients). IMPORTANT: Always check transcript speakers, not just calendar invitees — impromptu calls may have clients who weren't on the invite.
+- **No-show calls:** Do NOT create tasks from no-show client calls. These often turn into internal debriefs/training sessions with no actionable client tasks.
+- **Delegated tasks:** Prefix with [Person Name] in the card title. Place in Delegated list. Include "Assigned to:" in the description.
+- **Client-to-label mapping (SV account):**
+  - Walker McCallon / Dos Gringos → Dos Gringos Construction (green)
+  - Kel King / LA Elite Rentals / DOS / Don → LA Elite Rentals (orange)
+  - Haruna Oyola / Willie Oyola / RNR → RNR Property Solutions (purple)
+  - Jeremy Watson / Bedrock → Bedrock Investment Property (yellow)
+  - Internal SV team only (Jesylou, Marc, Ace, Alex, Bhel, CK, Ella, pdev@) → SKIP
+
 ### Fiona's Calendar Booking Link
 - **URL:** https://calendar.google.com/appointments/schedules/AcZssZ2duyv6vS3CvA2vf_Ond637NJ90m65px2j-I3N3pD5W68BPlnSt47VAJUb94zKuwvsYJGxKIxyL
 - **Use for:** Scheduling calls with Fiona
