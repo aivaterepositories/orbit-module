@@ -25,10 +25,10 @@ When sending emails on Fiona's behalf:
 #### Trello — Fiona's Project Board (Primary)
 - **URL:** https://trello.com/b/f2r0lkt5
 - **Workspace:** KA Workspace
-- **Default List:** Do Today
-- **Lists:** Do Today, Doing, Delegated, Stuck, Completed, KB
+- **Default List:** To Do (for new tasks from call processing)
+- **Lists:** To Do, Do Today, Doing, Delegated, Stuck, Completed, KB
 - **Labels:** Khalifeh & Associates (blue), Temp Power Systems (red), LA Elite Rentals (orange), Dos Gringos Construction (green), RNR Property Solutions (purple), Bedrock Investment Property (yellow), Aivate Internal (sky), FIG (pink)
-- **Usage:** After call transcripts, auto-create task cards in Do Today with the appropriate project label.
+- **Usage:** After call transcripts, auto-create task cards in **To Do** with the appropriate project label. Delegated tasks go in **Delegated** list.
 
 #### Trello — Khalifeh & Associates (Legacy/Standalone)
 - **URL:** https://trello.com/b/RxrX57P8/khalifeh-and-associates
