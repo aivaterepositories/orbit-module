@@ -33,6 +33,13 @@ When sending emails on Fiona's behalf:
 #### Trello — Khalifeh & Associates (Legacy/Standalone)
 - **URL:** https://trello.com/b/RxrX57P8/khalifeh-and-associates
 - **Timesheet Card:** `69eff51847e987ce823de238` (Timesheet and EOD Report — update daily with time allocation from KA EOD)
+- **Daily Timesheet Copy to Fiona's Project Board:**
+  - After updating the KA legacy timesheet card, also create a new card on Fiona's Project Board
+  - List: To Do
+  - Label: Khalifeh & Associates (blue)
+  - Custom Field "Assigned to" (ID: `6a0e8674edb9ed8aaa399943`): Jayson (ID: `6a0e8674edb9ed8aaa399945`)
+  - Card name format: "KA Timesheet & EOD — [Month Day, Year]"
+  - Description: That day's time allocation only
 
 #### Fathom Accounts
 - **Aivate account:** TPS, LA Elite, Dos Gringos, RNR, Bedrock, Aivate Internal
