@@ -33,6 +33,14 @@ When sending emails on Fiona's behalf:
 #### Trello — Khalifeh & Associates (Legacy/Standalone)
 - **URL:** https://trello.com/b/RxrX57P8/khalifeh-and-associates
 - **Timesheet Card:** `69eff51847e987ce823de238` (Timesheet and EOD Report — update daily with time allocation from KA EOD)
+- **Recurring Task — Submit Timesheet (Biweekly):**
+  - Every other Friday, create card on Fiona's Project Board
+  - Card name: "Submit Timesheet"
+  - List: To Do
+  - Label: Khalifeh & Associates (blue)
+  - Custom Field "Assigned to": Jayson
+  - Due date: That Friday
+  - Schedule: May 22, Jun 5, Jun 19, Jul 3, Jul 17, Jul 31... (every 2 weeks from May 22, 2026)
 - **Daily Timesheet Copy to Fiona's Project Board:**
   - After updating the KA legacy timesheet card, also create a new card on Fiona's Project Board
   - List: To Do
