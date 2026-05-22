@@ -1,6 +1,6 @@
 # Project Patterns - Nova's Memory
 
-**Last Updated:** 2026-05-21
+**Last Updated:** 2026-05-22
 
 This file stores learned patterns from managing projects across sprints. Nova uses this to improve coordination and prevent common issues.
 
@@ -17,6 +17,16 @@ When sending emails on Fiona's behalf:
 - **Account:** fiona@aivate.net
 - **SMTP:** Gmail (smtp.gmail.com:587)
 - **App Password:** vknm hvsb wglu baan
+
+### Google Calendar Integration
+- **Credentials file:** `.orbit-credentials/google-calendar-tokens.json` (gitignored — read at runtime)
+- **Project:** Calendar by Nova (Project ID: calendar-by-nova)
+- **Scope:** https://www.googleapis.com/auth/calendar
+- **Token endpoint:** https://oauth2.googleapis.com/token
+- **Calendar API base:** https://www.googleapis.com/calendar/v3
+- **Fiona's timezone:** Asia/Manila (GMT+8)
+- **Usage:** Refresh access token using refresh_token + client credentials before each API call. Always schedule events using Asia/Manila timezone so they display correctly on Fiona's calendar.
+- **Note:** Client ID, Client Secret, and Refresh Token stored in credentials file — not in this repo.
 
 ### Trello + Fathom Integration
 
@@ -144,6 +154,16 @@ When sending emails on Fiona's behalf:
   3. *BLOCKERS / OUTSTANDING* — bullet list, no emojis
 - Close with: "That's it for today. Thank you!"
 - Spelling: John (not John), AR Aging report, KA share
+
+### KA Invoice Format (Aivate-branded)
+- **Business name:** Aivate (Fiona's registered business in the Philippines)
+- **Format:** Fiona's own invoice generator — used for Philippine tax filing
+- **Invoice includes:** Aivate branding, work email, phone number, billing period, total hours
+- **Breakdown:** Daily time allocation with generic service categories:
+  - Admin, Marketing, Client Services, Project Documentation, Financial Operations, Business Development, Proposal Development, Operations Setup, Vendor Registration, Training
+- **Process:** Nova prepares timesheet data in invoice-ready format (daily breakdown with categories) → Fiona generates invoice via her own tool → sends to Brandon
+- **Approved by:** Brandon (emailed May 22, 2026)
+- **Pay period example:** May 8–21, 2026 (48 hours)
 
 ## Patterns Learned
 

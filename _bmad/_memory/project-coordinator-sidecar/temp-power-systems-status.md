@@ -5,11 +5,63 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-05-21 (Nova — Two CRM sessions with Chris, Angela, Sandra. 9 issues identified across deletion permissions, file uploads, SOV, filters, and task management. Reviewed and corrected by Fiona. Fathom: https://fathom.video/share/dq6wf8fyTacxr3gDT8YBtzBRfu973Eaj)
+**Last Updated:** 2026-05-22 (Nova — Processed full CRM Set-Up transcript from May 21. Live data audit conducted: ~15-20 jobs processed, 2 archived, several reclassified. Audit workflow established. Next sessions: Tue/Wed/Thu May 27-29. New bug found: SOV cents rounding. Duplicate reconciliation needed. Fathom: https://fathom.video/share/b2o3UrwrdzPckY-Lv97sxk6xx6DnAbqe)
 
 ---
 
-## Latest Update - May 21, 2026
+## Latest Update - May 22, 2026
+
+### CRM DATA AUDIT — FULL TRANSCRIPT PROCESSED
+
+**Attendees:** Chris Yates, Angela Vaughn-Richey, Sandra Morales, Fiona, Cob/Jacob
+**Recording:** [CRM Set-Up — May 21 (~2 hrs)](https://fathom.video/share/b2o3UrwrdzPckY-Lv97sxk6xx6DnAbqe)
+
+**What happened:**
+- Live CRM job audit — worked through Wayne's folder to verify, correct, and reclassify jobs across pipeline stages
+- ~15-20 jobs processed, 2 closed to Archive (Clifton Hills Estates, Starbucks Alhambra), several moved to Maintenance
+- Numerous duplicates identified (from CSV backfill)
+- Cob deployed Archive status option and fixed bugs live during the call
+
+#### Audit Workflow Established
+1. Work exclusively from Wayne's folder
+2. Check "Any" filter for duplicates
+3. Fiona assigns all duplicate (backfilled/yellow) jobs to herself
+4. Move audited jobs to Chris's bucket to track progress
+
+#### Key Decisions
+- **Got Job** = has contract, no work started, not yet scheduled
+- **Get Ready** = permitting, utility setup, contract requirements, equipment procurement
+- **Execution** = job is scheduled and actively being worked
+- **Maintenance** = all contract work billed; only rental/PO extra work remains
+- **Archive** = job fully finished and billed
+- **SOV cents:** Team wants cents displayed and calculated accurately — do NOT round
+- **Default assignment:** All new jobs default to Wayne's bucket
+
+#### Next Audit Sessions (Chris's time / PST)
+- **Tue May 27:** 10:00 AM – 12:00 PM
+- **Wed May 28:** 10:00 AM – 12:00 PM
+- **Thu May 29:** 2:00 PM – 4:00 PM
+
+#### New Bug: SOV Cents Rounding (Issue #10)
+- SOV calculation rounds to nearest dollar, creating discrepancies
+- Save button disabled with "Save Disabled Until SOV Balances with Contract Amount"
+- Discovered on Malia Holmes / Alara job
+- Assigned to Cob
+
+#### Additional Action Items from Audit
+| # | Action | Owner | Priority |
+|---|--------|-------|----------|
+| 21 | Assign all CRM duplicate jobs to self + reconcile with Cob's 58-item list | Fiona | HIGH |
+| 22 | Move ~20 completed Get Ready jobs to Angela's bucket for SOV work | Sandra | HIGH |
+| 23 | Complete SOVs for jobs in her bucket, then move to Chris's bucket | Angela | HIGH |
+| 24 | Fix SOV cents rounding — blocks saving on some jobs | Cob | HIGH |
+| 25 | Salesforce IP whitelisting — get Fiona's access set up properly | Chris | MEDIUM |
+| 26 | Build Salesforce link feature for master contracts in CRM | Cob | MEDIUM |
+| 27 | Work orders feature rollout — planned for week of May 27 | Fiona/Cob | MEDIUM |
+
+---
+
+## Previous Update - May 21, 2026
 
 ### CRM SET-UP SESSIONS (Two Sessions: AM + PM) — 9 ISSUES IDENTIFIED
 
