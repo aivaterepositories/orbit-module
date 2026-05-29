@@ -3,22 +3,21 @@
 
 **Prepared by:** Fiona Flynn, Marketing Specialist
 **Date:** May 29, 2026
-**Version:** 1.0 — For Jack's Review
+**Version:** 1.0 — For Review
 
 ---
 
 ## Executive Summary
 
-Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfolio of federal and commercial projects, and deep industry relationships. What it lacks is a systematic marketing presence. This plan addresses that gap with a practical, low-cost strategy that one person can execute.
+Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfolio of commercial projects, and deep industry relationships. What it lacks is a systematic marketing presence. This plan addresses that gap with a practical, cost-effective strategy.
 
-**The core thesis:** Jack Khalifeh's 40-year track record is KA's most powerful marketing asset. No competitor can replicate it. Every element of this plan is designed to amplify that credibility across the channels where architects, GCs, developers, and prime contractors are already looking.
+**The core thesis:** Jack Khalifeh's 40-year track record is KA's most powerful marketing asset. Every element of this plan is designed to amplify that credibility across the channels where architects, GCs, developers, and prime contractors are already looking.
 
 **What this plan covers:**
 - LinkedIn thought leadership through Jack's personal profile
 - Monthly email newsletter via Constant Contact
-- WordPress website optimization and SEO
+- WordPress website revamp and SEO
 - BD relationship development and follow-up systems
-- Federal/government contracting visibility
 - Content creation workflow that repurposes one input across all channels
 
 **What this plan does NOT require:**
@@ -27,32 +26,27 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 - Professional photography or video production
 - A complete website rebuild
 
-**Estimated ongoing investment:** ~6 hours/week of Fiona's time + existing Constant Contact Email Plus subscription ($157/month — already active).
-
 ---
 
 ## 1. Situation Analysis
 
 ### KA's Strengths
-- **40 years of continuous operation** — an unmatched track record in the region
+- **40 years of continuous operation** — a deep track record that few firms in the region can match
 - **Principal-led projects** — Jack's direct involvement on every project is a differentiator against large firms that send junior staff
-- **Federal/military experience** — established relationships with AECOM and past performance on NAVFAC, USACE, and VA projects
 - **Full-service MEP** — mechanical, electrical, and plumbing under one roof means coordinated designs and fewer change orders
 - **Small firm responsiveness** — faster turnaround, direct phone access to the principal, no bureaucratic layers
 
 ### Current Marketing Footprint
-- **Website:** WordPress (exists, needs content optimization)
-- **LinkedIn:** Jack has a profile (needs optimization and regular posting)
-- **Email:** Constant Contact subscription (not yet actively used for newsletters)
-- **BD outreach:** Fiona conducting regular lunch meetings with architects, GCs, and partners
-- **Federal:** SAM.gov registration, USWCC relationship, AECOM sub-consulting
+- **Website:** WordPress — exists but is outdated, lacks CTAs, and needs a revamp to be engaging and interactive for prospective partners
+- **LinkedIn:** Jack has a profile — needs optimization and regular posting
+- **Email:** Constant Contact Email Plus subscription ($157/month) with approximately 7,000 contacts already imported and filtered
+- **BD outreach:** Regular lunch meetings with architects, GCs, and partners; client outreach tracked in Trello
 
 ### Opportunities
 - No systematic LinkedIn presence → first-mover advantage among local MEP competitors on thought leadership
-- Email list not yet built → clean start with proper segmentation
-- Website has basic structure → service pages and SEO improvements can capture search traffic
-- Existing relationships are strong but undocumented → systematizing follow-ups turns one-time meetings into recurring pipeline
-- USWCC connection → potential WOSB certification opens federal set-aside opportunities
+- Email list already built (~7,000 contacts) → ready to launch monthly newsletter immediately
+- Website needs a revamp → opportunity to modernize, add CTAs, build service pages, and capture search traffic
+- Existing relationships are strong but follow-ups are informal → systematizing the BD flywheel turns one-time meetings into recurring pipeline
 
 ### Market Context (2026 Industry Data)
 - High-growth AEC firms invest 10-12% of revenue in marketing (Hinge Marketing, 2026)
@@ -72,7 +66,7 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 | **Architects** | Reliable MEP sub-consultant who coordinates well and meets deadlines | Referrals, LinkedIn, website search |
 | **General Contractors** | MEP engineer who can value-engineer, handle code compliance, minimize RFIs | Referrals, past project experience |
 | **Developers & Building Owners** | Trustworthy MEP design for new construction and TI projects | Google search, referrals, website |
-| **Prime Consultants (e.g., AECOM)** | Qualified MEP sub with federal past performance and required certifications | SAM.gov, capability statements, USWCC events |
+| **Prime Consultants** | Qualified MEP sub with strong past performance and relevant certifications | Capability statements, industry events |
 
 ### Secondary Audiences (Relationship & Referral)
 
@@ -80,7 +74,7 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 |----------|-------------------|
 | **Past Clients** | Referral sources, repeat business, testimonial providers |
 | **Industry Peers** | Cross-referral network, teaming partners on large projects |
-| **Government Contracting Officers** | Gatekeepers for federal opportunities, evaluate capability statements |
+| **Government Contracting Officers** | Gatekeepers for federal opportunities when applicable |
 
 ---
 
@@ -91,7 +85,6 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 | Goal | Metric | Target |
 |------|--------|--------|
 | Establish LinkedIn presence | Posts published | 24+ posts in 90 days |
-| Build email list | Contacts imported into Constant Contact | 200+ contacts, segmented into 3-4 groups |
 | Launch newsletter | Newsletters sent | 3 monthly newsletters |
 | Optimize website | Service pages created/updated | 5 service pages + project portfolio |
 | Systematize BD follow-up | Contact tracker entries | All active BD contacts logged |
@@ -106,7 +99,6 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 | Newsletter performance | Open rate | 35%+ (above industry average) |
 | Website traffic | Monthly organic visitors | 50% increase from baseline |
 | Case studies | Completed case studies | 5 published (web + PDF) |
-| Federal visibility | Capability statement versions | 3 targeted versions distributed |
 | BD pipeline | Active relationship contacts | 50+ contacts in tracker |
 
 ### 12-Month Goals (July 2026 - June 2027)
@@ -115,7 +107,7 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 |------|--------|--------|
 | Thought leadership position | LinkedIn followers (Jack's profile) | 1,000+ |
 | Inbound inquiries | Website/LinkedIn-sourced leads | 2+ per month |
-| Newsletter list | Active subscribers | 500+ |
+| Newsletter list | Active subscribers | Maintain and grow from 7,000 base |
 | Google Reviews | Total reviews | 15+ |
 | Content library | Total content assets | 50+ LinkedIn posts, 12 newsletters, 5 case studies, 10+ blog posts |
 | Revenue attribution | Projects sourced from marketing efforts | Track and report quarterly |
@@ -134,42 +126,44 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 
 **Headline:** Replace generic title with a value-driven headline.
 - Current (likely): "President at Khalifeh & Associates"
-- Recommended: "40 Years of MEP Engineering | Principal & Founder, Khalifeh & Associates | Mechanical, Electrical & Plumbing Design for Commercial, Healthcare & Federal Projects"
+- Recommended: "40 Years of MEP Engineering | Principal & Founder, Khalifeh & Associates | Mechanical, Electrical & Plumbing Design for Commercial, Healthcare & Institutional Projects"
 
-**About Section:** 3-4 paragraphs in first person. Lead with experience, mention specialties, end with a call to engagement. Include keywords: MEP engineering, HVAC design, electrical engineering, plumbing design, Title 24, federal, military, NAVFAC, USACE.
+**About Section:** 3-4 paragraphs in first person. Lead with experience, mention specialties, end with a call to engagement. Include keywords: MEP engineering, HVAC design, electrical engineering, plumbing design, Title 24.
 
 **Experience Section:** Expand KA's entry with project highlights, key clients (with permission), and service descriptions.
 
 **Featured Section:** Pin the 3 best-performing posts or a link to the capability statement.
 
-### Content Pillars (7 Rotating Themes)
+### Content Pillars (6 Rotating Themes)
 
 | Pillar | Theme | Cadence | Content Source |
 |--------|-------|---------|---------------|
 | **1. "40 Years in the Field"** | Career stories, lessons, war stories | 2x/month | 15-min "story time" with Jack |
-| **2. "Behind the Blueprint"** | Project showcases with challenge → solution → result | 2x/month | KA project list + 3 questions to Jack |
+| **2. "Behind the Blueprint"** | Project showcases with challenge → solution → result | 2x/month | KA project list + 3 questions to Jack or Brandon |
 | **3. "The MEP Minute"** | Technical thought leadership, code commentary | 2x/month | Industry news + Jack's 5-min reaction |
 | **4. "Partnerships & People"** | Relationship highlights, client/partner tags | 2-4x/month | Photos from BD meetings/events |
 | **5. "Code to Concrete"** | Educational content for non-engineers | 1-2x/month | Common client questions |
-| **6. "Federal & Military Insider"** | Government contracting positioning | 1-2x/month | SAM.gov, agency updates |
-| **7. "Behind the Firm"** | Jack's philosophy, firm culture, values | 1x/month | Conversations with Jack |
+| **6. "Behind the Firm"** | Jack's philosophy, firm culture, values | 1x/month | Conversations with Jack or Brandon |
 
-### Posting Schedule (10-12 posts/month)
+### Posting Schedule (8-10 posts/month)
 
 | Week | Monday | Wednesday |
 |------|--------|-----------|
 | 1 | 40 Years story | Project Showcase |
 | 2 | MEP Minute (technical) | Partnership/People photo |
-| 3 | Code to Concrete (educational) | Federal Insider |
-| 4 | Partnership/People | Behind the Firm OR 40 Years story |
+| 3 | Code to Concrete (educational) | Partnership/People |
+| 4 | Behind the Firm | 40 Years story OR MEP Minute |
 
 ### Content Creation Workflow
-1. **Weekly:** Fiona schedules 15-minute "story time" with Jack (phone or in-person)
-2. **Record** the conversation (phone transcription or Otter.ai — free)
-3. **Extract** the best anecdote, insight, or opinion
-4. **Draft** a LinkedIn post from Jack's perspective (first person)
-5. **Jack reviews** (2-minute read, approve or suggest edits)
-6. **Fiona posts** from Jack's account
+1. **Weekly:** Schedule 15-minute "story time" call with Jack (phone or in-person)
+2. **Alternative source:** Check in with Brandon for project insights, updates, or stories from the office
+3. **Record** the conversation (phone transcription or Otter.ai — free)
+4. **Extract** the best anecdote, insight, or opinion
+5. **Draft** a LinkedIn post from Jack's perspective (first person)
+6. **Jack reviews** (2-minute read, approve or suggest edits)
+7. **Post** from Jack's account
+
+**Content can also come from prepared topics and questions** — a set agenda for the story time call ensures efficient capture even on weeks when Jack is busy.
 
 ### Algorithm Best Practices (2026)
 - **Dwell time** is the #1 signal — write posts that hold attention (stories, lists, questions)
@@ -184,36 +178,24 @@ Khalifeh & Associates has 40 years of MEP engineering expertise, a strong portfo
 ## 5. Channel Strategy: Email Newsletter (Constant Contact)
 
 ### Newsletter Overview
-- **Platform:** Constant Contact (already subscribed)
+- **Platform:** Constant Contact Email Plus ($157/month — already active)
 - **Frequency:** Monthly — first Tuesday of each month, 7:00 AM PST
 - **Format:** HTML email with branded template
+- **Current list size:** ~7,000 contacts (already imported and filtered)
 - **Target open rate:** 35%+ (B2B professional services avg: 36.7-42%)
 - **Target click rate:** 2.5-4%
 
-### List Building Strategy
+### List Management
 
-**Immediate sources (Month 1):**
-- All past and current clients (with permission)
-- Architects and GC principals from Jack's existing relationships
-- USWCC and industry event contacts
-- LinkedIn connections (cross-reference and import)
-
-**Ongoing sources:**
-- Every BD lunch meeting → add to list
+The contact list is already built with approximately 7,000 contacts from KA's existing relationships and past clients. The list will continue to grow organically through:
+- Every BD lunch meeting → add new contact to list
 - Every networking event → collect cards, add to list
 - Website contact form submissions
 - Conference/trade show contacts
 
-**Target:** 200+ contacts by end of Month 1, 500+ by Month 12
+### Content Strategy
 
-### Segmentation (4 Groups)
-
-| Segment | Who | Content Emphasis |
-|---------|-----|-----------------|
-| **Architects & Designers** | Architecture firms KA partners with | Coordination capabilities, project stories |
-| **GCs & Developers** | General contractors, developers, building owners | Reliability, code compliance, value engineering |
-| **Government/Federal** | AECOM contacts, prime contractors, USWCC network | Certifications, capability statements, past performance |
-| **Past Clients** | Completed project clients | Relationship maintenance, referral opportunities |
+The newsletter will deliver the same high-value content to the full list. Content is relevant across all audience types — architects, GCs, developers, and past clients all benefit from hearing Jack's insights, seeing project showcases, and staying current on code and industry trends.
 
 ### Newsletter Template (Recurring Sections)
 
@@ -233,8 +215,8 @@ Every issue includes:
 | **July '26** | The Mid-Year Check-In | "What 6 months of MEP projects taught us about 2026" |
 | **August** | Back to Basics | "The MEP basics that save projects (and budgets)" |
 | **September** | Code Season | "New codes dropping — what your next project needs to know" |
-| **October** | Federal Focus | "Inside federal MEP: what prime contractors should know" |
-| **November** | Thankful for Partners | "The partnerships behind 40 years of engineering" |
+| **October** | Partnerships | "The partnerships behind 40 years of engineering" |
+| **November** | Thankful for Partners | "What 40 years of collaboration looks like" |
 | **December** | Year in Review | "40 years + 1 more: our 2026 in review" |
 | **January '27** | Predictions & Priorities | "What a 40-year MEP veteran sees coming in 2027" |
 | **February** | The Small Firm Advantage | "Why the biggest firms aren't always the best choice" |
@@ -247,10 +229,12 @@ Every issue includes:
 
 ## 6. Channel Strategy: Website & SEO (WordPress)
 
-### Website Optimization Priorities
+### Website Revamp Priorities
+
+The current website is outdated, lacks calls to action, and does not effectively communicate KA's value to prospective partners. The revamp should focus on making the site modern, interactive, and conversion-oriented.
 
 **Service Pages (Create or Update):**
-Each page: 500-800 words, keyword-optimized, with project examples and contact CTA.
+Each page: 500-800 words, keyword-optimized, with project examples and a clear contact CTA.
 
 1. `/mechanical` — Mechanical Engineering (HVAC, energy modeling, Title 24)
 2. `/electrical` — Electrical Engineering (power distribution, lighting, low-voltage)
@@ -263,13 +247,11 @@ Each page: 500-800 words, keyword-optimized, with project examples and contact C
 2. `/education` — Educational Facilities
 3. `/hospitality` — Hotels & Hospitality
 4. `/commercial` — Commercial Office & Retail
-5. `/federal-military` — Federal & Military Projects
 
 **Additional Pages:**
 - `/projects` — Project portfolio with photos and descriptions
-- `/about` — Jack's story, firm history, team (if applicable)
+- `/about` — Jack's story, firm history, team
 - `/why-ka` — The credibility page for prospects comparing firms
-- `/federal-mep` — Dedicated page for prime contractors evaluating KA for federal sub-work
 - `/contact` — Contact form with project type dropdown
 
 ### SEO Action Items
@@ -279,7 +261,7 @@ Each page: 500-800 words, keyword-optimized, with project examples and contact C
 | Install Yoast SEO or Rank Math (free plugin) | HIGH | One-time |
 | Optimize meta titles and descriptions on all pages | HIGH | One-time + maintain |
 | Create/complete Google Business Profile | HIGH | One-time + weekly posts |
-| Request Google Reviews from 5-10 past clients | HIGH | Ongoing |
+| Request Google Reviews from past clients | HIGH | Ongoing |
 | Publish 1-2 blog posts per month | MEDIUM | Ongoing |
 | Add schema markup for local business | MEDIUM | One-time |
 | Ensure mobile responsiveness | MEDIUM | One-time |
@@ -311,7 +293,7 @@ Each page: 500-800 words, keyword-optimized, with project examples and contact C
 - Respond to every review within 24 hours
 
 ### Blog Strategy
-- **Frequency:** 1-2 posts per month (no more — one person cannot sustain more)
+- **Frequency:** 1-2 posts per month
 - **Content:** Repurpose from LinkedIn posts (expand a 200-word post into a 600-word blog article)
 - **Topics:** Code commentary, project case studies, FAQ answers
 - **Each blog post also becomes:** A LinkedIn post + newsletter section + Google Business Profile update
@@ -328,39 +310,27 @@ Every BD interaction feeds into a system that compounds over time:
 MEET → CONNECT → FOLLOW UP → NURTURE → RE-ENGAGE → MEET AGAIN
 ```
 
-**Step 1: MEET** — Lunch meeting, USWCC event, conference, site visit
+**Step 1: MEET** — Lunch meeting, industry event, conference, site visit
 **Step 2: CONNECT** — LinkedIn connection request within 24 hours (personalized note)
 **Step 3: FOLLOW UP** — Personal email within 48 hours referencing the conversation
-**Step 4: ADD** — Import to Constant Contact with segment tag
+**Step 4: ADD** — Add to Constant Contact newsletter list
 **Step 5: NURTURE** — Monthly newsletter + LinkedIn content in their feed
 **Step 6: RE-ENGAGE** — Quarterly personal touchpoint (lunch, call, referral)
 **Step 7: MEET AGAIN** — Repeat cycle
 
+### Integration with Existing Trello Board
+
+The client outreach Trello board already tracks lunch meetings, follow-up cadence, and BD contacts. The flywheel above should be layered into the existing Trello workflow so that every card in the board also triggers the LinkedIn connection, Constant Contact addition, and quarterly re-engagement steps. This avoids building a duplicate system.
+
 ### Pre-Meeting Protocol
-- **3-5 days before:** Fiona sends confirmation email with a specific topic to discuss
+- **3-5 days before:** Confirmation email with a specific topic to discuss
 - **Day of:** Brief Jack with 2-3 bullet points from the contact's recent LinkedIn activity or company news
 
 ### Post-Meeting Protocol (Within 24 Hours)
 1. Send LinkedIn connection request from Jack's account with personalized message
-2. Add contact to Constant Contact (correct segment + source tag)
-3. Log in Contact Tracker (name, company, date, what was discussed, follow-up needed)
-4. Schedule 30-day follow-up task
-
-### Contact Tracker (Google Sheet)
-
-| Field | Purpose |
-|-------|---------|
-| Name | Contact name |
-| Company | Firm name |
-| Role | Title/position |
-| Segment | Architect / GC / Developer / Prime / Past Client |
-| Met Where | Event, lunch, referral source |
-| Date Met | First meeting date |
-| LinkedIn Connected | Yes/No |
-| Newsletter Added | Yes/No |
-| Last Touchpoint | Date + type (email, lunch, call) |
-| Next Touchpoint | Scheduled date + planned action |
-| Notes | Key conversation points, interests, project needs |
+2. Add contact to Constant Contact newsletter list
+3. Log in Trello board (name, company, date, what was discussed, follow-up needed)
+4. Schedule 30-day follow-up task in Trello
 
 ### Digital Amplification for Events
 - **Before:** LinkedIn post announcing attendance ("Looking forward to [event] next week...")
@@ -369,55 +339,7 @@ MEET → CONNECT → FOLLOW UP → NURTURE → RE-ENGAGE → MEET AGAIN
 
 ---
 
-## 8. Federal & Government Contracting Marketing
-
-### Foundation (Non-Negotiable)
-
-| Item | Status | Action Needed |
-|------|--------|--------------|
-| **SAM.gov Registration** | Verify | Confirm active, NAICS 541330, all reps/certs complete |
-| **Capability Statement** | Create | One-page PDF, 3-5 targeted versions |
-| **USWCC Membership** | Active | Leverage for WOSB certification path |
-| **AECOM Relationship** | Active | Maintain with quarterly touchpoints |
-
-### Capability Statement Requirements
-
-**Format:** One page, text-searchable PDF. Contracting officers spend 30-60 seconds on initial review.
-
-**Required sections:**
-1. **Header** — Logo, company name, UEI, CAGE code, NAICS codes
-2. **Core Competencies** — 4-6 specific capabilities (not generic)
-   - Example: "HVAC system design for DoD facilities per UFC standards"
-   - NOT: "Mechanical engineering services"
-3. **Differentiators** — 40 years experience, principal-led, specific agency past performance
-4. **Past Performance** — 3-4 relevant projects with client, scope, and quantifiable result
-5. **Certifications** — WOSB (if applicable), SDB, any contract vehicles
-6. **Contact** — Primary POC, phone, email, website, address
-
-**Targeted versions to create:**
-1. General / Commercial
-2. Federal / Military (emphasize NAVFAC, USACE, VA experience)
-3. Healthcare / Institutional
-
-### Certification Roadmap
-
-| Certification | Priority | Benefit |
-|--------------|----------|---------|
-| **WOSB** (via USWCC) | HIGH | Sole-source contracts up to $4.5M, federal set-asides |
-| **EDWOSB** | EVALUATE | Additional set-asides if financial criteria met |
-| **SDB** | MEDIUM | Self-certification via SAM.gov, 5% federal contracting goal |
-| **8(a)** | LONG-TERM | 9-year program with major sole-source access |
-
-### Supporting the AECOM Relationship
-1. Send updated capability statement to AECOM contacts quarterly
-2. Track AECOM's public contract wins — proactively express interest in MEP scope
-3. Build relationships with multiple AECOM contacts (people change roles)
-4. Document all federal/military project experience on website
-5. Attend conferences and USWCC events where AECOM's small business liaison officers participate
-
----
-
-## 9. Campaign Calendar
+## 8. Campaign Calendar
 
 ### Campaign 1: "40 Years of MEP" (Flagship)
 - **Duration:** 12 weeks
@@ -426,28 +348,21 @@ MEET → CONNECT → FOLLOW UP → NURTURE → RE-ENGAGE → MEET AGAIN
 - **Goal:** Establish Jack as the most experienced MEP voice on LinkedIn in the region
 - **Launch:** Month 2 (after profile optimization and initial posting rhythm established)
 
-### Campaign 2: "Your MEP Partner for Federal Work"
-- **Duration:** 6 weeks
-- **Channels:** LinkedIn + direct email outreach + capability statement distribution
-- **Target:** Prime contractors and agency contacts
-- **Goal:** Generate 3-5 new prime contractor conversations
-- **Launch:** Month 3
-
-### Campaign 3: "The MEP Mistakes Series"
+### Campaign 2: "The MEP Mistakes Series"
 - **Duration:** 8 weeks
 - **Channel:** LinkedIn + blog + newsletter
 - **Format:** Educational series on common MEP engineering mistakes
 - **Goal:** Position Jack as the expert who prevents costly errors
 - **Launch:** Month 4
 
-### Campaign 4: "Built by KA" — Client Appreciation
+### Campaign 3: "Built by KA" — Client Appreciation
 - **Duration:** Ongoing quarterly
 - **Channel:** Email + LinkedIn + in-person
 - **Format:** Recognize and celebrate past clients, request testimonials and referrals
 - **Goal:** Activate the referral network
 - **Launch:** Q3 2026 (October)
 
-### Campaign 5: "Lunch & Learn" Series
+### Campaign 4: "Lunch & Learn" Series
 - **Duration:** Quarterly sessions
 - **Channel:** In-person or virtual (30-45 minutes)
 - **Format:** Jack presents on a relevant MEP topic for architects, GCs, or developers
@@ -456,14 +371,14 @@ MEET → CONNECT → FOLLOW UP → NURTURE → RE-ENGAGE → MEET AGAIN
 
 ---
 
-## 10. The Content Repurposing System
+## 9. The Content Repurposing System
 
 ### One Input → Five Outputs
 
-Every piece of content starts with a single conversation with Jack and flows through all channels:
+Every piece of content starts with a single conversation with Jack (or insights from Brandon) and flows through all channels:
 
 ```
-15-min conversation with Jack
+15-min conversation with Jack or Brandon
     │
     ├──→ LinkedIn Post (200-300 words)
     │
@@ -481,14 +396,14 @@ Every piece of content starts with a single conversation with Jack and flows thr
 | Content Type | Source | LinkedIn | Newsletter | Blog | GBP |
 |-------------|--------|----------|-----------|------|-----|
 | Jack story | Story time call | Post | "From Jack's Desk" | Optional expansion | Yes |
-| Project spotlight | Project Q&A | Carousel post | "Project Spotlight" | Case study | Yes |
+| Project spotlight | Project Q&A with Jack or Brandon | Carousel post | "Project Spotlight" | Case study | Yes |
 | Code commentary | Industry news + Jack's reaction | Post | "MEP Minute" | Blog post | Yes |
 | Meeting/event | BD lunch or event | Photo post | "What We're Up To" | — | Yes |
 | Educational | Client FAQ | Carousel or text | Optional | Blog post | Yes |
 
 ---
 
-## 11. Budget & Resources
+## 10. Budget & Resources
 
 ### Current Costs
 | Item | Monthly Cost | Annual Cost |
@@ -505,26 +420,14 @@ Every piece of content starts with a single conversation with Jack and flows thr
 ### Optional Future Additions
 | Item | Monthly Cost | When to Consider |
 |------|-------------|-----------------|
-| Canva Pro (templates, brand kit) | $13/mo | If not already using — for branded carousels and presentations |
+| Canva Pro (templates, brand kit) | $13/mo | For branded carousels and presentations |
 | LinkedIn Sales Navigator | $80-100/mo | When systematically prospecting 50+ target accounts |
 | Yoast SEO Premium | $8/mo | After free version is fully utilized |
 | Professional photography (project photos) | $500-1,000 one-time | When case study library reaches 5+ projects |
 
-### Time Investment (Ongoing)
-
-| Activity | Weekly Hours |
-|----------|-------------|
-| LinkedIn content creation (draft posts for Jack) | 2.0 |
-| LinkedIn engagement (commenting, connecting, follow-ups) | 1.0 |
-| Email newsletter (amortized: ~4 hrs/month) | 1.0 |
-| Website updates (blog posts, projects, SEO) | 1.0 |
-| BD follow-up workflow (after meetings/events) | 0.5 |
-| Google Business Profile posting | 0.5 |
-| **Total** | **6.0 hrs/week** |
-
 ---
 
-## 12. 90-Day Implementation Plan
+## 11. 90-Day Implementation Plan
 
 ### Phase 1: Foundation (Weeks 1-2)
 
@@ -532,49 +435,42 @@ Every piece of content starts with a single conversation with Jack and flows thr
 |---|--------|---------|
 | 1 | Optimize Jack's LinkedIn profile | Rewrite headline, About section, Experience. Add skills, keywords |
 | 2 | Publish first LinkedIn post | Start with a "40 Years" story post |
-| 3 | Create the Contact Tracker (Google Sheet) | Import all existing BD contacts |
-| 4 | Set up Constant Contact newsletter template | Branded template with recurring sections |
-| 5 | Import existing contacts into Constant Contact | Segment into 3-4 groups |
-| 6 | Claim/optimize Google Business Profile | Complete all fields, add photos |
+| 3 | Set up Constant Contact newsletter template | Branded template with recurring sections |
+| 4 | Claim/optimize Google Business Profile | Complete all fields, add photos |
 
 ### Phase 2: Launch (Weeks 3-4)
 
 | # | Action | Details |
 |---|--------|---------|
-| 7 | Publish 4-6 more LinkedIn posts | Establish the 2x/week posting rhythm |
-| 8 | Send first newsletter | July edition: "The Mid-Year Check-In" |
-| 9 | Create "40 Years of MEP" Canva header graphic | For LinkedIn profile banner |
-| 10 | Begin weekly "story time" with Jack | 15-min weekly recorded conversations |
-| 11 | Verify SAM.gov registration is current | Update if needed |
-| 12 | Draft the capability statement (master version) | One-page PDF |
+| 5 | Publish 4-6 more LinkedIn posts | Establish the 2x/week posting rhythm |
+| 6 | Send first newsletter | July edition: "The Mid-Year Check-In" |
+| 7 | Create "40 Years of MEP" Canva header graphic | For LinkedIn profile banner |
+| 8 | Begin weekly "story time" with Jack | 15-min weekly recorded conversations |
 
 ### Phase 3: Build (Weeks 5-8)
 
 | # | Action | Details |
 |---|--------|---------|
-| 13 | Create/update 5 WordPress service pages | Mechanical, Electrical, Plumbing, Fire Protection, Energy/Title 24 |
-| 14 | Install Yoast SEO, optimize all pages | Meta titles, descriptions, schema |
-| 15 | Write first 2 case studies | PDF + website versions |
-| 16 | Send second newsletter | August edition |
-| 17 | Create 2 targeted capability statement versions | Federal/Military + Healthcare |
-| 18 | Request Google Reviews from 5 past clients | Personal email or phone request |
+| 9 | Create/update 5 WordPress service pages | Mechanical, Electrical, Plumbing, Fire Protection, Energy/Title 24 |
+| 10 | Install Yoast SEO, optimize all pages | Meta titles, descriptions, schema |
+| 11 | Write first 2 case studies | PDF + website versions |
+| 12 | Send second newsletter | August edition |
+| 13 | Request Google Reviews from 5 past clients | Personal email or phone request |
 
 ### Phase 4: Accelerate (Weeks 9-12)
 
 | # | Action | Details |
 |---|--------|---------|
-| 19 | Launch "40 Years of MEP" LinkedIn campaign | 12-week series begins |
-| 20 | Create project portfolio page on website | Showcase 8-10 best projects |
-| 21 | Write 3rd-5th case studies | Continue building library |
-| 22 | Send third newsletter | September edition |
-| 23 | Build "Federal MEP" landing page | khalifehassociates.com/federal-mep |
-| 24 | Build "Why KA" landing page | khalifehassociates.com/why-ka |
-| 25 | Begin collecting testimonials | 5-10 past clients |
-| 26 | Evaluate WOSB certification path | With USWCC guidance |
+| 14 | Launch "40 Years of MEP" LinkedIn campaign | 12-week series begins |
+| 15 | Create project portfolio page on website | Showcase 8-10 best projects |
+| 16 | Write 3rd-5th case studies | Continue building library |
+| 17 | Send third newsletter | September edition |
+| 18 | Build "Why KA" landing page | khalifehassociates.com/why-ka |
+| 19 | Begin collecting testimonials | 5-10 past clients |
 
 ---
 
-## 13. Measurement & Reporting
+## 12. Measurement & Reporting
 
 ### Monthly Metrics Dashboard
 
@@ -585,15 +481,15 @@ Every piece of content starts with a single conversation with Jack and flows thr
 | LinkedIn new connections | LinkedIn Analytics | 25+/month |
 | Newsletter open rate | Constant Contact | 35%+ |
 | Newsletter click rate | Constant Contact | 2.5%+ |
-| Newsletter list size | Constant Contact | Growing 10%/month |
+| Newsletter list size | Constant Contact | Maintaining and growing from 7,000 base |
 | Website traffic | Google Analytics | Trending upward |
 | Google Business Profile views | GBP Insights | Tracking |
 | Google Reviews (count) | Google | 1-2 new/month |
-| BD contacts added to tracker | Contact Tracker | All meetings logged |
+| BD contacts added to tracker | Trello | All meetings logged |
 | Inbound inquiries | Email/phone/website | Track source |
 
 ### Quarterly Review
-Every quarter, Fiona prepares a one-page summary for Jack covering:
+Every quarter, a one-page summary will be prepared covering:
 1. What was published (LinkedIn, newsletter, blog, website updates)
 2. Key metrics vs. targets
 3. BD relationship pipeline status
@@ -666,7 +562,7 @@ KHALIFEH & ASSOCIATES | khalifehassociates.com | [phone] | [email]
 
 ---
 
-## Appendix B: Key Data Points for Jack
+## Appendix B: Why This Plan Works — Key Data Points
 
 **Why LinkedIn matters:**
 - 5-8x more reach on personal profiles vs. company pages
@@ -676,24 +572,22 @@ KHALIFEH & ASSOCIATES | khalifehassociates.com | [phone] | [email]
 **Why email newsletters matter:**
 - 41% of small business owners say email is their most valuable marketing channel
 - B2B professional services get 36-42% open rates (people actually read these)
-- Segmented emails get 15-25% higher open rates
+- KA already has ~7,000 contacts ready to receive content
 
 **Why Google Business Profile matters:**
 - Complete profiles appear 18x more often in search results
 - Listings with photos get 42% more calls
-- It's free and takes a few hours to set up
+- It's free
 
-**Why this plan works for a small firm:**
-- Total cost: ~$157/month (Constant Contact Email Plus — already subscribed)
-- Total time: ~6 hours/week of Fiona's time
+**Why this plan works for KA:**
+- Only significant cost is Constant Contact ($157/month — already active)
 - No additional hires needed
 - Content comes from Jack's existing knowledge — no need to create from scratch
 - Every piece of content serves multiple channels (one input → five outputs)
 
-**The competitive advantage nobody can copy:**
-No other MEP firm in this market has a principal with 40 years of continuous experience who is willing to share stories, insights, and lessons publicly. This is KA's moat. This plan builds on it.
+**The competitive advantage:**
+Jack Khalifeh's 40 years of continuous MEP engineering experience, combined with his willingness to share stories, insights, and lessons publicly, gives KA a marketing voice that is authentic and difficult to replicate. This plan builds on that foundation.
 
 ---
 
 *Khalifeh & Associates Marketing Plan v1.0 | Prepared by Fiona Flynn | May 29, 2026*
-*Assembled by Nova on behalf of Fiona*
