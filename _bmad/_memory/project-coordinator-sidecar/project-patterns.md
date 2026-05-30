@@ -1,6 +1,6 @@
 # Project Patterns - Nova's Memory
 
-**Last Updated:** 2026-05-22
+**Last Updated:** 2026-05-29
 
 This file stores learned patterns from managing projects across sprints. Nova uses this to improve coordination and prevent common issues.
 
@@ -51,13 +51,18 @@ When sending emails on Fiona's behalf:
   - Custom Field "Assigned to": Jayson
   - Due date: That Friday
   - Schedule: May 22, Jun 5, Jun 19, Jul 3, Jul 17, Jul 31... (every 2 weeks from May 22, 2026)
-- **Daily Timesheet Copy to Fiona's Project Board:**
+- **Daily Timesheet & EOD to Fiona's Project Board (Standard Format):**
+  - Reference card: https://trello.com/c/2WK1zsxn (May 27, 2026 — use as template)
   - After updating the KA legacy timesheet card, also create a new card on Fiona's Project Board
-  - List: To Do
+  - **List: Delegated** (ALWAYS — EOD reports always go in the Delegated list, never Completed or To Do)
   - Label: Khalifeh & Associates (blue)
   - Custom Field "Assigned to" (ID: `6a0e8674edb9ed8aaa399943`): Jayson (ID: `6a0e8674edb9ed8aaa399945`)
   - Card name format: "KA Timesheet & EOD — [Month Day, Year]"
-  - Description: That day's time allocation only
+  - **Description:** Timesheet breakdown only (hours by category)
+  - **Comment:** Full EOD report in WhatsApp-friendly format — Jayson copies this and pastes directly to WhatsApp
+  - EOD format: Use *bold* for headers, → for sub-bullets, — as dividers, no emojis, no markdown tables
+  - Sections: TODAY'S ACCOMPLISHMENTS (numbered), TOMORROW'S PLAN (numbered), BLOCKERS / OUTSTANDING (bullets)
+  - Close with: "That's it for today. Thank you!"
 
 #### Fathom Accounts
 - **Aivate account:** TPS, LA Elite, Dos Gringos, RNR, Bedrock, Aivate Internal
@@ -113,6 +118,8 @@ When sending emails on Fiona's behalf:
 | Cob | cob@aivate.net | Team member - added 2026-02-08 |
 | Chris Yates | cyates@temppower.com | TPS client - introduced 2026-02-12 |
 | Wayne | wayne@temppower.com | TPS Project Manager - introduced 2026-02-12 |
+| Sandra Morales | smorales@temppower.com | TPS — Contracts & Compliance |
+| Angela Vaughn-Richey | angela@temppower.com | TPS — Accounting & Billing |
 | Kel King | Kelking372@gmail.com | LA Elite Rentals Owner - introduced 2026-02-12 |
 | Dos Espina | espinajasvenzon@gmail.com | LA Elite Rentals — Manager on Duty. Reinstated 2026-02-26. Receives all VA follow-up tasks. |
 | Jesse (Jesylou Jopio) | *(TBD)* | Fiona's supervisor at Scale Virtually. Assigns clients to Fiona for process engineering. NOT part of Aivate. |
