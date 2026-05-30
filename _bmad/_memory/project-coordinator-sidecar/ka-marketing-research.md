@@ -2,8 +2,7 @@
 
 ## Research for KA Marketing Plan Development
 **Generated:** May 29, 2026
-**For:** Fiona Flynn — Marketing Specialist, Khalifeh & Associates
-**Sources:** Hinge Marketing, Constant Contact, Ranktracker, USFCR, FedBiz Access, USWCC, and 25+ industry sources
+**Sources:** Hinge Marketing, Constant Contact, Ranktracker, and 25+ industry sources
 
 ---
 
@@ -31,7 +30,7 @@
 
 ### LinkedIn Sales Navigator: Verdict
 - **Defer for now.** At ~$100/month, most valuable for systematic outbound prospecting
-- KA's BD is currently relationship-driven (lunch meetings, USWCC matchmaking)
+- KA's BD is currently relationship-driven (lunch meetings, industry networking)
 - **Revisit** once KA has a defined target account list of 50+ firms
 
 ### LinkedIn Groups Worth Joining
@@ -39,7 +38,6 @@
 - SMACNA
 - USGBC / LEED Professionals
 - AEC Industry Professionals
-- Women in Engineering / USWCC groups
 - Local/regional AEC groups
 
 ### Lead Gen vs. Brand Awareness
@@ -59,7 +57,7 @@
 - 41% of small business owners expect email to be most valuable channel in 2026
 
 ### Recommended Send Frequency
-- **Monthly newsletter** — minimum viable frequency, realistic for one-person team
+- **Monthly newsletter** — minimum viable frequency, realistic and effective for B2B consulting
 - Quarterly acceptable if packed with value, but monthly keeps you top of mind
 - Avoid weekly — overmailing leads to unsubscribes
 
@@ -77,26 +75,13 @@
 4. Team/company news (sparingly)
 5. Soft CTA ("Working on a project that needs MEP design? Let's talk.")
 
-### List Building & Segmentation
+### List Status
+KA already has approximately 7,000 contacts imported into Constant Contact. The list will grow organically through BD meetings, networking events, and website form submissions.
 
-**List sources:**
-- Past/current clients
-- Architects and GC principals from lunch meetings
-- USWCC and industry event contacts
-- LinkedIn connections (export and cross-reference)
-- Conference/trade show attendees
-- Local AIA chapter members
+### Content Approach
+Rather than segmenting the list (which is impractical at this volume), the newsletter will deliver the same high-value content to the full list. The content is broadly relevant across all audience types — architects, GCs, developers, and past clients all benefit from Jack's insights, project showcases, and industry commentary.
 
-**Segmentation (start with 3-4 segments):**
-
-| Segment | Who | Content Focus |
-|---------|-----|---------------|
-| Architects & Designers | Architecture firms KA partners with | Coordination, capabilities |
-| GCs & Developers | General contractors, developers | Reliability, schedule, code compliance |
-| Government/Federal | AECOM contacts, primes, USWCC | Certifications, capability statements |
-| Past Clients | Completed project clients | Relationship maintenance, referrals |
-
-Constant Contact supports click segmentation — contacts auto-tagged based on link clicks.
+Constant Contact supports click segmentation — contacts are auto-tagged based on link clicks — which can be leveraged in the future if needed without manual categorization.
 
 ---
 
@@ -123,7 +108,7 @@ Constant Contact supports click segmentation — contacts auto-tagged based on l
 
 ### WordPress SEO Action Items
 1. **Dedicated service pages** — Mechanical, Electrical, Plumbing, Fire Protection, Energy Modeling/Title 24 (500-800 words each)
-2. **Project/sector pages** — Healthcare, Education, Hospitality, Commercial, Federal/Military
+2. **Project/sector pages** — Healthcare, Education, Hospitality, Commercial
 3. **Install Yoast SEO or Rank Math** (free plugins)
 4. **Google Business Profile** — Complete profiles get **70% more visits**, appear **18x more often** in search
    - Listings with photos get **42% more calls**
@@ -142,19 +127,18 @@ Constant Contact supports click segmentation — contacts auto-tagged based on l
 
 ### Tier 1 — Do First (Free/Near-Free, Highest Impact)
 1. Google Business Profile optimization
-2. Jack's LinkedIn — 2-3 posts/week (2-3 hrs/week total)
-3. Monthly email newsletter via Constant Contact (3-4 hrs/month)
-4. Website service pages and project portfolio (10-15 hrs one-time)
-5. Capability statement creation (one-time, critical for federal BD)
+2. Jack's LinkedIn — 2-3 posts/week
+3. Monthly email newsletter via Constant Contact
+4. Website service pages and project portfolio
 
 ### Tier 2 — Build Next (Low Cost, Compounding Returns)
-6. Case study library (3-5 one-page case studies)
-7. Blog posts (1-2/month, repurpose across channels)
-8. Testimonial collection (5-10 past clients)
+5. Case study library (3-5 one-page case studies)
+6. Blog posts (1-2/month, repurpose across channels)
+7. Testimonial collection (5-10 past clients)
 
 ### Tier 3 — Add When Capacity Allows
-9. Short-form video (Jack doing 60-sec tips)
-10. Webinar or lunch-and-learn for architect clients
+8. Short-form video (Jack doing 60-sec tips)
+9. Webinar or lunch-and-learn for architect clients
 
 ### Small Firm Advantages
 - **Personal brand > corporate brand** — Jack with 40 years is more compelling than a faceless firm
@@ -170,10 +154,10 @@ Constant Contact supports click segmentation — contacts auto-tagged based on l
 High-growth AEC firms use a hybrid networking strategy. **Combining LinkedIn engagement with email outreach generates 3.5x more responses** than either alone.
 
 ```
-IN-PERSON MEETING (Lunch, USWCC event, conference)
+IN-PERSON MEETING (Lunch, industry event, conference)
   → LINKEDIN CONNECTION (Connect same day, personalized note)
   → LINKEDIN NURTURE (They see Jack's posts 2-3x/week)
-  → EMAIL LIST (Add to Constant Contact with segment tag)
+  → EMAIL LIST (Add to Constant Contact)
   → MONTHLY NEWSLETTER (Stay top of mind)
   → NEXT IN-PERSON TOUCHPOINT (Follow-up lunch, event)
   → [CYCLE REPEATS]
@@ -181,8 +165,8 @@ IN-PERSON MEETING (Lunch, USWCC event, conference)
 
 ### Post-BD-Event Workflow (Within 24 Hours)
 1. **LinkedIn:** Connection request with personalized message
-2. **Constant Contact:** Add to appropriate segment, tag with source/firm type/date
-3. **CRM note:** Record who, what discussed, follow-up promised
+2. **Constant Contact:** Add to newsletter list
+3. **Trello:** Log in existing client outreach board (who, what discussed, follow-up needed)
 4. **30-day follow-up:** Schedule a personal check-in
 
 ### Digital Amplification
@@ -192,66 +176,20 @@ IN-PERSON MEETING (Lunch, USWCC event, conference)
 
 ---
 
-## 6. Government/Federal Contracting Marketing
-
-### SAM.gov (Non-Negotiable Foundation)
-- Active SAM.gov registration required for all federal work
-- **NAICS code 541330** (Engineering Services) — size standard $25.5M
-- Registration must be renewed annually
-- Complete all reps and certifications
-
-### Relevant Certifications
-
-| Certification | Relevance | Notes |
-|--------------|-----------|-------|
-| **WOSB** | HIGH | USWCC is an authorized certifier. Sole-source up to $4.5M |
-| **EDWOSB** | Evaluate | Additional set-asides if financial criteria met |
-| **SDB** | Evaluate | Self-certification via SAM.gov |
-| **8(a)** | High effort, high reward | 9-year program with sole-source access |
-| **DBE** | If pursuing DOT work | State DOT agencies certify |
-
-### The Capability Statement (One-Page, Non-Negotiable)
-- **Contracting officers spend 30-60 seconds on initial review** — must be ONE page
-- Required elements: Company header + UEI/CAGE/NAICS, Core competencies (4-6 bullets), Differentiators, Past performance (3-4 projects), Certifications, Contact info
-- **Create 3-5 targeted versions** for different agencies
-- Format: Bullet points, left-aligned, text-searchable PDF
-
-### Marketing to Support the AECOM Relationship
-1. Tailored capability statement for military/federal MEP — send quarterly
-2. Track AECOM's public contract wins — proactively reach out for MEP scope
-3. Build relationships with multiple AECOM contacts
-4. Document all federal/military experience meticulously
-5. Consider GSA Schedule (MAS) qualification
-
----
-
-## 7. The 90-Day Priority Roadmap
+## 6. The 90-Day Priority Roadmap
 
 | Week | Activity |
 |------|----------|
 | 1-2 | Optimize Jack's LinkedIn profile. Start posting 2x/week |
 | 1-2 | Claim/optimize Google Business Profile |
-| 2-3 | Verify SAM.gov registration |
-| 2-4 | Create capability statement (master + 2 targeted versions) |
-| 3-4 | Audit WordPress site. Create service pages + project portfolio |
-| 4-6 | Build Constant Contact email list. Import contacts, create segments |
-| 5-6 | Design newsletter template. Send first newsletter |
+| 3-4 | Set up Constant Contact newsletter template. Send first newsletter |
+| 3-4 | Begin weekly "story time" calls with Jack |
+| 5-6 | Create/update WordPress service pages + project portfolio |
+| 5-6 | Install Yoast SEO. Optimize all pages |
 | 6-8 | Write 3 case studies (PDF + website) |
-| 8-10 | Install Yoast SEO. Optimize all pages |
+| 8-10 | Launch "40 Years of MEP" LinkedIn campaign |
 | 10-12 | Collect Google Reviews from 5-10 past clients |
 | Ongoing | LinkedIn posting, monthly newsletter, post-BD follow-up workflow |
-
-### Ongoing Weekly Time Budget
-
-| Activity | Hours/Week |
-|----------|-----------|
-| LinkedIn content creation (draft posts for Jack) | 2 |
-| LinkedIn engagement (commenting, connecting, follow-ups) | 1 |
-| Email newsletter (amortized over month) | 1 |
-| Website updates (blog posts, projects, SEO) | 1 |
-| BD follow-up workflow (after meetings/events) | 0.5 |
-| Google Business Profile posting | 0.5 |
-| **Total** | **6 hours/week** |
 
 **Key principle:** Aggressive content repurposing — one conversation with Jack becomes a LinkedIn post, newsletter article, case study, blog post, and Google Business Profile update.
 
@@ -265,9 +203,6 @@ IN-PERSON MEETING (Lunch, USWCC event, conference)
 - Stambaugh Ness: The Evolution of AEC Firm Business Development
 - Ranktracker: MEP Engineering SEO
 - Constant Contact: Email Marketing Statistics & Trends 2026
-- USFCR: Writing a Winning Capabilities Statement 2026
-- FedBiz Access: 7 Critical SAM.gov Facts for 2026
-- USWCC: Certification Programs
 - Big Red SEO: Google Business Profile 2026
 - LinkedIn Algorithm Explained 2026
 - RocLogic Marketing: Strategy for Engineering Companies
@@ -276,4 +211,4 @@ IN-PERSON MEETING (Lunch, USWCC event, conference)
 
 ---
 
-*Research compiled by Nova on behalf of Fiona | May 29, 2026*
+*Research compiled for KA Marketing Plan | May 29, 2026*

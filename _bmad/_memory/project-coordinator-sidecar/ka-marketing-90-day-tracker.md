@@ -1,8 +1,7 @@
 # KA Marketing Plan — 90-Day Implementation Tracker
 
 **Start Date:** _____________ (Target: First week of July 2026)
-**Owner:** Fiona Flynn
-**Review cadence:** Weekly self-check, monthly summary for Jack
+**Review cadence:** Weekly check-in, monthly summary for Jack
 
 ---
 
@@ -15,17 +14,13 @@
 | 1.3 | Update Jack's LinkedIn Experience section | [ ] | Week 1 | | |
 | 1.4 | Add skills and keywords to LinkedIn profile | [ ] | Week 1 | | |
 | 1.5 | Publish first LinkedIn post ("40 Years" story) | [ ] | Week 1 | | |
-| 1.6 | Create Contact Tracker spreadsheet (Google Sheet) | [ ] | Week 1 | | |
-| 1.7 | Import all existing BD contacts into tracker | [ ] | Week 1 | | |
-| 1.8 | Set up Constant Contact newsletter template | [ ] | Week 1-2 | | |
-| 1.9 | Import contacts into Constant Contact | [ ] | Week 1-2 | | |
-| 1.10 | Segment contacts into 3-4 groups | [ ] | Week 2 | | |
-| 1.11 | Claim/create Google Business Profile | [ ] | Week 2 | | |
-| 1.12 | Complete all GBP fields + add 10+ photos | [ ] | Week 2 | | |
-| 1.13 | Publish second LinkedIn post | [ ] | Week 2 | | |
-| 1.14 | Schedule first weekly "story time" with Jack | [ ] | Week 2 | | |
+| 1.6 | Set up Constant Contact newsletter template | [ ] | Week 1-2 | | |
+| 1.7 | Claim/create Google Business Profile | [ ] | Week 2 | | |
+| 1.8 | Complete all GBP fields + add 10+ photos | [ ] | Week 2 | | |
+| 1.9 | Publish second LinkedIn post | [ ] | Week 2 | | |
+| 1.10 | Schedule first weekly "story time" with Jack | [ ] | Week 2 | | |
 
-**Phase 1 Checkpoint:** LinkedIn profile optimized, first 2 posts published, contact tracker live, Constant Contact set up, GBP claimed.
+**Phase 1 Checkpoint:** LinkedIn profile optimized, first 2 posts published, Constant Contact template ready, GBP claimed.
 
 ---
 
@@ -37,14 +32,11 @@
 | 2.2 | Send first newsletter (July: "Mid-Year Check-In") | [ ] | Week 3-4 | | |
 | 2.3 | Create "40 Years of MEP" LinkedIn banner graphic (Canva) | [ ] | Week 3 | | |
 | 2.4 | Conduct 2 "story time" sessions with Jack | [ ] | Week 3-4 | | |
-| 2.5 | Verify SAM.gov registration is current | [ ] | Week 3 | | |
-| 2.6 | Update SAM.gov NAICS codes and reps/certs if needed | [ ] | Week 3 | | |
-| 2.7 | Draft capability statement (master version) | [ ] | Week 4 | | |
-| 2.8 | Post first GBP update (repurpose LinkedIn content) | [ ] | Week 3 | | |
-| 2.9 | Log all new BD meeting contacts in tracker | [ ] | Ongoing | | |
-| 2.10 | Send LinkedIn connection requests from all recent BD meetings | [ ] | Week 3 | | |
+| 2.5 | Post first GBP update (repurpose LinkedIn content) | [ ] | Week 3 | | |
+| 2.6 | Log all new BD meeting contacts in Trello | [ ] | Ongoing | | |
+| 2.7 | Send LinkedIn connection requests from all recent BD meetings | [ ] | Week 3 | | |
 
-**Phase 2 Checkpoint:** Posting rhythm established (2x/week), first newsletter sent, capability statement drafted, SAM.gov verified.
+**Phase 2 Checkpoint:** Posting rhythm established (2x/week), first newsletter sent, GBP active.
 
 ---
 
@@ -63,13 +55,11 @@
 | 3.9 | Write Case Study #2 (PDF + website) | [ ] | Week 7 | | |
 | 3.10 | Publish 8 LinkedIn posts (maintain 2x/week) | [ ] | Week 5-8 | | |
 | 3.11 | Send second newsletter (August: "Back to Basics") | [ ] | Week 7-8 | | |
-| 3.12 | Create Federal/Military capability statement version | [ ] | Week 7 | | |
-| 3.13 | Create Healthcare capability statement version | [ ] | Week 8 | | |
-| 3.14 | Request Google Reviews from first 5 past clients | [ ] | Week 6 | | |
-| 3.15 | Post weekly GBP updates (4 posts) | [ ] | Week 5-8 | | |
-| 3.16 | Conduct 4 "story time" sessions with Jack | [ ] | Week 5-8 | | |
+| 3.12 | Request Google Reviews from first 5 past clients | [ ] | Week 6 | | |
+| 3.13 | Post weekly GBP updates (4 posts) | [ ] | Week 5-8 | | |
+| 3.14 | Conduct 4 "story time" sessions with Jack | [ ] | Week 5-8 | | |
 
-**Phase 3 Checkpoint:** 5 service pages live, 2 case studies done, 3 capability statement versions, 5 Google Reviews requested, SEO plugin installed.
+**Phase 3 Checkpoint:** 5 service pages live, 2 case studies done, 5 Google Reviews requested, SEO plugin installed.
 
 ---
 
@@ -82,18 +72,15 @@
 | 4.3 | Write Case Study #3 | [ ] | Week 9-10 | | |
 | 4.4 | Write Case Study #4 | [ ] | Week 10-11 | | |
 | 4.5 | Write Case Study #5 | [ ] | Week 11-12 | | |
-| 4.6 | Build "Federal MEP" landing page | [ ] | Week 10 | | |
-| 4.7 | Build "Why KA" landing page | [ ] | Week 11 | | |
-| 4.8 | Publish 8 LinkedIn posts (maintain cadence) | [ ] | Week 9-12 | | |
-| 4.9 | Send third newsletter (Sept: "Code Season") | [ ] | Week 11-12 | | |
-| 4.10 | Request Google Reviews from 5 more past clients | [ ] | Week 10 | | |
-| 4.11 | Collect 3-5 client testimonials | [ ] | Week 10-12 | | |
-| 4.12 | Evaluate WOSB certification eligibility with USWCC | [ ] | Week 12 | | |
-| 4.13 | Distribute capability statements to AECOM contacts | [ ] | Week 11 | | |
-| 4.14 | Post weekly GBP updates (4 posts) | [ ] | Week 9-12 | | |
-| 4.15 | Prepare first quarterly summary for Jack | [ ] | Week 12 | | |
+| 4.6 | Build "Why KA" landing page | [ ] | Week 10 | | |
+| 4.7 | Publish 8 LinkedIn posts (maintain cadence) | [ ] | Week 9-12 | | |
+| 4.8 | Send third newsletter (Sept: "Code Season") | [ ] | Week 11-12 | | |
+| 4.9 | Request Google Reviews from 5 more past clients | [ ] | Week 10 | | |
+| 4.10 | Collect 3-5 client testimonials | [ ] | Week 10-12 | | |
+| 4.11 | Post weekly GBP updates (4 posts) | [ ] | Week 9-12 | | |
+| 4.12 | Prepare first quarterly summary for Jack | [ ] | Week 12 | | |
 
-**Phase 4 Checkpoint:** LinkedIn campaign launched, 5 case studies done, 2 landing pages live, 10 Google Reviews requested, testimonials collected, quarterly report for Jack.
+**Phase 4 Checkpoint:** LinkedIn campaign launched, 5 case studies done, "Why KA" page live, 10 Google Reviews requested, testimonials collected, quarterly report for Jack.
 
 ---
 
@@ -106,14 +93,12 @@
 | LinkedIn new connections | 50+ | |
 | Newsletter editions sent | 3 | |
 | Newsletter open rate | 35%+ | |
-| Email list size | 200+ | |
 | Website service pages created | 5 | |
 | Case studies completed | 3-5 | |
 | Google Reviews requested | 10 | |
 | Google Reviews received | 5+ | |
-| Capability statement versions | 3 | |
 | "Story time" sessions with Jack | 10+ | |
-| BD contacts in tracker | All logged | |
+| BD contacts in Trello | All logged | |
 | Blog posts published | 2-4 | |
 | GBP posts published | 10+ | |
 | Inbound inquiries tracked | Track all | |
@@ -121,8 +106,6 @@
 ---
 
 ## ONGOING WEEKLY CHECKLIST (After 90 Days)
-
-Use this weekly checklist to maintain the marketing rhythm:
 
 | Day | Activity | Done |
 |-----|----------|------|
@@ -132,7 +115,7 @@ Use this weekly checklist to maintain the marketing rhythm:
 | **Wednesday** | Publish LinkedIn post #2 | [ ] |
 | **Wednesday** | Post GBP update (repurpose LinkedIn) | [ ] |
 | **Thursday** | Draft next week's LinkedIn posts | [ ] |
-| **Thursday** | BD follow-up: connection requests, emails, tracker updates | [ ] |
+| **Thursday** | BD follow-up: connection requests, emails, Trello updates | [ ] |
 | **Friday** | Review weekly metrics (LinkedIn Analytics, Constant Contact) | [ ] |
 | **1st Tuesday/month** | Send newsletter | [ ] |
 | **Last Friday/month** | Update monthly metrics dashboard | [ ] |
@@ -140,4 +123,4 @@ Use this weekly checklist to maintain the marketing rhythm:
 
 ---
 
-*KA Marketing Plan 90-Day Tracker v1.0 | Fiona Flynn | May 29, 2026*
+*KA Marketing Plan 90-Day Tracker v1.0 | May 29, 2026*

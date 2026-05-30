@@ -3,20 +3,19 @@
 ## A Strategic Playbook for a 40-Year MEP Engineering Consulting Firm
 
 **Generated:** May 29, 2026
-**For:** Fiona Flynn — Marketing Specialist, Khalifeh & Associates
 **Purpose:** Input material for the full KA Marketing Plan document
 
 ---
 
 ## 1. LINKEDIN CONTENT PILLARS
 
-The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP engineering problems since before most competitors started their firms.** Every post should subtly or directly reinforce that depth of experience.
+The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP engineering problems for 40 years.** Every post should subtly or directly reinforce that depth of experience.
 
 ---
 
 ### Pillar 1: "40 Years in the Field" — Experience Stories
 
-**Theme:** Lessons, war stories, and hard-won wisdom from four decades of MEP consulting. This is the flagship pillar — nobody else can create this content.
+**Theme:** Lessons, war stories, and hard-won wisdom from four decades of MEP consulting. This is the flagship pillar.
 
 **Posting format:** Text-only posts (LinkedIn's algorithm favors native text), occasionally paired with a throwback photo or hand-drawn sketch if available.
 
@@ -24,12 +23,12 @@ The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP 
 - "In 1987, I designed the HVAC system for a building that's still running today. Here's what I did differently."
 - "A contractor once told me my design was overkill. 15 years later, he called to thank me."
 - "The biggest MEP mistake I see firms make in 2026 — and why I stopped making it in 1994."
-- "3 things I learned from my first federal project that I still use on every project today."
+- "3 things I learned from my first major project that I still use on every project today."
 - "I've seen MEP engineering change 5 times in 40 years. Here's what never changes."
 
 **Posting cadence:** 2x per month (every other week)
 
-**Content capture method:** Fiona schedules a 15-minute "story time" with Jack once a week. Record the conversation on a phone. Transcribe with a free tool (Otter.ai or the phone's built-in transcription). Pull the best anecdote and turn it into a post.
+**Content capture method:** Schedule a 15-minute "story time" with Jack once a week. Record the conversation on a phone. Transcribe with a free tool (Otter.ai or the phone's built-in transcription). Pull the best anecdote and turn it into a post. Brandon can also provide stories and project insights.
 
 ---
 
@@ -42,12 +41,12 @@ The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP 
 **Example post titles / hooks:**
 - "This 200,000 SF warehouse needed full MEP in 90 days. Here's how we delivered."
 - "The client said the budget was impossible. We found $400K in mechanical savings without cutting corners."
-- "Federal project. Tight security clearance. Zero RFIs on our scope. Here's what that takes."
+- "Zero RFIs on our scope. Here's what that takes."
 - "Retrofit vs. new construction: why this hospital chose to upgrade, and how we made it work."
 
 **Posting cadence:** 2x per month
 
-**Content capture method:** Fiona pulls from KA's project list. For each project, she asks Jack three questions: (1) What was the challenge? (2) What did you do that was unusual or clever? (3) What was the result? That's the post.
+**Content capture method:** Pull from KA's project list. For each project, ask Jack or Brandon three questions: (1) What was the challenge? (2) What did you do that was unusual or clever? (3) What was the result? That's the post.
 
 ---
 
@@ -66,7 +65,7 @@ The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP 
 
 **Posting cadence:** 2x per month
 
-**Content capture method:** Fiona monitors industry news (ENR, ASHRAE, local building department updates) and asks Jack for a 5-minute reaction. She writes the post from his perspective.
+**Content capture method:** Monitor industry news (ENR, ASHRAE, local building department updates) and ask Jack for a 5-minute reaction. Write the post from his perspective.
 
 ---
 
@@ -79,12 +78,12 @@ The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP 
 **Example post titles / hooks:**
 - "Great lunch with [Name] from [Firm] today. We've been collaborating on projects since [year] — here's why that matters."
 - "Congratulations to [GC Name] on breaking ground on [Project]. Proud to be part of the MEP team."
-- "Met [Name] at the USWCC matchmaking event last week. Already exploring how we can team up on [agency] work."
-- "20 years working with AECOM on federal projects. Here's what makes a subconsulting relationship actually work."
+- "Met [Name] at a networking event last week. Already exploring how we can team up."
+- "20 years working with [Firm] on projects. Here's what makes a consulting relationship actually work."
 
 **Posting cadence:** 2-4x per month (these are the easiest to create — snap a photo at every meeting)
 
-**Content capture method:** Fiona takes a photo at every lunch meeting, networking event, or site visit. She drafts a 3-4 sentence caption. Always tags the other person/firm. Always asks permission before posting.
+**Content capture method:** Take a photo at every lunch meeting, networking event, or site visit. Draft a 3-4 sentence caption. Always tag the other person/firm. Always ask permission before posting.
 
 ---
 
@@ -103,27 +102,11 @@ The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP 
 
 **Posting cadence:** 1-2x per month
 
-**Content capture method:** Fiona identifies the most common questions clients and partners ask Jack, then turns each one into a post.
+**Content capture method:** Identify the most common questions clients and partners ask Jack, then turn each one into a post.
 
 ---
 
-### Pillar 6: "Federal & Military Insider" — Government Contracting Content
-
-**Theme:** Positions KA as the go-to MEP sub for federal and military work. Educates primes about KA's capabilities and educates other small firms about the federal landscape.
-
-**Posting format:** Text posts, occasionally linking to relevant SAM.gov opportunities or agency announcements.
-
-**Example post titles / hooks:**
-- "What prime contractors should look for in an MEP subconsultant for DoD work"
-- "NAVFAC, USACE, VA — we've engineered for all three. Here's how the requirements differ."
-- "Small business set-asides in A/E: how to actually win (not just bid)"
-- "The biggest misconception about federal MEP engineering"
-
-**Posting cadence:** 1-2x per month
-
----
-
-### Pillar 7: "Behind the Firm" — Culture & Humanity
+### Pillar 6: "Behind the Firm" — Culture & Humanity
 
 **Theme:** The human side of KA. Jack's philosophy, the firm's values, what it's like to work with a principal who's still on the phone with you directly (not routed through layers of project managers). This pillar is for differentiation against large firms.
 
@@ -139,24 +122,23 @@ The narrative backbone across all pillars: **Jack Khalifeh has been solving MEP 
 
 ---
 
-### Recommended Posting Schedule (Total: ~10-12 posts/month)
+### Recommended Posting Schedule (Total: ~8-10 posts/month)
 
 | Week | Monday | Wednesday |
 |------|--------|-----------|
 | 1 | 40 Years story | Project Showcase |
 | 2 | MEP Minute (technical) | Partnership/People photo |
-| 3 | Code to Concrete (educational) | Federal Insider |
-| 4 | Partnership/People | Behind the Firm OR 40 Years story |
-
-This is achievable for one person. Each post takes 20-30 minutes to draft if Fiona has the raw material from Jack.
+| 3 | Code to Concrete (educational) | Partnership/People |
+| 4 | Behind the Firm | 40 Years story OR MEP Minute |
 
 ---
 
 ## 2. NEWSLETTER THEMES & CONTENT CALENDAR
 
-**Platform:** Constant Contact (already subscribed)
+**Platform:** Constant Contact Email Plus ($157/month — already active)
 **Frequency:** Monthly, sent on the first Tuesday of each month at 7:00 AM PST
-**Audience segments:** GCs, architects, developers, agency contacts, prime consultants, past clients
+**List size:** ~7,000 contacts (already imported and filtered)
+**Audience:** GCs, architects, developers, prime consultants, past clients
 
 ---
 
@@ -178,8 +160,8 @@ This is achievable for one person. Each post takes 20-30 minutes to draft if Fio
 | **July** | "The Mid-Year Check-In" | Reflecting on H1 project trends | "What 6 months of MEP projects taught us about 2026" |
 | **August** | "Back to Basics" | The fundamentals that never go out of style | "The MEP basics that save projects (and budgets)" |
 | **September** | "Code Season" | Upcoming code changes for the new cycle | "New codes dropping — what your next project needs to know" |
-| **October** | "Federal Focus" | Federal/military contracting landscape | "Inside federal MEP: what prime contractors should know" |
-| **November** | "Thankful for Partners" | Client/partner appreciation | "The partnerships behind 40 years of engineering" |
+| **October** | "Partnerships" | Celebrating long-term collaborations | "The partnerships behind 40 years of engineering" |
+| **November** | "Thankful for Partners" | Client/partner appreciation | "What 40 years of collaboration looks like" |
 | **December** | "Year in Review" | KA's 2026 highlights | "40 years + 1 more: our 2026 in review" |
 | **January** | "Predictions & Priorities" | Jack's outlook for 2027 | "What a 40-year MEP veteran sees coming in 2027" |
 | **February** | "The Small Firm Advantage" | Why small firm = better engineering | "Why the biggest firms aren't always the best choice" |
@@ -192,25 +174,21 @@ This is achievable for one person. Each post takes 20-30 minutes to draft if Fio
 
 ## 3. LANDING PAGE CONCEPTS
 
-### Landing Page 1: "Federal & Military MEP Subconsulting"
-**URL:** khalifehassociates.com/federal-mep
-**Purpose:** Page Fiona sends to prime contractors and agency contacts after matchmaking events.
-
-### Landing Page 2: "Why KA" — The Credibility Page
+### Landing Page 1: "Why KA" — The Credibility Page
 **URL:** khalifehassociates.com/why-ka
 **Purpose:** The "close the deal" page for prospects comparing KA to competitors.
 
-### Landing Page 3: "Services — Mechanical Engineering"
+### Landing Page 2: "Services — Mechanical Engineering"
 **URL:** khalifehassociates.com/mechanical
 **Purpose:** SEO-targeted service page. Replicate for /electrical and /plumbing.
 
-### Landing Page 4: "Work With Us" — The Partnership Page
+### Landing Page 3: "Work With Us" — The Partnership Page
 **URL:** khalifehassociates.com/partner
 **Purpose:** For architects, GCs, and primes evaluating KA as a teaming partner.
 
-### Landing Page 5: "Resources" — Content Hub
+### Landing Page 4: "Resources" — Content Hub
 **URL:** khalifehassociates.com/resources
-**Purpose:** Home for all content — blog, newsletter archive, downloadable guides, capability statement.
+**Purpose:** Home for all content — blog, newsletter archive, downloadable guides.
 
 ---
 
@@ -228,8 +206,12 @@ MEET (lunch, event, site visit)
   → MEET AGAIN (repeat)
 ```
 
+### Integration with Existing Trello Board
+
+The client outreach Trello board already tracks lunch meetings, follow-up cadence, and BD contacts. The loop above should be layered into the existing Trello workflow so that every card also triggers the LinkedIn connection, Constant Contact addition, and quarterly re-engagement steps.
+
 ### Pre-Meeting Touchpoints
-- 3-5 days before: Fiona sends confirmation email with a specific topic to discuss
+- 3-5 days before: Confirmation email with a specific topic to discuss
 - Day of: Brief Jack with 2-3 bullet points from the contact's recent LinkedIn/news
 
 ### Post-Meeting Touchpoints
@@ -238,11 +220,6 @@ MEET (lunch, event, site visit)
 - Add to newsletter list
 - Quarterly: Personal re-engagement (lunch invite, phone call, referral)
 
-### Contact Tracker (Google Sheet)
-
-| Name | Company | Role | Met Where | Date | LinkedIn Connected | Newsletter Added | Last Touchpoint | Next Touchpoint | Notes |
-|------|---------|------|-----------|------|--------------------|-----------------|-----------------|-----------------|-------|
-
 ---
 
 ## 5. CAMPAIGN CONCEPTS
@@ -250,16 +227,13 @@ MEET (lunch, event, site visit)
 ### Campaign 1: "40 Years of MEP" — The Flagship Campaign
 12-week LinkedIn series, one post per week, each highlighting a different dimension of Jack's career.
 
-### Campaign 2: "Your MEP Partner for Federal Work"
-6-week push targeting primes. LinkedIn posts + direct email outreach + capability statement.
-
-### Campaign 3: "The MEP Mistakes Series"
+### Campaign 2: "The MEP Mistakes Series"
 8-week educational series about common MEP engineering mistakes and cautionary tales.
 
-### Campaign 4: "Built by KA" — Client Appreciation & Referral
+### Campaign 3: "Built by KA" — Client Appreciation & Referral
 Quarterly client appreciation program that doubles as a referral engine.
 
-### Campaign 5: "Lunch & Learn" — Hosted Education Sessions
+### Campaign 4: "Lunch & Learn" — Hosted Education Sessions
 Jack hosts 30-45 minute informal sessions on MEP topics for architects, GCs, or developers.
 
 ---
@@ -267,24 +241,22 @@ Jack hosts 30-45 minute informal sessions on MEP topics for architects, GCs, or 
 ## 6. QUICK WINS — FIRST TWO WEEKS
 
 ### Week 1
-1. Audit and optimize Jack's LinkedIn profile (2-3 hours)
-2. Publish the first LinkedIn post (1 hour)
-3. Create the Contact Tracker spreadsheet (30 minutes)
-4. Set up the newsletter template in Constant Contact (2 hours)
-5. Import existing contacts into Constant Contact (1 hour)
+1. Audit and optimize Jack's LinkedIn profile
+2. Publish the first LinkedIn post
+3. Set up the newsletter template in Constant Contact
+4. Claim/optimize Google Business Profile
 
 ### Week 2
-6. Publish the second LinkedIn post (45 minutes)
-7. Send the first newsletter (2-3 hours)
-8. Create a "40 Years of MEP" Canva header graphic (30 minutes)
-9. Draft the "Why KA" one-pager (1-2 hours)
-10. Schedule the first "story time" with Jack (15 min to schedule, 15 min to execute)
+5. Publish the second LinkedIn post
+6. Send the first newsletter
+7. Create a "40 Years of MEP" Canva header graphic
+8. Schedule the first "story time" with Jack
 
 ---
 
 ## 7. CONTENT TEMPLATES
 
-*(LinkedIn post templates, newsletter template structure, case study template, and "Why KA" one-pager outline are available in the full brainstorm output.)*
+*(LinkedIn post templates, newsletter template structure, case study template, and "Why KA" one-pager outline are available in the full marketing plan document.)*
 
 ---
 
@@ -294,19 +266,17 @@ Jack hosts 30-45 minute informal sessions on MEP topics for architects, GCs, or 
 |----------|--------|----------|
 | 1 | Optimize Jack's LinkedIn profile | Day 1-2 |
 | 2 | Publish first LinkedIn post | Day 2-3 |
-| 3 | Build the contact tracker spreadsheet | Day 3 |
-| 4 | Set up Constant Contact template + import contacts | Day 4-5 |
-| 5 | Create "Why KA" one-pager | Week 2 |
-| 6 | Send first newsletter | Week 2 |
-| 7 | Begin weekly "story time" with Jack | Week 2 (ongoing) |
-| 8 | Establish the posting cadence (2-3 LinkedIn posts/week) | Week 3 onward |
-| 9 | Build the "Federal MEP" landing page | Month 2 |
-| 10 | Build the "Why KA" landing page | Month 2 |
-| 11 | Launch the "40 Years of MEP" LinkedIn series | Month 2-3 |
-| 12 | Build service-specific landing pages | Month 3-4 |
-| 13 | Launch first "Lunch & Learn" | Month 4-5 |
-| 14 | Implement quarterly client appreciation cycle | Ongoing from Q3 |
+| 3 | Set up Constant Contact template | Day 3-4 |
+| 4 | Claim/optimize Google Business Profile | Day 4-5 |
+| 5 | Send first newsletter | Week 2 |
+| 6 | Begin weekly "story time" with Jack | Week 2 (ongoing) |
+| 7 | Establish the posting cadence (2x/week) | Week 3 onward |
+| 8 | Build the "Why KA" landing page | Month 2 |
+| 9 | Launch the "40 Years of MEP" LinkedIn series | Month 2-3 |
+| 10 | Build service-specific landing pages | Month 3-4 |
+| 11 | Launch first "Lunch & Learn" | Month 4-5 |
+| 12 | Implement quarterly client appreciation cycle | Ongoing from Q3 |
 
 ---
 
-*Prepared by Nova on behalf of Fiona | May 29, 2026*
+*Prepared for KA Marketing Plan | May 29, 2026*
