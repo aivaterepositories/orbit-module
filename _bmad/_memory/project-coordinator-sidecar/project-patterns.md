@@ -135,6 +135,8 @@ When sending emails on Fiona's behalf:
 | Brandon | *(TBD)* | Employer — Operations at Khalifeh & Associates Inc. Works with Jack. |
 | Clint Isaac Isa, PE | clint.isa@aecom.com | AECOM — Senior Manager, Transportation, US West. Phone: 310-612-4176. Contact for sub-consulting on federal/military projects. Introduced via USWCC Matchmaking May 2026. |
 | Candice Grant | candice.grant@aecom.com | AECOM — Project Controls Analyst, Transportation US West / Ports & Marine Americas. Phone: +1-714-330-7802. Contact for sub-consulting on federal/military projects. Introduced via USWCC Matchmaking May 2026. |
+| Scott Capewell | *(TBD)* | Client — CEO at Cape Homes LLC. Real estate investment (acquisitions, projects, property ops). Assigned via Scale Virtually Jun 2026. PROCESS w/ MVA, Single Role (EA), $2,500 SUF. IPEC June 4, 2026. |
+| Kristyn Michael | *(TBD)* | Client — Co-principal at Cape Homes LLC. Works with Scott Capewell. Assigned via Scale Virtually Jun 2026. |
 
 ## Internal Aivate Projects
 
