@@ -9,7 +9,7 @@
 
 | # | Task | Status | Target Date | Completed | Notes |
 |---|------|--------|-------------|-----------|-------|
-| 1.1 | Rewrite Jack's LinkedIn headline | [ ] | Week 1 | | |
+| 1.1 | Rewrite Jack's LinkedIn headline | [x] | Week 1 | 2026-06-11 | Final: "President at Khalifeh and Associates Inc. \| HVAC, Electrical, Plumbing, Fire Protection, & Title 24 for Architects & Developers" |
 | 1.2 | Rewrite Jack's LinkedIn About section | [ ] | Week 1 | | |
 | 1.3 | Update Jack's LinkedIn Experience section | [ ] | Week 1 | | |
 | 1.4 | Add skills and keywords to LinkedIn profile | [ ] | Week 1 | | |
