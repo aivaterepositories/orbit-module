@@ -5,7 +5,30 @@
 **Phase:** Deliver (Pilot Preparation)
 **Status:** Active Development
 **Started:** November 2025
-**Last Updated:** 2026-05-22 (Nova — Processed full CRM Set-Up transcript from May 21. Live data audit conducted: ~15-20 jobs processed, 2 archived, several reclassified. Audit workflow established. Next sessions: Tue/Wed/Thu May 27-29. New bug found: SOV cents rounding. Duplicate reconciliation needed. Fathom: https://fathom.video/share/b2o3UrwrdzPckY-Lv97sxk6xx6DnAbqe)
+**Last Updated:** 2026-06-17 (Nova — Materials Report patch shipped: 5 bug fixes (need-by date timezone shift, ETA-not-saving on On Order, global California time, notes visible without Edit, scrollable materials dropdown) + 4 feature updates (type quantities directly, custom Unit of Measure, change status from Materials Report row, simplified status labels: Needs to Order->Pending, Procured/On Order->On Order). Delivered to client; more feedback expected. See temp-power-systems-dev-report-jun17.md. Prior: 2026-05-22 — Processed full CRM Set-Up transcript from May 21. Live data audit conducted: ~15-20 jobs processed, 2 archived, several reclassified. Audit workflow established. Next sessions: Tue/Wed/Thu May 27-29. New bug found: SOV cents rounding. Duplicate reconciliation needed. Fathom: https://fathom.video/share/b2o3UrwrdzPckY-Lv97sxk6xx6DnAbqe)
+
+---
+
+## Latest Update - June 17, 2026
+
+### MATERIALS REPORT PATCH — SHIPPED (5 fixes + 4 updates)
+
+**Module:** Materials Report / materials-procurement
+**Status:** Delivered to client. More feedback expected; follow-up patch to come.
+**Full notes:** `temp-power-systems-dev-report-jun17.md`
+
+**Bug Fixes**
+1. **Need-by date wrong day** — system shifted dates back one day in some views; corrected so the entered date shows everywhere. No more project-view vs. Materials Report mismatch.
+2. **ETA not saving on "On Order"** — editing a material with a saved ETA showed a blank field and save erased it; ETAs now load and persist.
+3. **Global California time** — dates and the Overdue flag varied by user location; all dates now display in Pacific time for every user (Wayne and Fiona see the same date).
+4. **Notes visible without Edit** — notes were hidden behind the Edit screen; now shown directly in the materials list per project.
+5. **Materials dropdown scrollable** — full match list now scrolls via mouse wheel / keyboard.
+
+**Feature Updates**
+1. **Type quantities directly** — removed the up/down stepper; type the number straight in.
+2. **Custom Unit of Measure** — type any unit instead of picking from a limited dropdown.
+3. **Change status from the Materials Report** — per-row status dropdown; no need to open each job.
+4. **Simplified status labels** — "Needs to Order" -> **Pending**; "Procured or On Order" -> **On Order**; Ready and Unknown unchanged.
 
 ---
 
