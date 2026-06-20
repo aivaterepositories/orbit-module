@@ -473,8 +473,40 @@ When a lead is on the waitlist because the vehicle type they want isn't availabl
 ---
 
 **Created:** 2026-02-04
-**Last Updated:** 2026-05-21
+**Last Updated:** 2026-06-03
 **Status:** ACTIVE — PHASE 4 ALL APPROVED (7 workflows approved by Kel, May 21)
-**Current Sprint:** Phase 3 completing (Marky EOD May 21) → Phase 4: Internal Efficiency
-**Next Step:** Marky finishes Phase 3 → Collect Bouncie access + Kel's post-pickup template → Begin Phase 4 build (~2 weeks)
+**Current Sprint:** Phase 4: Internal Efficiency — ready to build non-Bouncie workflows
+**Next Step:** Build WF13-16 (no Bouncie dependency) while coordinating with DOS for Bouncie access → then build WF18-19
 **Project Coordinator:** Nova
+
+---
+
+## Update - June 3, 2026
+
+### PHASE 4 UPDATE EMAIL SENT TO KEL
+
+**Email sent:** June 3, 2026 (to Kel, CC solutions@aivate.net)
+**Subject:** LA Elite Rentals — Phase 4 Automation Update
+
+**Summary communicated to Kel:**
+- All 7 Phase 4 workflows approved and team is ready to build
+- Non-Bouncie workflows (WF13, WF14, WF15, WF16) can start immediately
+- Bouncie-dependent workflows (WF18, WF19) waiting on DOS to regain Bouncie app access
+- Coordinating a schedule with DOS — he'll let us know once he has access
+
+**Items still pending from Kel/DOS:**
+1. Bouncie API key / webhook access (DOS — once he has app access again)
+2. Post-pickup policy text template (Kel — to send via email)
+3. Bouncie device removed screenshot (Kel/DOS)
+4. Geofence confirmation — LA service area boundaries set in Bouncie
+
+**Billing note:** May retainer ($350) has been paid.
+
+**Build order (starting now):**
+1. WF13 — Auto-Task on Stage Change (no dependencies)
+2. WF14 — Stale Lead Alert 48-hour (no dependencies)
+3. WF15 — Denial Reason Auto-Response (needs Denial Reason field)
+4. WF16 — Pickup Confirmation Sequence (needs Pickup Date field + team notification setup)
+5. WF17 — Registration Renewal Notification (needs Google Sheet sync)
+6. WF18 — Bouncie Maintenance Alert (BLOCKED — Bouncie access)
+7. WF19 — Off-Grid / Border Alert (BLOCKED — geofence + Bouncie access)

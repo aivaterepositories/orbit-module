@@ -32,7 +32,345 @@
 
 ---
 
-## Latest Update - May 22, 2026
+## Latest Update - June 16, 2026
+
+### WORK ORDER COORDINATION CALL
+
+**Attendees:** Chris Yates, Wayne McCoy, Fiona Cafe
+**Recording:** https://fathom.video/share/54dxcPJng64fLvxbJAatyGR7u_fz29hn
+**Duration:** 98 min
+
+#### What Happened
+
+Fiona walked Chris and Wayne through the work order creation flow, work order calendar, billing schedule, crew portal, and work order statuses. Wayne demonstrated his current Salesforce scheduling workflow (list-based day view) and identified gaps in the CRM. Chris decided to consolidate Billing Schedule into Work Order Calendar. Test work orders were created on Prime Ventures and Gables. Crew portal was tested with Jorge's account — rendering delays and missing Google Maps were found.
+
+#### Key Decisions
+
+1. **Delete Billing Schedule entirely** — all functionality (list, table, export, filtering) moves to Work Order Calendar
+2. **Work Order Calendar = list-first** — list view is default, calendar month view is collapsible/optional, day view available
+3. **Keep all current WO statuses for now** — Pending, Ready for Field Execution, Field Execution Complete, Approved for Billing, Return for Revision, Invoiced/SOV (renamed). Pending Manager Review stays for evaluation.
+4. **Rename "Invoiced/Needs Reconciliation"** → **"Invoiced/SOV"**
+5. **Sitemap = dedicated field** in work order form (not Safety Notes)
+6. **Remaining-to-bill per lane** on dashboard (Chris request, not highest priority)
+7. **Salesforce migration still blocked** — Chris working with Salesforce on security/fraud alert issue preventing job transfers
+
+#### Fixes Identified — Email Sent to Cob (June 16)
+
+| # | Fix | Priority | Details |
+|---|-----|----------|---------|
+| 1 | Delete Billing Schedule, move to WO Calendar | CRITICAL | Remove section entirely, relocate all functionality |
+| 2 | WO Calendar: list-first, collapsible calendar | CRITICAL | List = default, calendar = collapsible, add day view + table toggle + export |
+| 3 | Add columns to WO Calendar list | CRITICAL | Opportunity Name, Site Location, Customer Contact (name + phone), Execution Notes |
+| 4 | Crew Portal: fix WO rendering delay | CRITICAL | 2-3 min delay before assigned WOs appear. Same root cause as prior contracts/SOV delay fix |
+| 5 | Crew Portal: show Google Maps | CRITICAL | Embedded map from site address. Currently not rendering |
+| 6 | Crew Portal: sitemap link as hyperlink | CRITICAL | Currently plain text. Must be clickable, open in new tab |
+| 7 | Add Sitemap field to WO form | CRITICAL | Dedicated field for sitemap PDF link (not in Safety Notes) |
+| 8 | Rename status to "Invoiced/SOV" | HIGH | Replace "Invoiced/Needs Reconciliation" |
+| 9 | Dashboard: remaining-to-bill per lane | HIGH | Show totals in Got Job, Get Ready, Execution lane headers |
+| 10 | Bulk materials-to-WO assignment | ENHANCEMENT | Select multiple materials → assign to one WO (like bulk need-by-date) |
+
+#### Test Data to Clean Up
+
+- 2 test work orders on Prime Ventures ($1K + $1.5K, June 15)
+- 1 test material on Prime Ventures
+- 1 test work order on Gables (Run Power to Lift Station, created by Wayne)
+
+#### Upcoming Sessions
+
+- **Wednesday June 18** — Live implementation session with Wayne + Mark (afternoon, ~same time)
+- **Friday June 20** — Live implementation session with Wayne + Mark (afternoon, ~same time)
+- **Goal:** Load next 2 weeks of real work orders into CRM, test full workflow end-to-end
+
+#### Salesforce Migration — Still Blocked
+
+- Majority of jobs scheduled for this week and next are NOT in CRM yet due to Salesforce security issue
+- Chris emailed Salesforce on Friday (June 13), awaiting response
+- Will call Salesforce today (June 16) to escalate
+- Cob on high alert for anything Salesforce-related — Zapier integration costs money if SF isn't syncing
+
+---
+
+## Previous Update - June 9, 2026
+
+### MATERIALS COORDINATION TRAINING — SESSION 1
+
+**Attendees:** Chris Yates, Wayne McCoy, Mark Moore, Jeff Clark, Fiona Cafe
+**Recording:** https://fathom.video/share/7u66uFfAxBUk46kyd2x5Lg3eZ2kM8Uxk
+**Duration:** 63 min
+**Full notes:** `temp-power-systems-materials-training-jun9.md`
+
+#### What Happened
+
+Fiona walked the TPS team through the materials & work order builder and Materials Report. Wayne will enter June 15–17 materials (real data from Notes) today. Mark reviews and updates statuses tomorrow (June 10). Goal: CRM replaces Notes-based workflow by June 15.
+
+#### Confirmed Working (Cob deployed before training)
+
+- "?" / Unknown status in order status dropdown
+- Bulk need-by date with per-item override
+- Custom material entry (type any material name not in dropdown)
+
+#### Bugs + Issues Found During Training
+
+| # | Issue | Severity | Details |
+|---|-------|----------|---------|
+| 1 | Add Materials pop-up doesn't persist when switching tabs | CRITICAL | Cob said fixed — NOT fixed. Pop-up disappears when switching browser tabs. Wayne loses all entered data. |
+| 2 | Preliminary Materials link not saving | HIGH | Wayne and Jeff both tried pasting Salesforce equipment list URL — link disappears on save. New functionality, deployed broken. |
+| 3 | Materials dropdown not scrollable | MEDIUM | Filtered dropdown list not scrollable — can't reach items further down the list. |
+| 4 | Material notes not visible in job detail view | MEDIUM | Notes show in Materials Report but not when drilling into job's materials section. Must click Edit to see. |
+| 5 | Comment indicator needed on material items | MEDIUM | No visual indicator when a material has comments. Needs icon with count. |
+| 6 | Cannot delete comments in Materials Coordination Log | MEDIUM | No delete option for posted comments in general comment/update section. |
+| 7 | Materials Report default view wrong | MEDIUM | Should default to "Need By Date" with "All Statuses." |
+| — | Archived jobs stay in Materials Report | NOTE | Chris wants all materials visible, including archived. Do NOT hide. |
+
+#### Feature Requests — ON HOLD (Chris: "Let's not spend any money yet")
+
+1. Manipulate order status directly from Materials Report filter view
+2. Completed status that removes items from list
+3. Materials ledger / checkbook per job
+4. Salesforce equipment list auto-mapping
+5. Materials tied to SOV phases / linear schedule
+
+#### Action Items
+
+| # | Action | Owner | Priority |
+|---|--------|-------|----------|
+| 1 | Fix Add Materials pop-up persistence (switching tabs kills it) | Cob | CRITICAL |
+| 2 | Fix Preliminary Materials link not saving | Cob | HIGH |
+| 3 | Fix Materials dropdown scroll | Cob | MEDIUM |
+| 4 | Fix material notes visibility in job detail view | Cob | MEDIUM |
+| 5 | Add comment indicator icon with count on material items | Cob | MEDIUM |
+| 6 | Add delete option for comments in Materials Coordination Log | Cob | MEDIUM |
+| 7 | Change Materials Report default view to "Need By Date" + "All Statuses" | Cob | MEDIUM |
+| 8 | Enter June 15–17 materials into CRM | Wayne | TODAY |
+| 9 | Review Wayne's entries, update statuses, log feedback | Mark | June 10 |
+| 10 | Schedule scheduling/tasks working sessions with Wayne | Fiona | This week |
+| 11 | Get Chris approval on Supabase upgrade (~$20/mo) | Fiona | HIGH |
+| 12 | Send bug fix email to Cob (with Loom + screenshots) | Fiona | TODAY |
+
+---
+
+## Previous Update - June 3, 2026
+
+### CHRIS'S RESPONSE — PERMITS & UTILITIES DIRECTION
+
+**Chris's Decision:**
+- Wants a **simple link to the Salesforce permit section** in the CRM for now (immediate, no cost)
+- Open to exploring full module enhancement — asked Fiona to create a quote
+- Not convinced they're ready for the full module yet, but acknowledges it will happen eventually
+
+**Actions Taken:**
+1. **Email to Cob** — 19 permit/utility fields to add to CRM (manual input, no cost). Salesforce Permit Link is first priority. CC: Chris, solutions@aivate.net.
+2. **Email response to Chris** — Confirmed Salesforce link is doable immediately, mentioned we can add all fields at no cost (manual input), and will prepare formal proposal for full module.
+3. **Proposal drafted** — `temp-power-systems-permits-utilities-proposal.md` + Google Drive HTML version. Two tiers: Basic ($1,000) / Advanced ($2,500). Awaiting Fiona's final review before sending to Chris.
+
+### RECONCILIATION STATUS — DASHBOARD QUESTION FROM CHRIS
+
+**Issue:** Chris asked what the "Reconciliation Status" tile on the dashboard means. It shows **2 out of 265**. Fiona does not know what logic is driving those numbers.
+
+**Questions sent to Cob (June 3):**
+1. What does 265 represent? (total jobs? jobs with SOV?)
+2. What does 2 represent? (what triggers "reconciled" status?)
+3. What logic is currently in place?
+
+**Intended logic (per Fiona):**
+- A job is "reconciled" when ALL Schedule of Value line items have been invoiced
+- Job has SOV in place (Angela added all line items/phases)
+- Every line item has a corresponding invoice amount entered
+- Total invoiced matches total scheduled = fully billed and balanced
+- TPS is just waiting on customer payment — nothing outstanding on their end
+
+**Status:** Awaiting Cob's response. May need logic adjustment if current implementation doesn't match intended definition.
+
+---
+
+## Previous Update - June 2, 2026
+
+### PERMITS & UTILITIES SCOPE SESSION WITH WAYNE
+
+**Attendees:** Chris Yates, Wayne McCoy, Cob Bautista, Fiona Cafe
+**Duration:** ~66 min
+**Recording:** [Fathom](https://fathom.video/share/HMy4svTGTuzpyEnUxqpzXmn_ydzdVw35)
+**Full notes:** `temp-power-systems-permits-utilities-call-jun2.md`
+
+#### What Happened
+
+Wayne walked the team through his full permit and utility workflow in Salesforce. This was the session originally planned in May 21 (action item B). Wayne demonstrated:
+- Multi-permit records per job (1-5+ permits each)
+- Per-permit fields (address, permit number, status, cross street, APN, Dig Alert, comments, iPermit Erators link)
+- Inspection tracking (manual date entry)
+- Utility company management (dropdown, account numbers, application IDs)
+- Meter removal workflow (Pending → Removed → Picked Up)
+- Document storage (consolidated PDFs from iPermit Erators uploaded to Salesforce file bank)
+
+#### Scope Analysis & Email to Chris
+
+**Within original scope:** Basic permit fields on existing job cards (manual entry). Approved by Chris in Feb 11 as "incidental stuff like creating additional fields."
+
+**Outside scope — Permits & Utilities Module (new proposal needed):**
+
+| Feature | Summary |
+|---------|---------|
+| Multi-permit architecture | New database tables, relational model (1-5+ permits per job) |
+| iPermit Erators integration | New third-party integration (separate from Salesforce-only scope) |
+| Utility company management & meter removal | Pre-populated dropdown, auto stage transition (Maintenance → Removal) |
+| Permits & utilities document section | Dedicated upload area per job (same pattern as contracts section) |
+| Salesforce permit document linking | Public-view links (same approach as contracts) |
+| Data migration & workflow automation | SF data import + trigger-based notifications & auto-task assignments |
+
+**Email sent:** June 2 to cyates@temppower.com (CC: solutions@aivate.net)
+**Subject:** "Permits & Utilities Module — Additional Scope from Today's Call"
+**Status:** Awaiting Chris's response. If approved → Fiona creates formal proposal with pricing.
+
+#### Key Decisions
+
+1. **Linking over duplication** — CRM links to Salesforce-stored permit documents (same as contracts). No duplicate file storage.
+2. **Dedicated document sections** — Permits & utilities get their own section in each job card, not a single shared file bank.
+3. **Manual entry for basic fields** — within scope. Automation (iPermit integration) = additional scope.
+4. **Meter removal auto-transition** — When removal date is set → job auto-moves from Maintenance to Removal.
+5. **Supabase upgrade needed** — Free tier (5 GB) → paid tier (100 GB). Separate infrastructure need, not part of the module scope.
+
+#### Cob Improvements Demonstrated
+
+- Collapsible sections (timeline, notes, contracts, permits, accounting) — working
+- Document upload real-time sync — working
+- Dashboard color reverted (accidental red push from sideline polish)
+
+#### New Bug
+
+| Issue | Severity | Owner |
+|-------|----------|-------|
+| Recurring password reset on sign-in (Chris forced to reset password every login) | HIGH | Cob |
+
+#### Action Items
+
+| # | Action | Owner | Priority |
+|---|--------|-------|----------|
+| 1 | Fix recurring password reset on sign-in | Cob | HIGH |
+| 2 | Research iPermit Erators API (pending Chris approval) | Cob | MEDIUM |
+| 3 | Salesforce CSV export with all permit/utility fields | Cob + Fiona | MEDIUM |
+| 4 | Research Salesforce API for pulling existing docs | Cob | MEDIUM |
+| 5 | Define Maintenance-to-Removal workflow | Chris + Wayne + Fiona | MEDIUM |
+| 6 | Create formal proposal for Permits & Utilities Module | Fiona | PENDING Chris |
+| 7 | Upgrade Supabase to paid tier | Cob/Fiona | HIGH |
+
+---
+
+## Previous Update - May 29, 2026
+
+### FIONA'S AUDIT — COB'S SECOND FIX BATCH + POLISH PASS
+
+**Context:** Cob went into "zen mode" for several days and pushed fixes for the 2 remaining open items from May 27, plus a UX polish pass, and a new feature (variable retention %). Fiona audited everything. Reply email sent to Cob (CC: Chris, solutions@aivate.net) on May 29.
+
+**Result: 4 Confirmed Resolved, 1 New Critical Blocker, 4 Items Still Need Work**
+
+### CRM AUDIT SESSION #3 — May 29, 2026 (Thu 2:00 PM PST)
+
+**Attendees:** Chris Yates, Angela Vaughn-Richey, Sandra Morales, Fiona Flynn
+**Duration:** ~20 min (cut short — team needed to keep working)
+**Full notes:** `temp-power-systems-crm-audit-session3-may29.md`
+
+#### Progress
+
+| Metric | Count |
+|--------|-------|
+| Total jobs in CRM | 277 |
+| Jobs completed (Chris's bucket) | 162 |
+| Wayne's bucket remaining | 108 (44 Execution + 15 Maintenance + 49 Removal) |
+| Realistic remaining for Sandra/Angela | ~59 (Execution + Maintenance) |
+| Removals needing review | 49 (may need Wayne to determine Archive vs. Removal) |
+
+#### Key Decisions
+
+1. **Duplicate cleanup ownership → Fiona.** 6 duplicates discovered (Sandra/Angela had stopped checking under assumption they were fixed). Fiona will handle all remaining duplicate cleanup. Sandra/Angela no longer need to check — just assign any duplicates to Fiona.
+2. **Monday June 2 = dedicated CRM cleanup day.** Chris's decision — no invoicing, reconciliation, or routine end-of-month work. All CRM. Resume regular duties Tuesday.
+3. **Sandra not in PM dropdown = by design.** She has no jobs assigned, so she doesn't appear. Not a bug. Team agrees.
+
+#### New Issue: Concurrent Editing Data Loss
+
+When Sandra and Angela work on the same job simultaneously from separate offices, one person's changes disappear when the other saves and exits. Worked fine in-person (verbal coordination) but fails remotely. **Risk:** Wayne, Sandra, and Angela could all be in the same job card during daily operations and overwrite each other's work. Monitoring — escalate to Cob if it persists.
+
+#### Connection to Bungalows Blocker
+
+Sandra's next job after this call was **Bungalows** — the same job Chris later reported as having no document checklist. Sandra likely hit this blocker immediately after the call ended, which triggered Chris's email to Cob.
+
+#### CONFIRMED RESOLVED
+
+| # | Issue | Severity | Notes |
+|---|-------|----------|-------|
+| 1 | SOV Cents Rounding | CRITICAL | **NOW RESOLVED.** Values like $85.90 display correctly across dashboard, SOV, reports, and exports. No more rounding. Closed. |
+| 2 | Retention Filter on Pipeline Page | MEDIUM | **NOW RESOLVED.** "Has Retention" and "No Retention" filters return the correct jobs. Closed. |
+| 3 | Job Deletion (Admin Only) | CRITICAL | Confirmed for Chris and Fiona. **Still need Sandra/Angela to verify they cannot delete.** Tentatively resolved. |
+| 4 | Document Uploads Sync | CRITICAL | Uploads appearing for other users without refresh. Will monitor. Closed. |
+
+#### NEW CRITICAL BLOCKER
+
+| # | Issue | Severity | Status | Details |
+|---|-------|----------|--------|---------|
+| NEW | **Missing Document Checklist on Some Job Cards** | CRITICAL | **BLOCKING SANDRA** | Chris reported that some job cards (e.g., "Bungalows") have NO contract document upload field, no contract dropdown, and no document checklist at all. Sandra cannot upload contracts or complete her tasks. Likely related to old backfill issue — some cards may not have been migrated to the 4-document checklist (Contract, Insurance Certificate, Billing Information, Purchase Order). Cob needs to check how many cards are affected and fix immediately. |
+
+#### STILL NEEDS WORK
+
+| # | Issue | Severity | Status | Details |
+|---|-------|----------|--------|---------|
+| 5 | **Variable Retention % (5/12/15%)** | HIGH | **NOT DEPLOYED** | Cob said 5%, 12%, and 15% retention options are implemented. Fiona only sees 10% in the dropdown. Feature not visible — needs investigation. |
+| 6 | **Dashboard Chart — Maintenance Label Truncated** | MEDIUM | **RENDERING BUG** | Maintenance stage shows in the chart, but label is cut off — only displaying "AINTENANCE." Chart overflows its container and overlaps the Job Status Distribution section. Needs rendering fix. |
+| 7 | **Dashboard Tiles — Revert to Old Design** | MEDIUM | **DESIGN REJECTED** | New tile design uses red color (reads as negative/alarming for neutral metrics). Fiona prefers old layout: four tiles in a single horizontal row (Schedule of Value, Remaining to Build, Total Build to Date, Reconciliation Status). Reinstate previous design, remove red color scheme. |
+| 8 | **Collapsible Sections on Job Detail Pages** | LOW | **NOT VISIBLE** | Cob mentioned collapse functionality for materials/documents sections. Fiona sees no toggle, arrow, or collapse mechanism anywhere on job detail pages. May not have deployed correctly. |
+
+#### ON HOLD
+
+| Item | Status | Details |
+|------|--------|---------|
+| Salesforce Automation | Waiting on Chris | Salesforce flags additional logins as fraud alert, blocking credential sharing. Chris working with Salesforce on a workaround. No action for Cob. |
+
+#### OBSERVING
+
+| Item | Details |
+|------|---------|
+| Cleaner dashboard layout | Will evaluate in day-to-day usage |
+| Smoother loading / loading indicators | Will evaluate in day-to-day usage |
+| Mobile responsiveness | Not yet tested by Fiona — will observe |
+
+#### OPEN FOLLOW-UPS (Carried Forward)
+
+| Item | Type | Details | Owner |
+|------|------|---------|-------|
+| Job deletion — manager access check | Verification | Have Sandra or Angela confirm they do NOT see a delete option | Fiona |
+| Task deletion — cross-user test | Verification | Confirm non-creators cannot delete tasks they didn't create | Fiona (during audit) |
+
+---
+
+## Previous Update - May 27, 2026
+
+### FIONA'S TEST RESULTS — COB'S 10-ITEM FIX BATCH (FIRST ROUND)
+
+**Context:** Cob reported all 10 open CRM items resolved on May 23. Fiona tested each item and sent reply email to Cob (CC: Chris, solutions@aivate.net) on May 27.
+
+**Result: 8 of 10 Confirmed Resolved, 2 Still Open**
+
+#### CONFIRMED RESOLVED
+
+| # | Issue | Severity | Notes |
+|---|-------|----------|-------|
+| 1 | Job Deletion + Admin Guardrail | CRITICAL | Working. Fiona can delete as admin. Follow-up needed: confirm managers can't delete. |
+| 2 | SOV Retention Row — Full Logic Overhaul | CRITICAL | Working. Can edit and delete retention lines. Auto 10% retention calculation is live. |
+| 4 | Task Deletion Guardrail — Assigner-Only | HIGH | Partially confirmed. Cross-user test not yet done. |
+| 5 | Document Link Option in Contracts & Compliance | HIGH | Working. Can paste external links. |
+| 6 | Persist Pipeline Filters Across Navigation | HIGH | Confirmed resolved. Filters persist. |
+| 8 | Real-time Push Notifications | MEDIUM | Confirmed resolved. Instant notifications. |
+| 9 | Additional Notes — More Prominent | LOW | Working. Amber/yellow highlight with icon. |
+| 10 | Audit Supabase Free Tier | LOW | On hold — not urgent. |
+
+#### NOT YET RESOLVED (at the time)
+
+| # | Issue | Severity | Status | Details |
+|---|-------|----------|--------|---------|
+| 3 | SOV Cents Rounding | CRITICAL | STILL BROKEN | Remaining to Bill rounded to nearest dollar. **(Now resolved in May 29 update)** |
+| 7 | Retention Filter on Pipeline Page | MEDIUM | STILL BROKEN | Filter returning incorrect jobs. **(Now resolved in May 29 update)** |
+
+---
+
+## Previous Update - May 22, 2026
 
 ### CRM DATA AUDIT — FULL TRANSCRIPT PROCESSED
 
@@ -268,12 +606,12 @@
 | **Multi-crew timestamps per WO** | Per-crew-member time in/out records |
 | **Sitemap field auto-populate** | Job-level sitemap → inherit to all child WOs |
 | **SF Contact Roles** | Pull POC contacts from SF into WO creation |
-| **SF Permit fields** | iPermit link + dig alert fields — 🚫 BLOCKED: need field names from Wayne |
+| **SF Permit fields** | iPermit link + dig alert fields — ✅ UNBLOCKED: Wayne provided full field list in June 2 session. See `temp-power-systems-permits-utilities-call-jun2.md`. Full module is additional scope — awaiting Chris approval. |
 | **CO Parent/Child logic** | Prevent duplicate jobs from child SF opportunities |
 | **SOV validation** | Phases must total contract amount before save |
 | **Task Automation Engine** | Auto-tasks triggered by job events |
 
-**🔴 BLOCKER:** SF Permit fields blocked — need Wayne to provide iPermit link + dig alert field names from Salesforce.
+**✅ UNBLOCKED:** SF Permit fields — Wayne provided full field list in June 2 session. Full Permits & Utilities Module is additional scope pending Chris's approval.
 
 ---
 
